@@ -655,7 +655,7 @@ function toggleSceneAutoMode(){
 	if(scene.mode != 1 && canProgress(false)){
 		scene.mode = 1;
 		scene.elements.autoInd.style.visibility = "visible";
-		scene.elements.textBoxIcon.style.backgroundImage = "url('data/ui/Scene_text_icon_edn2.webp')"
+		scene.elements.textBoxIcon.style.backgroundImage = "url('https://raw.githubusercontent.com/random197854/test5/gh-pages/data/ui/Scene_text_icon_edn2.webp')"
 		sceneAutoMode();
 	} else if (scene.mode == 1){
 		toggleOffSceneAutoMode();
@@ -665,7 +665,7 @@ function toggleSceneAutoMode(){
 function toggleOffSceneAutoMode(){
 	scene.mode = 0;
 	scene.elements.autoInd.style.visibility = "hidden";
-	scene.elements.textBoxIcon.style.backgroundImage = "url('data/ui/Scene_text_icon_edn1.webp')"
+	scene.elements.textBoxIcon.style.backgroundImage = "url('https://raw.githubusercontent.com/random197854/test5/gh-pages/data/ui/Scene_text_icon_edn1.webp')"
 	clearTimeout(scene.nextAuto);
 }
 
