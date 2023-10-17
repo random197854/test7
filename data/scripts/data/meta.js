@@ -9620,8 +9620,25 @@ var CHAR = {
             cv:CV.HAKATA_AKIKO
         }
     },
-
-
+    PUTIKA:{
+        base:{
+            name:{
+                eng:"Putika",
+                engAlias:[],
+                jap:"プティカ",
+                japAlias:[]
+            },
+            tags:[
+                TAG.PLATINUM_BLOND_HAIR, TAG.LONG_HAIR,
+                TAG.GARNET_EYES,
+                TAG.LIGHT_SKIN, TAG.AVERAGE_BREASTS, TAG.POINTED_EARS
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.AIKAWA_ARISA,
+            cv:CV.INOUE_YUA
+        }
+    },
 
 
     // :{
@@ -21535,6 +21552,7 @@ var SCENE = {
     },
     "0357_1":{
         character:CHAR.FUUMA_AMANE,
+        form:"adult",
         tags:{
             female:[
                 TAG.SWIMSUIT,
@@ -21549,6 +21567,7 @@ var SCENE = {
     },
     "0357_2":{
         character:CHAR.FUUMA_AMANE,
+        form:"adult",
         tags:{
             female:[
                 TAG.SWIMSUIT, TAG.NAKED,
@@ -26227,6 +26246,7 @@ var SCENE = {
             misc:[TAG.NO_SEX]
         },
         ignoredCharacterTags:[],
+        nextScene:"0576_2"
     },
     "0576_2":{
         character:[CHAR.LILINOE, CHAR.FUUMA_KOTAROU],
@@ -26254,6 +26274,7 @@ var SCENE = {
             misc:[]
         },
         ignoredCharacterTags:[],
+        nextScene:"0577_2"
     },
     "0577_2":{
         character:[CHAR.IGAWA_ASAGI, CHAR.FUUMA_KOTAROU],
@@ -26294,6 +26315,89 @@ var SCENE = {
         },
         ignoredCharacterTags:[],
     },
+    "0580_1":{
+        character:CHAR.RUNE,
+        tags:{
+            female:[
+                TAG.PANTIES_PUSHED_TO_SIDE, TAG.CROP_TOP, TAG.BREASTS_OUT,
+                TAG.PILEDRIVER,
+                TAG.VAGINAL_SEX, TAG.NAKADASHI, TAG.NIPPLE_PINCHING, TAG.NIPPLE_PULLING
+
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0580_2"
+    },
+    "0580_2":{
+        character:[],
+        tags:{
+            female:[
+                TAG.COMPLETELY_NAKED,
+                TAG.ROPE_BONDAGE, TAG.VAGINAL_SEX, TAG.NIPPLE_PLAY, TAG.BLOWJOB, TAG.NIPPLE_FUCK, TAG.LACTATION, TAG.NAKADASHI, TAG.VAGINAL_LEAKAGE, TAG.AHEGAO, TAG.DOUBLE_PENIS_PENETRATION
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0581_1":{
+        character:CHAR.TSUZURUGI_MIKOTO,
+        tags:{
+            female:[
+                TAG.HALLOWEEN_OUTFIT, TAG.SCHOOL_SWIMSUIT, TAG.NIPPLE_CUTOUTS, TAG.VAGINAL_CUTOUT, TAG.THIGH_HIGH_STOCKINGS,
+                TAG.STOMACH_DEFORMATION, TAG.NIPPLE_PULLING, TAG.ASPHYXIATION, TAG.VAGINAL_INSERTION
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0581_2"
+    },
+    "0581_2":{
+        character:CHAR.TSUZURUGI_MIKOTO,
+        tags:{
+            female:[
+                TAG.HALLOWEEN_OUTFIT, TAG.SCHOOL_SWIMSUIT, TAG.NIPPLE_CUTOUTS, TAG.VAGINAL_CUTOUT, TAG.THIGH_HIGH_STOCKINGS,
+                TAG.VAGINAL_FINGERING, TAG.MASTURBATION, TAG.VAGINAL_LEAKAGE, TAG.AHEGAO, TAG.URINATION_FETISH, TAG.BLOWJOB, TAG.VAGINAL_SEX, TAG.DOUBLE_PENIS_PENETRATION, TAG.NAKADASHI, TAG.CUM_IN_MOUTH, TAG.PISSED_ON, TAG.BUKKAKE
+            ],
+            male:[],
+            location:[TAG.WAREHOUSE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0582":{
+        character:[CHAR.PUTIKA, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.HALLOWEEN_OUTFIT, TAG.BREASTS_OUT, TAG.PANTIES_PUSHED_TO_SIDE, TAG.THIGH_HIGH_STOCKINGS,
+                TAG.VAGINAL_SEX, TAG.USED_CONDOMS_EXPOSITION, TAG.VIBRATOR, TAG.BLOWJOB, TAG.AHEGAO, TAG.SQUIRTING, TAG.VAGINAL_INSERTION
+            ],
+            male:[],
+            location:[TAG.BEDROOM, TAG.ON_BED],
+            misc:[TAG.OVERLAY_XRAY]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0583":{
+        character:CHAR.SHIPPOU_YAE,
+        tags:{
+            female:[
+                TAG.HALLOWEEN_OUTFIT, TAG.BREASTS_OUT, TAG.PANTIES,
+                TAG.MAGIC_WAND, TAG.CUNNILINGUS, TAG.BLOWJOB, TAG.VAGINAL_SEX, TAG.DOUBLE_PENIS_PENETRATION, TAG.CUM_IN_MOUTH, TAG.NAKADASHI, TAG.USED_CONDOMS_EXPOSITION, TAG.BODY_WRITING
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[TAG.CUT_IN_XRAY]
+        },
+        ignoredCharacterTags:[],
+    },
+
 
 
 
