@@ -26397,7 +26397,89 @@ var SCENE = {
         },
         ignoredCharacterTags:[],
     },
-
+    "0584_1":{
+        character:[CHAR.YUBASHIRI_HAYATE, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.LEOTARD, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.ANAL_FINGERING, TAG.GAPING, TAG.VAGINAL_LEAKAGE
+            ],
+            male:[],
+            location:[TAG.OUTSIDE, TAG.SEMI_PUBLIC],
+            misc:[TAG.NO_SEX]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0584_2"
+    },
+    "0584_2":{
+        character:[CHAR.YUBASHIRI_HAYATE, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.LEOTARD, TAG.PANTIES_PUSHED_TO_SIDE, TAG.PROTRUDING_NIPPLES, TAG.BREASTS_OUT,
+                TAG.ANAL_SEX, TAG.NAKADASHI, TAG.AHEGAO
+            ],
+            male:[],
+            location:[TAG.OUTSIDE, TAG.SEMI_PUBLIC],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0585_1":{
+        character:CHAR.UEHARA_RIN,
+        tags:{
+            female:[
+                TAG.BIKINI, TAG.MICROSKIRT, TAG.BREASTS_OUT, TAG.PANTIES_PUSHED_TO_SIDE, TAG.THIGH_HIGH_STOCKINGS,
+                TAG.QUICKIE_FIX_POSITION,
+                TAG.VAGINAL_SEX, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.SEMI_PRIVATE, TAG.WAREHOUSE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0585_2"
+    },
+    "0585_2":{
+        character:CHAR.UEHARA_RIN,
+        tags:{
+            female:[
+                TAG.BIKINI, TAG.BREASTS_OUT, TAG.THIGH_HIGH_STOCKINGS,
+                TAG.STANDING_SEX,
+                TAG.BREAST_GROPING, TAG.VAGINAL_SEX, TAG.NAKADASHI, TAG.SQUIRTING, TAG.AHEGAO, TAG.STOMACH_DEFORMATION
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0586":{
+        character:CHAR.SHARRON_OREAS,
+        tags:{
+            female:[
+                TAG.BREASTS_OUT, TAG.THONG, TAG.THIGH_HIGH_STOCKINGS,
+                TAG.BLOWJOB_PAIZURI, TAG.VAGINAL_FINGERING, TAG.CUM_IN_MOUTH, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0587":{
+        character:[CHAR.DOLORES, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.LEOTARD, TAG.FRILLY_CLOTHING, TAG.BREASTS_OUT, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.VAGINAL_FINGERING, TAG.VAGINAL_SEX, TAG.NAKADASHI, TAG.KISSING
+            ],
+            male:[],
+            location:[TAG.BEDROOM, TAG.ON_BED, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    
 
 
 
