@@ -1113,6 +1113,12 @@ var CV = {
         jap: "桃園杏里",
         japAlias: ["桃園", "杏里"]
     },
+    MINAMI_SHINO:{
+        eng: "Minami Shino",
+        engAlias: ["Minami", "Shino Minami", "Shino"],
+        jap: "みなみしの",
+        japAlias: ["みなみ", "しの"]
+    },
     IGNORE:{
         eng: "",
         engAlias: [],
@@ -9639,6 +9645,82 @@ var CHAR = {
             cv:CV.INOUE_YUA
         }
     },
+    SHOJOU_HATSUMI:{
+        base:{
+            name:{
+                eng:"Shoujo Hatsumi",
+                engAlias:["Shoujo", "Hatsumi Shoujo", "Hatsumi"],
+                jap:"処条はつみ",
+                japAlias:["処条", "はつみ"]
+            },
+            tags:[
+                TAG.RED_HAIR, TAG.LONG_HAIR,
+                TAG.GREY_EYES,
+                TAG.BIG_BREASTS, TAG.LIGHT_SKIN
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.AIKAWA_ARISA,
+            cv:CV.MORIYA_UTANE
+        }
+    },
+    CARA_CROMWELL:{
+        base:{
+            name:{
+                eng:"Cara Cromwell",
+                engAlias:["Cara", "Cara the Bloodlord"],
+                jap:"カーラ・クロムウェル",
+                japAlias:["カーラクロムウェル", "カーラ"]
+            },
+            tags:[
+               TAG.WHITE_HAIR, TAG.SHOULDER_LENGTH_HAIR, TAG.CURLY_HAIR,
+               TAG.RED_EYES,
+               TAG.LIGHT_SKIN, TAG.BIG_BREASTS,
+            ],
+            gender:"female",
+            originalCharacter:false,
+            artist:ARTIST.KAGAMI_HIROTAKA,
+            cv:CV.MOMOZONO_KAORU
+        }
+    },
+    YUUKI_TENKO:{
+        base:{
+            name:{
+                eng:"Yuuki Tenko",
+                engAlias:["Yuuki, Tenko Yuuki", "Tenko"],
+                jap:"結城天鼓",
+                japAlias:["結城", "天鼓"]
+            },
+            tags:[
+                TAG.WHITE_HAIR, TAG.SHOULDER_LENGTH_HAIR,
+                TAG.RED_EYES,
+                TAG.LIGHT_SKIN, TAG.SMALL_BREASTS
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.KUUCHUU_YOUSAI,
+            cv:CV.MUGIME_PURIN
+        }
+    },
+    LISCIA:{
+        base:{
+            name:{
+                eng:"Liscia",
+                engAlias:[],
+                jap:"リーシア",
+                japAlias:[]
+            },
+            tags:[
+                TAG.BROWN_HAIR, TAG.LONG_HAIR,
+                TAG.VIOLET_EYES,
+                TAG.HUGE_BREASTS, TAG.LIGHT_SKIN, TAG.HORNS
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.ASAHI,
+            cv:CV.MINAMI_SHINO
+        }
+    },
 
 
     // :{
@@ -9926,25 +10008,6 @@ var CHAR = {
             originalCharacter:false,
             artist:ARTIST.SIAN,
             cv:CV.NAKANO_SHINO
-        }
-    },
-    CARA_CROMWELL:{
-        base:{
-            name:{
-                eng:"Cara Cromwell",
-                engAlias:["Cara", "Cara the Bloodlord"],
-                jap:"カーラ・クロムウェル",
-                japAlias:["カーラクロムウェル", "カーラ"]
-            },
-            tags:[
-               TAG.WHITE_HAIR, TAG.SHOULDER_LENGTH_HAIR, TAG.CURLY_HAIR,
-               TAG.RED_EYES,
-               TAG.LIGHT_SKIN, TAG.BIG_BREASTS,
-            ],
-            gender:"female",
-            originalCharacter:false,
-            artist:ARTIST.KAGAMI_HIROTAKA,
-            cv:CV.MOMOZONO_KAORU
         }
     },
     SOPHIA_ARDUISO_FAIRGLYN:{
@@ -26475,6 +26538,87 @@ var SCENE = {
             ],
             male:[],
             location:[TAG.BEDROOM, TAG.ON_BED, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0588_1":{
+        character:CHAR.SHOJOU_HATSUMI,
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.RIPPED_CLOTHING, TAG.BREASTS_OUT, TAG.THIGH_HIGH_STOCKINGS,
+                TAG.QUICKIE_FIX_POSITION,
+                TAG.KISSING, TAG.ANILINGUS, TAG.VAGINAL_SEX, TAG.NAKADASHI, TAG.AHEGAO
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0588_2"
+    },
+    "0588_2":{
+        character:CHAR.SHOJOU_HATSUMI,
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.BREASTS_OUT, TAG.THIGH_HIGH_STOCKINGS, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.BLOWJOB, TAG.MAGIC_WAND, TAG.VAGINAL_SEX, TAG.BUKKAKE, TAG.NAKADASHI, TAG.ANAL_SEX, TAG.SQUIRTING
+            ],
+            male:[],
+            location:[],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0589_1":{
+        character:CHAR.CARA_CROMWELL,
+        tags:{
+            female:[
+                TAG.BODYSTOCKING, TAG.PROTRUDING_NIPPLES, TAG.BREASTS_OUT, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.TENTACLE_BONDAGE, TAG.BREAST_GROPING, TAG.BREAST_INJECTION, TAG.TENTACLE_RAPE, TAG.VAGINAL_SEX, TAG.NAKADASHI, TAG.AHEGAO, TAG.ANAL_SEX, TAG.DOUBLE_PENIS_PENETRATION, TAG.STOMACH_INFLATION
+            ],
+            male:[],
+            location:[TAG.FLESH_ROOM, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0589_2"
+    },
+    "0589_2":{
+        character:CHAR.CARA_CROMWELL,
+        tags:{
+            female:[
+                TAG.BODYSTOCKING,
+                TAG.TENTACLE_BONDAGE, TAG.VAGINAL_SEX, TAG.NAKADASHI, TAG.AHEGAO, TAG.NIPPLE_PLAY, TAG.SCAT
+            ],
+            male:[TAG.ORC],
+            location:[TAG.FLESH_ROOM, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0590":{
+        character:CHAR.YUUKI_TENKO,
+        tags:{
+            female:[
+                TAG.NAKED, TAG.THIGH_HIGH_SOCKS,
+                TAG.VIBRATOR, TAG.ROTOR, TAG.METAL_BONDAGE, TAG.SQUIRTING, TAG.VAGINAL_SEX, TAG.NAKADASHI, TAG.AHEGAO
+            ],
+            male:[],
+            location:[TAG.PRISON_CELL, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0591":{
+        character:CHAR.LISCIA,
+        tags:{
+            female:[
+                TAG.RIPPED_CLOTHING, TAG.GLASSES, TAG.BREASTS_OUT,
+                TAG.NIPPLE_PINCHING, TAG.LACTATION, TAG.VAGINAL_SEX, TAG.RAPE, TAG.PAIZURI, TAG.NIPPLE_SUCKING, TAG.NAKADASHI, TAG.BUKKAKE
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
             misc:[]
         },
         ignoredCharacterTags:[],
