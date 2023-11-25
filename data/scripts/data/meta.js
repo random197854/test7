@@ -6724,8 +6724,8 @@ var CHAR = {
     YUFI:{
         base:{
             name:{
-                eng:"Yufi",
-                engAlias:["Yufie", "Yuphy", "Oni Twin", "Oni Twins", "Yufi and Sofi", "Yufie and Sofie", "Yuphy and Sophy", "Yufi & Sofi", "Yufie & Sofie", "Yuphy & Sophy"],
+                eng:"Yuphie",
+                engAlias:["Yufie", "Yuphy", "Yufi", "Oni Twin", "Oni Twins", "Yuphie & Sophie", "Yuphie and Sophie", "Yufi and Sofi", "Yufie and Sofie", "Yuphy and Sophy", "Yufi & Sofi", "Yufie & Sofie", "Yuphy & Sophy"],
                 jap:"ユフィ",
                 japAlias:["ユフィ＆ソフィ", "双子の鬼娘"]
             },
@@ -6743,8 +6743,8 @@ var CHAR = {
     SOFI:{
         base:{
             name:{
-                eng:"Sofi",
-                engAlias:["Sofie", "Sophy", "Sophie", "Sofy", "Oni Twin", "Oni Twins", "Yufi and Sofi", "Yufie and Sofie", "Yuphy and Sophy", "Yufi & Sofi", "Yufie & Sofie", "Yuphy & Sophy"],
+                eng:"Sophie",
+                engAlias:["Sofie", "Sophy", "Sophie", "Sofy", "Sofi", "Oni Twin", "Oni Twins", "Yuphie & Sophie", "Yuphie and Sophie", "Yufi and Sofi", "Yufie and Sofie", "Yuphy and Sophy", "Yufi & Sofi", "Yufie & Sofie", "Yuphy & Sophy"],
                 jap:"ソフィ",
                 japAlias:["ユフィ＆ソフィ", "双子の鬼娘"]
             },
@@ -7296,6 +7296,24 @@ var CHAR = {
             originalCharacter:true,
             artist:ARTIST.POTION,
             cv:CV.YOSHINAKA_AI
+        },
+        form:{
+            adult:{
+                name:{
+                    eng:"Shinki Mai",
+                    engAlias:["Future Nanse Mai", "Adult Nanse Mai", "Future Mai", "Adult Mai"],
+                    jap:"神気舞",
+                    japAlias:["神気七瀬舞", "大人七瀬舞", "未来舞", "未来七瀬舞"]
+                },
+            },
+            young:{
+                name:{
+                    eng:"Young Mai",
+                    engAlias:["Young Nanase Mai"],
+                    jap:"若い舞",
+                    japAlias:["若い七瀬舞"]
+                },
+            },
         }
     },
     SHISHIMURA_KORO:{
@@ -9719,6 +9737,25 @@ var CHAR = {
             originalCharacter:true,
             artist:ARTIST.ASAHI,
             cv:CV.MINAMI_SHINO
+        }
+    },
+    RAGNAROK:{
+        base:{
+            name:{
+                eng:"Ragnarok",
+                engAlias:["Ragnarock", "Kirara Mama", "Kirara's Mother"],
+                jap:"ラグナロク",
+                japAlias:[]
+            },
+            tags:[
+                TAG.BLOND_HAIR, TAG.LONG_HAIR,
+                TAG.BLUE_EYES,
+                TAG.LIGHT_SKIN, TAG.HUGE_BREASTS
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.AOI_NAGISA,
+            cv:CV.OKUDERA_KASUMI
         }
     },
 
@@ -18448,6 +18485,7 @@ var SCENE = {
     },
     "0208_1":{
         character:[CHAR.NANASE_MAI, CHAR.FUUMA_KOTAROU],
+        form:["young", null],
         tags:{
             female:[
                 TAG.TAIMANIN_OUTFIT, TAG.RIPPED_CLOTHING, TAG.BREAST_CUTOUTS
@@ -18461,6 +18499,7 @@ var SCENE = {
     },
     "0208_2":{
         character:[CHAR.NANASE_MAI, CHAR.FUUMA_KOTAROU],
+        form:["young", null],
         tags:{
             female:[
                 TAG.TAIMANIN_OUTFIT,
@@ -20886,6 +20925,7 @@ var SCENE = {
     },
     "0323_1":{
         character:CHAR.NANASE_MAI,
+        form:"young",
         tags:{
             female:[
                 TAG.TAIMANIN_OUTFIT, TAG.RIPPED_CLOTHING, TAG.BREAST_CUTOUTS, TAG.VAGINAL_CUTOUT, TAG.ANAL_CUTOUT, TAG.PONYTAIL,
@@ -20900,6 +20940,7 @@ var SCENE = {
     },
     "0323_2":{
         character:CHAR.NANASE_MAI,
+        form:"young",
         tags:{
             female:[
                 TAG.TAIMANIN_OUTFIT, TAG.RIPPED_CLOTHING, TAG.BREAST_CUTOUTS, TAG.VAGINAL_CUTOUT, TAG.ANAL_CUTOUT, TAG.PONYTAIL, TAG.COLLAR,
@@ -26616,6 +26657,60 @@ var SCENE = {
             female:[
                 TAG.RIPPED_CLOTHING, TAG.GLASSES, TAG.BREASTS_OUT,
                 TAG.NIPPLE_PINCHING, TAG.LACTATION, TAG.VAGINAL_SEX, TAG.RAPE, TAG.PAIZURI, TAG.NIPPLE_SUCKING, TAG.NAKADASHI, TAG.BUKKAKE
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0592_1":{
+        character:[CHAR.NANASE_MAI, CHAR.FUUMA_KOTAROU],
+        form:["adult", null],
+        tags:{
+            female:[
+                TAG.BIKINI, TAG.CHOKER, TAG.THIGH_BAND, TAG.GLOVES, TAG.BREASTS_OUT,
+                TAG.HANDJOB, TAG.BREAST_GROPING, TAG.BLOWJOB_PAIZURI, TAG.CUM_IN_MOUTH
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.ON_BED, TAG.PRIVATE],
+            misc:[TAG.NO_SEX]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0592_2":{
+        character:[CHAR.NANASE_MAI, CHAR.FUUMA_KOTAROU],
+        form:["adult", null],
+        tags:{
+            female:[
+                TAG.BIKINI, TAG.CHOKER, TAG.THIGH_BAND, TAG.GLOVES, TAG.BREASTS_OUT, TAG.THIGH_HIGH_STOCKINGS, TAG.PARTIALLY_TRANSPARENT_CLOTHING, TAG.THONG,
+                TAG.INTERCRURAL_SEX, TAG.BUKKAKE, TAG.VAGINAL_SEX, TAG.SQUIRTING, TAG.NAKADASHI, TAG.AHEGAO
+            ],
+            male:[],
+            location:[],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0593_1":{
+        character:[CHAR.RAGNAROK, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.PARTIALLY_TRANSPARENT_CLOTHING, TAG.INVERTED_NIPPLES,
+                TAG.BLOWJOB_PAIZURI, TAG.BUKKAKE
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[TAG.NO_SEX]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0593_2":{
+        character:[CHAR.RAGNAROK, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.BREASTS_OUT, TAG.VAGINAL_CUTOUT,
+                TAG.VAGINAL_SEX, TAG.NAKADASHI
             ],
             male:[],
             location:[TAG.INSIDE, TAG.PRIVATE],
@@ -35141,6 +35236,7 @@ var SCENE = {
     },
     "c639":{
         character:CHAR.NANASE_MAI,
+        form:"young",
         tags:{
             female:[
                 TAG.TAIMANIN_OUTFIT, TAG.PROTRUDING_NIPPLES, TAG.RIPPED_CLOTHING, TAG.CROTCHLESS_CLOTHING,
@@ -35155,6 +35251,7 @@ var SCENE = {
     },
     "c640":{
         character:CHAR.NANASE_MAI,
+        form:"young",
         tags:{
             female:[
                 TAG.WEDDING_DRESS, TAG.BREASTS_OUT, TAG.NIPPLE_PIERCING, TAG.GARTER_BELT, TAG.HALF_NAKED,
@@ -35840,6 +35937,7 @@ var SCENE = {
     },
     "c695":{
         character:CHAR.NANASE_MAI,
+        form:"young",
         tags:{
             female:[
                 TAG.WEDDING_DRESS, TAG.NIPPLE_PIERCING, TAG.BREASTS_OUT, TAG.CUPLESS_CLOTHING, TAG.CHOKER, TAG.GARTER_BELT, TAG.PANTYLESS, TAG.BRALESS, TAG.HALF_NAKED, TAG.FINGERLESS_EVENING_GLOVES,
@@ -35854,6 +35952,7 @@ var SCENE = {
     },
     "c696":{
         character:CHAR.NANASE_MAI,
+        form:"young",
         tags:{
             female:[
                 TAG.WEDDING_DRESS, TAG.NIPPLE_PIERCING, TAG.BREASTS_OUT, TAG.CUPLESS_CLOTHING, TAG.CHOKER, TAG.GARTER_BELT, TAG.PANTYLESS, TAG.BRALESS, TAG.HALF_NAKED, TAG.FINGERLESS_EVENING_GLOVES,
