@@ -360,15 +360,15 @@ function constructImagePath(src, id){
 	return "https://raw.githubusercontent.com/random197854/test5/gh-pages/images/" + src + ".webp";
 }
 function constructVoiceAudioPath(src, id){
-	return "https://raw.githubusercontent.com/random197854/test5/gh-pages/data/audio/voices/" + src + ".ogg";
+	return "https://raw.githubusercontent.com/random197854/test5/gh-pages/data/audio/voices/" + src.toLowerCase() + ".ogg";
 }
 
 function constructBGMAudioPath(src){
-	return "https://raw.githubusercontent.com/random197854/test5/gh-pages/data/audio/bgm/" + src + ".ogg";
+	return "https://raw.githubusercontent.com/random197854/test5/gh-pages/data/audio/bgm/" + src.toLowerCase() + ".ogg";
 }
 
 function constructSEAudioPath(src){
-	return "https://raw.githubusercontent.com/random197854/test5/gh-pages/data/audio/se/" + src + ".ogg";
+	return "https://raw.githubusercontent.com/random197854/test5/gh-pages/data/audio/se/" + src.toLowerCase() + ".ogg";
 }
 
 function emptyTempPreload(){
