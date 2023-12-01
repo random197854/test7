@@ -245,6 +245,12 @@ var ARTIST = {
         jap: "佐藤空気",
         japAlias: ["佐藤", "空気"]
     },
+    YOU_MARU:{
+        eng: "You Maru",
+        engAlias: ["You", "Maru You", "Maru"],
+        jap: "遊丸",
+        japAlias: ["遊", "丸"]
+    },
     IGNORE:{
         eng: "",
         engAlias: [],
@@ -1118,6 +1124,18 @@ var CV = {
         engAlias: ["Minami", "Shino Minami", "Shino"],
         jap: "みなみしの",
         japAlias: ["みなみ", "しの"]
+    },
+    SUZUNE_AI:{
+        eng: "Minami Shino",
+        engAlias: ["Minami", "Shino Minami", "Shino"],
+        jap: "涼音愛",
+        japAlias: ["涼音", "愛"]
+    },
+    SORA_MAME:{
+        eng: "Sora Mame.",
+        engAlias: ["Sora Mame", "Sora", "Mame Sora.", "Mame Sora"],
+        jap: "そらまめ。",
+        japAlias: ["そらまめ", "そら", "まめ"]
     },
     IGNORE:{
         eng: "",
@@ -4356,6 +4374,24 @@ var CHAR = {
                 engAlias:["Tachibana", "Ichirou Tachibana", "Ichirou"],
                 jap:"橘壱郎",
                 japAlias:["橘", "壱郎"]
+            },
+            tags:[
+                
+            ],
+            gender:"male",
+            focus:false,
+            originalCharacter:false,
+            artist:ARTIST.IGNORE,
+            cv:CV.IGNORE
+        }
+    },
+    EDWIN_BLACK:{
+        base:{
+            name:{
+                eng:"Edwin Black",
+                engAlias:["Black-sama"],
+                jap:"エドウィン・ブラック",
+                japAlias:["エドウィン", "ブラック", "ブラック様"]
             },
             tags:[
                 
@@ -9756,6 +9792,82 @@ var CHAR = {
             originalCharacter:true,
             artist:ARTIST.AOI_NAGISA,
             cv:CV.OKUDERA_KASUMI
+        }
+    },
+    RIISHA:{
+        base:{
+            name:{
+                eng:"Riisha",
+                engAlias:["Leesha", "Liisha", "Reesha"],
+                jap:"リーシャ",
+                japAlias:[]
+            },
+            tags:[
+                TAG.PINK_HAIR, TAG.SHOULDER_LENGTH_HAIR,
+                TAG.PINK_EYES,
+                TAG.BIG_BREASTS, TAG.LIGHT_SKIN, TAG.HORNS, TAG.SUCCUBUS
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.YOU_MARU,
+            cv:CV.AN_MITSUKI
+        }
+    },
+    SHINGANJI_KAEDE:{
+        base:{
+            name:{
+                eng:"Shinganji Kaede",
+                engAlias:["Shinganji", "Kaede Shinganji", "Kaede", "Kurenai Mama", "Kurenai's Mother"],
+                jap:"心願寺楓",
+                japAlias:["心願寺", "楓"]
+            },
+            tags:[
+                TAG.BLOND_HAIR, TAG.LONG_HAIR, TAG.TWIN_TAILS,
+                TAG.GREEN_EYES, TAG.RED_EYES, TAG.HETEROCHROMIA,
+                TAG.BIG_BREASTS, TAG.LIGHT_SKIN
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.ZOL,
+            cv:CV.IGASAKI_AYAKA
+        }
+    },
+    LOLA:{
+        base:{
+            name:{
+                eng:"Lola",
+                engAlias:["Rora"],
+                jap:"ローラ",
+                japAlias:[]
+            },
+            tags:[
+                TAG.GREY_HAIR, TAG.LONG_HAIR,
+                TAG.RED_EYES,
+                TAG.LIGHT_SKIN, TAG.BIG_BREASTS
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.SAKURANBO,
+            cv:CV.SUZUNE_AI
+        }
+    },
+    FRAMU_RAMU:{
+        base:{
+            name:{
+                eng:"Furamu Ramu",
+                engAlias:["Fram Ram"],
+                jap:"フラム・ラム",
+                japAlias:["フラム", "ラム"]
+            },
+            tags:[
+                TAG.WHITE_HAIR, TAG.LONG_HAIR,
+                TAG.GARNET_EYES,
+                TAG.SMALL_BREASTS, TAG.LIGHT_BROWN_SKIN, TAG.TANLINES, TAG.ELF
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.KUUCHUU_YOUSAI,
+            cv:CV.SORA_MAME
         }
     },
 
@@ -26677,6 +26789,7 @@ var SCENE = {
             misc:[TAG.NO_SEX]
         },
         ignoredCharacterTags:[],
+        nextScene:"0592_2"
     },
     "0592_2":{
         character:[CHAR.NANASE_MAI, CHAR.FUUMA_KOTAROU],
@@ -26704,6 +26817,7 @@ var SCENE = {
             misc:[TAG.NO_SEX]
         },
         ignoredCharacterTags:[],
+        nextScene:"0593_2"
     },
     "0593_2":{
         character:[CHAR.RAGNAROK, CHAR.FUUMA_KOTAROU],
@@ -26718,6 +26832,88 @@ var SCENE = {
         },
         ignoredCharacterTags:[],
     },
+    "0594_1":{
+        character:[CHAR.RIISHA, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.BREASTS_OUT, TAG.TIGHT_CLOTHING, TAG.THIGH_HIGH_STOCKINGS,
+                TAG.HANDJOB
+            ],
+            male:[TAG.NIPPLE_SUCKING],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[TAG.NO_SEX]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0594_2"
+    },
+    "0594_2":{
+        character:[CHAR.RIISHA, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.BREASTS_OUT, TAG.TIGHT_CLOTHING, TAG.PANTIES_PUSHED_TO_SIDE, TAG.THIGH_HIGH_STOCKINGS,
+                TAG.SITTING_SEX,
+                TAG.WOMB_TATTOO, TAG.VAGINAL_SEX, TAG.NAKADASHI, TAG.KISSING
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0595_1":{
+        character:[CHAR.SHINGANJI_KAEDE, CHAR.EDWIN_BLACK],
+        tags:{
+            female:[
+                TAG.KIMONO, TAG.BREASTS_OUT, TAG.PANTIES, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.VAGINAL_FINGERING, TAG.VAGINAL_SEX, TAG.BREAST_GROPING, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.BEDROOM, TAG.ON_BED, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0595_2"
+    },
+    "0595_2":{
+        character:[CHAR.SHINGANJI_KAEDE],
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.PROTRUDING_NIPPLES, TAG.THIGH_HIGH_STOCKINGS, TAG.RIPPED_CLOTHING, TAG.BREAST_CUTOUTS,
+                TAG.TENTACLE_RAPE, TAG.STUCK_IN_MEAT_WALL, TAG.VAGINAL_INJECTION, TAG.VAGINAL_SEX, TAG.STOMACH_DEFORMATION, TAG.NIPPLE_SUCKING, TAG.NAKADASHI, TAG.STOMACH_INFLATION, TAG.PREGNANT, TAG.AHEGAO
+            ],
+            male:[],
+            location:[TAG.PRIVATE, TAG.INSIDE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0596":{
+        character:[CHAR.LOLA, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.CASUAL_CLOTHING,
+                TAG.PANTIES_PUSHED_TO_SIDE, TAG.VAGINAL_SEX, TAG.BREAST_GROPING, TAG.NIPPLE_PINCHING, TAG.SPANKING, TAG.NAKADASHI, TAG.AHEGAO
+            ],
+            male:[],
+            location:[TAG.BEDROOM, TAG.PRIVATE, TAG.ON_BED],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0597":{
+        character:[CHAR.FRAMU_RAMU, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.COMPLETELY_NAKED,
+                TAG.VAGINAL_SEX, TAG.NAKADASHI, TAG.VAGINAL_LEAKAGE
+            ],
+            male:[],
+            location:[TAG.OUTSIDE, TAG.SEMI_PUBLIC],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    
     
 
 
