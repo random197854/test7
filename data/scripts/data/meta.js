@@ -9372,7 +9372,7 @@ var CHAR = {
             ],
             gender:"female",
             originalCharacter:true,
-            artist:ARTIST.SAKURANBO,
+            artist:ARTIST.SANO_TOSHIHIDE,
             cv:CV.MORIYA_UTANE
         }
     },
@@ -26913,7 +26913,91 @@ var SCENE = {
         },
         ignoredCharacterTags:[],
     },
-    
+    "0598_1":{
+        character:CHAR.ASAHINA_ICHIKA,
+        tags:{
+            female:[
+                TAG.CHRISTMAS_CLOTHING, TAG.BRA, TAG.PANTIES, TAG.PANTIES_PUSHED_TO_SIDE, TAG.PROTRUDING_NIPPLES,
+                TAG.STANDING_SEX,
+                TAG.HEART_PUPILS, TAG.VAGINAL_LEAKAGE, TAG.SPREAD_PUSSY, TAG.VAGINAL_SEX, TAG.NAKADASHI, TAG.INCONTINENCE, TAG.AHEGAO
+            ],
+            male:[],
+            location:[TAG.ALLEYWAY, TAG.SEMI_PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0598_2"
+    },
+    "0598_2":{
+        character:CHAR.ASAHINA_ICHIKA,
+        tags:{
+            female:[
+                TAG.CHRISTMAS_CLOTHING, TAG.PANTIES, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.DOGGY_STYLE,
+                TAG.FOOT_LICKING, TAG.VAGINAL_SEX, TAG.NAKADASHI, TAG.BUKKAKE, TAG.HEART_PUPILS
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0599_1":{
+        character:[CHAR.AISHUU_HEBIKO, CHAR.LILIM],
+        form:["young", "normal"],
+        tags:{
+            female:[
+                TAG.CHRISTMAS_CLOTHING, TAG.BIKINI, TAG.THIGH_HIGH_STOCKINGS, TAG.PANTIES_PUSHED_TO_SIDE, TAG.BREASTS_OUT,
+                TAG.YURI, TAG.BREAST_GROPING, TAG.TENTACLE, TAG.CLIT_PLAY, TAG.VAGINAL_INSERTION, TAG.VAGINAL_LEAKAGE, TAG.AHEGAO, 
+            ],
+            male:[],
+            location:[],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0599_2"
+    },
+    "0599_2":{
+        character:[CHAR.AISHUU_HEBIKO, CHAR.LILIM, CHAR.FUUMA_KOTAROU],
+        form:["young", "awakened", null],
+        tags:{
+            female:[
+                TAG.CHRISTMAS_CLOTHING, TAG.BIKINI, TAG.THIGH_HIGH_STOCKINGS, TAG.PANTIES_PUSHED_TO_SIDE, TAG.BREASTS_OUT,
+                TAG.YURI, TAG.BREAST_GROPING, TAG.NIPPLE_PLAY, TAG.SQUIRTING, TAG.VAGINAL_SEX, TAG.BUKKAKE
+            ],
+            male:[],
+            location:[],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0600":{
+        character:[CHAR.ISOZAKI_INORI, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.CHRISTMAS_CLOTHING, TAG.LEOTARD, TAG.EVENING_GLOVES, TAG.PANTIES_PUSHED_TO_SIDE, TAG.BREASTS_OUT,
+                TAG.VAGINAL_SEX, TAG.BREAST_GROPING, TAG.SENSUAL_BITING, TAG.NAKADASHI, TAG.BUKKAKE
+            ],
+            male:[],
+            location:[TAG.BEDROOM, TAG.ON_BED],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0601":{
+        character:[CHAR.SEDONA_ARSTONA, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.CHRISTMAS_CLOTHING, TAG.BREASTS_OUT, TAG.RIPPED_CLOTHING, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.COWGIRL_POSITION,
+                TAG.VAGINAL_SEX, TAG.NAKADASHI, TAG.STOMACH_INFLATION, TAG.LACTATION, TAG.BUKKAKE, TAG.AHEGAO, TAG.VAGINAL_LEAKAGE, 
+            ],
+            male:[],
+            location:[],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
     
 
 
