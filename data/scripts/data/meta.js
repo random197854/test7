@@ -26998,7 +26998,92 @@ var SCENE = {
         },
         ignoredCharacterTags:[],
     },
-    
+    "0602_1":{
+        character:CHAR.TATSUMIYA_HAIRI,
+        tags:{
+            female:[
+                TAG.KIMONO, TAG.PANTIES,
+                TAG.FORCEFUL_BLOWJOB, TAG.CUM_IN_MOUTH, TAG.BUKKAKE
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0602_2"
+    },
+    "0602_2":{
+        character:CHAR.TATSUMIYA_HAIRI,
+        tags:{
+            female:[
+                TAG.KIMONO, TAG.BREASTS_OUT, TAG.PANTYLESS,
+                TAG.VAGINAL_SEX, TAG.STOMACH_DEFORMATION, TAG.STOMACH_INFLATION, TAG.NAKADASHI, TAG.VAGINAL_LEAKAGE, TAG.PREGNANT, TAG.LACTATION
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0603_1":{
+        character:[CHAR.MIZUKI_SHIRANUI, CHAR.UEHARA_SHIKANOSUKE],
+        form:["adult", null],
+        tags:{
+            female:[
+                TAG.KIMONO, TAG.GLOVES, TAG.CHOKER, TAG.THIGH_HIGH_STOCKINGS,
+                TAG.HANDJOB, 
+            ],
+            male:[
+                TAG.NIPPLE_PLAY, TAG.ORGASM_DENIAL, TAG.AHEGAO
+            ],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0603_2"
+    },
+    "0603_2":{
+        character:[CHAR.MIZUKI_SHIRANUI, CHAR.UEHARA_SHIKANOSUKE],
+        form:["adult", null],
+        tags:{
+            female:[
+                TAG.KIMONO, TAG.GLOVES, TAG.CHOKER, TAG.THIGH_HIGH_STOCKINGS,
+                TAG.BREAST_GROPING, TAG.VAGINAL_SEX, TAG.KISSING, TAG.NAKADASHI
+            ],
+            male:[
+                TAG.AHEGAO
+            ],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[TAG.CUT_IN_XRAY]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0604":{
+        character:[CHAR.ICHIMONJI_MIIKO, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.MIKO_DRESS, TAG.BREASTS_OUT,
+                TAG.VAGINAL_SEX, TAG.VAGINAL_LEAKAGE, TAG.NIPPLE_PINCHING, TAG.ASPHYXIATION, TAG.NAKADASHI, TAG.AHEGAO
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0605":{
+        character:CHAR.SHIKIMI,
+        tags:{
+            female:[
+                TAG.ROPE_BONDAGE, TAG.HAT, TAG.THIGH_HIGH_STOCKINGS, TAG.MAGIC_WAND,
+                TAG.SWEATING, TAG.NIPPLE_SUCKING, TAG.BREAST_GROPING, TAG.AHEGAO, TAG.BUKKAKE, TAG.VAGINAL_LEAKAGE
+            ],
+            male:[],
+            location:[TAG.OUTSIDE, TAG.PUBLIC],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
 
 
 
