@@ -1137,6 +1137,24 @@ var CV = {
         jap: "そらまめ。",
         japAlias: ["そらまめ", "そら", "まめ"]
     },
+    UTSUMI_HINATA:{
+        eng: "Utsumi Hinata",
+        engAlias: ["Utsumi", "Hinata Utsumi", "Hinata"],
+        jap: "内海ひなた",
+        japAlias: ["内海", "ひなた"]
+    },
+    ENOMOTO_NEMU:{
+        eng: "Enomoto Nemu",
+        engAlias: ["Enomoto", "Nemu Enomoto", "Nemu"],
+        jap: "榎本ねむ",
+        japAlias: ["榎本", "ねむ"]
+    },
+    YAMABUKI_URARA:{
+        eng: "Yamabuki Urara",
+        engAlias: ["Yamabuki", "Urara Yamabuki", "Urara"],
+        jap: "山吹うらら",
+        japAlias: ["山吹", "うらら"]
+    },
     IGNORE:{
         eng: "",
         engAlias: [],
@@ -9868,6 +9886,64 @@ var CHAR = {
             originalCharacter:true,
             artist:ARTIST.KUUCHUU_YOUSAI,
             cv:CV.SORA_MAME
+        }
+    },
+    ELZA:{
+        base:{
+            name:{
+                eng:"Elza Swanson",
+                engAlias:["Elza", "Swanson"],
+                jap:"エルザ・スワンソン",
+                japAlias:["エルザ", "スワンソン"]
+            },
+            tags:[
+                TAG.BLOND_HAIR, TAG.LONG_HAIR,
+                TAG.BLUE_EYES,
+                TAG.HUGE_BREASTS, TAG.LIGHT_SKIN
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.ASAHI,
+            cv:CV.UTSUMI_HINATA
+        }
+    },
+    DAJAME:{
+        base:{
+            name:{
+                eng:"Dajame",
+                engAlias:[],
+                jap:"ダジャメ",
+                japAlias:[]
+            },
+            tags:[
+                TAG.BLUE_HAIR, TAG.CYAN_HAIR, TAG.MULTICOLORED_HAIR, TAG.SHOULDER_LENGTH_HAIR,
+                TAG.CYAN_EYES,
+                TAG.SMALL_BREASTS, TAG.LIGHT_SKIN
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.HOMURA_YUNI,
+            cv:CV.ENOMOTO_NEMU
+        }
+    },
+    ARUM:{
+        base:{
+            name:{
+                eng:"Arum",
+                engAlias:[],
+                jap:"アルム",
+                japAlias:[]
+            },
+            tags:[
+                TAG.PINK_HAIR, TAG.SHOULDER_LENGTH_HAIR,
+                TAG.PINK_EYES,
+                TAG.BIG_BREASTS, TAG.LIGHT_SKIN,
+                TAG.SUCCUBUS, TAG.DEMON_TAIL, TAG.FEATHERY_WINGS, TAG.HORNS
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.AIKAWA_ARISA,
+            cv:CV.YAMABUKI_URARA
         }
     },
 
@@ -27080,6 +27156,85 @@ var SCENE = {
             ],
             male:[],
             location:[TAG.OUTSIDE, TAG.PUBLIC],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0606_1":{
+        character:CHAR.ELZA,
+        tags:{
+            female:[
+                TAG.BREASTS_OUT,
+                TAG.BREAST_GROWTH, TAG.NIPPLE_FUCK, TAG.LACTATION, TAG.VIBRATOR, TAG.BUKKAKE
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0606_2":{
+        character:CHAR.ELZA,
+        tags:{
+            female:[
+                TAG.BREASTS_OUT,
+                TAG.BREAST_GROWTH, TAG.LACTATION, TAG.BUKKAKE, TAG.VAGINAL_SEX, TAG.BREAST_SUCKING, TAG.NAKADASHI
+            ],
+            male:[TAG.OLD_MAN],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0607_1":{
+        character:CHAR.IGAWA_SAKURA,
+        form:["young"],
+        tags:{
+            female:[
+                TAG.CROP_TOP, TAG.SKIRT, TAG.PANTIES, TAG.CHOKER, TAG.THIGH_HIGH_STOCKINGS, TAG.GLASSES, TAG.BREASTS_OUT, TAG.PANTYLESS,
+                TAG.PROSTITUTION, TAG.HANDJOB, TAG.BLOWJOB, TAG.VAGINAL_LEAKAGE, TAG.CUM_IN_MOUTH, TAG.CUM_SWALLOWING
+            ],
+            male:[],
+            location:[TAG.ALLEYWAY, TAG.SEMI_PUBLIC],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0607_2":{
+        character:CHAR.IGAWA_SAKURA,
+        form:["young"],
+        tags:{
+            female:[
+                TAG.CROP_TOP, TAG.SKIRT, TAG.PANTIES, TAG.CHOKER, TAG.THIGH_HIGH_STOCKINGS, TAG.BREASTS_OUT, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.PROSTITUTION, TAG.VAGINAL_SEX, TAG.WEARING_CONDOMS, TAG.SWEATING, TAG.BLOWJOB, TAG.CUM_IN_MOUTH, TAG.CUM_SWALLOWING, TAG.VAGINAL_LEAKAGE, TAG.BLOWJOB_PAIZURI, TAG.NAKADASHI, TAG.BUKKAKE, TAG.SQUIRTING, TAG.USED_CONDOMS_EXPOSITION, TAG.PEACE_SIGN
+            ],
+            male:[TAG.OLD_MAN],
+            location:[TAG.LOVE_HOTEL, TAG.PRIVATE],
+            misc:[TAG.CUT_IN_XRAY]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0608":{
+        character:[CHAR.DAJAME, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.NIPPLE_PLAY, TAG.MASTURBATION, TAG.VAGINAL_LEAKAGE, TAG.BLOWJOB, TAG.CUM_IN_MOUTH, TAG.TONGUE_PIERCING, TAG.HEART_PUPILS
+            ],
+            male:[],
+            location:[TAG.BEDROOM, TAG.ON_BED],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0609":{
+        character:CHAR.ARUM,
+        tags:{
+            female:[
+                TAG.BREASTS_OUT, TAG.CHOKER,
+                TAG.VAGINAL_SEX, TAG.DEFLORATION, TAG.VAGINAL_LEAKAGE, TAG.BREAST_GROPING, TAG.DRUGS, TAG.AHEGAO, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
             misc:[]
         },
         ignoredCharacterTags:[],
