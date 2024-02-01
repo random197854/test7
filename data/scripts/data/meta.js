@@ -27172,6 +27172,7 @@ var SCENE = {
             misc:[]
         },
         ignoredCharacterTags:[],
+        nextScene:"0606_2"
     },
     "0606_2":{
         character:CHAR.ELZA,
@@ -27199,6 +27200,7 @@ var SCENE = {
             misc:[]
         },
         ignoredCharacterTags:[],
+        nextScene:"0607_2"
     },
     "0607_2":{
         character:CHAR.IGAWA_SAKURA,
@@ -27232,6 +27234,86 @@ var SCENE = {
             female:[
                 TAG.BREASTS_OUT, TAG.CHOKER,
                 TAG.VAGINAL_SEX, TAG.DEFLORATION, TAG.VAGINAL_LEAKAGE, TAG.BREAST_GROPING, TAG.DRUGS, TAG.AHEGAO, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0610_1":{
+        character:[CHAR.LATIKUUL, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.BREASTS_OUT, TAG.DRESS, TAG.FRILLY_CLOTHING, TAG.THIGH_HIGH_STOCKINGS, TAG.CHOKER,
+                TAG.BLOWJOB, TAG.BREAST_GROPING, TAG.INCONTINENCE, TAG.CUM_IN_MOUTH, TAG.VAGINAL_SEX, TAG.NAKADASHI, TAG.AHEGAO, TAG.VAGINAL_LEAKAGE
+            ],
+            male:[],
+            location:[TAG.LOVE_HOTEL, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0610_2"
+    },
+    "0610_2":{
+        character:[CHAR.LATIKUUL, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.BREASTS_OUT, TAG.DRESS, TAG.FRILLY_CLOTHING, TAG.THIGH_HIGH_STOCKINGS, TAG.CHOKER, TAG.PANTIES_AROUND_LEG,
+                TAG.BREAST_GROPING, TAG.VAGINAL_FINGERING, TAG.KISSING, TAG.VAGINAL_SEX, TAG.NAKADASHI, TAG.AHEGAO
+            ],
+            male:[],
+            location:[TAG.LOVE_HOTEL, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0611_1":{
+        character:[CHAR.MAYA_CORDELIA, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.PARTIALLY_TRANSPARENT_CLOTHING, TAG.BRA, TAG.THONG, TAG.PANTIES_PUSHED_TO_SIDE, TAG.WOMB_TATTOO, TAG.RIPPED_CLOTHING, TAG.BREASTS_OUT, TAG.HAIR_RIBBON,
+                TAG.ANAL_BEADS, TAG.CUNNILINGUS, TAG.VAGINAL_FINGERING, TAG.VAGINAL_LEAKAGE, TAG.VAGINAL_SEX, TAG.KISSING, TAG.NAKADASHI, TAG.AHEGAO
+            ],
+            male:[],
+            location:[TAG.LOVE_HOTEL, TAG.PRIVATE],
+            misc:[TAG.CUT_IN_XRAY]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0611_2"
+    },
+    "0611_2":{
+        character:[CHAR.MAYA_CORDELIA, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.THONG, TAG.PANTIES_PUSHED_TO_SIDE, TAG.BREASTS_OUT, TAG.NAKED_RIBBON, TAG.THIGH_HIGH_STOCKINGS, TAG.HAIR_RIBBON,
+                TAG.ANAL_BEADS, TAG.VAGINAL_LEAKAGE, TAG.BLOWJOB, TAG.GAPING, TAG.CUM_IN_MOUTH, TAG.ANAL_SEX, TAG.NAKADASHI, TAG.INCONTINENCE, TAG.DICK_CLEANING_BLOWJOB, TAG.SPREAD_ASS
+            ],
+            male:[],
+            location:[TAG.LOVE_HOTEL, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0612":{
+        character:[CHAR.AMETANI_SHIINA],
+        tags:{
+            female:[
+                TAG.ROPE_BONDAGE,
+                TAG.BLOWJOB, TAG.INCONTINENCE, TAG.CUM_IN_MOUTH, TAG.PANTIES_PULLED_DOWN, TAG.VAGINAL_SEX, TAG.NAKADASHI, TAG.DICK_CLEANING_BLOWJOB
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0613":{
+        character:[CHAR.ELSIE_MOMOA, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.BREASTS_OUT, TAG.PANTIES_PUSHED_TO_SIDE, TAG.GLASSES, TAG.APRON,
+                TAG.VAGINAL_SEX, TAG.FEMDOM, TAG.SQUIRTING, TAG.STOMACH_DEFORMATION, TAG.BREAST_GROPING, TAG.NAKADASHI, TAG.AHEGAO, TAG.BUKKAKE
             ],
             male:[],
             location:[TAG.INSIDE, TAG.PRIVATE],
