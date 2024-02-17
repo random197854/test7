@@ -1155,6 +1155,12 @@ var CV = {
         jap: "山吹うらら",
         japAlias: ["山吹", "うらら"]
     },
+    HANAMORI_MEI:{
+        eng: "Hanamori Mei",
+        engAlias: ["Hanamori", "Mei Hanamori", "Mei"],
+        jap: "花杜めい",
+        japAlias: ["花杜", "めい"]
+    },
     IGNORE:{
         eng: "",
         engAlias: [],
@@ -9944,6 +9950,83 @@ var CHAR = {
             originalCharacter:true,
             artist:ARTIST.AIKAWA_ARISA,
             cv:CV.YAMABUKI_URARA
+        }
+    },
+    KUGIMITSU_CHLOE:{
+        base:{
+            name:{
+                eng:"Kugimitsu Chloe",
+                engAlias:["Kugimitsu", "Chloe Kugimitsu", "Chloe"],
+                jap:"釘光クロエ",
+                japAlias:["釘光", "クロエ"]
+            },
+            tags:[
+              TAG.WHITE_HAIR, TAG.SHOULDER_LENGTH_HAIR,
+              TAG.BLUE_EYES,
+              TAG.LIGHT_SKIN, TAG.AVERAGE_BREASTS  
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.KUUCHUU_YOUSAI,
+            cv:CV.HAKATA_AKIKO
+        }
+    },
+    MIKAMI_CHIZU:{
+        base:{
+            name:{
+                eng:"Mikiami Chizu",
+                engAlias:["Mikami", "Chizu Mikami", "Chizu", "Mikami Chidzu", "Chidzu Mikami", "Chidzu", "Mikami Chidu", "Chidu Mikami", "Chidu"],
+                jap:"魅神千都",
+                japAlias:["魅神", "千都"]
+            },
+            tags:[
+                TAG.BLACK_HAIR, TAG.LONG_HAIR,
+                TAG.GARNET_EYES,
+                TAG.HUGE_BREASTS, TAG.LIGHT_SKIN
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.AOI_NAGISA,
+            cv:CV.KANAN
+        }
+    },
+    ANNETTESU:{
+        base:{
+            name:{
+                eng:"Annettesu",
+                engAlias:[],
+                jap:"アーネテス",
+                japAlias:[]
+            },
+            tags:[
+                TAG.CYAN_HAIR, TAG.SHOULDER_LENGTH_HAIR,
+                TAG.GARNET_EYES,
+                TAG.UNNATURAL_SKIN, TAG.LIGHT_SKIN, TAG.BIG_BREASTS
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.ASAHI,
+            cv:CV.MUGIME_PURIN
+        }
+    },
+    EMORITA:{
+        base:{
+            name:{
+                eng:"Emorita",
+                engAlias:[],
+                jap:"エモリタ",
+                japAlias:[]
+            },
+            tags:[
+                TAG.PINK_HAIR, TAG.SHOULDER_LENGTH_HAIR,
+                TAG.PINK_EYES,
+                TAG.LIGHT_SKIN, TAG.BIG_BREASTS,
+                TAG.HORNS, TAG.BAT_WINGS
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.HOMURA_YUNI,
+            cv:CV.HANAMORI_MEI
         }
     },
 
@@ -27317,6 +27400,85 @@ var SCENE = {
             ],
             male:[],
             location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0614_1":{
+        character:[CHAR.KUGIMITSU_CHLOE, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.BREASTS_OUT, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.VIBRATOR, TAG.VAGINAL_INSERTION, TAG.PILLORY, TAG.BLOWJOB, TAG.SQUIRTING, TAG.CUM_IN_MOUTH, TAG.VAGINAL_SEX, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.PRISON_CELL, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0614_2"
+    },
+    "0614_2":{
+        character:[CHAR.KUGIMITSU_CHLOE, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.BREASTS_OUT, TAG.PANTYLESS,
+                TAG.FEMDOM, TAG.VAGINAL_SEX, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.PRISON_CELL, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0615_1":{
+        character:[CHAR.MIKAMI_CHIZU, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.BREASTS_OUT, TAG.CHOKER,
+                TAG.INVERTED_NIPPLES, TAG.PAIZURI, TAG.BUKKAKE
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0615_2"
+    },
+    "0615_2":{
+        character:[CHAR.MIKAMI_CHIZU, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.VAGINAL_CUTOUT, TAG.PANTIES_PUSHED_TO_SIDE, TAG.BREASTS_OUT, TAG.CHOKER,
+                TAG.VAGINAL_SEX, TAG.NAKADASHI, 
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0616":{
+        character:[CHAR.ANNETTESU],
+        tags:{
+            female:[
+                TAG.HANDJOB, TAG.BLOWJOB, TAG.CUM_IN_MOUTH
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0617":{
+        character:[CHAR.EMORITA],
+        tags:{
+            female:[
+                TAG.SHORT_SHORTS, TAG.THIGH_HIGH_STOCKINGS,
+                TAG.BREAST_GROPING, TAG.VAGINAL_SEX, TAG.NAKADASHI, TAG.AHEGAO
+            ],
+            male:[],
+            location:[],
             misc:[]
         },
         ignoredCharacterTags:[],
