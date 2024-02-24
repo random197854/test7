@@ -1166,6 +1166,18 @@ var CV = {
         engAlias: [],
         jap: "",
         japAlias: []
+    },
+    ITSUKI:{
+        eng: "Itsuki",
+        engAlias: [],
+        jap: "伊月",
+        japAlias: []
+    },
+    KIRIYAMA_SHOUBU:{
+        eng: "Kiriyama Shoubu",
+        engAlias: ["Kiriyama", "Shoubu Kiriyama", "Shoubu"],
+        jap: "桐山菖蒲",
+        japAlias: ["桐山", "菖蒲"]
     }
 }
 
@@ -10027,6 +10039,46 @@ var CHAR = {
             originalCharacter:true,
             artist:ARTIST.HOMURA_YUNI,
             cv:CV.HANAMORI_MEI
+        }
+    },
+    YAMATA_NO_OROCHI:{
+        base:{
+            name:{
+                eng:"Yamata no Orochi",
+                engAlias:["Yamata", "Orochi"],
+                jap:"ヤマタノオロチ",
+                japAlias:["ヤマタ", "オロチ"]
+            },
+            tags:[
+                TAG.VIOLET_HAIR, TAG.RED_HAIR, TAG.MULTICOLORED_HAIR, TAG.SHORT_HAIR,
+                TAG.GREEN_EYES, TAG.UNNATURAL_SCLERA,
+                TAG.LIGHT_SKIN, TAG.BIG_BREASTS,
+                TAG.ONI
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.ZOL,
+            cv:CV.ITSUKI
+        }
+    },
+    SOKUSHITSUKI:{
+        base:{
+            name:{
+                eng:"Sokushitsuki",
+                engAlias:["Speed Demon"],
+                jap:"速疾鬼",
+                japAlias:[]
+            },
+            tags:[
+                TAG.PINK_HAIR, TAG.LONG_HAIR,
+                TAG.PINK_EYES,
+                TAG.LIGHT_SKIN, TAG.HUGE_BREASTS,
+                TAG.ONI
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.OBUI,
+            cv:CV.KIRIYAMA_SHOUBU
         }
     },
 
@@ -27483,6 +27535,62 @@ var SCENE = {
         },
         ignoredCharacterTags:[],
     },
+    "4001_1":{
+        character:CHAR.YAMATA_NO_OROCHI,
+        tags:{
+            female:[
+                TAG.NAKED, TAG.RIPPED_CLOTHING, TAG.THIGH_HIGH_STOCKINGS, TAG.ROPE_BONDAGE, TAG.METAL_BONDAGE, TAG.COLLAR,
+                TAG.CLIT_PLAY, TAG.GAPING, TAG.SQUIRTING, TAG.WHIP, TAG.AHEGAO
+            ],
+            male:[],
+            location:[TAG.PRISON_CELL, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"4001_2"
+    },
+    "4001_2":{
+        character:CHAR.YAMATA_NO_OROCHI,
+        tags:{
+            female:[
+                TAG.NAKED, TAG.RIPPED_CLOTHING, TAG.THIGH_HIGH_STOCKINGS, TAG.ROPE_BONDAGE, TAG.NIPPLE_PIERCING,
+                TAG.ANAL_INSERTION, TAG.VAGINAL_LEAKAGE, TAG.STOMACH_INFLATION, TAG.ANAL_SEX, TAG.VAGINAL_SEX, TAG.DOUBLE_PENIS_PENETRATION, TAG.WHIP, TAG.NAKADASHI, TAG.AHEGAO, TAG.SCAT
+            ],
+            male:[],
+            location:[TAG.ARENA, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "4002_1":{
+        character:CHAR.SOKUSHITSUKI,
+        tags:{
+            female:[
+                TAG.BREASTS_OUT, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.BLOWJOB, TAG.HANDJOB, TAG.VAGINAL_SEX, TAG.DOUBLE_PENIS_PENETRATION, TAG.BUKKAKE, TAG.NAKADASHI, TAG.USED_CONDOMS_EXPOSITION, TAG.VAGINAL_LEAKAGE, TAG.CUM_LICKUP, TAG.CUM_SWALLOWING
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"4002_2"
+    },
+    "4002_2":{
+        character:[CHAR.SOKUSHITSUKI, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.BREASTS_OUT,
+                TAG.DOGGY_STYLE,
+                TAG.BLOWJOB, TAG.CUM_IN_MOUTH, TAG.CUM_SWALLOWING, TAG.VAGINAL_SEX, TAG.NIPPLE_PINCHING, TAG.BREAST_GROPING, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.ALLEYWAY, TAG.SEMI_PUBLIC],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+
 
 
 
