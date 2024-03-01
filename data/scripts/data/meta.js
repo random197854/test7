@@ -27535,6 +27535,89 @@ var SCENE = {
         },
         ignoredCharacterTags:[],
     },
+    "0618_1":{
+        character:[CHAR.YAKUSHIJI_MIZUHO, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.DRESS, TAG.PANTIES, TAG.PROTRUDING_NIPPLES, TAG.CLEAVAGE_CUTOUT,
+                TAG.BLOWJOB
+            ],
+            male:[TAG.URETHRA_INSERTION],
+            location:[TAG.SEMI_PUBLIC, TAG.INSIDE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0618_2"
+    },
+    "0618_2":{
+        character:[CHAR.YAKUSHIJI_MIZUHO, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.DRESS, TAG.PROTRUDING_NIPPLES, TAG.CLEAVAGE_CUTOUT,
+                TAG.CUM_SWALLOWING, TAG.VAGINAL_SEX, TAG.BREASTS_OUT, TAG.VAGINAL_SEX, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0619_1":{
+        character:CHAR.YATSU_MURASAKI,
+        tags:{
+            female:[
+                TAG.SLIT_DRESS, TAG.PROTRUDING_NIPPLES, TAG.THIGH_HIGH_STOCKINGS, TAG.CLEAVAGE_CUTOUT, TAG.BREASTS_OUT, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.VIBRATOR, TAG.VAGINAL_INSERTION, TAG.STOMACH_DEFORMATION, TAG.ANAL_SEX, TAG.AHEGAO, TAG.STOMACH_INFLATION, TAG.VAGINAL_LEAKAGE
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.SEMI_PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0619_2"
+    },
+    "0619_2":{
+        character:CHAR.YATSU_MURASAKI,
+        tags:{
+            female:[
+                TAG.SLIT_DRESS, TAG.THIGH_HIGH_STOCKINGS, TAG.BREASTS_OUT, TAG.PANTYLESS, TAG.HIGH_HEELS,
+                TAG.VIBRATOR, TAG.VAGINAL_INSERTION, TAG.ANAL_INSERTION, TAG.NAKADASHI, TAG.STOMACH_INFLATION, TAG.FUTANARI, TAG.VAGINAL_LEAKAGE, TAG.VAGINAL_SEX, TAG.MASTURBATION, TAG.HANDJOB, TAG.AHEGAO, TAG.BUKKAKE, TAG.CUM_IN_MOUTH
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.SEMI_PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0620":{
+        character:CHAR.YAYOI,
+        tags:{
+            female:[
+                TAG.DRESS, TAG.PANTYLESS, TAG.BREASTS_OUT,
+                TAG.VIBRATOR, TAG.VAGINAL_INSERTION, TAG.PISSED_ON, TAG.BUKKAKE, TAG.SQUIRTING, TAG.VAGINAL_LEAKAGE, TAG.VAGINAL_SEX, TAG.BEASTIALITY, TAG.AHEGAO
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.SEMI_PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0621":{
+        character:[CHAR.RINOA_CERINGU, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.DRESS, TAG.PANTIES, TAG.BREASTS_OUT, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.BREAST_GROPING, TAG.VAGINAL_FINGERING, TAG.VAGINAL_SEX, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.PRIVATE, TAG.INSIDE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+
+
+
     "4001_1":{
         character:CHAR.YAMATA_NO_OROCHI,
         tags:{
