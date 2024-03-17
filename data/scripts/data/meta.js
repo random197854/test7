@@ -10081,6 +10081,63 @@ var CHAR = {
             cv:CV.KIRIYAMA_SHOUBU
         }
     },
+    ASAFUJI_YOUKO:{
+        base:{
+            name:{
+                eng:"Asafuji Youko",
+                engAlias:["Asafuji", "Youko Asafuji", "Youko"],
+                jap:"麻藤陽子",
+                japAlias:["麻藤", "陽子"]
+            },
+            tags:[
+                TAG.BROWN_HAIR, TAG.LONG_HAIR,
+                TAG.AMBER_EYES,
+                TAG.LIGHT_SKIN, TAG.BIG_BREASTS
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.SANO_TOSHIHIDE,
+            cv:CV.KUROMORI_OSHIKA
+        }
+    },
+    MARDOLL:{
+        base:{
+            name:{
+                eng:"Mardoll",
+                engAlias:["Mardöll"],
+                jap:"マルーデル",
+                japAlias:[]
+            },
+            tags:[
+                TAG.PLATINUM_BLOND_HAIR, TAG.LONG_HAIR,
+                TAG.RED_EYES,
+                TAG.LIGHT_SKIN, TAG.BIG_BREASTS, TAG.SUCCUBUS, TAG.HORNS, TAG.DEMON_TAIL, TAG.BAT_WINGS
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.NOBUSHITO,
+            cv:CV.FUYUMINE_KOSUZU
+        }
+    },
+    OLTOR:{
+        base:{
+            name:{
+                eng:"Oltor",
+                engAlias:[],
+                jap:"オルトール",
+                japAlias:[]
+            },
+            tags:[
+                TAG.GREEN_HAIR, TAG.GRADIENT_HAIR, TAG.LONG_HAIR,
+                TAG.VIOLET_EYES,
+                TAG.LIGHT_SKIN, TAG.HUGE_BREASTS, TAG.POINTED_EARS, TAG.ELF
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.ASAHI,
+            cv:CV.SORA_MAME
+        }
+    },
 
 
     // :{
@@ -27611,6 +27668,87 @@ var SCENE = {
             ],
             male:[],
             location:[TAG.PRIVATE, TAG.INSIDE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0622_1":{
+        character:[CHAR.ASAFUJI_YOUKO, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT,
+                TAG.HANDJOB, TAG.BLOWJOB, TAG.BUKKAKE, TAG.CUM_LICKUP, TAG.CUM_IN_MOUTH
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0622_2":{
+        character:[CHAR.ASAFUJI_YOUKO, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.VAGINAL_CUTOUT,
+                TAG.CUNNILINGUS, TAG.SQUIRTING, TAG.VAGINAL_SEX, TAG.DEFLORATION, TAG.NAKADASHI, TAG.DOUBLE_PEACE_SIGN_AHEGAO
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0623_1":{
+        character:CHAR.TSUBAKI,
+        tags:{
+            female:[
+                TAG.BREASTS_OUT, TAG.VAGINAL_CUTOUT,
+                TAG.RAPE, TAG.VAGINAL_SEX, TAG.NAKADASHI, TAG.BUKKAKE, TAG.CERVIX_PENETRATION, TAG.VAGINAL_LEAKAGE
+            ],
+            male:[],
+            location:[TAG.OUTSIDE, TAG.SEMI_PUBLIC],
+            misc:[TAG.CUT_IN_XRAY]
+        },
+        ignoredCharacterTags:[],
+        artistOverwrite:[ARTIST.SHINDOL]
+    },
+    "0623_2":{
+        character:CHAR.TSUBAKI,
+        tags:{
+            female:[
+                TAG.BREASTS_OUT, TAG.VAGINAL_CUTOUT,
+                TAG.FULL_NELSON,
+                TAG.RAPE, TAG.VAGINAL_SEX, TAG.ANAL_SEX, TAG.DOUBLE_PENIS_PENETRATION, TAG.NIPPLE_PLAY, TAG.NAKADASHI, TAG.BLOWJOB, TAG.TRIPLE_PENIS_PENETRATION, TAG.STOMACH_DEFORMATION, TAG.CUM_IN_MOUTH
+            ],
+            male:[],
+            location:[TAG.OUTSIDE, TAG.SEMI_PUBLIC],
+            misc:[TAG.CUT_IN_XRAY]
+        },
+        ignoredCharacterTags:[],
+        artistOverwrite:[ARTIST.SHINDOL]
+    },
+    "0624":{
+        character:CHAR.MARDOLL,
+        tags:{
+            female:[
+                TAG.BREAST_CUTOUTS, TAG.VAGINAL_CUTOUT,
+                TAG.BREAST_GROPING, TAG.MASTURBATION, TAG.FUTANARI, TAG.HANDJOB, TAG.SQUIRTING, TAG.AHEGAO, TAG.BUKKAKE
+            ],
+            male:[],
+            location:[TAG.OUTSIDE, TAG.SEMI_PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0625":{
+        character:[CHAR.OLTOR, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.LINGERIE, TAG.FRILLY_CLOTHING, TAG.BREASTS_OUT,
+                TAG.HANDJOB, TAG.VAGINAL_SEX, TAG.BREAST_GROPING, TAG.NIPPLE_SUCKING, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.BEDROOM, TAG.ON_BED, TAG.PRIVATE],
             misc:[]
         },
         ignoredCharacterTags:[],
