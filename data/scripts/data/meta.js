@@ -26179,6 +26179,7 @@ var SCENE = {
     },
     "0550_1":{
         character:CHAR.AKIYAMA_RINKO,
+        form: "young",
         tags:{
             female:[
                 TAG.BIKINI, TAG.BREASTS_OUT, TAG.CHOKER, TAG.FINGERLESS_EVENING_GLOVES,
@@ -26193,6 +26194,7 @@ var SCENE = {
     },
     "0550_2":{
         character:CHAR.AKIYAMA_RINKO,
+        form: "young",
         tags:{
             female:[
                 TAG.BIKINI, TAG.BREASTS_OUT, TAG.CHOKER, TAG.FINGERLESS_EVENING_GLOVES, TAG.PANTIES_PUSHED_TO_SIDE, TAG.WOMB_TATTOO,
@@ -26666,6 +26668,7 @@ var SCENE = {
     },
     "0574_1":{
         character:[CHAR.MIZUKI_YUKIKAZE, CHAR.AKIYAMA_RINKO, CHAR.YAZAKI_MUNEICHI],
+        form: ["young", "young", null],
         tags:{
             female:[
                 TAG.TAIMANIN_OUTFIT, TAG.RIPPED_CLOTHING, TAG.PANTIES_PUSHED_TO_SIDE, TAG.PROTRUDING_NIPPLES,
@@ -26680,6 +26683,7 @@ var SCENE = {
     },
     "0574_2":{
         character:[CHAR.MIZUKI_YUKIKAZE, CHAR.AKIYAMA_RINKO, CHAR.YAZAKI_MUNEICHI],
+        form: ["young", "young", null],
         tags:{
             female:[
                 TAG.TAIMANIN_OUTFIT, TAG.RIPPED_CLOTHING, TAG.PANTIES_PUSHED_TO_SIDE, TAG.BREASTS_OUT,
@@ -27381,7 +27385,7 @@ var SCENE = {
     },
     "0607_1":{
         character:CHAR.IGAWA_SAKURA,
-        form:["young"],
+        form:"young",
         tags:{
             female:[
                 TAG.CROP_TOP, TAG.SKIRT, TAG.PANTIES, TAG.CHOKER, TAG.THIGH_HIGH_STOCKINGS, TAG.GLASSES, TAG.BREASTS_OUT, TAG.PANTYLESS,
@@ -27396,7 +27400,7 @@ var SCENE = {
     },
     "0607_2":{
         character:CHAR.IGAWA_SAKURA,
-        form:["young"],
+        form:"young",
         tags:{
             female:[
                 TAG.CROP_TOP, TAG.SKIRT, TAG.PANTIES, TAG.CHOKER, TAG.THIGH_HIGH_STOCKINGS, TAG.BREASTS_OUT, TAG.PANTIES_PUSHED_TO_SIDE,
@@ -27621,6 +27625,7 @@ var SCENE = {
     },
     "0619_1":{
         character:CHAR.YATSU_MURASAKI,
+        form: "adult",
         tags:{
             female:[
                 TAG.SLIT_DRESS, TAG.PROTRUDING_NIPPLES, TAG.THIGH_HIGH_STOCKINGS, TAG.CLEAVAGE_CUTOUT, TAG.BREASTS_OUT, TAG.PANTIES_PUSHED_TO_SIDE,
@@ -27635,6 +27640,7 @@ var SCENE = {
     },
     "0619_2":{
         character:CHAR.YATSU_MURASAKI,
+        form: "adult",
         tags:{
             female:[
                 TAG.SLIT_DRESS, TAG.THIGH_HIGH_STOCKINGS, TAG.BREASTS_OUT, TAG.PANTYLESS, TAG.HIGH_HEELS,
@@ -27753,6 +27759,86 @@ var SCENE = {
         },
         ignoredCharacterTags:[],
     },
+    "0626_1":{
+        character:CHAR.AKIYAMA_RINKO,
+        form: "young",
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.BREASTS_OUT, TAG.VAGINAL_CUTOUT,
+                TAG.LEGS_PULLED_UP,
+                TAG.PROFESSIONAL_PORN_PRODUCTION, TAG.LOTION, TAG.BREAST_MASSAGE, TAG.USED_CONDOMS_EXPOSITION, TAG.VIBRATOR, TAG.BLOWJOB, TAG.FACE_MASK, TAG.BUKKAKE, TAG.AHEGAO, TAG.SQUIRTING
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0626_2":{
+        character:CHAR.AKIYAMA_RINKO,
+        form: "young",
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.BREASTS_OUT, TAG.VAGINAL_CUTOUT,
+                TAG.QUICKIE_FIX_POSITION,
+                TAG.PROFESSIONAL_PORN_PRODUCTION, TAG.BUKKAKE, TAG.VAGINAL_SEX, TAG.SPANKING, TAG.NAKADASHI, TAG.AHEGAO
+            ],
+            male:[],
+            location:[TAG.ALLEYWAY, TAG.SEMI_PUBLIC],
+            misc:[TAG.OVERLAY_XRAY]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0627_1":{
+        character:[CHAR.KAMIMURA_MAIKA, CHAR.FUUMA_KOTAROU],
+        form: ["young", null],
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.THONG, TAG.BREASTS_OUT, 
+                TAG.VAGINAL_LEAKAGE, TAG.MASTURBATION, TAG.VAGINAL_FINGERING, TAG.BLOWJOB, TAG.FORCEFUL_BLOWJOB, TAG.BREAST_GROPING, TAG.NIPPLE_PINCHING, TAG.PAIZURI, TAG.AHEGAO
+            ],
+            male:[TAG.ANILINGUS],
+            location:[TAG.PRIVATE, TAG.LOVE_HOTEL, TAG.ON_BED],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0627_2":{
+        character:[CHAR.KAMIMURA_MAIKA, CHAR.FUUMA_KOTAROU],
+        form: ["young", null],
+        tags:{
+            female:[
+                TAG.LINGERIE, TAG.BREASTS_OUT, TAG.CROTCHLESS_PANTIES, TAG.THIGH_HIGH_STOCKINGS, TAG.GARTER_BELT, TAG.NIPPLE_PIERCING,
+                TAG.LEGS_PULLED_UP,
+                TAG.VAGINAL_FINGERING, TAG.SQUIRTING, TAG.CLIT_PLAY, TAG.VAGINAL_SEX, TAG.STOMACH_DEFORMATION, TAG.NIPPLE_PLAY, TAG.NAKADASHI, TAG.AHEGAO, TAG.PEACE_SIGN, TAG.VAGINAL_LEAKAGE
+                
+            ],
+            male:[],
+            location:[TAG.PRIVATE, TAG.LOVE_HOTEL, TAG.ON_BED],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+
+
+
+
+
+
+
+
+    // "0":{
+    //     character:[],
+    //     tags:{
+    //         female:[
+                
+    //         ],
+    //         male:[],
+    //         location:[],
+    //         misc:[]
+    //     },
+    //     ignoredCharacterTags:[],
+    // },
 
 
 
@@ -27916,22 +28002,6 @@ var SCENE = {
         },
         ignoredCharacterTags:[TAG.TANNED_SKIN, TAG.TANLINES],
     },
-
-
-    // "0":{
-    //     character:[],
-    //     tags:{
-    //         female:[
-                
-    //         ],
-    //         male:[],
-    //         location:[],
-    //         misc:[]
-    //     },
-    //     ignoredCharacterTags:[],
-    // },
-
-
 
 
 
