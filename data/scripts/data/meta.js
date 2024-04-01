@@ -27819,6 +27819,85 @@ var SCENE = {
         },
         ignoredCharacterTags:[],
     },
+    "0628_1":{
+        character:CHAR.KURAHASI_HOKUTO,
+        tags:{
+            female:[
+                TAG.KIMONO, TAG.BRA, TAG.SKIRT, TAG.PANTIES, TAG.THIGH_HIGH_STOCKINGS, TAG.GARTER_BELT, TAG.PROTRUDING_NIPPLES, TAG.PANTIES_PUSHED_TO_SIDE, TAG.BREASTS_OUT,
+                TAG.BREAST_GROPING, TAG.VAGINAL_FINGERING, TAG.SQUIRTING, TAG.VAGINAL_SEX, TAG.NAKADASHI, TAG.BUKKAKE, TAG.AHEGAO
+
+            ],
+            male:[],
+            location:[TAG.CLASSROOM, TAG.PRIVATE],
+            misc:[TAG.CUT_IN_XRAY]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0628_2":{
+        character:CHAR.KURAHASI_HOKUTO,
+        tags:{
+            female:[
+                TAG.PET_COLLAR, TAG.NAVEL_PIERCING, TAG.NIPPLE_PIERCING, TAG.GENITAL_PIERCING, TAG.TONGUE_PIERCING, TAG.NAKED, TAG.THIGH_HIGH_STOCKINGS, TAG.GARTER_BELT,
+                TAG.BREAST_GROPING, TAG.VAGINAL_FINGERING, TAG.MASTURBATION, TAG.VAGINAL_SEX, TAG.DRUGS, TAG.BLOWJOB, TAG.SQUIRTING, TAG.NAKADASHI, TAG.CUM_IN_MOUTH
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0629_1":{
+        character:[CHAR.FUTABA_LILY_RAMSES, CHAR.TACHIBANA_ICHIROU],
+        tags:{
+            female:[
+                TAG.LEOTARD, TAG.HIGH_HEELS, TAG.PARTIALLY_TRANSPARENT_CLOTHING, TAG.THIGH_HIGH_STOCKINGS, TAG.GARTER_BELT, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.WOMB_TATTOO, TAG.NIPPLE_PLAY, TAG.VAGINAL_SEX, TAG.STOMACH_DEFORMATION, TAG.ANAL_SEX, TAG.BLOWJOB, TAG.TRIPLE_PENIS_PENETRATION, TAG.HANDJOB, TAG.NAKADASHI, TAG.CUM_IN_MOUTH, TAG.CUM_SWALLOWING, TAG.BUKKAKE
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[TAG.GROUP]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0629_2":{
+        character:[CHAR.FUTABA_LILY_RAMSES, CHAR.TACHIBANA_ICHIROU],
+        tags:{
+            female:[
+                TAG.LEOTARD, TAG.HIGH_HEELS, TAG.THIGH_HIGH_STOCKINGS, TAG.GARTER_BELT, TAG.PANTIES_PUSHED_TO_SIDE, TAG.BREASTS_OUT,
+                TAG.VAGINAL_SEX, TAG.NAKADASHI, TAG.BLOWJOB, TAG.SPREAD_PUSSY, TAG.ANAL_SEX, TAG.VAGINAL_FINGERING
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0630":{
+        character:[CHAR.GLORIA, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.BREASTS_OUT, TAG.SKIRT, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.BLOWJOB, TAG.VAGINAL_LEAKAGE, TAG.CUM_IN_MOUTH, TAG.VAGINAL_SEX, TAG.AHEGAO, TAG.NAKADASHI, TAG.NIPPLE_PINCHING
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0631":{
+        character:CHAR.MICHEA_SILKYS,
+        tags:{
+            female:[
+                TAG.BREASTS_OUT, TAG.PANTIES, TAG.PANTIES_PUSHED_TO_SIDE, TAG.THIGH_HIGH_SOCKS,
+                TAG.MIND_CONTROL, TAG.HANDJOB, TAG.BUKKAKE, TAG.VAGINAL_SEX, TAG.BLOWJOB, TAG.DOUBLE_PENIS_PENETRATION, TAG.NAKADASHI, TAG.CUM_IN_MOUTH
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
 
 
 
