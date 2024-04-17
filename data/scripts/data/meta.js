@@ -1161,12 +1161,6 @@ var CV = {
         jap: "花杜めい",
         japAlias: ["花杜", "めい"]
     },
-    IGNORE:{
-        eng: "",
-        engAlias: [],
-        jap: "",
-        japAlias: []
-    },
     ITSUKI:{
         eng: "Itsuki",
         engAlias: [],
@@ -1178,7 +1172,19 @@ var CV = {
         engAlias: ["Kiriyama", "Shoubu Kiriyama", "Shoubu"],
         jap: "桐山菖蒲",
         japAlias: ["桐山", "菖蒲"]
-    }
+    },
+    SAKURA_MIZUKI:{
+        eng: "Sakura Mizuki",
+        engAlias: ["Sakura", "Mizuki Sakura", "Mizuki"],
+        jap: "桜水季",
+        japAlias: ["桜", "水季"]
+    },
+    IGNORE:{
+        eng: "",
+        engAlias: [],
+        jap: "",
+        japAlias: []
+    },
 }
 
 var TAG = {
@@ -10136,6 +10142,64 @@ var CHAR = {
             originalCharacter:true,
             artist:ARTIST.ASAHI,
             cv:CV.SORA_MAME
+        }
+    },
+    SHAERIN_AYANO:{
+        base:{
+            name:{
+                eng:"Shaerin Ayano",
+                engAlias:["Shaerin", "Ayano Shaerin", "Ayano"],
+                jap:"射影輪文乃",
+                japAlias:["射影輪", "文乃"]
+            },
+            tags:[
+                TAG.BLACK_HAIR, TAG.LONG_HAIR,
+                TAG.VIOLET_EYES,
+                TAG.BIG_BREASTS, TAG.LIGHT_SKIN
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.NOBUSHITO,
+            cv:CV.SAKURA_MIZUKI
+        }
+    },
+    HISAHIGE_NANA:{
+        base:{
+            name:{
+                eng:"Hisashige Nana",
+                engAlias:["Hisashige", "Nana Hisashige", "Nana"],
+                jap:"久重ナナ",
+                japAlias:["久重", "ナナ"]
+            },
+            tags:[
+                TAG.BLOND_HAIR, TAG.LONG_HAIR,
+                TAG.BLUE_EYES,
+                TAG.BIG_BREASTS, TAG.LIGHT_SKIN
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.SABUROU,
+            cv:CV.SEKITA_IORI
+        }
+    },
+    SHIGEMORI_YUKIYO:{
+        base:{
+            name:{
+                eng:"Shigemori Yukiyo",
+                engAlias:["Shigemori", "Yukiyo Shigemori", "Yukiyo"],
+                jap:"繁森幸代",
+                japAlias:["繁森", "幸代"]
+            },
+            tags:[
+                TAG.BROWN_HAIR, TAG.BLOND_HAIR, TAG.WHITE_HAIR, TAG.MULTICOLORED_HAIR, TAG.LONG_HAIR,
+                TAG.VIOLET_EYES,
+                TAG.BIG_BREASTS, TAG.LIGHT_SKIN,
+                TAG.HORNS
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.ASAHI,
+            cv:CV.MORIYA_UTANE
         }
     },
 
@@ -27690,6 +27754,7 @@ var SCENE = {
             misc:[]
         },
         ignoredCharacterTags:[],
+        nextScene:"0622_2"
     },
     "0622_2":{
         character:[CHAR.ASAFUJI_YOUKO, CHAR.FUUMA_KOTAROU],
@@ -27716,7 +27781,8 @@ var SCENE = {
             misc:[TAG.CUT_IN_XRAY]
         },
         ignoredCharacterTags:[],
-        artistOverwrite:[ARTIST.SHINDOL]
+        artistOverwrite:[ARTIST.SHINDOL],
+        nextScene:"0623_2"
     },
     "0623_2":{
         character:CHAR.TSUBAKI,
@@ -27773,6 +27839,7 @@ var SCENE = {
             misc:[]
         },
         ignoredCharacterTags:[],
+        nextScene:"0626_2"
     },
     "0626_2":{
         character:CHAR.AKIYAMA_RINKO,
@@ -27802,6 +27869,7 @@ var SCENE = {
             misc:[]
         },
         ignoredCharacterTags:[],
+        nextScene:"0627_2"
     },
     "0627_2":{
         character:[CHAR.KAMIMURA_MAIKA, CHAR.FUUMA_KOTAROU],
@@ -27832,6 +27900,7 @@ var SCENE = {
             misc:[TAG.CUT_IN_XRAY]
         },
         ignoredCharacterTags:[],
+        nextScene:"0628_2"
     },
     "0628_2":{
         character:CHAR.KURAHASI_HOKUTO,
@@ -27858,6 +27927,7 @@ var SCENE = {
             misc:[TAG.GROUP]
         },
         ignoredCharacterTags:[],
+        nextScene:"0629_2"
     },
     "0629_2":{
         character:[CHAR.FUTABA_LILY_RAMSES, CHAR.TACHIBANA_ICHIROU],
@@ -27894,6 +27964,88 @@ var SCENE = {
             ],
             male:[],
             location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0632_1":{
+        character:CHAR.SHAERIN_AYANO,
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.BREAST_CUTOUTS, TAG.VAGINAL_CUTOUT, TAG.BODY_WRITING,
+                TAG.CLIT_PLAY, TAG.MASTURBATION, TAG.BREAST_GROPING, TAG.INTERCRURAL_SEX, TAG.SQUIRTING, TAG.VAGINAL_FINGERING, TAG.NIPPLE_SUCKING
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[TAG.CUT_IN_XRAY]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0632_2"
+    },
+    "0632_2":{
+        character:CHAR.SHAERIN_AYANO,
+        tags:{
+            female:[
+                TAG.COMPLETELY_NAKED, TAG.BODY_WRITING,
+                TAG.VIBRATOR, TAG.ANAL_INSERTION, TAG.ANAL_SEX, TAG.BLOWJOB, TAG.VAGINAL_SEX, TAG.HAIR_PULLING, TAG.NAKADASHI, TAG.AHEGAO, TAG.VAGINAL_LEAKAGE
+            ],
+            male:[],
+            location:[],
+            misc:[TAG.CUT_IN_XRAY]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0633_1":{
+        character:CHAR.NANASE_MAI,
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.BREAST_CUTOUTS, TAG.VAGINAL_CUTOUT,
+                TAG.STANDING_SEX,
+                TAG.KISSING, TAG.VAGINAL_SEX, TAG.STOMACH_DEFORMATION, TAG.NAKADASHI
+            ],
+            male:[TAG.OGRE],
+            location:[TAG.PRISON_CELL, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0633_2"
+    },
+    "0633_2":{
+        character:[CHAR.NANASE_MAI, CHAR.ASTAROTH],
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.BREASTS_OUT, TAG.RIPPED_CLOTHING,
+                TAG.VAGINAL_FINGERING, TAG.SQUIRTING, TAG.VIBRATOR, TAG.YURI, TAG.WOMB_TATTOO, TAG.NAKADASHI, TAG.AHEGAO, TAG.VAGINAL_LEAKAGE
+            ],
+            male:[],
+            location:[TAG.PRISON_CELL, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0634":{
+        character:CHAR.HISAHIGE_NANA,
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.PROTRUDING_NIPPLES, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.BREAST_GROPING, TAG.NAKADASHI, TAG.NIPPLE_PINCHING, TAG.AHEGAO, TAG.BUKKAKE, TAG.SQUIRTING
+
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0635":{
+        character:CHAR.SHIGEMORI_YUKIYO,
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.BREASTS_OUT,
+                TAG.BREAST_GROWTH, TAG.VAGINAL_SEX, TAG.PAIZURI, TAG.LACTATION, TAG.NIPPLE_PINCHING, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.OUTSIDE, TAG.SEMI_PUBLIC],
             misc:[]
         },
         ignoredCharacterTags:[],
