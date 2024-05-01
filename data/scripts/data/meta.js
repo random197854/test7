@@ -10202,7 +10202,25 @@ var CHAR = {
             cv:CV.MORIYA_UTANE
         }
     },
-
+    KAGARI:{
+        base:{
+            name:{
+                eng:"Kagari",
+                engAlias:[],
+                jap:"篝",
+                japAlias:[]
+            },
+            tags:[
+                TAG.BLACK_HAIR, TAG.LONG_HAIR,
+                TAG.RED_EYES,
+                TAG.AVERAGE_BREASTS, TAG.LIGHT_SKIN
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.IGNORE,
+            cv:CV.FURUSAWA_REI
+        }
+    },
 
     // :{
     //     base:{
@@ -28050,7 +28068,87 @@ var SCENE = {
         },
         ignoredCharacterTags:[],
     },
-
+    "0636_1":{
+        character:[CHAR.LOLA, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.MAID_DRESS, TAG.BREASTS_OUT,
+                TAG.PAIZURI, TAG.HANDJOB, TAG.BLOWJOB_PAIZURI, TAG.BREAST_GROPING, TAG.NIPPLE_PINCHING, TAG.BUKKAKE
+            ],
+            male:[],
+            location:[TAG.BEDROOM, TAG.ON_BED, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0636_2"
+    },
+    "0636_2":{
+        character:[CHAR.LOLA, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.MAID_DRESS, TAG.BREASTS_OUT, TAG.PANTIES_AROUND_LEG,
+                TAG.BUKKAKE, TAG.VAGINAL_SEX, TAG.NAKADASHI, TAG.BREAST_GROPING, TAG.NIPPLE_PINCHING, TAG.SQUIRTING
+            ],
+            male:[],
+            location:[TAG.BEDROOM, TAG.ON_BED, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0637_1":{
+        character:CHAR.SNAKE_LADY,
+        tags:{
+            female:[
+                TAG.MAID_DRESS, TAG.PROTRUDING_NIPPLES, TAG.PANTYHOSE, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.DOGGY_STYLE,
+                TAG.VAGINAL_SEX, TAG.HANDJOB, TAG.NAKADASHI, TAG.AHEGAO, TAG.BUKKAKE, TAG.CUM_LICKUP
+            ],
+            male:[],
+            location:[TAG.PRISON_CELL, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0637_2"
+    },
+    "0637_2":{
+        character:CHAR.SNAKE_LADY,
+        tags:{
+            female:[
+                TAG.MAID_DRESS, TAG.BREASTS_OUT, TAG.THONG, TAG.PANTYHOSE, 
+                TAG.HANDJOB, TAG.VAGINAL_LEAKAGE, TAG.AHEGAO, TAG.VIBRATOR, TAG.VAGINAL_INSERTION, TAG.MASTURBATION
+            ],
+            male:[],
+            location:[TAG.SEMI_PRIVATE, TAG.INSIDE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0638":{
+        character:[CHAR.MAKISHIMA_AYAME, CHAR.KAGARI],
+        tags:{
+            female:[
+                TAG.MAID_DRESS, TAG.SCHOOL_UNIFORM, TAG.BREASTS_OUT, TAG.RIPPED_CLOTHING, TAG.PANTYHOSE, TAG.THIGH_HIGH_STOCKINGS,
+                TAG.FUTANARI, TAG.VAGINAL_FINGERING, TAG.BREAST_GROPING, TAG.VAGINAL_SEX, TAG.NAKADASHI, TAG.BLOWJOB, TAG.AHEGAO
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0639":{
+        character:CHAR.AINO_NOZOMI,
+        tags:{
+            female:[],
+            male:[
+                TAG.MAID_DRESS, TAG.PANTIES, TAG.PROTRUDING_NIPPLES,
+                TAG.BLOWJOB, TAG.NIPPLE_PINCHING, TAG.BUKKAKE, TAG.BUTT_PLUG
+            ],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[TAG.CUT_IN_XRAY]
+        },
+        ignoredCharacterTags:[],
+    },
 
 
 
