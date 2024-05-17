@@ -1179,6 +1179,18 @@ var CV = {
         jap: "桜水季",
         japAlias: ["桜", "水季"]
     },
+    AIKA_MIKO:{
+        eng: "Aika Miko",
+        engAlias: ["Aika", "Miko Aika", "Miko"],
+        jap: "愛花みこ",
+        japAlias: ["愛花", "みこ"]
+    },
+    MAMESHIBA_HANA:{
+        eng: "Mamehsiba Hana",
+        engAlias: ["Mameshiba", "Hana Mameshiba", "Hana"],
+        jap: "豆柴花",
+        japAlias: ["豆柴", "花"]
+    },
     IGNORE:{
         eng: "",
         engAlias: [],
@@ -10219,6 +10231,82 @@ var CHAR = {
             originalCharacter:true,
             artist:ARTIST.IGNORE,
             cv:CV.FURUSAWA_REI
+        }
+    },
+    MIKURIYA_MINORI:{
+        base:{
+            name:{
+                eng:"Mikuriya Minori",
+                engAlias:["Mikuriya", "Minori Mikuriya", "Minori"],
+                jap:"御厨屋みのり",
+                japAlias:["御厨屋", "みのり"]
+            },
+            tags:[
+                TAG.BROWN_HAIR, TAG.SHOULDER_LENGTH_HAIR,
+                TAG.RED_EYES,
+                TAG.LIGHT_SKIN, TAG.BIG_BREASTS
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.KUUCHUU_YOUSAI,
+            cv:CV.AIKA_MIKO
+        }
+    },
+    URSULA:{
+        base:{
+            name:{
+                eng:"Ursula",
+                engAlias:["Asera", "Aasera"],
+                jap:"アーセラ",
+                japAlias:[]
+            },
+            tags:[
+                TAG.GREY_HAIR, TAG.LONG_HAIR,
+                TAG.VIOLET_EYES,
+                TAG.LIGHT_SKIN, TAG.HUGE_BREASTS, TAG.POINTED_EARS
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.SAIJO_SATORU,
+            cv:CV.IGASAKI_AYAKA
+        }
+    },
+    AURELIA:{
+        base:{
+            name:{
+                eng:"Aurelia",
+                engAlias:[],
+                jap:"オーレリア",
+                japAlias:[]
+            },
+            tags:[
+                TAG.CYAN_HAIR, TAG.LONG_HAIR,
+                TAG.VIOLET_EYES,
+                TAG.UNNATURAL_SKIN, TAG.FLAT_CHESTED
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.AIKAWA_ARISA,
+            cv:CV.TACHIBANA_SARA
+        }
+    },
+    YOKOZONO_HAZUMI:{
+        base:{
+            name:{
+                eng:"Yokozono Hazumi",
+                engAlias:["Yokozono", "Hazumi Yokozono", "Hazumi"],
+                jap:"横園はずみ",
+                japAlias:["横園", "はずみ"]
+            },
+            tags:[
+                TAG.BROWN_HAIR, TAG.SHOULDER_LENGTH_HAIR,
+                TAG.AMBER_EYES,
+                TAG.LIGHT_SKIN, TAG.BIG_BREASTS
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.HOMURA_YUNI,
+            cv:CV.MAMESHIBA_HANA
         }
     },
 
@@ -28149,7 +28237,85 @@ var SCENE = {
         },
         ignoredCharacterTags:[],
     },
-
+    "0640_1":{
+        character:[CHAR.MIKURIYA_MINORI, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.MAID_DRESS, TAG.BREASTS_OUT,
+                TAG.BLOWJOB_PAIZURI, TAG.BUKKAKE
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0640_2"
+    },
+    "0640_2":{
+        character:[CHAR.MIKURIYA_MINORI, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.MAID_DRESS, TAG.BREASTS_OUT, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.BREAST_SUCKING, TAG.NIPPLE_PINCHING, TAG.VAGINAL_SEX, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0641_1":{
+        character:[CHAR.URSULA, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.BREASTS_OUT,
+                TAG.BLOWJOB, TAG.VAGINAL_SEX, TAG.DOUBLE_PENIS_PENETRATION, TAG.BREAST_GROPING, TAG.DEEPTHROAT, TAG.CUM_IN_MOUTH, TAG.BUKKAKE, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0641_2"
+    },
+    "0641_2":{
+        character:[CHAR.URSULA, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.BREASTS_OUT, TAG.PET_COLLAR,
+                TAG.BREAST_GROPING, TAG.VAGINAL_SEX, TAG.HAIR_PULLING, TAG.HEART_PUPILS, TAG.NAKADASHI, TAG.AHEGAO
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE, TAG.ON_BED],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0642":{
+        character:CHAR.AURELIA,
+        tags:{
+            female:[
+                TAG.NIPPLE_PLAY, TAG.MASTURBATION, TAG.VIBRATOR, TAG.SQUIRTING
+            ],
+            male:[],
+            location:[],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0643":{
+        character:CHAR.YOKOZONO_HAZUMI,
+        tags:{
+            female:[
+                TAG.BREASTS_OUT,
+                TAG.TENTACLE_BONDAGE, TAG.CLIT_PLAY, TAG.PAIZURI, TAG.LACTATION
+            ],
+            male:[],
+            location:[TAG.FLESH_ROOM, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
 
 
 
