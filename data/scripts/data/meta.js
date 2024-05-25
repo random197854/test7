@@ -28316,7 +28316,65 @@ var SCENE = {
         },
         ignoredCharacterTags:[],
     },
-
+    "0644_1":{
+        character:[CHAR.KOUKAWA_ASUKA, CHAR.FUUMA_KOTAROU],
+        form: ["normal", null],
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.PROTRUDING_NIPPLES,
+                TAG.CUNNILINGUS, TAG.BREAST_GROPING, TAG.CLIT_PLAY, TAG.VAGINAL_SEX, TAG.NAKADASHI, TAG.BUKKAKE
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE ,TAG.ON_BED],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0644_2"
+    },
+    "0644_2":{
+        character:[CHAR.KOUKAWA_ASUKA, CHAR.FUUMA_KOTAROU],
+        form: ["normal", null],
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT,
+                TAG.DOGGY_STYLE,
+                TAG.BUKKAKE, TAG.VAGINAL_SEX, TAG.HAIR_PULLING, TAG.ANAL_SEX, TAG.NAKADASHI, TAG.AHEGAO
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE ,TAG.ON_BED],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0645_1":{
+        character:CHAR.FUUMA_AMANE,
+        form: "adult",
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.BREAST_CUTOUTS, TAG.VAGINAL_CUTOUT, TAG.METAL_BONDAGE,
+                TAG.RAPE, TAG.NIPPLE_PINCHING, TAG.SQUIRTING, TAG.VAGINAL_SEX, TAG.RYONA, TAG.AHEGAO, TAG.NAKADASHI, TAG.VAGINAL_LEAKAGE
+            ],
+            male:[],
+            location:[TAG.PRISON_CELL, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0645_2"
+    },
+    "0645_2":{
+        character:[CHAR.FUUMA_AMANE, CHAR.FUUMA_KOTAROU],
+        form: ["adult", null],
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.BREASTS_OUT, TAG.NIPPLE_PIERCING,
+                TAG.WOMB_TATTOO, TAG.BODY_WRITING, TAG.VAGINAL_SEX, TAG.LACTATION, TAG.SQUIRTING, TAG.AHEGAO
+            ],
+            male:[],
+            location:[TAG.BEDROOM, TAG.ON_BED],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
 
 
 
