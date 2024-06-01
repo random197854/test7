@@ -24,7 +24,7 @@ function initStorySelect(){
 }
 
 function buildStorySelect(){
-	let chapterChoice = document.getElementById("story-select-chapter-choices");
+	const chapterChoice = document.getElementById("story-select-chapter-choices");
 	for(chapter of chapterOrder){
 		if(chapter == null){
 			continue;
@@ -35,7 +35,7 @@ function buildStorySelect(){
 		if(chapter.type == "chapter"){
 			let chapNameElem = document.createElement("div");
 			chapNameElem.classList += "chapter-choice-name"
-			chapNameElem.innerText = chapter.japName
+			chapNameElem.innerText = prefs.scene.eng ? chapter.engName ?? chapter.japName : chapter.japName;
 			let chapNoElem = document.createElement("div");
 			chapNoElem.classList += "chapter-choice-no"
 			chapNoElem.innerText = chapter.chapter
@@ -49,6 +49,18 @@ function buildStorySelect(){
 		base.setAttribute("storyType", chapter.type);
 		chapterChoice.append(base);
 	}
+}
+
+function rebuildStorySelect(){
+	const chapterChoice = document.getElementById("story-select-chapter-choices");
+	for(const child of chapterChoice.children){
+		if(child.getAttribute("storyType") === "chapter"){
+			const chapter = storyData[chapterOrder[Number(child.getAttribute("storyid"))]];
+			child.children[0].innerText = prefs.scene.eng ? chapter.engName ?? chapter.japName : chapter.japName;
+		}
+	}
+	const storySelectData = getSelectedStoryData();
+	storySelect.elements.title.innerText = prefs.scene.eng ? storySelectData.engName ?? storySelectData.japName : storySelectData.japName;
 }
 
 function getSelectedStoryData(){
@@ -74,7 +86,8 @@ function setChapterChoice(elem){
 	storySelect.type = elem.getAttribute("storytype");
 	storySelect.id = elem.getAttribute("storyid");
 	storySelect.section = "S01";
-	storySelect.elements.title.innerText = getSelectedStoryData().japName;
+	const storySelectData = getSelectedStoryData();
+	storySelect.elements.title.innerText = prefs.scene.eng ? storySelectData.engName ?? storySelectData.japName : storySelectData.japName;
 	switchStoryMenu()
 }
 
@@ -227,7 +240,7 @@ STORY = {
 		japName:"雷撃の対魔忍",
 		engName:null,
 		type:"story",
-		banner:"bnr_ev_story_00001_1_l.webp",
+		banner:"bnr_ev_story_00001_1_l.png",
 		id:5
 	},
 	CHAPTER006:{
@@ -241,21 +254,21 @@ STORY = {
 		japName:"期末テストと最強の対魔忍",
 		engName:null,
 		type:"raid",
-		banner:"bnr_ev_raid_00001_1_l.webp",
+		banner:"bnr_ev_raid_00001_1_l.png",
 		id:7
 	},
 	STORYEVENT002:{
 		japName:"幻影の魔女",
 		engName:null,
 		type:"story",
-		banner:"bnr_ev_story_00002_1_l.webp",
+		banner:"bnr_ev_story_00002_1_l.png",
 		id:8
 	},
 	MAPEVENT001:{
 		japName:"忍びの宿命って奴か",
 		engName:null,
 		type:"map",
-		banner:"bnr_ev_map_00001_1_l.webp",
+		banner:"bnr_ev_map_00001_1_l.png",
 		id:9
 	},
 	CHAPTER007:{
@@ -269,7 +282,7 @@ STORY = {
 		japName:"殺人鬼ソニア",
 		engName:null,
 		type:"raid",
-		banner:"bnr_ev_raid_00002_1_l.webp",
+		banner:"bnr_ev_raid_00002_1_l.png",
 		id:11
 	},
 	CHAPTER008:{
@@ -283,14 +296,14 @@ STORY = {
 		japName:"悪霊とホワイトクリスマス",
 		engName:null,
 		type:"map",
-		banner:"bnr_ev_map_00002_1_l.webp",
+		banner:"bnr_ev_map_00002_1_l.png",
 		id:13
 	},
 	STORYEVENT003:{
 		japName:"迎春！猪パニック！",
 		engName:null,
 		type:"story",
-		banner:"bnr_ev_story_00003_1_l.webp",
+		banner:"bnr_ev_story_00003_1_l.png",
 		id:14
 	},
 	CHAPTER009:{
@@ -304,21 +317,21 @@ STORY = {
 		japName:"操られた爆炎",
 		engName:null,
 		type:"raid",
-		banner:"bnr_ev_raid_00003_1_l.webp",
+		banner:"bnr_ev_raid_00003_1_l.png",
 		id:16
 	},
 	STORYEVENT004:{
 		japName:"対魔忍のバレンタインは厳しい",
 		engName:null,
 		type:"story",
-		banner:"bnr_ev_story_00004_1_l.webp",
+		banner:"bnr_ev_story_00004_1_l.png",
 		id:17
 	},
 	MAPEVENT003:{
 		japName:"稲毛屋のアイス",
 		engName:null,
 		type:"map",
-		banner:"bnr_ev_map_00003_1_l.webp",
+		banner:"bnr_ev_map_00003_1_l.png",
 		id:18
 	},
 	CHAPTER010:{
@@ -332,14 +345,14 @@ STORY = {
 		japName:"錬金術師と狼男",
 		engName:null,
 		type:"raid",
-		banner:"bnr_ev_raid_00004_1_l.webp",
+		banner:"bnr_ev_raid_00004_1_l.png",
 		id:20
 	},
 	MAPEVENT004:{
 		japName:"魔界騎士のお仕事",
 		engName:null,
 		type:"map",
-		banner:"bnr_ev_map_00004_1_l.webp",
+		banner:"bnr_ev_map_00004_1_l.png",
 		id:21
 	},
 	CHAPTER011:{
@@ -353,21 +366,21 @@ STORY = {
 		japName:"沙耶NEOを抹殺せよ",
 		engName:null,
 		type:"story",
-		banner:"bnr_ev_story_00005_1_l.webp",
+		banner:"bnr_ev_story_00005_1_l.png",
 		id:23
 	},
 	APRILFOOLSEVENT001:{
 		japName:"タコスレさん",
 		engName:null,
 		type:"mini",
-		banner:"bnr_ev_mini_00005_1_l.webp",
+		banner:"bnr_ev_mini_00005_1_l.png",
 		id:24
 	},
 	RAIDEVENT005:{
 		japName:"リリムとミーティア",
 		engName:null,
 		type:"raid",
-		banner:"bnr_ev_raid_00005_1_l.webp",
+		banner:"bnr_ev_raid_00005_1_l.png",
 		id:25
 	},
 	CHAPTER012:{
@@ -381,14 +394,14 @@ STORY = {
 		japName:"忘れられた蛇神",
 		engName:null,
 		type:"map",
-		banner:"bnr_ev_map_00005_1_l.webp",
+		banner:"bnr_ev_map_00005_1_l.png",
 		id:27
 	},
 	STORYEVENT006:{
 		japName:"まりの大冒険　闇の町の怪紳士",
 		engName:null,
 		type:"story",
-		banner:"bnr_ev_story_00006_1_l.webp",
+		banner:"bnr_ev_story_00006_1_l.png",
 		id:28
 	},
 	CHAPTER013:{
@@ -402,14 +415,14 @@ STORY = {
 		japName:"ジューンブライド狂想曲",
 		engName:null,
 		type:"raid",
-		banner:"bnr_ev_raid_00006_1_l.webp",
+		banner:"bnr_ev_raid_00006_1_l.png",
 		id:30
 	},
 	MAPEVENT006:{
 		japName:"鮮血の椿姫",
 		engName:null,
 		type:"map",
-		banner:"bnr_ev_map_00006_1_l.webp",
+		banner:"bnr_ev_map_00006_1_l.png",
 		id:31
 	},
 	CHAPTER014:{
@@ -423,14 +436,14 @@ STORY = {
 		japName:"あぶないサマービーチ",
 		engName:null,
 		type:"story",
-		banner:"bnr_ev_story_00007_1_l.webp",
+		banner:"bnr_ev_story_00007_1_l.png",
 		id:33
 	},
 	RAIDEVENT007:{
 		japName:"毒も過ぎれば薬となる！？",
 		engName:null,
 		type:"raid",
-		banner:"bnr_ev_raid_00007_1_l.webp",
+		banner:"bnr_ev_raid_00007_1_l.png",
 		id:34
 	},
 	CHAPTER015:{
@@ -444,14 +457,14 @@ STORY = {
 		japName:"楽園の馬超",
 		engName:null,
 		type:"map",
-		banner:"bnr_ev_map_00007_1_l.webp",
+		banner:"bnr_ev_map_00007_1_l.png",
 		id:36
 	},
 	STORYEVENT008:{
 		japName:"蜘蛛の貴婦人",
 		engName:null,
 		type:"story",
-		banner:"bnr_ev_story_00008_1_l.webp",
+		banner:"bnr_ev_story_00008_1_l.png",
 		id:37
 	},
 	CHAPTER016:{
@@ -465,14 +478,14 @@ STORY = {
 		japName:"呪いの鏡",
 		engName:null,
 		type:"raid",
-		banner:"bnr_ev_raid_00008_1_l.webp",
+		banner:"bnr_ev_raid_00008_1_l.png",
 		id:39
 	},
 	MAPEVENT008:{
 		japName:"カンザキ食堂",
 		engName:null,
 		type:"map",
-		banner:"bnr_ev_map_00008_1_l.webp",
+		banner:"bnr_ev_map_00008_1_l.png",
 		id:40
 	},
 	CHAPTER017:{
@@ -486,14 +499,14 @@ STORY = {
 		japName:"ヨミハラ炎上",
 		engName:null,
 		type:"story",
-		banner:"bnr_ev_story_00009_1_l.webp",
+		banner:"bnr_ev_story_00009_1_l.png",
 		id:42
 	},
 	RAIDEVENT009:{
 		japName:"恋と友情のハロウィンナイト",
 		engName:null,
 		type:"raid",
-		banner:"bnr_ev_raid_00009_1_l.webp",
+		banner:"bnr_ev_raid_00009_1_l.png",
 		id:43
 	},
 	CHAPTER018:{
@@ -507,14 +520,14 @@ STORY = {
 		japName:"サイボーグ探偵の事件簿",
 		engName:null,
 		type:"map",
-		banner:"bnr_ev_map_00009_1_l.webp",
+		banner:"bnr_ev_map_00009_1_l.png",
 		id:45
 	},
 	RAIDEVENT010:{
 		japName:"嵐吹く夜に月光る",
 		engName:null,
 		type:"raid",
-		banner:"bnr_ev_raid_00010_1_l.webp",
+		banner:"bnr_ev_raid_00010_1_l.png",
 		id:46
 	},
 	CHAPTER019:{
@@ -528,28 +541,28 @@ STORY = {
 		japName:"降ったと思えば土砂降り",
 		engName:null,
 		type:"story",
-		banner:"bnr_ev_story_00010_1_l.webp",
+		banner:"bnr_ev_story_00010_1_l.png",
 		id:48
 	},
 	MAPEVENT010:{
 		japName:"聖夜の花と危険なオモチャ",
 		engName:null,
 		type:"map",
-		banner:"bnr_ev_map_00010_1_l.webp",
+		banner:"bnr_ev_map_00010_1_l.png",
 		id:49
 	},
 	RAIDEVENT011:{
 		japName:"早く来い来いお正月",
 		engName:null,
 		type:"raid",
-		banner:"bnr_ev_raid_00011_1_l.webp",
+		banner:"bnr_ev_raid_00011_1_l.png",
 		id:50
 	},
 	STORYEVENT011:{
 		japName:"ふうま天音と秘密の館",
 		engName:null,
 		type:"story",
-		banner:"bnr_ev_story_00011_1_l.webp",
+		banner:"bnr_ev_story_00011_1_l.png",
 		id:51
 	},
 	CHAPTER020:{
@@ -563,14 +576,14 @@ STORY = {
 		japName:"ファイアー＆ペーパー",
 		engName:null,
 		type:"map",
-		banner:"bnr_ev_map_00011_1_l.webp",
+		banner:"bnr_ev_map_00011_1_l.png",
 		id:53
 	},
 	RAIDEVENT012:{
 		japName:"やっぱり対魔忍のバレンタインは厳しい",
 		engName:null,
 		type:"raid",
-		banner:"bnr_ev_raid_00012_1_l.webp",
+		banner:"bnr_ev_raid_00012_1_l.png",
 		id:54
 	},
 	CHAPTER021:{
@@ -584,14 +597,14 @@ STORY = {
 		japName:"期末試験とうさぎの対魔忍",
 		engName:null,
 		type:"story",
-		banner:"bnr_ev_story_00012_1_l.webp",
+		banner:"bnr_ev_story_00012_1_l.png",
 		id:56
 	},
 	MAPEVENT012:{
 		japName:"そに子、対魔忍になりまうｓ♪",
 		engName:null,
 		type:"map",
-		banner:"bnr_ev_map_00012_1_l.webp",
+		banner:"bnr_ev_map_00012_1_l.png",
 		id:57
 	},
 	CHAPTER022:{
@@ -605,21 +618,21 @@ STORY = {
 		japName:"五車に紅がやって来た",
 		engName:null,
 		type:"raid",
-		banner:"bnr_ev_raid_00013_1_l.webp",
+		banner:"bnr_ev_raid_00013_1_l.png",
 		id:59
 	},
 	APRILFOOLSEVENT002:{
 		japName:"まりの突撃取材スクープ！",
 		engName:null,
 		type:"mini2",
-		banner:"bnr_campaign_00011_l.webp",
+		banner:"bnr_campaign_00011_l.png",
 		id:60
 	},
 	STORYEVENT013:{
 		japName:"魔界騎士と次元の悪魔",
 		engName:null,
 		type:"story",
-		banner:"bnr_ev_story_00013_1_l.webp",
+		banner:"bnr_ev_story_00013_1_l.png",
 		id:61
 	},
 	CHAPTER023:{
@@ -633,14 +646,14 @@ STORY = {
 		japName:"不死の兵士",
 		engName:null,
 		type:"map",
-		banner:"bnr_ev_map_00013_1_l.webp",
+		banner:"bnr_ev_map_00013_1_l.png",
 		id:63
 	},
 	RAIDEVENT014:{
 		japName:"アンブローズ～美しき刺客",
 		engName:null,
 		type:"raid",
-		banner:"bnr_ev_raid_00014_1_l.webp",
+		banner:"bnr_ev_raid_00014_1_l.png",
 		id:64
 	},
 	CHAPTER024:{
@@ -654,14 +667,14 @@ STORY = {
 		japName:"ジューンブライド・アゲイン",
 		engName:null,
 		type:"story",
-		banner:"bnr_ev_story_00014_1_l.webp",
+		banner:"bnr_ev_story_00014_1_l.png",
 		id:66
 	},
 	MAPEVENT014:{
 		japName:"勇者の憂鬱",
 		engName:null,
 		type:"map",
-		banner:"bnr_ev_map_00014_1_l.webp",
+		banner:"bnr_ev_map_00014_1_l.png",
 		id:67
 	},
 	CHAPTER025:{
@@ -675,14 +688,14 @@ STORY = {
 		japName:"渚の魔女と小さな騎士",
 		engName:null,
 		type:"raid",
-		banner:"bnr_ev_raid_00015_1_l.webp",
+		banner:"bnr_ev_raid_00015_1_l.png",
 		id:69
 	},
 	STORYEVENT015:{
 		japName:"怒れる猫と水着のお姉さま",
 		engName:null,
 		type:"story",
-		banner:"bnr_ev_story_00015_1_l.webp",
+		banner:"bnr_ev_story_00015_1_l.png",
 		id:70
 	},
 	CHAPTER026:{
@@ -696,14 +709,14 @@ STORY = {
 		japName:"マスターと補習といいね",
 		engName:null,
 		type:"map",
-		banner:"bnr_ev_map_00015_1_l.webp",
+		banner:"bnr_ev_map_00015_1_l.png",
 		id:72
 	},
 	RAIDEVENT016:{
 		japName:"ヨミハラ大納涼祭",
 		engName:null,
 		type:"raid",
-		banner:"bnr_ev_raid_00016_1_l.webp",
+		banner:"bnr_ev_raid_00016_1_l.png",
 		id:73
 	},
 	CHAPTER027:{
@@ -717,14 +730,14 @@ STORY = {
 		japName:"バニー対魔忍とカジノ・ラビリンス",
 		engName:null,
 		type:"story",
-		banner:"bnr_ev_story_00016_1_l.webp",
+		banner:"bnr_ev_story_00016_1_l.png",
 		id:75
 	},
 	MAPEVENT016:{
 		japName:"トラジローはじめてのおつかい",
 		engName:null,
 		type:"map",
-		banner:"bnr_ev_map_00016_1_l.webp",
+		banner:"bnr_ev_map_00016_1_l.png",
 		id:76
 	},
 	CHAPTER028:{
@@ -738,14 +751,14 @@ STORY = {
 		japName:"キツネの恩返し",
 		engName:null,
 		type:"raid",
-		banner:"bnr_ev_raid_00017_1_l.webp",
+		banner:"bnr_ev_raid_00017_1_l.png",
 		id:78
 	},
 	STORYEVENT017:{
 		japName:"ハロウィンデビル",
 		engName:null,
 		type:"story",
-		banner:"bnr_ev_story_00017_1_l.webp",
+		banner:"bnr_ev_story_00017_1_l.png",
 		id:79
 	},
 	CHAPTER029:{
@@ -759,14 +772,14 @@ STORY = {
 		japName:"恋の純情爆走ロード",
 		engName:null,
 		type:"map",
-		banner:"bnr_ev_map_00017_1_l.webp",
+		banner:"bnr_ev_map_00017_1_l.png",
 		id:81
 	},
 	STORYEVENT018:{
 		japName:"ナーサラと愉快な鬼マフィア",
 		engName:null,
 		type:"story",
-		banner:"bnr_ev_story_00018_1_l.webp",
+		banner:"bnr_ev_story_00018_1_l.png",
 		id:82
 	},
 	CHAPTER030:{
@@ -780,14 +793,14 @@ STORY = {
 		japName:"ある日のヨミハラ",
 		engName:null,
 		type:"map",
-		banner:"bnr_ev_map_00018_1_l.webp",
+		banner:"bnr_ev_map_00018_1_l.png",
 		id:84
 	},
 	RAIDEVENT018:{
 		japName:"ヨミハラに雪が降る",
 		engName:null,
 		type:"raid",
-		banner:"bnr_ev_raid_00018_1_l.webp",
+		banner:"bnr_ev_raid_00018_1_l.png",
 		id:85
 	},
 	CHAPTER031:{
@@ -801,14 +814,14 @@ STORY = {
 		japName:"センザキには手を出すな",
 		engName:null,
 		type:"story",
-		banner:"bnr_ev_story_00019_1_l.webp",
+		banner:"bnr_ev_story_00019_1_l.png",
 		id:87
 	},
 	MAPEVENT019:{
 		japName:"アミダハラの追跡者",
 		engName:null,
 		type:"map",
-		banner:"bnr_ev_map_00019_1_l.webp",
+		banner:"bnr_ev_map_00019_1_l.png",
 		id:88
 	},
 	CHAPTER032:{
@@ -822,14 +835,14 @@ STORY = {
 		japName:"俺とエルフと対魔忍",
 		engName:null,
 		type:"raid",
-		banner:"bnr_ev_raid_00019_1_l.webp",
+		banner:"bnr_ev_raid_00019_1_l.png",
 		id:90
 	},
 	STORYEVENT020:{
 		japName:"チョコとキラー",
 		engName:null,
 		type:"story",
-		banner:"bnr_ev_story_00020_1_l.webp",
+		banner:"bnr_ev_story_00020_1_l.png",
 		id:91
 	},
 	CHAPTER033:{
@@ -843,14 +856,14 @@ STORY = {
 		japName:"ニートにメイド",
 		engName:null,
 		type:"map",
-		banner:"bnr_ev_map_00020_1_l.webp",
+		banner:"bnr_ev_map_00020_1_l.png",
 		id:93
 	},
 	RAIDEVENT020:{
 		japName:"Deep Dive",
 		engName:null,
 		type:"raid",
-		banner:"bnr_ev_raid_00020_1_l.webp",
+		banner:"bnr_ev_raid_00020_1_l.png",
 		id:94
 	},
 	CHAPTER034:{
@@ -864,21 +877,21 @@ STORY = {
 		japName:"朧と猫と舞姫島の伝説",
 		engName:null,
 		type:"story",
-		banner:"bnr_ev_story_00021_1_l.webp",
+		banner:"bnr_ev_story_00021_1_l.png",
 		id:96
 	},
 	APRILFOOLSEVENT003:{
 		japName:"蛸刺の刃",
 		engName:null,
 		type:"mini",
-		banner:"bnr_ev_run_00001_l.webp",
+		banner:"bnr_ev_run_00001_l.png",
 		id:97
 	},
 	MAPEVENT021:{
 		japName:"毒と復讐",
 		engName:null,
 		type:"map",
-		banner:"bnr_ev_map_00021_1_l.webp",
+		banner:"bnr_ev_map_00021_1_l.png",
 		id:98
 	},
 	CHAPTER035:{
@@ -892,14 +905,14 @@ STORY = {
 		japName:"ダンジョン再び",
 		engName:null,
 		type:"raid",
-		banner:"bnr_ev_raid_00021_1_l.webp",
+		banner:"bnr_ev_raid_00021_1_l.png",
 		id:100
 	},
 	STORYEVENT022:{
 		japName:"電遁乙女と酔いどれ剣士",
 		engName:null,
 		type:"story",
-		banner:"bnr_ev_story_00022_1_l.webp",
+		banner:"bnr_ev_story_00022_1_l.png",
 		id:101
 	},
 	CHAPTER036:{
@@ -913,14 +926,14 @@ STORY = {
 		japName:"ジューンブライド　the Final",
 		engName:null,
 		type:"map",
-		banner:"bnr_ev_map_00022_1_l.webp",
+		banner:"bnr_ev_map_00022_1_l.png",
 		id:103
 	},
 	RAIDEVENT022:{
 		japName:"魔界騎士の資格",
 		engName:null,
 		type:"raid",
-		banner:"bnr_ev_raid_00022_1_l.webp",
+		banner:"bnr_ev_raid_00022_1_l.png",
 		id:104
 	},
 	CHAPTER037:{
@@ -934,14 +947,14 @@ STORY = {
 		japName:"時をかけるビーチ",
 		engName:null,
 		type:"story",
-		banner:"bnr_ev_story_00023_1_l.webp",
+		banner:"bnr_ev_story_00023_1_l.png",
 		id:106
 	},
 	MAPEVENT023:{
 		japName:"夏のオトコ祭り",
 		engName:null,
 		type:"map",
-		banner:"bnr_ev_map_00023_1_l.webp",
+		banner:"bnr_ev_map_00023_1_l.png",
 		id:107
 	},
 	CHAPTER038:{
@@ -955,14 +968,14 @@ STORY = {
 		japName:"夏休みと襲撃者",
 		engName:null,
 		type:"raid",
-		banner:"bnr_ev_raid_00023_1_l.webp",
+		banner:"bnr_ev_raid_00023_1_l.png",
 		id:109
 	},
 	STORYEVENT024:{
 		japName:"バニートラップ",
 		engName:null,
 		type:"story",
-		banner:"bnr_ev_story_00024_1_l.webp",
+		banner:"bnr_ev_story_00024_1_l.png",
 		id:110
 	},
 	CHAPTER039:{
@@ -976,14 +989,14 @@ STORY = {
 		japName:"つながる想いとバースデイ",
 		engName:null,
 		type:"map",
-		banner:"bnr_ev_map_00024_1_l.webp",
+		banner:"bnr_ev_map_00024_1_l.png",
 		id:112
 	},
 	RAIDEVENT024:{
 		japName:"ヨミハラサイドストーリー",
 		engName:null,
 		type:"raid",
-		banner:"bnr_ev_raid_00024_1_l.webp",
+		banner:"bnr_ev_raid_00024_1_l.png",
 		id:113
 	},
 	CHAPTER040:{
@@ -997,14 +1010,14 @@ STORY = {
 		japName:"魔女の記憶と追跡者",
 		engName:null,
 		type:"story",
-		banner:"bnr_ev_story_00025_1_l.webp",
+		banner:"bnr_ev_story_00025_1_l.png",
 		id:115
 	},
 	MAPEVENT025:{
 		japName:"ハロウィン警備と対魔忍",
 		engName:null,
 		type:"map",
-		banner:"bnr_ev_map_00025_1_l.webp",
+		banner:"bnr_ev_map_00025_1_l.png",
 		id:116
 	},
 	CHAPTER041:{
@@ -1018,14 +1031,14 @@ STORY = {
 		japName:"竜と魔女の子守歌",
 		engName:null,
 		type:"raid",
-		banner:"bnr_ev_raid_00025_1_l.webp",
+		banner:"bnr_ev_raid_00025_1_l.png",
 		id:118
 	},
 	MAPEVENT026:{
 		japName:"はぐれ者たちの哀歌",
 		engName:null,
 		type:"map",
-		banner:"bnr_ev_map_00026_1_l.webp",
+		banner:"bnr_ev_map_00026_1_l.png",
 		id:119
 	},
 	CHAPTER042:{
@@ -1039,14 +1052,14 @@ STORY = {
 		japName:"アミダハラの探偵",
 		engName:null,
 		type:"story",
-		banner:"bnr_ev_story_00026_1_l.webp",
+		banner:"bnr_ev_story_00026_1_l.png",
 		id:121
 	},
 	RAIDEVENT026:{
 		japName:"クリスマス・ストーリーズ",
 		engName:null,
 		type:"raid",
-		banner:"bnr_ev_raid_00026_1_l.webp",
+		banner:"bnr_ev_raid_00026_1_l.png",
 		id:122
 	},
 	CHAPTER043:{
@@ -1060,14 +1073,14 @@ STORY = {
 		japName:"ゆきかぜがアイドルしてる件",
 		engName:null,
 		type:"map",
-		banner:"bnr_ev_map_00027_1_l.webp",
+		banner:"bnr_ev_map_00027_1_l.png",
 		id:124
 	},
 	RAIDEVENT027:{
 		japName:"ちょっと魔界に行ってくる",
 		engName:null,
 		type:"raid",
-		banner:"bnr_ev_raid_00027_1_l.webp",
+		banner:"bnr_ev_raid_00027_1_l.png",
 		id:125
 	},
 	CHAPTER044:{
@@ -1081,14 +1094,14 @@ STORY = {
 		japName:"罪と罰",
 		engName:null,
 		type:"story",
-		banner:"bnr_ev_story_00027_1_l.webp",
+		banner:"bnr_ev_story_00027_1_l.png",
 		id:127
 	},
 	MAPEVENT028:{
 		japName:"From Your Valentine",
 		engName:null,
 		type:"map",
-		banner:"bnr_ev_map_00028_1_l.webp",
+		banner:"bnr_ev_map_00028_1_l.png",
 		id:128
 	},
 	CHAPTER045:{
@@ -1102,14 +1115,14 @@ STORY = {
 		japName:"メイドさんと草",
 		engName:null,
 		type:"raid",
-		banner:"bnr_ev_raid_00028_1_l.webp",
+		banner:"bnr_ev_raid_00028_1_l.png",
 		id:130
 	},
 	STORYEVENT028:{
 		japName:"人さがしの夢魔",
 		engName:null,
 		type:"story",
-		banner:"bnr_ev_story_00028_1_l.webp",
+		banner:"bnr_ev_story_00028_1_l.png",
 		id:131
 	},
 	CHAPTER046:{
@@ -1123,21 +1136,21 @@ STORY = {
 		japName:"ヨミハラ大応援チアバトル",
 		engName:null,
 		type:"map",
-		banner:"bnr_ev_map_00029_1_l.webp",
+		banner:"bnr_ev_map_00029_1_l.png",
 		id:133
 	},
 	APRILFOOLSEVENT004:{
 		japName:"対魔忍RPG－N　体験版",
 		engName:null,
 		type:"mini",
-		banner:"bnr_ev_april_00001_3_l.webp",
+		banner:"bnr_ev_april_00001_3_l.png",
 		id:134
 	},
 	RAIDEVENT029:{
 		japName:"トラと天使とアルバイト",
 		engName:null,
 		type:"raid",
-		banner:"bnr_ev_raid_00029_1_l.webp",
+		banner:"bnr_ev_raid_00029_1_l.png",
 		id:135
 	},
 	CHAPTER047:{
@@ -1151,14 +1164,14 @@ STORY = {
 		japName:"別れの夜会",
 		engName:null,
 		type:"story",
-		banner:"bnr_ev_story_00029_1_l.webp",
+		banner:"bnr_ev_story_00029_1_l.png",
 		id:137
 	},
 	MAPEVENT030:{
 		japName:"イングリッドの休暇",
 		engName:null,
 		type:"map",
-		banner:"bnr_ev_map_00030_1_l.webp",
+		banner:"bnr_ev_map_00030_1_l.png",
 		id:138
 	},
 	CHAPTER048:{
@@ -1172,28 +1185,28 @@ STORY = {
 		japName:"アサギ校長と結婚してみた",
 		engName:null,
 		type:"raid",
-		banner:"bnr_ev_raid_00030_1_l.webp",
+		banner:"bnr_ev_raid_00030_1_l.png",
 		id:140
 	},
 	STORYEVENT030:{
 		japName:"陰陽念流の剣士",
 		engName:null,
 		type:"story",
-		banner:"bnr_ev_story_00030_1_l.webp",
+		banner:"bnr_ev_story_00030_1_l.png",
 		id:141
 	},
 	MAPEVENT031:{
 		japName:"魔王の娘とビーチ",
 		engName:null,
 		type:"map",
-		banner:"bnr_ev_map_00031_1_l.webp",
+		banner:"bnr_ev_map_00031_1_l.png",
 		id:142
 	},
 	RAIDEVENT031:{
 		japName:"人魚の住む海",
 		engName:null,
 		type:"raid",
-		banner:"bnr_ev_raid_00031_1_l.webp",
+		banner:"bnr_ev_raid_00031_1_l.png",
 		id:143
 	},
 	CHAPTER049:{
@@ -1207,14 +1220,14 @@ STORY = {
 		japName:"GUNSLINGER and TAIMANIN",
 		engName:null,
 		type:"story",
-		banner:"bnr_ev_story_00031_1_l.webp",
+		banner:"bnr_ev_story_00031_1_l.png",
 		id:145
 	},
 	MAPEVENT032:{
 		japName:"バニーの亡霊",
 		engName:null,
 		type:"map",
-		banner:"bnr_ev_map_00032_1_l.webp",
+		banner:"bnr_ev_map_00032_1_l.png",
 		id:146
 	},
 	CHAPTER050:{
@@ -1228,14 +1241,14 @@ STORY = {
 		japName:"舞華姐さんの魚退治",
 		engName:null,
 		type:"raid",
-		banner:"bnr_ev_raid_00032_1_l.webp",
+		banner:"bnr_ev_raid_00032_1_l.png",
 		id:148
 	},
 	STORYEVENT032:{
 		japName:"地下都市の用心棒",
 		engName:null,
 		type:"story",
-		banner:"bnr_ev_story_00032_1_l.webp",
+		banner:"bnr_ev_story_00032_1_l.png",
 		id:149
 	},
 	CHAPTER051:{
@@ -1249,14 +1262,14 @@ STORY = {
 		japName:"稲毛屋の夏",
 		engName:null,
 		type:"map",
-		banner:"bnr_ev_map_00033_1_l.webp",
+		banner:"bnr_ev_map_00033_1_l.png",
 		id:151
 	},
 	RAIDEVENT033:{
 		japName:"ハロウィンの魔女剣客",
 		engName:null,
 		type:"raid",
-		banner:"bnr_ev_raid_00033_1_l.webp",
+		banner:"bnr_ev_raid_00033_1_l.png",
 		id:152
 	},
 	CHAPTER052:{
@@ -1270,14 +1283,14 @@ STORY = {
 		japName:"未来からの皇女さま",
 		engName:null,
 		type:"story",
-		banner:"bnr_ev_story_00033_1_l.webp",
+		banner:"bnr_ev_story_00033_1_l.png",
 		id:154
 	},
 	MAPEVENT034:{
 		japName:"魔法少女ココアと謎の魔界騎士",
 		engName:null,
 		type:"map",
-		banner:"bnr_ev_map_00034_1_l.webp",
+		banner:"bnr_ev_map_00034_1_l.png",
 		id:155
 	},
 	CHAPTER053:{
@@ -1291,14 +1304,14 @@ STORY = {
 		japName:"陰陽師とダイダラボッチ",
 		engName:null,
 		type:"raid",
-		banner:"bnr_ev_raid_00034_1_l.webp",
+		banner:"bnr_ev_raid_00034_1_l.png",
 		id:157
 	},
 	STORYEVENT034:{
 		japName:"故郷からの刺客",
 		engName:null,
 		type:"story",
-		banner:"bnr_ev_story_00034_1_l.webp",
+		banner:"bnr_ev_story_00034_1_l.png",
 		id:158
 	},
 	CHAPTER054:{
@@ -1312,28 +1325,28 @@ STORY = {
 		japName:"魔神さまとお正月",
 		engName:null,
 		type:"map",
-		banner:"bnr_ev_map_00035_1_l.webp",
+		banner:"bnr_ev_map_00035_1_l.png",
 		id:160
 	},
 	STORYEVENT035:{
 		japName:"双葉・リリー・ラムセス",
 		engName:null,
 		type:"story",
-		banner:"bnr_ev_story_00035_1_l.webp",
+		banner:"bnr_ev_story_00035_1_l.png",
 		id:161
 	},
 	RAIDEVENT035:{
 		japName:"サイボーグ探偵とバレンタイン",
 		engName:null,
 		type:"raid",
-		banner:"bnr_ev_raid_00035_1_l.webp",
+		banner:"bnr_ev_raid_00035_1_l.png",
 		id:162
 	},
 	MAPEVENT036:{
 		japName:"炎鎖の交",
 		engName:null,
 		type:"map",
-		banner:"bnr_ev_map_00036_1_l.webp",
+		banner:"bnr_ev_map_00036_1_l.png",
 		id:163
 	},
 	CHAPTER055:{
@@ -1347,14 +1360,14 @@ STORY = {
 		japName:"特異点の夜会",
 		engName:null,
 		type:"raid",
-		banner:"bnr_ev_raid_00036_1_l.webp",
+		banner:"bnr_ev_raid_00036_1_l.png",
 		id:165
 	},
 	STORYEVENT036:{
 		japName:"魔女の誇りと炎の魔人",
 		engName:null,
 		type:"story",
-		banner:"bnr_ev_story_00036_1_l.webp",
+		banner:"bnr_ev_story_00036_1_l.png",
 		id:166
 	},
 	CHAPTER056:{
@@ -1368,21 +1381,21 @@ STORY = {
 		japName:"青春と欲望のキックオフ",
 		engName:null,
 		type:"map",
-		banner:"bnr_ev_map_00037_1_l.webp",
+		banner:"bnr_ev_map_00037_1_l.png",
 		id:168
 	},
 	APRILFOOLSEVENT005:{
 		japName:"リズム☆TAIMANIN",
 		engName:null,
 		type:"mini",
-		banner:"bnr_ev_april_00002_1_l.webp",
+		banner:"bnr_ev_april_00002_1_l.png",
 		id:169
 	},
 	RAIDEVENT037:{
 		japName:"千里眼の時子",
 		engName:null,
 		type:"raid",
-		banner:"bnr_ev_raid_00037_1_l.webp",
+		banner:"bnr_ev_raid_00037_1_l.png",
 		id:170
 	},
 	CHAPTER057:{
@@ -1396,14 +1409,14 @@ STORY = {
 		japName:"メイドの国の大冒険",
 		engName:null,
 		type:"story",
-		banner:"bnr_ev_story_00037_1_l.webp",
+		banner:"bnr_ev_story_00037_1_l.png",
 		id:172
 	},
 	MAPEVENT038:{
 		japName:"森のサメさんとラティクール",
 		engName:null,
 		type:"map",
-		banner:"bnr_ev_map_00038_1_l.webp",
+		banner:"bnr_ev_map_00038_1_l.png",
 		id:173
 	},
 	CHAPTER058:{
@@ -1417,14 +1430,14 @@ STORY = {
 		japName:"結婚のヴァルキリア",
 		engName:null,
 		type:"raid",
-		banner:"bnr_ev_raid_00038_1_l.webp",
+		banner:"bnr_ev_raid_00038_1_l.png",
 		id:175
 	},
 	STORYEVENT038:{
 		japName:"酒呑童子と志木麗佳",
 		engName:null,
 		type:"story",
-		banner:"bnr_ev_story_00038_1_l.webp",
+		banner:"bnr_ev_story_00038_1_l.png",
 		id:176
 	},
 	CHAPTER059:{
@@ -1438,14 +1451,14 @@ STORY = {
 		japName:"馬の剣士と真夏の対魔忍",
 		engName:null,
 		type:"map",
-		banner:"bnr_ev_map_00039_1_l.webp",
+		banner:"bnr_ev_map_00039_1_l.png",
 		id:178
 	},
 	RAIDEVENT039:{
 		japName:"ビビ・ブラッド",
 		engName:null,
 		type:"raid",
-		banner:"bnr_ev_raid_00039_1_l.webp",
+		banner:"bnr_ev_raid_00039_1_l.png",
 		id:179
 	},
 	CHAPTER060:{
@@ -1459,14 +1472,14 @@ STORY = {
 		japName:"最強バニー決定戦",
 		engName:null,
 		type:"map",
-		banner:"bnr_ev_map_00040_1_l.webp",
+		banner:"bnr_ev_map_00040_1_l.png",
 		id:181
 	},
 	STORYEVENT039:{
 		japName:"大洋の魔女",
 		engName:null,
 		type:"story",
-		banner:"bnr_ev_story_00039_1_l.webp",
+		banner:"bnr_ev_story_00039_1_l.png",
 		id:182
 	},
 	CHAPTER061:{
@@ -1480,14 +1493,14 @@ STORY = {
 		japName:"夏の終わりと百目の鬼",
 		engName:null,
 		type:"raid",
-		banner:"bnr_ev_raid_00040_1_l.webp",
+		banner:"bnr_ev_raid_00040_1_l.png",
 		id:184
 	},
 	STORYEVENT040:{
 		japName:"爆拳の対魔忍と呪われた美女",
 		engName:null,
 		type:"story",
-		banner:"bnr_ev_story_00040_1_l.webp",
+		banner:"bnr_ev_story_00040_1_l.png",
 		id:185
 	},
 	CHAPTER062:{
@@ -1501,14 +1514,14 @@ STORY = {
 		japName:"10月10日は妊娠の日",
 		engName:null,
 		type:"map",
-		banner:"bnr_ev_map_00041_1_l.webp",
+		banner:"bnr_ev_map_00041_1_l.png",
 		id:187
 	},
 	RAIDEVENT041:{
 		japName:"電脳ハロウィンの怪物",
 		engName:null,
 		type:"raid",
-		banner:"bnr_ev_raid_00041_1_l.webp",
+		banner:"bnr_ev_raid_00041_1_l.png",
 		id:188
 	},
 	CHAPTER063:{
@@ -1522,14 +1535,14 @@ STORY = {
 		japName:"キングダムレース",
 		engName:null,
 		type:"map",
-		banner:"bnr_ev_map_00042_1_l.webp",
+		banner:"bnr_ev_map_00042_1_l.png",
 		id:190
 	},
 	STORYEVENT041:{
 		japName:"異世界遠足からの冒険譚",
 		engName:null,
 		type:"story",
-		banner:"bnr_ev_story_00041_1_l.webp",
+		banner:"bnr_ev_story_00041_1_l.png",
 		id:191
 	},
 	CHAPTER064:{
@@ -1543,14 +1556,14 @@ STORY = {
 		japName:"紅き血の鎮魂歌",
 		engName:null,
 		type:"raid",
-		banner:"bnr_ev_raid_00042_1_l.webp",
+		banner:"bnr_ev_raid_00042_1_l.png",
 		id:193
 	},
 	STORYEVENT042:{
 		japName:"クリスマスの訪問者",
 		engName:null,
 		type:"story",
-		banner:"bnr_ev_story_00042_1_l.webp",
+		banner:"bnr_ev_story_00042_1_l.png",
 		id:194
 	},
 	CHAPTER065:{
@@ -1564,28 +1577,28 @@ STORY = {
 		japName:"ビューティフル・ニューイヤー",
 		engName:null,
 		type:"map",
-		banner:"bnr_ev_map_00043_1_l.webp",
+		banner:"bnr_ev_map_00043_1_l.png",
 		id:196
 	},
 	RAIDEVENT043:{
 		japName:"思いがけないMANGAヒーロー",
 		engName:null,
 		type:"raid",
-		banner:"bnr_ev_raid_00043_1_l.webp",
+		banner:"bnr_ev_raid_00043_1_l.png",
 		id:197
 	},
 	STORYEVENT043:{
 		japName:"五車チョコレート大戦",
 		engName:null,
 		type:"story",
-		banner:"bnr_ev_story_00043_1_l.webp",
+		banner:"bnr_ev_story_00043_1_l.png",
 		id:198
 	},
 	MAPEVENT044:{
 		japName:"開遁の巫女・魅神千都",
 		engName:null,
 		type:"map",
-		banner:"bnr_ev_map_00044_1_l.webp",
+		banner:"bnr_ev_map_00044_1_l.png",
 		id:199
 	},
 	CHAPTER066:{
@@ -1599,14 +1612,14 @@ STORY = {
 		japName:"迸れ！パワーの夜会",
 		engName:null,
 		type:"raid",
-		banner:"bnr_ev_raid_00044_1_l.webp",
+		banner:"bnr_ev_raid_00044_1_l.png",
 		id:201
 	},
 	STORYEVENT044:{
 		japName:"ツバキとヨーコ",
 		engName:null,
 		type:"story",
-		banner:"bnr_ev_story_00044_1_l.webp",
+		banner:"bnr_ev_story_00044_1_l.png",
 		id:202
 	},
 	CHAPTER067:{
@@ -1620,21 +1633,21 @@ STORY = {
 		japName:"雷撃のガールズバンド！",
 		engName:null,
 		type:"map",
-		banner:"bnr_ev_map_00045_1_l.webp",
+		banner:"bnr_ev_map_00045_1_l.png",
 		id:204
 	},
 	APRILFOOLSEVENT006:{
 		japName:"DeathGrandPrixSP2nd",
 		engName:null,
 		type:"mini",
-		banner:"bnr_ev_april_00003_1_l.webp",
+		banner:"bnr_ev_april_00003_1_l.png",
 		id:205
 	},
 	RAIDEVENT045:{
 		japName:"舞と最強オークと呪いの日記",
 		engName:null,
 		type:"raid",
-		banner:"bnr_ev_raid_00045_1_l.webp",
+		banner:"bnr_ev_raid_00045_1_l.png",
 		id:206
 	},
 	CHAPTER068:{
@@ -1648,14 +1661,14 @@ STORY = {
 		japName:"メイドと執事とお使いの冒険",
 		engName:null,
 		type:"story",
-		banner:"bnr_ev_story_00045_1_l.webp",
+		banner:"bnr_ev_story_00045_1_l.png",
 		id:208
 	},
 	MAPEVENT046:{
 		japName:"おいしい契約",
 		engName:null,
 		type:"map",
-		banner:"bnr_ev_map_00046_1_l.webp",
+		banner:"bnr_ev_map_00046_1_l.png",
 		id:209
 	},
 	CHAPTER069:{
@@ -1665,4 +1678,12 @@ STORY = {
 		chapter:69,
 		id:210
 	},
+	RAIDEVENT046:{
+		japName:"イングリッド姫の結婚",
+		engName:null,
+		type:"raid",
+		banner:"bnr_ev_raid_00046_1_l.png",
+		id:211
+	},
 }
+
