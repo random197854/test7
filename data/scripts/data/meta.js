@@ -28375,7 +28375,88 @@ var SCENE = {
         },
         ignoredCharacterTags:[],
     },
-
+    "0646_1":{
+        character:[CHAR.AMAMIYA_SHISUI, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.WEDDING_DRESS, TAG.PANTIES_PULLED_DOWN, TAG.BREASTS_OUT, TAG.GARTER_BELT, TAG.THIGH_HIGH_STOCKINGS, TAG.EVENING_GLOVES,
+                TAG.KISSING, TAG.VAGINAL_SEX, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE, TAG.ON_BED],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0646_2"
+    },
+    "0646_2":{
+        character:[CHAR.AMAMIYA_SHISUI, CHAR.SHISHIMURA_KORO, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.WEDDING_DRESS, TAG.BREASTS_OUT, TAG.THIGH_HIGH_STOCKINGS, TAG.EVENING_GLOVES, TAG.CHOKER,
+                TAG.VAGINAL_SEX, TAG.KISSING, TAG.BREAST_GROPING, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE, TAG.ON_BED],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0647_1":{
+        character:CHAR.INGRID,
+        tags:{
+            female:[
+                TAG.WEDDING_DRESS, TAG.BREASTS_OUT, TAG.GARTER_BELT, TAG.THIGH_HIGH_STOCKINGS, TAG.CHOKER,
+                TAG.STANDING_SEX,
+                TAG.BREAST_GROPING, TAG.KISSING, TAG.VAGINAL_FINGERING, TAG.HANDJOB, TAG.VAGINAL_LEAKAGE, TAG.VAGINAL_SEX, TAG.NAKADASHI, TAG.AHEGAO
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0647_2"
+    },
+    "0647_2":{
+        character:CHAR.INGRID,
+        tags:{
+            female:[
+                TAG.WEDDING_DRESS, TAG.BREASTS_OUT, TAG.GARTER_BELT, TAG.THIGH_HIGH_STOCKINGS, TAG.CHOKER,
+                TAG.STANDING_SEX,
+                TAG.VAGINAL_SEX, TAG.PREGNANT, TAG.BREAST_GROPING, TAG.LACTATION, TAG.AHEGAO, TAG.VAGINAL_LEAKAGE, TAG.NAKADASHI, TAG.KISSING
+            ],
+            male:[],
+            location:[TAG.CHURCH, TAG.SEMI_PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0648":{
+        character:CHAR.COOLIDGE,
+        tags:{
+            female:[
+                TAG.WEDDING_DRESS, TAG.PANTIES, TAG.COMPLETELY_NAKED,
+                TAG.NAKED_DOGEZA, TAG.FOOT_LICKING, TAG.BLOWJOB, TAG.VAGINAL_SEX, TAG.NAKADASHI, TAG.BUKKAKE
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0649":{
+        character:[CHAR.CHEVALIER, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.WEDDING_DRESS, TAG.BREASTS_OUT,
+                TAG.BLOWJOB_PAIZURI, TAG.BREAST_GROWTH, TAG.BUKKAKE
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
 
 
 
