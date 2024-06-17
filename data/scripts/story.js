@@ -1685,5 +1685,12 @@ STORY = {
 		banner:"bnr_ev_raid_00046_1_l.webp",
 		id:211
 	},
+	STORYEVENT046:{
+		japName:"怪獣と巨大化対魔忍",
+		engName:null,
+		type:"story",
+		banner:"bnr_ev_story_00046_1_l.webp",
+		id:212
+	},
 }
 
