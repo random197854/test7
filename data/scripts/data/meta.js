@@ -1191,6 +1191,12 @@ var CV = {
         jap: "豆柴花",
         japAlias: ["豆柴", "花"]
     },
+    KITANI_RAMERU:{
+        eng: "Kirani Rameru",
+        engAlias: ["Kitani", "Rameru Kitani", "Rameru"],
+        jap: "喜谷ラメル",
+        japAlias: ["喜谷", "ラメル"]
+    },
     IGNORE:{
         eng: "",
         engAlias: [],
@@ -10307,6 +10313,63 @@ var CHAR = {
             originalCharacter:true,
             artist:ARTIST.HOMURA_YUNI,
             cv:CV.MAMESHIBA_HANA
+        }
+    },
+    DAIDOUJI_NAMI:{
+        base:{
+            name:{
+                eng:"Daidouji Nami",
+                engAlias:["Daidouji", "Nami Daidouji", "Nami"],
+                jap:"大道寺なみ",
+                japAlias:["大道寺", "なみ"]
+            },
+            tags:[
+                TAG.BLOND_HAIR, TAG.LONG_HAIR,
+                TAG.GREEN_EYES,
+                TAG.HUGE_BREASTS, TAG.LIGHT_SKIN
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.AOI_NAGISA,
+            cv:CV.AN_MITSUKI
+        }
+    },
+    BONDO_MARIA:{
+        base:{
+            name:{
+                eng:"Bondo Maria",
+                engAlias:["Bondo", "Maria Bondo", "Maria"],
+                jap:"盆戸麻里亜",
+                japAlias:["盆戸", "麻里亜"]
+            },
+            tags:[
+                TAG.BLOND_HAIR, TAG.LONG_HAIR,
+                TAG.BLUE_EYES,
+                TAG.AVERAGE_BREASTS, TAG.LIGHT_SKIN
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.KUUCHUU_YOUSAI,
+            cv:CV.SAKURANI_AKARI
+        }
+    },
+    HAZAMADA_KIRINO:{
+        base:{
+            name:{
+                eng:"Hazamada Kirino",
+                engAlias:["Hazamada", "Kirino Hazamada", "Kirino"],
+                jap:"間田　霧乃",
+                japAlias:["間田", "霧乃"]
+            },
+            tags:[
+                TAG.BLUE_HAIR, TAG.LONG_HAIR,
+                TAG.AMBER_EYES,
+                TAG.BIG_BREASTS, TAG.LIGHT_SKIN
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.ZOL,
+            cv:CV.KITANI_RAMERU
         }
     },
 
@@ -28457,7 +28520,87 @@ var SCENE = {
         },
         ignoredCharacterTags:[],
     },
-
+    "0650_1":{
+        character:[CHAR.DAJAME, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.COMPLETELY_NAKED,
+                TAG.QUICKIE_FIX_POSITION,
+                TAG.VAGINAL_SEX, TAG.NAKADASHI, TAG.SPANKING, TAG.DRUGS, TAG.ASPHYXIATION, TAG.HEART_PUPILS
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0650_2"
+    },
+    "0650_2":{
+        character:[CHAR.DAJAME, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT,
+                TAG.FINGER_SUCKING, TAG.VAGINAL_SEX, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.BEDROOM, TAG.ON_BED],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0651_1":{
+        character:CHAR.DAIDOUJI_NAMI,
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.BREASTS_OUT, TAG.VAGINAL_CUTOUT, TAG.THIGH_HIGH_STOCKINGS, TAG.FRILLY_CLOTHING,
+                TAG.TENTACLE_RAPE, TAG.VAGINAL_SEX, TAG.STOMACH_DEFORMATION, TAG.DEFLORATION, TAG.NAKADASHI, TAG.AHEGAO, TAG.VAGINAL_LEAKAGE, TAG.BREAST_GROPING
+            ],
+            male:[],
+            location:[TAG.OUTSIDE, TAG.PUBLIC],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0651_2"
+    },
+    "0651_2":{
+        character:CHAR.DAIDOUJI_NAMI,
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.BREASTS_OUT, TAG.VAGINAL_CUTOUT, TAG.THIGH_HIGH_STOCKINGS, TAG.FRILLY_CLOTHING,
+                TAG.TENTACLE_RAPE, TAG.VAGINAL_SEX, TAG.NIPPLE_PLAY, TAG.ELECTRIC_SHOCKS, TAG.NAKADASHI, TAG.AHEGAO, TAG.INCONTINENCE, TAG.STOMACH_DEFORMATION
+            ],
+            male:[],
+            location:[TAG.OUTSIDE, TAG.PUBLIC],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0652":{
+        character:CHAR.BONDO_MARIA,
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.BREASTS_OUT, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.METAL_BONDAGE, TAG.VAGINAL_LEAKAGE, TAG.SQUIRTING
+            ],
+            male:[],
+            location:[],
+            misc:[TAG.NO_SEX]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0653":{
+        character:CHAR.HAZAMADA_KIRINO,
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.PANTIES, TAG.PROTRUDING_NIPPLES, TAG.BREAST_CUTOUTS,
+                TAG.SQUIRTING, TAG.AHEGAO, TAG.VAGINAL_SEX, TAG.DEFLORATION, TAG.STOMACH_DEFORMATION, TAG.BREAST_GROPING, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.BEDROOM, TAG.ON_BED],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
 
 
 
