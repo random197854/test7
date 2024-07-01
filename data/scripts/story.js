@@ -1692,5 +1692,19 @@ STORY = {
 		banner:"bnr_ev_story_00046_1_l.webp",
 		id:212
 	},
+	CHAPTER070:{
+		japName:"死神が生まれた日　後編",
+		engName:null,
+		type:"chapter",
+		chapter:70,
+		id:213
+	},
+	MAPEVENT047:{
+		japName:"カーラ様と海水浴に行った件",
+		engName:null,
+		type:"map",
+		banner:"bnr_ev_map_00047_1_l.webp",
+		id:214
+	},
 }
 

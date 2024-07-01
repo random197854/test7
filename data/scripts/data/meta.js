@@ -10372,6 +10372,26 @@ var CHAR = {
             cv:CV.KITANI_RAMERU
         }
     },
+    POIPUKA:{
+        base:{
+            name:{
+                eng:"Poipuka",
+                engAlias:[],
+                jap:"ポイプカ",
+                japAlias:[]
+            },
+            tags:[
+                TAG.WHITE_HAIR, TAG.LONG_HAIR,
+                TAG.GREEN_EYES,
+                TAG.TANNED_SKIN, TAG.HUGE_BREASTS,
+                TAG.TAIL, TAG.HORNS
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.ASAHI,
+            cv:CV.HIGASHI_SHIZU
+        }
+    },
 
     // :{
     //     base:{
@@ -28597,6 +28617,84 @@ var SCENE = {
             ],
             male:[],
             location:[TAG.BEDROOM, TAG.ON_BED],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0654_1":{
+        character:CHAR.MARIKA_KRISHNA,
+        tags:{
+            female:[
+                TAG.SWIMSUIT, TAG.HAT, TAG.PROTRUDING_NIPPLES, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.VAGINAL_LEAKAGE, TAG.VAGINAL_SEX, TAG.WOMB_TATTOO, TAG.NAKADASHI, TAG.CUM_SWALLOWING, TAG.SQUIRTING, TAG.AHEGAO, TAG.CUM_IN_MOUTH
+            ],
+            male:[],
+            location:[TAG.CAVE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0654_2":{
+        character:CHAR.MARIKA_KRISHNA,
+        tags:{
+            female:[
+                TAG.SWIMSUIT, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.VAGINAL_SEX, TAG.NAKADASHI, TAG.AHEGAO, TAG.STOMACH_INFLATION, TAG.STOMACH_DEFORMATION
+            ],
+            male:[TAG.MONSTER],
+            location:[TAG.CAVE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0655_1":{
+        character:CHAR.CARA_CROMWELL,
+        tags:{
+            female:[
+                TAG.BIKINI, TAG.PROTRUDING_NIPPLES,
+                TAG.PROFESSIONAL_PORN_PRODUCTION, TAG.KISSING, TAG.BLOWJOB, TAG.DEEPTHROAT, TAG.CUM_IN_MOUTH, TAG.BUKKAKE
+            ],
+            male:[],
+            location:[TAG.OUTSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0655_2":{
+        character:CHAR.CARA_CROMWELL,
+        tags:{
+            female:[
+                TAG.BIKINI, TAG.PROTRUDING_NIPPLES, TAG.BREASTS_OUT, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.VAGINAL_SEX, TAG.NAKADASHI, TAG.AHEGAO
+            ],
+            male:[],
+            location:[TAG.OUTSIDE, TAG.PRIVATE],
+            misc:[TAG.CUT_IN_XRAY]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0656":{
+        character:CHAR.POIPUKA,
+        tags:{
+            female:[
+                TAG.PROTRUDING_NIPPLES, TAG.PARTIALLY_TRANSPARENT_CLOTHING, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.DEFLORATION, TAG.VAGINAL_SEX, TAG.BUKKAKE, TAG.BREAST_SUCKING, TAG.NAKADASHI, TAG.AHEGAO
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.ON_BED, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0657":{
+        character:CHAR.MURAKUMO_IBUKI,
+        tags:{
+            female:[
+                TAG.BIKINI, TAG.BREASTS_OUT, TAG.PANTIES_AROUND_LEG, TAG.EVENING_GLOVES,
+                TAG.CUNNILINGUS, TAG.BUKKAKE, TAG.VAGINAL_SEX, TAG.AHEGAO
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
             misc:[]
         },
         ignoredCharacterTags:[],
