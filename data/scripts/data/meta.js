@@ -10392,6 +10392,62 @@ var CHAR = {
             cv:CV.HIGASHI_SHIZU
         }
     },
+    SHINONOME_YAHIRO:{
+        base:{
+            name:{
+                eng:"Shinonome Yahiro",
+                engAlias:["Shinonome", "Yahiro Shinonome", "Yahiro"],
+                jap:"死乃々目八尋",
+                japAlias:["死乃々目", "八尋"]
+            },
+            tags:[
+                TAG.BLACK_HAIR, TAG.LONG_HAIR,
+                TAG.HUGE_BREASTS, TAG.LIGHT_SKIN
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.ZOL,
+            cv:CV.MOMOZONO_ANRI
+        }
+    },
+    YORIBE_TSUTOME:{
+        base:{
+            name:{
+                eng:"Yoribe Tsutome",
+                engAlias:["Yoribe", "Tsutome Yoribe", "Tsutome"],
+                jap:"寄辺都留",
+                japAlias:["寄辺", "都留"]
+            },
+            tags:[
+                TAG.RED_HAIR, TAG.SHOULDER_LENGTH_HAIR,
+                TAG.RED_EYES,
+                TAG.BIG_BREASTS, TAG.LIGHT_SKIN
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.SAKURANBO,
+            cv:CV.AKAI_RIA
+        }
+    },
+    MINAKAMI_CHIKA:{
+        base:{
+            name:{
+                eng:"Minakami Chika",
+                engAlias:["Minakami", "Chika Minakami", "Chika"],
+                jap:"水上千歌",
+                japAlias:["水上", "千歌"]
+            },
+            tags:[
+                TAG.PLATINUM_BLOND_HAIR, TAG.SHOULDER_LENGTH_HAIR,
+                TAG.VIOLET_EYES,
+                TAG.SMALL_BREASTS, TAG.LIGHT_SKIN
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.HOMURA_YUNI,
+            cv:CV.MINAMIJUUJI_ISSEI
+        }
+    },
 
     // :{
     //     base:{
@@ -28695,6 +28751,85 @@ var SCENE = {
             ],
             male:[],
             location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0658_1":{
+        character:[CHAR.SHINONOME_YAHIRO, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.BREASTS_OUT, TAG.DRESS,
+                TAG.HANDJOB, TAG.BREAST_GROPING, TAG.CUM_LICKUP
+            ],
+            male:[TAG.NIPPLE_PULLING],
+            location:[TAG.UNDER_WATER, TAG.PRIVATE],
+            misc:[TAG.NO_SEX]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0658_2":{
+        character:[CHAR.SHINONOME_YAHIRO, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.BIKINI, TAG.BREASTS_OUT,
+                TAG.VAGINAL_SEX, TAG.DEFLORATION, TAG.KISSING, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.UNDER_WATER, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0659_1":{
+        character:[CHAR.RAGNAROK, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.BIKINI, TAG.BREASTS_OUT, TAG.CHOKER, TAG.EVENING_GLOVES, TAG.THIGH_BAND,
+                TAG.BREAST_SUCKING, TAG.HANDJOB, TAG.BUKKAKE
+            ],
+            male:[],
+            location:[TAG.BEACH, TAG.PRIVATE],
+            misc:[TAG.NO_SEX]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0659_2":{
+        character:[CHAR.RAGNAROK, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.BIKINI, TAG.BREASTS_OUT, TAG.PANTIES_PUSHED_TO_SIDE,TAG.CHOKER, TAG.EVENING_GLOVES, TAG.THIGH_BAND,
+                TAG.DOGGY_STYLE,
+                TAG.VAGINAL_SEX, TAG.SPANKING, TAG.NAKADASHI, TAG.ANAL_SEX, TAG.AHEGAO
+            ],
+            male:[],
+            location:[TAG.BEACH, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0660":{
+        character:CHAR.YORIBE_TSUTOME,
+        tags:{
+            female:[
+                TAG.BIKINI, TAG.BREASTS_OUT,
+                TAG.BLOWJOB, TAG.CUM_IN_MOUTH, TAG.VAGINAL_SEX, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.PRISON_CELL, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0661":{
+        character:[CHAR.MINAKAMI_CHIKA, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.SWIMSUIT, TAG.PANTIES_PUSHED_TO_SIDE, TAG.TANLINES, TAG.TANNED_SKIN,
+                TAG.ASS_GROPING, TAG.VAGINAL_SEX, TAG.DEFLORATION, TAG.NAKADASHI, TAG.INCONTINENCE
+            ],
+            male:[],
+            location:[TAG.IN_WATER, TAG.PRIVATE],
             misc:[]
         },
         ignoredCharacterTags:[],
