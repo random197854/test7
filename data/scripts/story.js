@@ -1706,5 +1706,12 @@ STORY = {
 		banner:"bnr_ev_map_00047_1_l.webp",
 		id:214
 	},
+	RAIDEVENT047:{
+		japName:"ビーチ解放区の女王",
+		engName:null,
+		type:"raid",
+		banner:"bnr_ev_raid_00047_1_l.webp",
+		id:215
+	},
 }
 
