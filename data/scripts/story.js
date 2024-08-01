@@ -1713,5 +1713,12 @@ STORY = {
 		banner:"bnr_ev_raid_00047_1_l.webp",
 		id:215
 	},
+	MAPEVENT048:{
+		japName:"黒いバニーの暗殺者",
+		engName:null,
+		type:"map",
+		banner:"bnr_ev_map_00048_1_l.webp",
+		id:216
+	},
 }
 
