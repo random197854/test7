@@ -28689,6 +28689,7 @@ var SCENE = {
             misc:[]
         },
         ignoredCharacterTags:[],
+        nextScene:"0654_2"
     },
     "0654_2":{
         character:CHAR.MARIKA_KRISHNA,
@@ -28715,6 +28716,7 @@ var SCENE = {
             misc:[]
         },
         ignoredCharacterTags:[],
+        nextScene:"0655_2"
     },
     "0655_2":{
         character:CHAR.CARA_CROMWELL,
@@ -28767,6 +28769,7 @@ var SCENE = {
             misc:[TAG.NO_SEX]
         },
         ignoredCharacterTags:[],
+        nextScene:"0658_2"
     },
     "0658_2":{
         character:[CHAR.SHINONOME_YAHIRO, CHAR.FUUMA_KOTAROU],
@@ -28793,6 +28796,7 @@ var SCENE = {
             misc:[TAG.NO_SEX]
         },
         ignoredCharacterTags:[],
+        nextScene:"0659_2"
     },
     "0659_2":{
         character:[CHAR.RAGNAROK, CHAR.FUUMA_KOTAROU],
@@ -28830,6 +28834,86 @@ var SCENE = {
             ],
             male:[],
             location:[TAG.IN_WATER, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0662_1":{
+        character:CHAR.KIRIHARA_JUNKO,
+        tags:{
+            female:[
+                TAG.BUNNYGIRL_OUTFIT, TAG.BREASTS_OUT,
+                TAG.BREAST_SUCKING, TAG.LACTATION, TAG.CLIT_PLAY, TAG.VAGINAL_LEAKAGE
+            ],
+            male:[],
+            location:[TAG.FACILITY, TAG.PRIVATE],
+            misc:[TAG.NO_SEX]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0662_2"
+    },
+    "0662_2":{
+        character:CHAR.KIRIHARA_JUNKO,
+        tags:{
+            female:[
+                TAG.NAKED,
+                TAG.NIPPLE_FUCK, TAG.VIBRATOR, TAG.VAGINAL_INSERTION, TAG.ANAL_INSERTION, TAG.STOMACH_INFLATION, TAG.LACTATION, TAG.ELECTRIC_SHOCKS, TAG.GAPING
+            ],
+            male:[],
+            location:[TAG.FACILITY, TAG.PRIVATE],
+            misc:[TAG.NO_SEX]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0663_1":{
+        character:[CHAR.PHANTASMA, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.BUNNYGIRL_OUTFIT, TAG.BREASTS_OUT, TAG.PANTIES_PUSHED_TO_SIDE, TAG.VAGINAL_CUTOUT, TAG.STOCKINGS, 
+                TAG.VAGINAL_SEX, TAG.FACESITTING, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.BEDROOM, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0663_2":{
+        character:[CHAR.PHANTASMA, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.BUNNYGIRL_OUTFIT, TAG.BREASTS_OUT, TAG.VAGINAL_CUTOUT, TAG.STOCKINGS, TAG.HIGH_HEELS,
+                TAG.VAGINAL_SEX, TAG.NAKADASHI
+            ],
+            male:[TAG.NIPPLE_PLAY],
+            location:[TAG.BEDROOM, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0663_2"
+    },
+    "0664":{
+        character:[CHAR.MYURUNU, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.BUNNYGIRL_OUTFIT, TAG.BREASTS_OUT, TAG.LEOTARD, TAG.PANTIES_PUSHED_TO_SIDE, TAG.STOCKINGS, TAG.METAL_BONDAGE,
+                TAG.CLIT_PLAY, TAG.MAGIC_WAND, TAG.INCONTINENCE, TAG.VAGINAL_SEX, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0665":{
+        character:CHAR.TORAJIRO,
+        tags:{
+            female:[
+                TAG.BUNNYGIRL_OUTFIT, TAG.LEOTARD, TAG.BREASTS_OUT, TAG.NIPPLE_PIERCING, TAG.GENITAL_PIERCING, TAG.STOCKINGS,
+                TAG.VAGINAL_SEX, TAG.USED_CONDOMS_EXPOSITION, TAG.VAGINAL_LEAKAGE, TAG.NAKADASHI, TAG.AHEGAO
+            ],
+            male:[],
+            location:[TAG.CASINO, TAG.PUBLIC],
             misc:[]
         },
         ignoredCharacterTags:[],
