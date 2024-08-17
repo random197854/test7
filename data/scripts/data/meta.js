@@ -251,6 +251,12 @@ var ARTIST = {
         jap: "遊丸",
         japAlias: ["遊", "丸"]
     },
+    SATOU_SHOUJI:{
+        eng: "Satou Shouji",
+        engAlias: ["Satou", "Shouji Satou", "Shouji"],
+        jap: "佐藤ショウジ",
+        japAlias: ["佐藤", "ショウジ"]
+    },
     IGNORE:{
         eng: "",
         engAlias: [],
@@ -1196,6 +1202,24 @@ var CV = {
         engAlias: ["Kitani", "Rameru Kitani", "Rameru"],
         jap: "喜谷ラメル",
         japAlias: ["喜谷", "ラメル"]
+    },
+    INOUE_MARINA:{
+        eng: "Inoue Marina",
+        engAlias: ["Inoue", "Marina Inoue", "Marina"],
+        jap: "井上麻里奈",
+        japAlias: ["井上", "麻里奈"]
+    },
+    SAWASHIRO_MIYUKI:{
+        eng: "Sawashiro Miyuki",
+        engAlias: ["Sawashiro", "Miyuki Sawashiro", "Miyuki"],
+        jap: "沢城みゆき",
+        japAlias: ["沢城", "みゆき"]
+    },
+    KITAMURA_ERI:{
+        eng: "Kitamura Eri",
+        engAlias: ["Kitamura", "Eri Kitamura", "Eri"],
+        jap: "喜多村英梨",
+        japAlias: ["喜多村", "英梨"]
     },
     IGNORE:{
         eng: "",
@@ -10446,6 +10470,63 @@ var CHAR = {
             originalCharacter:true,
             artist:ARTIST.HOMURA_YUNI,
             cv:CV.MINAMIJUUJI_ISSEI
+        }
+    },
+    MIYAMOTO_REI:{
+        base:{
+            name:{
+                eng:"Miyamoto Rei",
+                engAlias:["Miyamoto", "Rei Miyamoto", "Rei"],
+                jap:"宮本麗",
+                japAlias:["宮本", "麗"]
+            },
+            tags:[
+                TAG.BROWN_HAIR, TAG.LONG_HAIR,
+                TAG.RED_EYES,
+                TAG.BIG_BREASTS, TAG.LIGHT_SKIN
+            ],
+            gender:"female",
+            originalCharacter:false,
+            artist:ARTIST.SATOU_SHOUJI,
+            cv:CV.INOUE_MARINA
+        }
+    },
+    BUSUJIMA_SAEKO:{
+        base:{
+            name:{
+                eng:"Busujima Saeko",
+                engAlias:["Busujima", "Saeko Busujim", "Saeko"],
+                jap:"毒島冴子",
+                japAlias:["毒島", "冴子"]
+            },
+            tags:[
+                TAG.VIOLET_HAIR, TAG.LONG_HAIR,
+                TAG.BLUE_EYES,
+                TAG.BIG_BREASTS, TAG.LIGHT_SKIN
+            ],
+            gender:"female",
+            originalCharacter:false,
+            artist:ARTIST.SATOU_SHOUJI,
+            cv:CV.SAWASHIRO_MIYUKI
+        }
+    },
+    TAKAGI_SAYA:{
+        base:{
+            name:{
+                eng:"Takagi Saya",
+                engAlias:["Takagi", "Saya Takagi", "Saya"],
+                jap:"高城沙耶",
+                japAlias:["高城", "沙耶"]
+            },
+            tags:[
+                TAG.PINK_HAIR, TAG.LONG_HAIR,
+                TAG.BROWN_EYES,
+                TAG.BIG_BREASTS, TAG.LIGHT_SKIN
+            ],
+            gender:"female",
+            originalCharacter:false,
+            artist:ARTIST.SATOU_SHOUJI,
+            cv:CV.KITAMURA_ERI
         }
     },
 
@@ -28877,6 +28958,7 @@ var SCENE = {
             misc:[]
         },
         ignoredCharacterTags:[],
+        nextScene:"0663_2"
     },
     "0663_2":{
         character:[CHAR.PHANTASMA, CHAR.FUUMA_KOTAROU],
@@ -28890,7 +28972,6 @@ var SCENE = {
             misc:[]
         },
         ignoredCharacterTags:[],
-        nextScene:"0663_2"
     },
     "0664":{
         character:[CHAR.MYURUNU, CHAR.FUUMA_KOTAROU],
@@ -28914,6 +28995,107 @@ var SCENE = {
             ],
             male:[],
             location:[TAG.CASINO, TAG.PUBLIC],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0666_1":{
+        character:[CHAR.MIYAMOTO_REI, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.BIKINI
+            ],
+            male:[],
+            location:[],
+            misc:[TAG.NO_SEX]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0666_2"
+    },
+    "0666_2":{
+        character:[CHAR.MIYAMOTO_REI, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.BIKINI,
+            ],
+            male:[],
+            location:[],
+            misc:[TAG.NO_SEX]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0667_1":{
+        character:[CHAR.BUSUJIMA_SAEKO, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.BIKINI
+            ],
+            male:[],
+            location:[],
+            misc:[TAG.NO_SEX]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0667_2"
+    },
+    "0667_2":{
+        character:[CHAR.BUSUJIMA_SAEKO, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.BIKINI
+            ],
+            male:[],
+            location:[],
+            misc:[TAG.NO_SEX]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0668_1":{
+        character:[CHAR.TAKAGI_SAYA, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.BIKINI
+            ],
+            male:[],
+            location:[],
+            misc:[TAG.NO_SEX]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0668_2"
+    },
+    "0668_2":{
+        character:[CHAR.TAKAGI_SAYA, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.BIKINI
+            ],
+            male:[],
+            location:[],
+            misc:[TAG.NO_SEX]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0669":{
+        character:CHAR.MARIKA_KRISHNA,
+        tags:{
+            female:[
+                TAG.SCHOOL_UNIFORM, TAG.RIPPED_CLOTHING, TAG.BREAST_CUTOUTS, TAG.PANTIES,
+                TAG.RAPE, TAG.BREAST_GROPING, TAG.CUNNILINGUS, TAG.VAGINAL_SEX, TAG.NAKADASHI, TAG.ASPHYXIATION
+            ],
+            male:[],
+            location:[],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0670":{
+        character:[CHAR.IZUMO_TSURU, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.SCHOOL_UNIFORM, TAG.PANTIES, TAG.PANTIES_PUSHED_TO_SIDE, TAG.BREASTS_OUT,
+                TAG.VAGINAL_SEX, TAG.BREAST_GROPING, TAG.SENSUAL_BITING, TAG.VAGINAL_LEAKAGE, TAG.NAKADASHI, TAG.AHEGAO
+            ],
+            male:[],
+            location:[],
             misc:[]
         },
         ignoredCharacterTags:[],
