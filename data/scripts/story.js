@@ -1720,5 +1720,12 @@ STORY = {
 		banner:"bnr_ev_map_00048_1_l.webp",
 		id:216
 	},
+	STORYEVENT047:{
+		japName:"対魔忍・オブ・ザ・デッド",
+		engName:null,
+		type:"story",
+		banner:"bnr_ev_story_00047_1_l.webp",
+		id:217
+	},
 }
 
