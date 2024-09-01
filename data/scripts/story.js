@@ -9,6 +9,17 @@ storySelect = {
 	}
 }
 
+const storySelectObserver = new IntersectionObserver(entries => {
+	for(const entry of entries){
+		if(entry.isIntersecting){
+			const elem = entry.target;
+			elem.style.backgroundImage = `url("Story/banner/${elem.getAttribute("lazy")}")`;
+			elem.removeAttribute("lazy");
+			storySelectObserver.unobserve(entry.target);
+		}
+	}
+});
+
 function initStorySelect(){
 	storySelect.elements.section = document.getElementById("story-select-section-select");
 	storySelect.elements.part = document.getElementById("story-select-section-single");
@@ -21,11 +32,27 @@ function initStorySelect(){
 	if(document.getElementById("story-select-chapter-choices").children.length > 0){
 		setChapterChoice(document.getElementById("story-select-chapter-choices").children[0]);
 	}
+
+	if(prefs.scene.eng){
+		storySelect.elements.title.style.fontFamily = "var(--eng-font)";
+	} else {
+		storySelect.elements.title.style.fontFamily = "var(--jp-font)";
+	}
 }
 
 function buildStorySelect(){
 	const chapterChoice = document.getElementById("story-select-chapter-choices");
-	for(chapter of chapterOrder){
+	const observer = new IntersectionObserver(entries => {
+		for(const entry of entries){
+			if(entry.isIntersecting){
+				const elem = entry.target;
+				elem.style.backgroundImage = `url("Story/banner/${elem.getAttribute("lazy")}")`;
+				elem.removeAttribute("lazy");
+				observer.unobserve(entry.target);
+			}
+		}
+	});
+	for(let chapter of chapterOrder){
 		if(chapter == null){
 			continue;
 		}
@@ -35,15 +62,22 @@ function buildStorySelect(){
 		if(chapter.type == "chapter"){
 			let chapNameElem = document.createElement("div");
 			chapNameElem.classList += "chapter-choice-name"
-			chapNameElem.innerText = prefs.scene.eng ? chapter.engName ?? chapter.japName : chapter.japName;
+			if(prefs.scene.eng){
+				chapNameElem.innerText = chapter.engName ?? chapter.japName;
+				chapNameElem.style.fontFamily = "var(--eng-font)";
+			} else {
+				chapNameElem.innerText = chapter.japName;
+				chapNameElem.style.fontFamily = "var(--jp-font)";
+			}
 			let chapNoElem = document.createElement("div");
 			chapNoElem.classList += "chapter-choice-no"
 			chapNoElem.innerText = chapter.chapter
-			base.append(chapNameElem);
-			base.append(chapNoElem);
+			base.append(chapNoElem, chapNameElem);
 			base.classList.add("chapter-choice-main");
 		} else {
-			base.style.backgroundImage = 'url("Story/banner/' + chapter.banner + '")'; 
+			const banner = prefs.scene.eng ? chapter.engBanner ?? chapter.banner : chapter.banner;
+			base.setAttribute("lazy", banner);
+			storySelectObserver.observe(base);
 		}
 		base.setAttribute("storyId", chapter.id);
 		base.setAttribute("storyType", chapter.type);
@@ -51,16 +85,37 @@ function buildStorySelect(){
 	}
 }
 
+/**
+ * Used in prefs.js when Translation status is changed.  
+ * Updates text and banner to correct language.
+ */
 function rebuildStorySelect(){
 	const chapterChoice = document.getElementById("story-select-chapter-choices");
 	for(const child of chapterChoice.children){
+		const chapter = storyData[chapterOrder[Number(child.getAttribute("storyid"))]];
 		if(child.getAttribute("storyType") === "chapter"){
-			const chapter = storyData[chapterOrder[Number(child.getAttribute("storyid"))]];
-			child.children[0].innerText = prefs.scene.eng ? chapter.engName ?? chapter.japName : chapter.japName;
+			const textElem = child.children[1];
+			if(prefs.scene.eng){
+				textElem.innerText = chapter.engName ?? chapter.japName;
+				textElem.style.fontFamily = "var(--eng-font)";
+			} else {
+				textElem.innerText = chapter.japName;
+				textElem.style.fontFamily = "var(--jp-font)";
+			}
+		} else {
+			const banner = prefs.scene.eng ? chapter.engBanner ?? chapter.banner : chapter.banner;
+			child.setAttribute("lazy", banner);
+			storySelectObserver.observe(child);
 		}
 	}
 	const storySelectData = getSelectedStoryData();
-	storySelect.elements.title.innerText = prefs.scene.eng ? storySelectData.engName ?? storySelectData.japName : storySelectData.japName;
+	if(prefs.scene.eng){
+		storySelect.elements.title.innerText = storySelectData.engName ?? storySelectData.japName;
+		storySelect.elements.title.style.fontFamily = "var(--eng-font)";
+	} else {
+		storySelect.elements.title.innerText = storySelectData.japName;
+		storySelect.elements.title.style.fontFamily = "var(--jp-font)";
+	}
 }
 
 function getSelectedStoryData(){
@@ -203,170 +258,183 @@ function unhideElem(elem){
 STORY = {
 	CHAPTER001:{
 		japName:"反乱",
-		engName:null,
+		engName:"Rebellion",
 		type:"chapter",
 		chapter:1,
 		id:0
 	},
 	CHAPTER002:{
 		japName:"独立遊撃隊",
-		engName:null,
+		engName:"Independent Commando Unit",
 		type:"chapter",
 		chapter:2,
 		id:1
 	},
 	CHAPTER003:{
 		japName:"雨の幽霊城",
-		engName:null,
+		engName:"Haunted Castle in the Rain",
 		type:"chapter",
 		chapter:3,
 		id:2
 	},
 	CHAPTER004:{
 		japName:"対魔忍OFF",
-		engName:null,
+		engName:"\"Time\"-anin Off",
 		type:"chapter",
 		chapter:4,
 		id:3
 	},
 	CHAPTER005:{
 		japName:"異次元紀行へようこそ",
-		engName:null,
+		engName:"Welcome to Another Dimension",
 		type:"chapter",
 		chapter:5,
 		id:4
 	},
 	STORYEVENT001:{
 		japName:"雷撃の対魔忍",
-		engName:null,
+		engName:"Lightning Taimanin",
 		type:"story",
 		banner:"bnr_ev_story_00001_1_l.webp",
+		engBanner:"en/bnr_ev_story_00001_1_l.webp",
 		id:5
 	},
 	CHAPTER006:{
 		japName:"蛇にアリーナ",
-		engName:null,
+		engName:"The Snake & the Arena",
 		type:"chapter",
 		chapter:6,
 		id:6
 	},
 	RAIDEVENT001:{
 		japName:"期末テストと最強の対魔忍",
-		engName:null,
+		engName:"Exam Season & the Almighty Taimanin",
 		type:"raid",
 		banner:"bnr_ev_raid_00001_1_l.webp",
+		engBanner:"en/bnr_ev_raid_00001_1_l.webp",
 		id:7
 	},
 	STORYEVENT002:{
 		japName:"幻影の魔女",
-		engName:null,
+		engName:"The Phantom Witch",
 		type:"story",
 		banner:"bnr_ev_story_00002_1_l.webp",
+		engBanner:"en/bnr_ev_story_00002_1_l.webp",
 		id:8
 	},
 	MAPEVENT001:{
 		japName:"忍びの宿命って奴か",
-		engName:null,
+		engName:"The So-Called Fate of the Shinobi",
 		type:"map",
 		banner:"bnr_ev_map_00001_1_l.webp",
+		engBanner:"en/bnr_ev_map_00001_1_l.webp",
 		id:9
 	},
 	CHAPTER007:{
 		japName:"さくらのお小遣い大作戦",
-		engName:null,
+		engName:"Sakura's Pocket Money Mission",
 		type:"chapter",
 		chapter:7,
 		id:10
 	},
 	RAIDEVENT002:{
 		japName:"殺人鬼ソニア",
-		engName:null,
+		engName:"Sonia the Homicidal Maniac",
 		type:"raid",
 		banner:"bnr_ev_raid_00002_1_l.webp",
+		engBanner:"en/bnr_ev_raid_00002_1_l.webp",
 		id:11
 	},
 	CHAPTER008:{
 		japName:"イン・ザ・ダーク",
-		engName:null,
+		engName:"In the Dark",
 		type:"chapter",
 		chapter:8,
 		id:12
 	},
 	MAPEVENT002:{
 		japName:"悪霊とホワイトクリスマス",
-		engName:null,
+		engName:"The Evil Spirit & the White Christmas",
 		type:"map",
 		banner:"bnr_ev_map_00002_1_l.webp",
+		engBanner:"en/bnr_ev_map_00002_1_l.webp",
 		id:13
 	},
 	STORYEVENT003:{
 		japName:"迎春！猪パニック！",
-		engName:null,
+		engName:"New Year! Pig Panic!",
 		type:"story",
 		banner:"bnr_ev_story_00003_1_l.webp",
+		engBanner:"en/bnr_ev_story_00003_1_l.webp",
 		id:14
 	},
 	CHAPTER009:{
 		japName:"迷宮",
-		engName:null,
+		engName:"The Labyrinth",
 		type:"chapter",
 		chapter:9,
 		id:15
 	},
 	RAIDEVENT003:{
 		japName:"操られた爆炎",
-		engName:null,
+		engName:"The Manipulated Explosive Inferno",
 		type:"raid",
 		banner:"bnr_ev_raid_00003_1_l.webp",
+		engBanner:"en/bnr_ev_raid_00003_1_l.webp",
 		id:16
 	},
 	STORYEVENT004:{
 		japName:"対魔忍のバレンタインは厳しい",
-		engName:null,
+		engName:"Valentine's Day Is Tough for Taimanin",
 		type:"story",
 		banner:"bnr_ev_story_00004_1_l.webp",
+		engBanner:"en/bnr_ev_story_00004_1_l.webp",
 		id:17
 	},
 	MAPEVENT003:{
 		japName:"稲毛屋のアイス",
-		engName:null,
+		engName:"Inageya's Ice Cream",
 		type:"map",
 		banner:"bnr_ev_map_00003_1_l.webp",
+		engBanner:"en/bnr_ev_map_00003_1_l.webp",
 		id:18
 	},
 	CHAPTER010:{
 		japName:"ヨミハラ潜入・前編",
-		engName:null,
+		engName:"Infiltrate Yomihara: Part 1",
 		type:"chapter",
 		chapter:10,
 		id:19
 	},
 	RAIDEVENT004:{
 		japName:"錬金術師と狼男",
-		engName:null,
+		engName:"The Alchemist & the Werewolf",
 		type:"raid",
 		banner:"bnr_ev_raid_00004_1_l.webp",
+		engBanner:"en/bnr_ev_raid_00004_1_l.webp",
 		id:20
 	},
 	MAPEVENT004:{
 		japName:"魔界騎士のお仕事",
-		engName:null,
+		engName:"A Devildom Knight's Job",
 		type:"map",
 		banner:"bnr_ev_map_00004_1_l.webp",
+		engBanner:"en/bnr_ev_map_00004_1_l.webp",
 		id:21
 	},
 	CHAPTER011:{
 		japName:"ヨミハラ潜入・後編",
-		engName:null,
+		engName:"Infiltrate Yomihara: Part 2",
 		type:"chapter",
 		chapter:11,
 		id:22
 	},
 	STORYEVENT005:{
 		japName:"沙耶NEOを抹殺せよ",
-		engName:null,
+		engName:"Slay Saya NEO",
 		type:"story",
 		banner:"bnr_ev_story_00005_1_l.webp",
+		engBanner:"en/bnr_ev_story_00005_1_l.webp",
 		id:23
 	},
 	APRILFOOLSEVENT001:{
@@ -374,90 +442,99 @@ STORY = {
 		engName:null,
 		type:"mini",
 		banner:"bnr_ev_mini_00005_1_l.webp",
+		engBanner:null,
 		id:24
 	},
 	RAIDEVENT005:{
 		japName:"リリムとミーティア",
-		engName:null,
+		engName:"Lilim & Metier",
 		type:"raid",
 		banner:"bnr_ev_raid_00005_1_l.webp",
+		engBanner:"en/bnr_ev_raid_00005_1_l.webp",
 		id:25
 	},
 	CHAPTER012:{
 		japName:"魔女出づりて鬼来たる",
-		engName:null,
+		engName:"As Goeth the Witch, so Cometh the Oni",
 		type:"chapter",
 		chapter:12,
 		id:26
 	},
 	MAPEVENT005:{
 		japName:"忘れられた蛇神",
-		engName:null,
+		engName:"The Forgotten Serpent God",
 		type:"map",
 		banner:"bnr_ev_map_00005_1_l.webp",
+		engBanner:"en/bnr_ev_map_00005_1_l.webp",
 		id:27
 	},
 	STORYEVENT006:{
 		japName:"まりの大冒険　闇の町の怪紳士",
-		engName:null,
+		engName:"Mari's Great Adventure: The Odd Gentleman from the City of Darkness",
 		type:"story",
 		banner:"bnr_ev_story_00006_1_l.webp",
+		engBanner:"en/bnr_ev_story_00006_1_l.webp",
 		id:28
 	},
 	CHAPTER013:{
 		japName:"ゆきかぜの家いったことある？",
-		engName:null,
+		engName:"Have You Ever Been to Yukikaze's House?",
 		type:"chapter",
 		chapter:13,
 		id:29
 	},
 	RAIDEVENT006:{
 		japName:"ジューンブライド狂想曲",
-		engName:null,
+		engName:"June Bride Capriccio",
 		type:"raid",
 		banner:"bnr_ev_raid_00006_1_l.webp",
+		engBanner:"en/bnr_ev_raid_00006_1_l.webp",
 		id:30
 	},
 	MAPEVENT006:{
 		japName:"鮮血の椿姫",
-		engName:null,
+		engName:"Blood-Splattered Tsubaki",
 		type:"map",
 		banner:"bnr_ev_map_00006_1_l.webp",
+		engBanner:"en/bnr_ev_map_00006_1_l.webp",
 		id:31
 	},
 	CHAPTER014:{
 		japName:"その名は峰舟子",
-		engName:null,
+		engName:"Her Name Is Mine Funako",
 		type:"chapter",
 		chapter:14,
 		id:32
 	},
 	STORYEVENT007:{
 		japName:"あぶないサマービーチ",
-		engName:null,
+		engName:"The Dangerous Summer Beach",
 		type:"story",
 		banner:"bnr_ev_story_00007_1_l.webp",
+		engBanner:"en/bnr_ev_story_00007_1_l.webp",
 		id:33
 	},
 	RAIDEVENT007:{
 		japName:"毒も過ぎれば薬となる！？",
-		engName:null,
+		engName:"Toxic Enough to Be Medicine!?",
 		type:"raid",
 		banner:"bnr_ev_raid_00007_1_l.webp",
+		engBanner:"en/bnr_ev_raid_00007_1_l.webp",
 		id:34
 	},
 	CHAPTER015:{
 		japName:"五車の夏休み",
-		engName:null,
+		engName:"Gosha Summer Vacation",
 		type:"chapter",
 		chapter:15,
 		id:35
 	},
 	MAPEVENT007:{
 		japName:"楽園の馬超",
-		engName:null,
+		engName:"Ba Chou in Paradise",
 		type:"map",
 		banner:"bnr_ev_map_00007_1_l.webp",
+		engBanner:"en/bnr_ev_map_00007_1_l.webp",
 		id:36
 	},
 	STORYEVENT008:{
@@ -1726,6 +1803,20 @@ STORY = {
 		type:"story",
 		banner:"bnr_ev_story_00047_1_l.webp",
 		id:217
+	},
+	CHAPTER071:{
+		japName:"禍津夜叉髑髏",
+		engName:null,
+		type:"chapter",
+		chapter:71,
+		id:218
+	},
+	RAIDEVENT048:{
+		japName:"Persona",
+		engName:null,
+		type:"raid",
+		banner:"bnr_ev_raid_00048_1_l.webp",
+		id:219
 	},
 }
 
