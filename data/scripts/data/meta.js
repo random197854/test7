@@ -1221,6 +1221,12 @@ var CV = {
         jap: "喜多村英梨",
         japAlias: ["喜多村", "英梨"]
     },
+    INUGAMI_HINATA:{
+        eng: "Inugami Hinata",
+        engAlias: ["Inugami", "Hinata Inugami", "Hinata"],
+        jap: "犬神ひなた",
+        japAlias: ["犬神", "ひなた"]
+    },
     IGNORE:{
         eng: "",
         engAlias: [],
@@ -5424,6 +5430,24 @@ var CHAR = {
             originalCharacter:true,
             artist:ARTIST.HOMURA_YUNI,
             cv:CV.HAZUKI_MAACHI
+        },
+        form:{
+            adult:{
+                name:{
+                    eng:"Adult Minasaki",
+                    engAlias:[],
+                    jap:"大人ミナサキ",
+                    japAlias:[]
+                }
+            },
+            normal:{
+                name:{
+                    eng:"Normal Minasaki",
+                    engAlias:["Young Minasaki"],
+                    jap:"普通ミナサキ",
+                    japAlias:[]
+                },
+            },
         }
     },
     MICHEA_SILKYS:{
@@ -10527,6 +10551,25 @@ var CHAR = {
             originalCharacter:false,
             artist:ARTIST.SATOU_SHOUJI,
             cv:CV.KITAMURA_ERI
+        }
+    },
+    SUMITANI_YUMI:{
+        base:{
+            name:{
+                eng:"Sumitani Yumi",
+                engAlias:["Sumitani", "Yumi Sumitani", "Yumi", "YUMI-SONA"],
+                jap:"澄谷夕美",
+                japAlias:["澄谷", "夕美"]
+            },
+            tags:[
+                TAG.PINK_HAIR, TAG.BLOND_HAIR, TAG.GRADIENT_HAIR,
+                TAG.BLUE_EYES,
+                TAG.BIG_BREASTS, TAG.LIGHT_SKIN
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.KAGAMI_HIROTAKA,
+            cv:CV.INUGAMI_HINATA
         }
     },
 
@@ -29096,6 +29139,86 @@ var SCENE = {
             ],
             male:[],
             location:[],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0671_1":{
+        character:CHAR.MINASAKI,
+        form:"adult",
+        tags:{
+            female:[
+                TAG.BREASTS_OUT, TAG.PANTYLESS,
+                TAG.BREAST_GROPING, TAG.VAGINAL_SEX, TAG.FORCEFUL_BLOWJOB, TAG.DOUBLE_PENIS_PENETRATION, TAG.NAKADASHI, TAG.BUKKAKE, TAG.CUM_IN_MOUTH
+            ],
+            male:[],
+            location:[TAG.OUTSIDE, TAG.SEMI_PUBLIC],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0671_2":{
+        character:[CHAR.MINASAKI, CHAR.FUUMA_KOTAROU],
+        form:["adult", null],
+        tags:{
+            female:[
+                TAG.BREASTS_OUT,
+                TAG.TENTACLE_BONDAGE, TAG.BREAST_INJECTION, TAG.VAGINAL_INJECTION, TAG.VAGINAL_SEX, TAG.ELECTRIC_SHOCKS, TAG.NAKADASHI, TAG.AHEGAO, TAG.DICK_CLEANING_BLOWJOB
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0672_1":{
+        character:[CHAR.SUMITANI_YUMI, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.SCHOOL_UNIFORM, TAG.GLASSES, TAG.BREASTS_OUT, TAG.PANTIES_PUSHED_TO_SIDE, TAG.GARTER_BELT, TAG.THIGH_HIGH_STOCKINGS,
+                TAG.KISSING, TAG.VAGINAL_SEX, TAG.AHEGAO, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.SCHOOL, TAG.SEMI_PUBLIC],
+            misc:[TAG.CUT_IN_XRAY]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0672_2":{
+        character:[CHAR.SUMITANI_YUMI, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT,
+                TAG.BLOWJOB, TAG.CUM_IN_MOUTH, TAG.BUKKAKE, TAG.AHEGAO
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[TAG.NO_SEX]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0673":{
+        character:CHAR.SHIJIMA_MUGI,
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.PANTIES_PUSHED_TO_SIDE, TAG.BREASTS_OUT,
+                TAG.TENTACLE_BONDAGE, TAG.VAGINAL_SEX, TAG.NIPPLE_FUCK, TAG.FORCEFUL_BLOWJOB, TAG.DOUBLE_PENIS_PENETRATION, TAG.NAKADASHI, TAG.CUM_IN_MOUTH
+            ],
+            male:[],
+            location:[TAG.FLESH_ROOM, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0674":{
+        character:CHAR.BRIDGET,
+        tags:{
+            female:[
+                TAG.COMPLETELY_NAKED, TAG.PET_COLLAR,
+                TAG.METAL_BONDAGE, TAG.VAGINAL_SEX, TAG.NAKADASHI, TAG.BLOWJOB, TAG.DOUBLE_PENIS_PENETRATION, TAG.NAKADASHI, TAG.BUKKAKE
+            ],
+            male:[],
+            location:[TAG.PRISON_CELL, TAG.PRIVATE],
             misc:[]
         },
         ignoredCharacterTags:[],
