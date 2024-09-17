@@ -9,6 +9,17 @@ storySelect = {
 	}
 }
 
+const storySelectObserver = new IntersectionObserver(entries => {
+	for(const entry of entries){
+		if(entry.isIntersecting){
+			const elem = entry.target;
+			elem.style.backgroundImage = `url("Story/banner/${elem.getAttribute("lazy")}")`;
+			elem.removeAttribute("lazy");
+			storySelectObserver.unobserve(entry.target);
+		}
+	}
+});
+
 function initStorySelect(){
 	storySelect.elements.section = document.getElementById("story-select-section-select");
 	storySelect.elements.part = document.getElementById("story-select-section-single");
@@ -21,11 +32,27 @@ function initStorySelect(){
 	if(document.getElementById("story-select-chapter-choices").children.length > 0){
 		setChapterChoice(document.getElementById("story-select-chapter-choices").children[0]);
 	}
+
+	if(prefs.scene.eng){
+		storySelect.elements.title.style.fontFamily = "var(--eng-font)";
+	} else {
+		storySelect.elements.title.style.fontFamily = "var(--jp-font)";
+	}
 }
 
 function buildStorySelect(){
 	const chapterChoice = document.getElementById("story-select-chapter-choices");
-	for(chapter of chapterOrder){
+	const observer = new IntersectionObserver(entries => {
+		for(const entry of entries){
+			if(entry.isIntersecting){
+				const elem = entry.target;
+				elem.style.backgroundImage = `url("Story/banner/${elem.getAttribute("lazy")}")`;
+				elem.removeAttribute("lazy");
+				observer.unobserve(entry.target);
+			}
+		}
+	});
+	for(let chapter of chapterOrder){
 		if(chapter == null){
 			continue;
 		}
@@ -35,16 +62,22 @@ function buildStorySelect(){
 		if(chapter.type == "chapter"){
 			let chapNameElem = document.createElement("div");
 			chapNameElem.classList += "chapter-choice-name"
-			chapNameElem.innerText = prefs.scene.eng ? chapter.engName ?? chapter.japName : chapter.japName;
+			if(prefs.scene.eng){
+				chapNameElem.innerText = chapter.engName ?? chapter.japName;
+				chapNameElem.style.fontFamily = "var(--eng-font)";
+			} else {
+				chapNameElem.innerText = chapter.japName;
+				chapNameElem.style.fontFamily = "var(--jp-font)";
+			}
 			let chapNoElem = document.createElement("div");
 			chapNoElem.classList += "chapter-choice-no"
 			chapNoElem.innerText = chapter.chapter
-			base.append(chapNameElem);
-			base.append(chapNoElem);
+			base.append(chapNoElem, chapNameElem);
 			base.classList.add("chapter-choice-main");
 		} else {
-			//base.style.backgroundImage = 'url("Story/banner/' + chapter.banner + '")'; 
-			base.style.backgroundImage = 'url("Story/banner/' + (prefs.scene.eng ? chapter.engBanner ?? chapter.banner : chapter.banner) + '")'; 
+			const banner = prefs.scene.eng ? chapter.engBanner ?? chapter.banner : chapter.banner;
+			base.setAttribute("lazy", banner);
+			storySelectObserver.observe(base);
 		}
 		base.setAttribute("storyId", chapter.id);
 		base.setAttribute("storyType", chapter.type);
@@ -52,16 +85,37 @@ function buildStorySelect(){
 	}
 }
 
+/**
+ * Used in prefs.js when Translation status is changed.  
+ * Updates text and banner to correct language.
+ */
 function rebuildStorySelect(){
 	const chapterChoice = document.getElementById("story-select-chapter-choices");
 	for(const child of chapterChoice.children){
+		const chapter = storyData[chapterOrder[Number(child.getAttribute("storyid"))]];
 		if(child.getAttribute("storyType") === "chapter"){
-			const chapter = storyData[chapterOrder[Number(child.getAttribute("storyid"))]];
-			child.children[0].innerText = prefs.scene.eng ? chapter.engName ?? chapter.japName : chapter.japName;
+			const textElem = child.children[1];
+			if(prefs.scene.eng){
+				textElem.innerText = chapter.engName ?? chapter.japName;
+				textElem.style.fontFamily = "var(--eng-font)";
+			} else {
+				textElem.innerText = chapter.japName;
+				textElem.style.fontFamily = "var(--jp-font)";
+			}
+		} else {
+			const banner = prefs.scene.eng ? chapter.engBanner ?? chapter.banner : chapter.banner;
+			child.setAttribute("lazy", banner);
+			storySelectObserver.observe(child);
 		}
 	}
 	const storySelectData = getSelectedStoryData();
-	storySelect.elements.title.innerText = prefs.scene.eng ? storySelectData.engName ?? storySelectData.japName : storySelectData.japName;
+	if(prefs.scene.eng){
+		storySelect.elements.title.innerText = storySelectData.engName ?? storySelectData.japName;
+		storySelect.elements.title.style.fontFamily = "var(--eng-font)";
+	} else {
+		storySelect.elements.title.innerText = storySelectData.japName;
+		storySelect.elements.title.style.fontFamily = "var(--jp-font)";
+	}
 }
 
 function getSelectedStoryData(){
@@ -242,7 +296,7 @@ STORY = {
 		engName:"Lightning Taimanin",
 		type:"story",
 		banner:"bnr_ev_story_00001_1_l.webp",
-		engBanner:"bnr_ev_story_00001_1_l_eng.webp",
+		engBanner:"en/bnr_ev_story_00001_1_l.webp",
 		id:5
 	},
 	CHAPTER006:{
@@ -257,7 +311,7 @@ STORY = {
 		engName:"Exam Season & the Almighty Taimanin",
 		type:"raid",
 		banner:"bnr_ev_raid_00001_1_l.webp",
-		engBanner:"bnr_ev_raid_00001_1_l_eng.webp",
+		engBanner:"en/bnr_ev_raid_00001_1_l.webp",
 		id:7
 	},
 	STORYEVENT002:{
@@ -265,7 +319,7 @@ STORY = {
 		engName:"The Phantom Witch",
 		type:"story",
 		banner:"bnr_ev_story_00002_1_l.webp",
-		engBanner:"bnr_ev_story_00002_1_l_eng.webp",
+		engBanner:"en/bnr_ev_story_00002_1_l.webp",
 		id:8
 	},
 	MAPEVENT001:{
@@ -273,7 +327,7 @@ STORY = {
 		engName:"The So-Called Fate of the Shinobi",
 		type:"map",
 		banner:"bnr_ev_map_00001_1_l.webp",
-		engBanner:"bnr_ev_map_00001_1_l_eng.webp",
+		engBanner:"en/bnr_ev_map_00001_1_l.webp",
 		id:9
 	},
 	CHAPTER007:{
@@ -288,7 +342,7 @@ STORY = {
 		engName:"Sonia the Homicidal Maniac",
 		type:"raid",
 		banner:"bnr_ev_raid_00002_1_l.webp",
-		engBanner:"bnr_ev_raid_00002_1_l_eng.webp",
+		engBanner:"en/bnr_ev_raid_00002_1_l.webp",
 		id:11
 	},
 	CHAPTER008:{
@@ -303,7 +357,7 @@ STORY = {
 		engName:"The Evil Spirit & the White Christmas",
 		type:"map",
 		banner:"bnr_ev_map_00002_1_l.webp",
-		engBanner:"bnr_ev_map_00002_1_l_eng.webp",
+		engBanner:"en/bnr_ev_map_00002_1_l.webp",
 		id:13
 	},
 	STORYEVENT003:{
@@ -311,7 +365,7 @@ STORY = {
 		engName:"New Year! Pig Panic!",
 		type:"story",
 		banner:"bnr_ev_story_00003_1_l.webp",
-		engBanner:"bnr_ev_story_00003_1_l_eng.webp",
+		engBanner:"en/bnr_ev_story_00003_1_l.webp",
 		id:14
 	},
 	CHAPTER009:{
@@ -326,7 +380,7 @@ STORY = {
 		engName:"The Manipulated Explosive Inferno",
 		type:"raid",
 		banner:"bnr_ev_raid_00003_1_l.webp",
-		engBanner:"bnr_ev_raid_00003_1_l_eng.webp",
+		engBanner:"en/bnr_ev_raid_00003_1_l.webp",
 		id:16
 	},
 	STORYEVENT004:{
@@ -334,7 +388,7 @@ STORY = {
 		engName:"Valentine's Day Is Tough for Taimanin",
 		type:"story",
 		banner:"bnr_ev_story_00004_1_l.webp",
-		engBanner:"bnr_ev_story_00004_1_l_eng.webp",
+		engBanner:"en/bnr_ev_story_00004_1_l.webp",
 		id:17
 	},
 	MAPEVENT003:{
@@ -342,7 +396,7 @@ STORY = {
 		engName:"Inageya's Ice Cream",
 		type:"map",
 		banner:"bnr_ev_map_00003_1_l.webp",
-		engBanner:"bnr_ev_map_00003_1_l_eng.webp",
+		engBanner:"en/bnr_ev_map_00003_1_l.webp",
 		id:18
 	},
 	CHAPTER010:{
@@ -357,7 +411,7 @@ STORY = {
 		engName:"The Alchemist & the Werewolf",
 		type:"raid",
 		banner:"bnr_ev_raid_00004_1_l.webp",
-		engBanner:"bnr_ev_raid_00004_1_l_eng.webp",
+		engBanner:"en/bnr_ev_raid_00004_1_l.webp",
 		id:20
 	},
 	MAPEVENT004:{
@@ -365,7 +419,7 @@ STORY = {
 		engName:"A Devildom Knight's Job",
 		type:"map",
 		banner:"bnr_ev_map_00004_1_l.webp",
-		engBanner:"bnr_ev_map_00004_1_l_eng.webp",
+		engBanner:"en/bnr_ev_map_00004_1_l.webp",
 		id:21
 	},
 	CHAPTER011:{
@@ -380,7 +434,7 @@ STORY = {
 		engName:"Slay Saya NEO",
 		type:"story",
 		banner:"bnr_ev_story_00005_1_l.webp",
-		engBanner:"bnr_ev_story_00005_1_l_eng.webp",
+		engBanner:"en/bnr_ev_story_00005_1_l.webp",
 		id:23
 	},
 	APRILFOOLSEVENT001:{
@@ -396,7 +450,7 @@ STORY = {
 		engName:"Lilim & Metier",
 		type:"raid",
 		banner:"bnr_ev_raid_00005_1_l.webp",
-		engBanner:"bnr_ev_raid_00005_1_l_eng.webp",
+		engBanner:"en/bnr_ev_raid_00005_1_l.webp",
 		id:25
 	},
 	CHAPTER012:{
@@ -411,7 +465,7 @@ STORY = {
 		engName:"The Forgotten Serpent God",
 		type:"map",
 		banner:"bnr_ev_map_00005_1_l.webp",
-		engBanner:"bnr_ev_map_00005_1_l_eng.webp",
+		engBanner:"en/bnr_ev_map_00005_1_l.webp",
 		id:27
 	},
 	STORYEVENT006:{
@@ -419,7 +473,7 @@ STORY = {
 		engName:"Mari's Great Adventure: The Odd Gentleman from the City of Darkness",
 		type:"story",
 		banner:"bnr_ev_story_00006_1_l.webp",
-		engBanner:"bnr_ev_story_00006_1_l_eng.webp",
+		engBanner:"en/bnr_ev_story_00006_1_l.webp",
 		id:28
 	},
 	CHAPTER013:{
@@ -434,7 +488,7 @@ STORY = {
 		engName:"June Bride Capriccio",
 		type:"raid",
 		banner:"bnr_ev_raid_00006_1_l.webp",
-		engBanner:"bnr_ev_raid_00006_1_l_eng.webp",
+		engBanner:"en/bnr_ev_raid_00006_1_l.webp",
 		id:30
 	},
 	MAPEVENT006:{
@@ -442,7 +496,7 @@ STORY = {
 		engName:"Blood-Splattered Tsubaki",
 		type:"map",
 		banner:"bnr_ev_map_00006_1_l.webp",
-		engBanner:"bnr_ev_map_00006_1_l_eng.webp",
+		engBanner:"en/bnr_ev_map_00006_1_l.webp",
 		id:31
 	},
 	CHAPTER014:{
@@ -457,7 +511,7 @@ STORY = {
 		engName:"The Dangerous Summer Beach",
 		type:"story",
 		banner:"bnr_ev_story_00007_1_l.webp",
-		engBanner:"bnr_ev_story_00007_1_l_eng.webp",
+		engBanner:"en/bnr_ev_story_00007_1_l.webp",
 		id:33
 	},
 	RAIDEVENT007:{
@@ -465,7 +519,7 @@ STORY = {
 		engName:"Toxic Enough to Be Medicine!?",
 		type:"raid",
 		banner:"bnr_ev_raid_00007_1_l.webp",
-		engBanner:"bnr_ev_raid_00007_1_l_eng.webp",
+		engBanner:"en/bnr_ev_raid_00007_1_l.webp",
 		id:34
 	},
 	CHAPTER015:{
@@ -480,7 +534,7 @@ STORY = {
 		engName:"Ba Chou in Paradise",
 		type:"map",
 		banner:"bnr_ev_map_00007_1_l.webp",
-		engBanner:"bnr_ev_map_00007_1_l_eng.webp",
+		engBanner:"en/bnr_ev_map_00007_1_l.webp",
 		id:36
 	},
 	STORYEVENT008:{
@@ -488,12 +542,11 @@ STORY = {
 		engName:null,
 		type:"story",
 		banner:"bnr_ev_story_00008_1_l.webp",
-		engBanner:null,
 		id:37
 	},
 	CHAPTER016:{
 		japName:"忘れられた書斎",
-		engName:"The Forgotten Study",
+		engName:null,
 		type:"chapter",
 		chapter:16,
 		id:38
@@ -503,7 +556,6 @@ STORY = {
 		engName:null,
 		type:"raid",
 		banner:"bnr_ev_raid_00008_1_l.webp",
-		engBanner:null,
 		id:39
 	},
 	MAPEVENT008:{
@@ -511,12 +563,11 @@ STORY = {
 		engName:null,
 		type:"map",
 		banner:"bnr_ev_map_00008_1_l.webp",
-		engBanner:null,
 		id:40
 	},
 	CHAPTER017:{
 		japName:"AD2068",
-		engName:"AD2068",
+		engName:null,
 		type:"chapter",
 		chapter:17,
 		id:41
@@ -526,7 +577,6 @@ STORY = {
 		engName:null,
 		type:"story",
 		banner:"bnr_ev_story_00009_1_l.webp",
-		engBanner:null,
 		id:42
 	},
 	RAIDEVENT009:{
@@ -534,7 +584,6 @@ STORY = {
 		engName:null,
 		type:"raid",
 		banner:"bnr_ev_raid_00009_1_l.webp",
-		engBanner:null,
 		id:43
 	},
 	CHAPTER018:{
@@ -549,7 +598,6 @@ STORY = {
 		engName:null,
 		type:"map",
 		banner:"bnr_ev_map_00009_1_l.webp",
-		engBanner:null,
 		id:45
 	},
 	RAIDEVENT010:{
@@ -557,7 +605,6 @@ STORY = {
 		engName:null,
 		type:"raid",
 		banner:"bnr_ev_raid_00010_1_l.webp",
-		engBanner:null,
 		id:46
 	},
 	CHAPTER019:{
@@ -572,7 +619,6 @@ STORY = {
 		engName:null,
 		type:"story",
 		banner:"bnr_ev_story_00010_1_l.webp",
-		engBanner:null,
 		id:48
 	},
 	MAPEVENT010:{
@@ -580,7 +626,6 @@ STORY = {
 		engName:null,
 		type:"map",
 		banner:"bnr_ev_map_00010_1_l.webp",
-		engBanner:null,
 		id:49
 	},
 	RAIDEVENT011:{
@@ -588,7 +633,6 @@ STORY = {
 		engName:null,
 		type:"raid",
 		banner:"bnr_ev_raid_00011_1_l.webp",
-		engBanner:null,
 		id:50
 	},
 	STORYEVENT011:{
@@ -596,7 +640,6 @@ STORY = {
 		engName:null,
 		type:"story",
 		banner:"bnr_ev_story_00011_1_l.webp",
-		engBanner:null,
 		id:51
 	},
 	CHAPTER020:{
@@ -611,7 +654,6 @@ STORY = {
 		engName:null,
 		type:"map",
 		banner:"bnr_ev_map_00011_1_l.webp",
-		engBanner:null,
 		id:53
 	},
 	RAIDEVENT012:{
@@ -619,7 +661,6 @@ STORY = {
 		engName:null,
 		type:"raid",
 		banner:"bnr_ev_raid_00012_1_l.webp",
-		engBanner:null,
 		id:54
 	},
 	CHAPTER021:{
@@ -634,7 +675,6 @@ STORY = {
 		engName:null,
 		type:"story",
 		banner:"bnr_ev_story_00012_1_l.webp",
-		engBanner:null,
 		id:56
 	},
 	MAPEVENT012:{
@@ -642,7 +682,6 @@ STORY = {
 		engName:null,
 		type:"map",
 		banner:"bnr_ev_map_00012_1_l.webp",
-		engBanner:null,
 		id:57
 	},
 	CHAPTER022:{
@@ -657,7 +696,6 @@ STORY = {
 		engName:null,
 		type:"raid",
 		banner:"bnr_ev_raid_00013_1_l.webp",
-		engBanner:null,
 		id:59
 	},
 	APRILFOOLSEVENT002:{
@@ -665,7 +703,6 @@ STORY = {
 		engName:null,
 		type:"mini2",
 		banner:"bnr_campaign_00011_l.webp",
-		engBanner:null,
 		id:60
 	},
 	STORYEVENT013:{
@@ -673,7 +710,6 @@ STORY = {
 		engName:null,
 		type:"story",
 		banner:"bnr_ev_story_00013_1_l.webp",
-		engBanner:null,
 		id:61
 	},
 	CHAPTER023:{
@@ -688,7 +724,6 @@ STORY = {
 		engName:null,
 		type:"map",
 		banner:"bnr_ev_map_00013_1_l.webp",
-		engBanner:null,
 		id:63
 	},
 	RAIDEVENT014:{
@@ -696,7 +731,6 @@ STORY = {
 		engName:null,
 		type:"raid",
 		banner:"bnr_ev_raid_00014_1_l.webp",
-		engBanner:null,
 		id:64
 	},
 	CHAPTER024:{
@@ -711,7 +745,6 @@ STORY = {
 		engName:null,
 		type:"story",
 		banner:"bnr_ev_story_00014_1_l.webp",
-		engBanner:null,
 		id:66
 	},
 	MAPEVENT014:{
@@ -719,7 +752,6 @@ STORY = {
 		engName:null,
 		type:"map",
 		banner:"bnr_ev_map_00014_1_l.webp",
-		engBanner:null,
 		id:67
 	},
 	CHAPTER025:{
@@ -734,7 +766,6 @@ STORY = {
 		engName:null,
 		type:"raid",
 		banner:"bnr_ev_raid_00015_1_l.webp",
-		engBanner:null,
 		id:69
 	},
 	STORYEVENT015:{
@@ -742,7 +773,6 @@ STORY = {
 		engName:null,
 		type:"story",
 		banner:"bnr_ev_story_00015_1_l.webp",
-		engBanner:null,
 		id:70
 	},
 	CHAPTER026:{
@@ -757,7 +787,6 @@ STORY = {
 		engName:null,
 		type:"map",
 		banner:"bnr_ev_map_00015_1_l.webp",
-		engBanner:null,
 		id:72
 	},
 	RAIDEVENT016:{
@@ -765,7 +794,6 @@ STORY = {
 		engName:null,
 		type:"raid",
 		banner:"bnr_ev_raid_00016_1_l.webp",
-		engBanner:null,
 		id:73
 	},
 	CHAPTER027:{
@@ -780,7 +808,6 @@ STORY = {
 		engName:null,
 		type:"story",
 		banner:"bnr_ev_story_00016_1_l.webp",
-		engBanner:null,
 		id:75
 	},
 	MAPEVENT016:{
@@ -788,7 +815,6 @@ STORY = {
 		engName:null,
 		type:"map",
 		banner:"bnr_ev_map_00016_1_l.webp",
-		engBanner:null,
 		id:76
 	},
 	CHAPTER028:{
@@ -803,7 +829,6 @@ STORY = {
 		engName:null,
 		type:"raid",
 		banner:"bnr_ev_raid_00017_1_l.webp",
-		engBanner:null,
 		id:78
 	},
 	STORYEVENT017:{
@@ -811,7 +836,6 @@ STORY = {
 		engName:null,
 		type:"story",
 		banner:"bnr_ev_story_00017_1_l.webp",
-		engBanner:null,
 		id:79
 	},
 	CHAPTER029:{
@@ -826,7 +850,6 @@ STORY = {
 		engName:null,
 		type:"map",
 		banner:"bnr_ev_map_00017_1_l.webp",
-		engBanner:null,
 		id:81
 	},
 	STORYEVENT018:{
@@ -834,7 +857,6 @@ STORY = {
 		engName:null,
 		type:"story",
 		banner:"bnr_ev_story_00018_1_l.webp",
-		engBanner:null,
 		id:82
 	},
 	CHAPTER030:{
@@ -849,7 +871,6 @@ STORY = {
 		engName:null,
 		type:"map",
 		banner:"bnr_ev_map_00018_1_l.webp",
-		engBanner:null,
 		id:84
 	},
 	RAIDEVENT018:{
@@ -857,7 +878,6 @@ STORY = {
 		engName:null,
 		type:"raid",
 		banner:"bnr_ev_raid_00018_1_l.webp",
-		engBanner:null,
 		id:85
 	},
 	CHAPTER031:{
@@ -872,7 +892,6 @@ STORY = {
 		engName:null,
 		type:"story",
 		banner:"bnr_ev_story_00019_1_l.webp",
-		engBanner:null,
 		id:87
 	},
 	MAPEVENT019:{
@@ -880,7 +899,6 @@ STORY = {
 		engName:null,
 		type:"map",
 		banner:"bnr_ev_map_00019_1_l.webp",
-		engBanner:null,
 		id:88
 	},
 	CHAPTER032:{
@@ -895,7 +913,6 @@ STORY = {
 		engName:null,
 		type:"raid",
 		banner:"bnr_ev_raid_00019_1_l.webp",
-		engBanner:null,
 		id:90
 	},
 	STORYEVENT020:{
@@ -903,7 +920,6 @@ STORY = {
 		engName:null,
 		type:"story",
 		banner:"bnr_ev_story_00020_1_l.webp",
-		engBanner:null,
 		id:91
 	},
 	CHAPTER033:{
@@ -918,7 +934,6 @@ STORY = {
 		engName:null,
 		type:"map",
 		banner:"bnr_ev_map_00020_1_l.webp",
-		engBanner:null,
 		id:93
 	},
 	RAIDEVENT020:{
@@ -926,7 +941,6 @@ STORY = {
 		engName:null,
 		type:"raid",
 		banner:"bnr_ev_raid_00020_1_l.webp",
-		engBanner:null,
 		id:94
 	},
 	CHAPTER034:{
@@ -941,7 +955,6 @@ STORY = {
 		engName:null,
 		type:"story",
 		banner:"bnr_ev_story_00021_1_l.webp",
-		engBanner:null,
 		id:96
 	},
 	APRILFOOLSEVENT003:{
@@ -949,7 +962,6 @@ STORY = {
 		engName:null,
 		type:"mini",
 		banner:"bnr_ev_run_00001_l.webp",
-		engBanner:null,
 		id:97
 	},
 	MAPEVENT021:{
@@ -957,7 +969,6 @@ STORY = {
 		engName:null,
 		type:"map",
 		banner:"bnr_ev_map_00021_1_l.webp",
-		engBanner:null,
 		id:98
 	},
 	CHAPTER035:{
@@ -972,7 +983,6 @@ STORY = {
 		engName:null,
 		type:"raid",
 		banner:"bnr_ev_raid_00021_1_l.webp",
-		engBanner:null,
 		id:100
 	},
 	STORYEVENT022:{
@@ -980,7 +990,6 @@ STORY = {
 		engName:null,
 		type:"story",
 		banner:"bnr_ev_story_00022_1_l.webp",
-		engBanner:null,
 		id:101
 	},
 	CHAPTER036:{
@@ -995,7 +1004,6 @@ STORY = {
 		engName:null,
 		type:"map",
 		banner:"bnr_ev_map_00022_1_l.webp",
-		engBanner:null,
 		id:103
 	},
 	RAIDEVENT022:{
@@ -1003,7 +1011,6 @@ STORY = {
 		engName:null,
 		type:"raid",
 		banner:"bnr_ev_raid_00022_1_l.webp",
-		engBanner:null,
 		id:104
 	},
 	CHAPTER037:{
@@ -1018,7 +1025,6 @@ STORY = {
 		engName:null,
 		type:"story",
 		banner:"bnr_ev_story_00023_1_l.webp",
-		engBanner:null,
 		id:106
 	},
 	MAPEVENT023:{
@@ -1026,7 +1032,6 @@ STORY = {
 		engName:null,
 		type:"map",
 		banner:"bnr_ev_map_00023_1_l.webp",
-		engBanner:null,
 		id:107
 	},
 	CHAPTER038:{
@@ -1041,7 +1046,6 @@ STORY = {
 		engName:null,
 		type:"raid",
 		banner:"bnr_ev_raid_00023_1_l.webp",
-		engBanner:null,
 		id:109
 	},
 	STORYEVENT024:{
@@ -1049,7 +1053,6 @@ STORY = {
 		engName:null,
 		type:"story",
 		banner:"bnr_ev_story_00024_1_l.webp",
-		engBanner:null,
 		id:110
 	},
 	CHAPTER039:{
@@ -1064,7 +1067,6 @@ STORY = {
 		engName:null,
 		type:"map",
 		banner:"bnr_ev_map_00024_1_l.webp",
-		engBanner:null,
 		id:112
 	},
 	RAIDEVENT024:{
@@ -1072,7 +1074,6 @@ STORY = {
 		engName:null,
 		type:"raid",
 		banner:"bnr_ev_raid_00024_1_l.webp",
-		engBanner:null,
 		id:113
 	},
 	CHAPTER040:{
@@ -1087,7 +1088,6 @@ STORY = {
 		engName:null,
 		type:"story",
 		banner:"bnr_ev_story_00025_1_l.webp",
-		engBanner:null,
 		id:115
 	},
 	MAPEVENT025:{
@@ -1095,7 +1095,6 @@ STORY = {
 		engName:null,
 		type:"map",
 		banner:"bnr_ev_map_00025_1_l.webp",
-		engBanner:null,
 		id:116
 	},
 	CHAPTER041:{
@@ -1110,7 +1109,6 @@ STORY = {
 		engName:null,
 		type:"raid",
 		banner:"bnr_ev_raid_00025_1_l.webp",
-		engBanner:null,
 		id:118
 	},
 	MAPEVENT026:{
@@ -1118,7 +1116,6 @@ STORY = {
 		engName:null,
 		type:"map",
 		banner:"bnr_ev_map_00026_1_l.webp",
-		engBanner:null,
 		id:119
 	},
 	CHAPTER042:{
@@ -1133,7 +1130,6 @@ STORY = {
 		engName:null,
 		type:"story",
 		banner:"bnr_ev_story_00026_1_l.webp",
-		engBanner:null,
 		id:121
 	},
 	RAIDEVENT026:{
@@ -1141,7 +1137,6 @@ STORY = {
 		engName:null,
 		type:"raid",
 		banner:"bnr_ev_raid_00026_1_l.webp",
-		engBanner:null,
 		id:122
 	},
 	CHAPTER043:{
@@ -1156,7 +1151,6 @@ STORY = {
 		engName:null,
 		type:"map",
 		banner:"bnr_ev_map_00027_1_l.webp",
-		engBanner:null,
 		id:124
 	},
 	RAIDEVENT027:{
@@ -1164,7 +1158,6 @@ STORY = {
 		engName:null,
 		type:"raid",
 		banner:"bnr_ev_raid_00027_1_l.webp",
-		engBanner:null,
 		id:125
 	},
 	CHAPTER044:{
@@ -1179,7 +1172,6 @@ STORY = {
 		engName:null,
 		type:"story",
 		banner:"bnr_ev_story_00027_1_l.webp",
-		engBanner:null,
 		id:127
 	},
 	MAPEVENT028:{
@@ -1187,7 +1179,6 @@ STORY = {
 		engName:null,
 		type:"map",
 		banner:"bnr_ev_map_00028_1_l.webp",
-		engBanner:null,
 		id:128
 	},
 	CHAPTER045:{
@@ -1202,7 +1193,6 @@ STORY = {
 		engName:null,
 		type:"raid",
 		banner:"bnr_ev_raid_00028_1_l.webp",
-		engBanner:null,
 		id:130
 	},
 	STORYEVENT028:{
@@ -1210,7 +1200,6 @@ STORY = {
 		engName:null,
 		type:"story",
 		banner:"bnr_ev_story_00028_1_l.webp",
-		engBanner:null,
 		id:131
 	},
 	CHAPTER046:{
@@ -1225,7 +1214,6 @@ STORY = {
 		engName:null,
 		type:"map",
 		banner:"bnr_ev_map_00029_1_l.webp",
-		engBanner:null,
 		id:133
 	},
 	APRILFOOLSEVENT004:{
@@ -1233,7 +1221,6 @@ STORY = {
 		engName:null,
 		type:"mini",
 		banner:"bnr_ev_april_00001_3_l.webp",
-		engBanner:null,
 		id:134
 	},
 	RAIDEVENT029:{
@@ -1241,7 +1228,6 @@ STORY = {
 		engName:null,
 		type:"raid",
 		banner:"bnr_ev_raid_00029_1_l.webp",
-		engBanner:null,
 		id:135
 	},
 	CHAPTER047:{
@@ -1256,7 +1242,6 @@ STORY = {
 		engName:null,
 		type:"story",
 		banner:"bnr_ev_story_00029_1_l.webp",
-		engBanner:null,
 		id:137
 	},
 	MAPEVENT030:{
@@ -1264,7 +1249,6 @@ STORY = {
 		engName:null,
 		type:"map",
 		banner:"bnr_ev_map_00030_1_l.webp",
-		engBanner:null,
 		id:138
 	},
 	CHAPTER048:{
@@ -1279,7 +1263,6 @@ STORY = {
 		engName:null,
 		type:"raid",
 		banner:"bnr_ev_raid_00030_1_l.webp",
-		engBanner:null,
 		id:140
 	},
 	STORYEVENT030:{
@@ -1287,7 +1270,6 @@ STORY = {
 		engName:null,
 		type:"story",
 		banner:"bnr_ev_story_00030_1_l.webp",
-		engBanner:null,
 		id:141
 	},
 	MAPEVENT031:{
@@ -1295,7 +1277,6 @@ STORY = {
 		engName:null,
 		type:"map",
 		banner:"bnr_ev_map_00031_1_l.webp",
-		engBanner:null,
 		id:142
 	},
 	RAIDEVENT031:{
@@ -1303,7 +1284,6 @@ STORY = {
 		engName:null,
 		type:"raid",
 		banner:"bnr_ev_raid_00031_1_l.webp",
-		engBanner:null,
 		id:143
 	},
 	CHAPTER049:{
@@ -1318,7 +1298,6 @@ STORY = {
 		engName:null,
 		type:"story",
 		banner:"bnr_ev_story_00031_1_l.webp",
-		engBanner:null,
 		id:145
 	},
 	MAPEVENT032:{
@@ -1326,7 +1305,6 @@ STORY = {
 		engName:null,
 		type:"map",
 		banner:"bnr_ev_map_00032_1_l.webp",
-		engBanner:null,
 		id:146
 	},
 	CHAPTER050:{
@@ -1341,7 +1319,6 @@ STORY = {
 		engName:null,
 		type:"raid",
 		banner:"bnr_ev_raid_00032_1_l.webp",
-		engBanner:null,
 		id:148
 	},
 	STORYEVENT032:{
@@ -1349,7 +1326,6 @@ STORY = {
 		engName:null,
 		type:"story",
 		banner:"bnr_ev_story_00032_1_l.webp",
-		engBanner:null,
 		id:149
 	},
 	CHAPTER051:{
@@ -1364,7 +1340,6 @@ STORY = {
 		engName:null,
 		type:"map",
 		banner:"bnr_ev_map_00033_1_l.webp",
-		engBanner:null,
 		id:151
 	},
 	RAIDEVENT033:{
@@ -1372,7 +1347,6 @@ STORY = {
 		engName:null,
 		type:"raid",
 		banner:"bnr_ev_raid_00033_1_l.webp",
-		engBanner:null,
 		id:152
 	},
 	CHAPTER052:{
@@ -1387,7 +1361,6 @@ STORY = {
 		engName:null,
 		type:"story",
 		banner:"bnr_ev_story_00033_1_l.webp",
-		engBanner:null,
 		id:154
 	},
 	MAPEVENT034:{
@@ -1395,7 +1368,6 @@ STORY = {
 		engName:null,
 		type:"map",
 		banner:"bnr_ev_map_00034_1_l.webp",
-		engBanner:null,
 		id:155
 	},
 	CHAPTER053:{
@@ -1410,7 +1382,6 @@ STORY = {
 		engName:null,
 		type:"raid",
 		banner:"bnr_ev_raid_00034_1_l.webp",
-		engBanner:null,
 		id:157
 	},
 	STORYEVENT034:{
@@ -1418,7 +1389,6 @@ STORY = {
 		engName:null,
 		type:"story",
 		banner:"bnr_ev_story_00034_1_l.webp",
-		engBanner:null,
 		id:158
 	},
 	CHAPTER054:{
@@ -1433,7 +1403,6 @@ STORY = {
 		engName:null,
 		type:"map",
 		banner:"bnr_ev_map_00035_1_l.webp",
-		engBanner:null,
 		id:160
 	},
 	STORYEVENT035:{
@@ -1441,7 +1410,6 @@ STORY = {
 		engName:null,
 		type:"story",
 		banner:"bnr_ev_story_00035_1_l.webp",
-		engBanner:null,
 		id:161
 	},
 	RAIDEVENT035:{
@@ -1449,7 +1417,6 @@ STORY = {
 		engName:null,
 		type:"raid",
 		banner:"bnr_ev_raid_00035_1_l.webp",
-		engBanner:null,
 		id:162
 	},
 	MAPEVENT036:{
@@ -1457,7 +1424,6 @@ STORY = {
 		engName:null,
 		type:"map",
 		banner:"bnr_ev_map_00036_1_l.webp",
-		engBanner:null,
 		id:163
 	},
 	CHAPTER055:{
@@ -1472,7 +1438,6 @@ STORY = {
 		engName:null,
 		type:"raid",
 		banner:"bnr_ev_raid_00036_1_l.webp",
-		engBanner:null,
 		id:165
 	},
 	STORYEVENT036:{
@@ -1480,7 +1445,6 @@ STORY = {
 		engName:null,
 		type:"story",
 		banner:"bnr_ev_story_00036_1_l.webp",
-		engBanner:null,
 		id:166
 	},
 	CHAPTER056:{
@@ -1495,7 +1459,6 @@ STORY = {
 		engName:null,
 		type:"map",
 		banner:"bnr_ev_map_00037_1_l.webp",
-		engBanner:null,
 		id:168
 	},
 	APRILFOOLSEVENT005:{
@@ -1503,7 +1466,6 @@ STORY = {
 		engName:null,
 		type:"mini",
 		banner:"bnr_ev_april_00002_1_l.webp",
-		engBanner:null,
 		id:169
 	},
 	RAIDEVENT037:{
@@ -1511,7 +1473,6 @@ STORY = {
 		engName:null,
 		type:"raid",
 		banner:"bnr_ev_raid_00037_1_l.webp",
-		engBanner:null,
 		id:170
 	},
 	CHAPTER057:{
@@ -1526,7 +1487,6 @@ STORY = {
 		engName:null,
 		type:"story",
 		banner:"bnr_ev_story_00037_1_l.webp",
-		engBanner:null,
 		id:172
 	},
 	MAPEVENT038:{
@@ -1534,7 +1494,6 @@ STORY = {
 		engName:null,
 		type:"map",
 		banner:"bnr_ev_map_00038_1_l.webp",
-		engBanner:null,
 		id:173
 	},
 	CHAPTER058:{
@@ -1549,7 +1508,6 @@ STORY = {
 		engName:null,
 		type:"raid",
 		banner:"bnr_ev_raid_00038_1_l.webp",
-		engBanner:null,
 		id:175
 	},
 	STORYEVENT038:{
@@ -1557,7 +1515,6 @@ STORY = {
 		engName:null,
 		type:"story",
 		banner:"bnr_ev_story_00038_1_l.webp",
-		engBanner:null,
 		id:176
 	},
 	CHAPTER059:{
@@ -1572,7 +1529,6 @@ STORY = {
 		engName:null,
 		type:"map",
 		banner:"bnr_ev_map_00039_1_l.webp",
-		engBanner:null,
 		id:178
 	},
 	RAIDEVENT039:{
@@ -1580,7 +1536,6 @@ STORY = {
 		engName:null,
 		type:"raid",
 		banner:"bnr_ev_raid_00039_1_l.webp",
-		engBanner:null,
 		id:179
 	},
 	CHAPTER060:{
@@ -1595,7 +1550,6 @@ STORY = {
 		engName:null,
 		type:"map",
 		banner:"bnr_ev_map_00040_1_l.webp",
-		engBanner:null,
 		id:181
 	},
 	STORYEVENT039:{
@@ -1603,7 +1557,6 @@ STORY = {
 		engName:null,
 		type:"story",
 		banner:"bnr_ev_story_00039_1_l.webp",
-		engBanner:null,
 		id:182
 	},
 	CHAPTER061:{
@@ -1618,7 +1571,6 @@ STORY = {
 		engName:null,
 		type:"raid",
 		banner:"bnr_ev_raid_00040_1_l.webp",
-		engBanner:null,
 		id:184
 	},
 	STORYEVENT040:{
@@ -1626,7 +1578,6 @@ STORY = {
 		engName:null,
 		type:"story",
 		banner:"bnr_ev_story_00040_1_l.webp",
-		engBanner:null,
 		id:185
 	},
 	CHAPTER062:{
@@ -1641,7 +1592,6 @@ STORY = {
 		engName:null,
 		type:"map",
 		banner:"bnr_ev_map_00041_1_l.webp",
-		engBanner:null,
 		id:187
 	},
 	RAIDEVENT041:{
@@ -1649,7 +1599,6 @@ STORY = {
 		engName:null,
 		type:"raid",
 		banner:"bnr_ev_raid_00041_1_l.webp",
-		engBanner:null,
 		id:188
 	},
 	CHAPTER063:{
@@ -1664,7 +1613,6 @@ STORY = {
 		engName:null,
 		type:"map",
 		banner:"bnr_ev_map_00042_1_l.webp",
-		engBanner:null,
 		id:190
 	},
 	STORYEVENT041:{
@@ -1672,7 +1620,6 @@ STORY = {
 		engName:null,
 		type:"story",
 		banner:"bnr_ev_story_00041_1_l.webp",
-		engBanner:null,
 		id:191
 	},
 	CHAPTER064:{
@@ -1687,7 +1634,6 @@ STORY = {
 		engName:null,
 		type:"raid",
 		banner:"bnr_ev_raid_00042_1_l.webp",
-		engBanner:null,
 		id:193
 	},
 	STORYEVENT042:{
@@ -1695,7 +1641,6 @@ STORY = {
 		engName:null,
 		type:"story",
 		banner:"bnr_ev_story_00042_1_l.webp",
-		engBanner:null,
 		id:194
 	},
 	CHAPTER065:{
@@ -1710,7 +1655,6 @@ STORY = {
 		engName:null,
 		type:"map",
 		banner:"bnr_ev_map_00043_1_l.webp",
-		engBanner:null,
 		id:196
 	},
 	RAIDEVENT043:{
@@ -1718,7 +1662,6 @@ STORY = {
 		engName:null,
 		type:"raid",
 		banner:"bnr_ev_raid_00043_1_l.webp",
-		engBanner:null,
 		id:197
 	},
 	STORYEVENT043:{
@@ -1726,7 +1669,6 @@ STORY = {
 		engName:null,
 		type:"story",
 		banner:"bnr_ev_story_00043_1_l.webp",
-		engBanner:null,
 		id:198
 	},
 	MAPEVENT044:{
@@ -1734,7 +1676,6 @@ STORY = {
 		engName:null,
 		type:"map",
 		banner:"bnr_ev_map_00044_1_l.webp",
-		engBanner:null,
 		id:199
 	},
 	CHAPTER066:{
@@ -1749,7 +1690,6 @@ STORY = {
 		engName:null,
 		type:"raid",
 		banner:"bnr_ev_raid_00044_1_l.webp",
-		engBanner:null,
 		id:201
 	},
 	STORYEVENT044:{
@@ -1757,7 +1697,6 @@ STORY = {
 		engName:null,
 		type:"story",
 		banner:"bnr_ev_story_00044_1_l.webp",
-		engBanner:null,
 		id:202
 	},
 	CHAPTER067:{
@@ -1772,7 +1711,6 @@ STORY = {
 		engName:null,
 		type:"map",
 		banner:"bnr_ev_map_00045_1_l.webp",
-		engBanner:null,
 		id:204
 	},
 	APRILFOOLSEVENT006:{
@@ -1780,7 +1718,6 @@ STORY = {
 		engName:null,
 		type:"mini",
 		banner:"bnr_ev_april_00003_1_l.webp",
-		engBanner:null,
 		id:205
 	},
 	RAIDEVENT045:{
@@ -1788,7 +1725,6 @@ STORY = {
 		engName:null,
 		type:"raid",
 		banner:"bnr_ev_raid_00045_1_l.webp",
-		engBanner:null,
 		id:206
 	},
 	CHAPTER068:{
@@ -1803,7 +1739,6 @@ STORY = {
 		engName:null,
 		type:"story",
 		banner:"bnr_ev_story_00045_1_l.webp",
-		engBanner:null,
 		id:208
 	},
 	MAPEVENT046:{
@@ -1811,7 +1746,6 @@ STORY = {
 		engName:null,
 		type:"map",
 		banner:"bnr_ev_map_00046_1_l.webp",
-		engBanner:null,
 		id:209
 	},
 	CHAPTER069:{
@@ -1826,7 +1760,6 @@ STORY = {
 		engName:null,
 		type:"raid",
 		banner:"bnr_ev_raid_00046_1_l.webp",
-		engBanner:null,
 		id:211
 	},
 	STORYEVENT046:{
@@ -1834,7 +1767,6 @@ STORY = {
 		engName:null,
 		type:"story",
 		banner:"bnr_ev_story_00046_1_l.webp",
-		engBanner:null,
 		id:212
 	},
 	CHAPTER070:{
@@ -1849,7 +1781,6 @@ STORY = {
 		engName:null,
 		type:"map",
 		banner:"bnr_ev_map_00047_1_l.webp",
-		engBanner:null,
 		id:214
 	},
 	RAIDEVENT047:{
@@ -1857,7 +1788,6 @@ STORY = {
 		engName:null,
 		type:"raid",
 		banner:"bnr_ev_raid_00047_1_l.webp",
-		engBanner:null,
 		id:215
 	},
 	MAPEVENT048:{
@@ -1865,7 +1795,6 @@ STORY = {
 		engName:null,
 		type:"map",
 		banner:"bnr_ev_map_00048_1_l.webp",
-		engBanner:null,
 		id:216
 	},
 	STORYEVENT047:{
@@ -1873,8 +1802,27 @@ STORY = {
 		engName:null,
 		type:"story",
 		banner:"bnr_ev_story_00047_1_l.webp",
-		engBanner:null,
 		id:217
 	},
-}
+	CHAPTER071:{
+		japName:"禍津夜叉髑髏",
+		engName:null,
+		type:"chapter",
+		chapter:71,
+		id:218
+	},
+	RAIDEVENT048:{
+		japName:"Persona",
+		engName:null,
+		type:"raid",
+		banner:"bnr_ev_raid_00048_1_l.webp",
+		id:219
+	},
+	STORYEVENT048:{
+        japName:"黒星と海獣",
+		engName:null,
+        type:"story",
+        banner:"bnr_ev_story_00048_1_l.webp",
+        id:220
+    },
 
