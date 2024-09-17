@@ -1825,4 +1825,4 @@ STORY = {
         banner:"bnr_ev_story_00048_1_l.webp",
         id:220
     },
-
+}
