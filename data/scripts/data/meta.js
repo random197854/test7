@@ -10572,6 +10572,63 @@ var CHAR = {
             cv:CV.INUGAMI_HINATA
         }
     },
+    IBA_MINAMI:{
+        base:{
+            name:{
+                eng:"Iba Minami",
+                engAlias:["Iba", "Mianmi Iba", "Minami"],
+                jap:"伊庭美南",
+                japAlias:["伊庭", "美南"]
+            },
+            tags:[
+                TAG.BROWN_HAIR, TAG.SHOULDER_LENGTH_HAIR,
+                TAG.BLUE_EYES,
+                TAG.BIG_BREASTS, TAG.LIGHT_SKIN
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.SAIJO_SATORU,
+            cv:CV.HAZUKI_HIKARI
+        }
+    },
+    JIGOKUMARU_AKIRA:{
+        base:{
+            name:{
+                eng:"Jigokumaru Akira",
+                engAlias:["JigokuMaru", "Akira Jigokumaru", "Akira"],
+                jap:"地獄丸アキラ",
+                japAlias:["地獄丸", "アキラ"]
+            },
+            tags:[
+                TAG.BLACK_HAIR, TAG.LONG_HAIR,
+                TAG.BLACK_EYES,
+                TAG.LIGHT_SKIN, TAG.AVERAGE_BREASTS
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.YUUJI,
+            cv:CV.AN_MITSUKI
+        }
+    },
+    KANNAGI_EIHA:{
+        base:{
+            name:{
+                eng:"Kannagi Eiha",
+                engAlias:["Kannagi", "Eiha Kannagi", "Eiha"],
+                jap:"観凪エイハ",
+                japAlias:["観凪", "エイハ"]
+            },
+            tags:[
+                TAG.WHITE_HAIR, TAG.SHOULDER_LENGTH_HAIR,
+                TAG.BLUE_EYES,
+                TAG.BIG_BREASTS, TAG.LIGHT_SKIN
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.SANO_TOSHIHIDE,
+            cv:CV.ITO_MUSUBI
+        }
+    },
 
     // :{
     //     base:{
@@ -29156,6 +29213,7 @@ var SCENE = {
             misc:[]
         },
         ignoredCharacterTags:[],
+        nextScene:"0671_2"
     },
     "0671_2":{
         character:[CHAR.MINASAKI, CHAR.FUUMA_KOTAROU],
@@ -29183,6 +29241,7 @@ var SCENE = {
             misc:[TAG.CUT_IN_XRAY]
         },
         ignoredCharacterTags:[],
+        nextScene:"0672_2"
     },
     "0672_2":{
         character:[CHAR.SUMITANI_YUMI, CHAR.FUUMA_KOTAROU],
@@ -29220,6 +29279,86 @@ var SCENE = {
             male:[],
             location:[TAG.PRISON_CELL, TAG.PRIVATE],
             misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0675_1":{
+        character:[CHAR.IBA_MINAMI, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.BREASTS_OUT,
+                TAG.BLOWJOB_PAIZURI, TAG.BUKKAKE, TAG.CUM_IN_MOUTH
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0675_2"
+    },
+    "0675_2":{
+        character:[CHAR.IBA_MINAMI, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.BREASTS_OUT, TAG.PANTIES_PUSHED_TO_SIDE, TAG.LEOTARD,
+                TAG.VAGINAL_SEX, TAG.LEGLOCK, TAG.BREAST_GROPING, TAG.NAKADASHI, TAG.VAGINAL_LEAKAGE
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE, TAG.ON_BED],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0676_1":{
+        character:CHAR.JIGOKUMARU_AKIRA,
+        tags:{
+            female:[
+                TAG.RIPPED_CLOTHING, TAG.GARTER_BELT, TAG.THIGH_HIGH_STOCKINGS, TAG.PANTIES, TAG.SCHOOL_UNIFORM, TAG.SKIRT, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.BREAST_GROPING, TAG.VAGINAL_SEX, TAG.NIPPLE_PINCHING, TAG.NAKADASHI, TAG.AHEGAO, TAG.INCONTINENCE
+            ],
+            male:[],
+            location:[],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0676_2"
+    },
+    "0676_2":{
+        character:CHAR.JIGOKUMARU_AKIRA,
+        tags:{
+            female:[
+                TAG.RIPPED_CLOTHING, TAG.GARTER_BELT, TAG.THIGH_HIGH_STOCKINGS, TAG.PANTIES_AROUND_LEG, TAG.SCHOOL_UNIFORM, TAG.SKIRT, TAG.CHOKER,
+                TAG.VAGINAL_SEX, TAG.NAKADASHI, TAG.FORCEFUL_BLOWJOB, TAG.DOUBLE_PENIS_PENETRATION, TAG.SPANKING, TAG.CUM_IN_MOUTH, TAG.VAGINAL_LEAKAGE, TAG.BUKKAKE
+            ],
+            male:[],
+            location:[TAG.OUTSIDE, TAG.SEMI_PUBLIC],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0677":{
+        character:[CHAR.AMANAKI_UI, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.SCHOOL_UNIFORM, TAG.SCHOOL_SWIMSUIT, TAG.BREASTS_OUT, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.BREAST_GROPING, TAG.VAGINAL_SEX, TAG.NIPPLE_PINCHING, TAG.NAKADASHI, TAG.BUKKAKE, TAG.DICK_CLEANING_BLOWJOB, TAG.VAGINAL_LEAKAGE
+            ],
+            male:[],
+            location:[],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0678":{
+        character:CHAR.KANNAGI_EIHA,
+        tags:{
+            female:[
+                TAG.NAKED, TAG.THIGH_HIGH_STOCKINGS, TAG.EVENING_GLOVES,
+                TAG.ROPE_BONDAGE, TAG.BUKKAKE, TAG.VAGINAL_SEX, TAG.ANAL_SEX, TAG.DOUBLE_PENIS_PENETRATION, TAG.BLOWJOB, TAG.TRIPLE_PENIS_PENETRATION, TAG.NAKADASHI, TAG.CUM_IN_MOUTH, TAG.STOMACH_INFLATION, TAG.AHEGAO
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[TAG.CUT_IN_XRAY]
         },
         ignoredCharacterTags:[],
     },
