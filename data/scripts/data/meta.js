@@ -3989,6 +3989,11 @@ var TAG = {
         aliases:["Cheer Leader Outfit"],
         parents:["SKIRT", "CROP_TOP"]
     },
+    RELIGIOUS_HABIT:{
+        name:"Religious Habit",
+        aliases:["Religious Clothing", "Nun Outfit", "Nun Habit", "Nun Clothing"],
+        parents:[]
+    },
 
     // Misc.
     WEARING_CONDOMS:{
@@ -29359,6 +29364,62 @@ var SCENE = {
             male:[],
             location:[TAG.INSIDE, TAG.PRIVATE],
             misc:[TAG.CUT_IN_XRAY]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0679_1":{
+        character:[CHAR.IGAWA_ASAGI, CHAR.KOUKAWA_OBORO],
+        form:["adult", null],
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.PROTRUDING_NIPPLES, TAG.RIPPED_CLOTHING, TAG.BREAST_CUTOUTS,
+                TAG.ROPE_BONDAGE, TAG.BREAST_GROPING, TAG.VAGINAL_FINGERING, TAG.NIPPLE_PINCHING, TAG.VAGINAL_LEAKAGE, TAG.SQUIRTING, TAG.VIBRATOR, TAG.VAGINAL_INSERTION, TAG.AHEGAO
+            ],
+            male:[],
+            location:[],
+            misc:[TAG.NO_SEX]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0679_2":{
+        character:[CHAR.IGAWA_ASAGI, CHAR.KOUKAWA_OBORO, CHAR.FUUMA_KOTAROU],
+        form:["adult", null, null],
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.RIPPED_CLOTHING, TAG.BREAST_CUTOUTS, TAG.BREASTS_OUT, TAG.VAGINAL_CUTOUT, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.ROPE_BONDAGE, TAG.VAGINAL_SEX, TAG.BREAST_GROPING, TAG.NIPPLE_PINCHING, TAG.NAKADASHI, TAG.BUKKAKE, TAG.AHEGAO
+            ],
+            male:[],
+            location:[],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0680_1":{
+        character:[CHAR.ONISAKI_KIRARA, CHAR.ONISAKI_KIRARA, CHAR.FUUMA_KOTAROU],
+        form:["young", "future", null],
+        tags:{
+            female:[
+                TAG.CHEERLEADER_OUTFIT, TAG.RELIGIOUS_HABIT, TAG.BREASTS_OUT,
+                TAG.LOTION, TAG.BLOWJOB_PAIZURI, TAG.BUKKAKE
+            ],
+            male:[],
+            location:[TAG.BEDROOM, TAG.ON_BED, TAG.PRIVATE],
+            misc:[TAG.NO_SEX]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0680_2":{
+        character:[CHAR.ONISAKI_KIRARA, CHAR.ONISAKI_KIRARA, CHAR.FUUMA_KOTAROU],
+        form:["young", "future", null],
+        tags:{
+            female:[
+                TAG.CHEERLEADER_OUTFIT, TAG.RELIGIOUS_HABIT, TAG.BREASTS_OUT, TAG.THONG, TAG.PANTIES_PUSHED_TO_SIDE, TAG.MAGIC_TATTOO,
+                TAG.VAGINAL_SEX, TAG.KISSING, TAG.STOMACH_DEFORMATION, TAG.NAKADASHI, TAG.VAGINAL_LEAKAGE, TAG.HEART_PUPILS, TAG.THIGH_HIGH_STOCKINGS, TAG.HIGH_HEELS, 
+            ],
+            male:[TAG.NIPPLE_PLAY],
+            location:[TAG.BEDROOM, TAG.ON_BED, TAG.PRIVATE],
+            misc:[]
         },
         ignoredCharacterTags:[],
     },
