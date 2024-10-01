@@ -26536,6 +26536,7 @@ var SCENE = {
             misc:[]
         },
         ignoredCharacterTags:[],
+        nextScene:"0680_1"
     },
     "0543":{
         character:CHAR.VIOLA,
@@ -28875,6 +28876,7 @@ var SCENE = {
             misc:[]
         },
         ignoredCharacterTags:[],
+        artistOverwrite: ARTIST.NOBUSHITO,
         nextScene:"0654_2"
     },
     "0654_2":{
@@ -28889,6 +28891,7 @@ var SCENE = {
             misc:[]
         },
         ignoredCharacterTags:[],
+        artistOverwrite: ARTIST.NOBUSHITO,
     },
     "0655_1":{
         character:CHAR.CARA_CROMWELL,
@@ -29191,6 +29194,7 @@ var SCENE = {
             misc:[]
         },
         ignoredCharacterTags:[],
+        artistOverwrite: ARTIST.NOBUSHITO,
     },
     "0670":{
         character:[CHAR.IZUMO_TSURU, CHAR.FUUMA_KOTAROU],
@@ -29380,6 +29384,7 @@ var SCENE = {
             misc:[TAG.NO_SEX]
         },
         ignoredCharacterTags:[],
+        nextScene:"0679_2"
     },
     "0679_2":{
         character:[CHAR.IGAWA_ASAGI, CHAR.KOUKAWA_OBORO, CHAR.FUUMA_KOTAROU],
@@ -29408,6 +29413,7 @@ var SCENE = {
             misc:[TAG.NO_SEX]
         },
         ignoredCharacterTags:[],
+        nextScene:"0680_2"
     },
     "0680_2":{
         character:[CHAR.ONISAKI_KIRARA, CHAR.ONISAKI_KIRARA, CHAR.FUUMA_KOTAROU],
@@ -29419,6 +29425,88 @@ var SCENE = {
             ],
             male:[TAG.NIPPLE_PLAY],
             location:[TAG.BEDROOM, TAG.ON_BED, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0681_1":{
+        character:[CHAR.ELEKTRA, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.BREASTS_OUT,
+                TAG.BLOWJOB_PAIZURI, TAG.BUKKAKE, TAG.CUM_IN_MOUTH, TAG.PREGNANT
+            ],
+            male:[],
+            location:[TAG.BEDROOM, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0681_2"
+    },
+    "0681_2":{
+        character:[CHAR.ELEKTRA, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.BREASTS_OUT, TAG.PANTYLESS,
+                TAG.PREGNANT, TAG.VAGINAL_FINGERING, TAG.BREAST_GROPING, TAG.VAGINAL_LEAKAGE, TAG.LACTATION, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.BEDROOM, TAG.ON_BED, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0682_1":{
+        character:[CHAR.MIZUKI_YUKIKAZE, CHAR.FUUMA_KOTAROU],
+        form:["young", null],
+        tags:{
+            female:[
+                TAG.SWIMSUIT, TAG.CHOKER, TAG.PARTIALLY_TRANSPARENT_CLOTHING,
+                TAG.LOTION, TAG.KISSING, TAG.INTERCRURAL_SEX, TAG.PREGNANT
+            ],
+            male:[],
+            location:[TAG.BATHROOM, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0682_2"
+    },
+    "0682_2":{
+        character:[CHAR.MIZUKI_YUKIKAZE, CHAR.FUUMA_KOTAROU],
+        form:["young", null],
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.BREAST_CUTOUTS, TAG.VAGINAL_CUTOUT,
+                TAG.PREGNANT, TAG.VAGINAL_SEX, TAG.VAGINAL_LEAKAGE, TAG.NAKADASHI, TAG.LACTATION, TAG.AHEGAO, TAG.WOMB_TATTOO, 
+            ],
+            male:[],
+            location:[],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0683":{
+        character:[CHAR.SENOKA],
+        tags:{
+            female:[
+                TAG.BREASTS_OUT, TAG.PANTYLESS,
+                TAG.VAGINAL_SEX, TAG.LACTATION, TAG.NAKADASHI, TAG.PREGNANT
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0684":{
+        character:[CHAR.CLERIA_FORANE, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.BREASTS_OUT,
+                TAG.PREGNANT, TAG.CUNNILINGUS, TAG.BLOWJOB_PAIZURI, TAG.LACTATION, TAG.CUM_IN_MOUTH
+            ],
+            male:[],
+            location:[],
             misc:[]
         },
         ignoredCharacterTags:[],

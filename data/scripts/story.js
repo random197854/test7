@@ -1582,4 +1582,16 @@ STORY = {
         banner:"bnr_ev_story_00048_1_l.webp",
         id:220
     },
+    CHAPTER072:{
+        japName:"動乱の終奏曲",
+        type:"chapter",
+        chapter:72,
+        id:221
+    },
+    MAPEVENT049:{
+        japName:"ルキナちゃんの家出",
+        type:"map",
+        banner:"bnr_ev_map_00049_1_l.webp",
+        id:222
+    },
 }
