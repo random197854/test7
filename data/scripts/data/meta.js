@@ -29511,6 +29511,88 @@ var SCENE = {
         },
         ignoredCharacterTags:[],
     },
+    "0685_1":{
+        character:CHAR.CHIARU,
+        tags:{
+            female:[
+                TAG.PANTYHOSE, TAG.FRILLY_CLOTHING, TAG.GLOVES, TAG.THIGH_BAND, TAG.PANTIES, TAG.RIPPED_CLOTHING,
+                TAG.HANDJOB, TAG.ROTOR, TAG.VAGINAL_LEAKAGE, TAG.BLOWJOB, TAG.VAGINAL_INSERTION, TAG.BUKKAKE, TAG.SQUIRTING, TAG.INCONTINENCE
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0685_2":{
+        character:CHAR.CHIARU,
+        tags:{
+            female:[
+                TAG.PANTYHOSE, TAG.FRILLY_CLOTHING, TAG.GLOVES, TAG.THIGH_BAND, TAG.PANTIES_PUSHED_TO_SIDE, TAG.RIPPED_CLOTHING, TAG.BREASTS_OUT, TAG.BRA,
+                TAG.VAGINAL_SEX, TAG.NAKADASHI, TAG.AHEGAO, TAG.STOMACH_INFLATION
+            ],
+            male:[TAG.ORC],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0686_1":{
+        character:CHAR.KAMIMURA_AZUMA,
+        tags:{
+            female:[
+                TAG.BREASTS_OUT, TAG.PANTIES, TAG.THIGH_HIGH_STOCKINGS,
+                TAG.VAGINAL_LEAKAGE, TAG.VIBRATOR, TAG.VAGINAL_INSERTION, TAG.AHEGAO, TAG.VAGINAL_LEAKAGE, TAG.INVERTED_NIPPLES
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0686_2":{
+        character:CHAR.KAMIMURA_AZUMA,
+        tags:{
+            female:[
+                TAG.BREASTS_OUT, TAG.THIGH_HIGH_STOCKINGS,
+                TAG.VAGINAL_SEX, TAG.BUKKAKE, TAG.AHEGAO, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0687":{
+        character:[CHAR.KARINA, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.BREASTS_OUT, TAG.PANTYLESS, TAG.CHOKER,
+                TAG.FOOTJOB, TAG.VAGINAL_SEX, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.ON_BED, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0688":{
+        character:[CHAR.KUSHINOBE_SUMIKA, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.BREASTS_OUT, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.VAGINAL_SEX, TAG.BREAST_GROPING, TAG.NAKADASHI, TAG.AHEGAO
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.ON_BED, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+
+
+
+    
 
 
 

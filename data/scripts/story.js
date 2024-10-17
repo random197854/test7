@@ -1594,4 +1594,10 @@ STORY = {
         banner:"bnr_ev_map_00049_1_l.webp",
         id:222
     },
+    RAIDEVENT049:{
+        japName:"ダークネスハロウィン大暴走",
+        type:"raid",
+        banner:"bnr_ev_raid_00049_1_l.webp",
+        id:223
+    },
 }
