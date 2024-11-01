@@ -10634,6 +10634,25 @@ var CHAR = {
             cv:CV.ITO_MUSUBI
         }
     },
+    RYUUZEN_TOMOKO:{
+        base:{
+            name:{
+                eng:"Ryuuzen Tomoko",
+                engAlias:["Ryuuzen", "Tomoko Ryuuzen", "Tomoko"],
+                jap:"龍前トモコ",
+                japAlias:["龍前", "トモコ"]
+            },
+            tags:[
+                TAG.BLACK_HAIR, TAG.SHOULDER_LENGTH_HAIR,
+                TAG.BLUE_EYES,
+                TAG.HUGE_BREASTS, TAG.LIGHT_SKIN
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.SIAN,
+            cv:CV.KUROMORI_OSHIKA
+        }
+    },
 
     // :{
     //     base:{
@@ -29523,6 +29542,7 @@ var SCENE = {
             misc:[]
         },
         ignoredCharacterTags:[],
+        nextScene:"0685_2"
     },
     "0685_2":{
         character:CHAR.CHIARU,
@@ -29549,6 +29569,7 @@ var SCENE = {
             misc:[]
         },
         ignoredCharacterTags:[],
+        nextScene:"0686_2"
     },
     "0686_2":{
         character:CHAR.KAMIMURA_AZUMA,
@@ -29589,6 +29610,87 @@ var SCENE = {
         },
         ignoredCharacterTags:[],
     },
+    "0689_1":{
+        character:[CHAR.SANADA_SAKI, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.PROTRUDING_NIPPLES, TAG.BREASTS_OUT,
+                TAG.HANDJOB, TAG.BLOWJOB_PAIZURI, TAG.CUM_IN_MOUTH
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[TAG.NO_SEX]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0689_2"
+    },
+    "0689_2":{
+        character:[CHAR.SANADA_SAKI, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.BREASTS_OUT, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.HANDJOB, TAG.VAGINAL_SEX, TAG.VAGINAL_LEAKAGE, TAG.NAKADASHI, TAG.AHEGAO
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0690_1":{
+        character:CHAR.RYUUZEN_TOMOKO,
+        tags:{
+            female:[
+                TAG.BREASTS_OUT, TAG.PANTIES_PUSHED_TO_SIDE, TAG.THIGH_HIGH_STOCKINGS,
+                TAG.VAGINAL_LEAKAGE, TAG.BREAST_GROPING, TAG.AHEGAO, TAG.NIPPLE_PINCHING, TAG.PORN_PRODUCTION
+            ],
+            male:[],
+            location:[TAG.BEDROOM, TAG.PRIVATE],
+            misc:[TAG.NO_SEX]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0690_2"
+    },
+    "0690_2":{
+        character:CHAR.RYUUZEN_TOMOKO,
+        tags:{
+            female:[
+                TAG.BREASTS_OUT, TAG.PANTIES_PUSHED_TO_SIDE, TAG.THIGH_HIGH_STOCKINGS,
+                TAG.LEGS_PULLED_UP, TAG.VAGINAL_SEX, TAG.SQUIRTING, TAG.AHEGAO, TAG.NAKADASHI, TAG.MINDBREAK, TAG.VAGINAL_INSERTION, TAG.DOUBLE_PEACE_SIGN, TAG.INCONTINENCE, TAG.PORN_PRODUCTION
+
+            ],
+            male:[],
+            location:[TAG.BEDROOM, TAG.ON_BED, TAG.PRIVATE],
+            misc:[TAG.CUT_IN_XRAY]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0691":{
+        character:CHAR.ROKKA,
+        tags:{
+            female:[
+                TAG.BREASTS_OUT, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.VAGINAL_SEX, TAG.HANDJOB, TAG.BLOWJOB, TAG.NAKADASHI, TAG.PORN_PRODUCTION, TAG.BUKKAKE, TAG.PEACE_SIGN
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0692":{
+        character:[CHAR.NADIA, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.PANTIES_PUSHED_TO_SIDE, TAG.BREASTS_OUT,
+                TAG.BUKKAKE, TAG.VAGINAL_SEX
+            ],
+            male:[],
+            location:[TAG.BEDROOM, TAG.ON_BED, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
 
 
 
@@ -29607,6 +29709,7 @@ var SCENE = {
     //         misc:[]
     //     },
     //     ignoredCharacterTags:[],
+    //     nextScene:""
     // },
 
 
