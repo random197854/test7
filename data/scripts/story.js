@@ -1600,4 +1600,17 @@ STORY = {
         banner:"bnr_ev_raid_00049_1_l.webp",
         id:223
     },
+    STORYEVENT049:{
+        japName:"新学年とヨミハラRUNレース",
+        type:"story",
+        banner:"bnr_ev_story_00049_1_l.webp",
+        id:224
+    },
+    CHAPTER073:{
+        japName:"Epilogue",
+        type:"vol1end",
+        chapter:73,
+        id:225
+    },
 }
+
