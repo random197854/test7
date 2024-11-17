@@ -1612,5 +1612,11 @@ STORY = {
         chapter:73,
         id:225
     },
+    MAPEVENT050:{
+        japName:"ミラベル・ベル",
+        type:"map",
+        banner:"bnr_ev_map_00050_1_l.webp",
+        id:226
+    },
 }
 

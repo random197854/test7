@@ -1227,6 +1227,12 @@ var CV = {
         jap: "犬神ひなた",
         japAlias: ["犬神", "ひなた"]
     },
+    MOMOSE_RIRU:{
+        eng: "Momose Riru",
+        engAlias: ["Momose", "Riru Momose", "Riru"],
+        jap: "百瀬りる",
+        japAlias: ["百瀬", "りる"]
+    },
     IGNORE:{
         eng: "",
         engAlias: [],
@@ -10651,6 +10657,25 @@ var CHAR = {
             originalCharacter:true,
             artist:ARTIST.SIAN,
             cv:CV.KUROMORI_OSHIKA
+        }
+    },
+    ARGENTO:{
+        base:{
+            name:{
+                eng:"Argento",
+                engAlias:["Argent"],
+                jap:"アルジェント",
+                japAlias:[]
+            },
+            tags:[
+                TAG.WHITE_HAIR, TAG.LONG_HAIR,
+                TAG.RED_EYES,
+                TAG.LIGHT_SKIN, TAG.BIG_BREASTS, TAG.POINTED_EARS
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.SABUROU,
+            cv:CV.MOMOSE_RIRU
         }
     },
 
@@ -29687,6 +29712,86 @@ var SCENE = {
             ],
             male:[],
             location:[TAG.BEDROOM, TAG.ON_BED, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0693_1":{
+        character:CHAR.AREKKI,
+        tags:{
+            female:[
+                TAG.BREASTS_OUT, TAG.PANTIES_PUSHED_TO_SIDE, TAG.THONG, TAG.NAVEL_PIERCING,
+                TAG.CUNNILINGUS, TAG.VAGINAL_SEX, TAG.NAKADASHI
+            ],
+            male:[TAG.ORC],
+            location:[TAG.LOVE_HOTEL, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0693_2"
+    },
+    "0693_2":{
+        character:CHAR.AREKKI,
+        tags:{
+            female:[
+                TAG.BREASTS_OUT, TAG.PANTYLESS,
+                TAG.VAGINAL_SEX, TAG.BREAST_GROPING, TAG.NAKADASHI, TAG.BUKKAKE, TAG.KISSING
+            ],
+            male:[TAG.ORC],
+            location:[TAG.LOVE_HOTEL, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0694_1":{
+        character:CHAR.MIRABELL_BELL,
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.LEOTARD, TAG.PANTIES_PUSHED_TO_SIDE, TAG.BREASTS_OUT, 
+                TAG.SEX_ENGINE, TAG.STOMACH_DEFORMATION, TAG.FUTANARI, TAG.AHEGAO, TAG.LACTATION, TAG.VAGINAL_LEAKAGE
+            ],
+            male:[],
+            location:[TAG.FACILITY, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0694_2"
+    },
+    "0694_2":{
+        character:CHAR.MIRABELL_BELL,
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.LEOTARD, TAG.PANTIES_PUSHED_TO_SIDE, TAG.BREASTS_OUT,
+                TAG.FUTANARI, TAG.LACTATION, TAG.VAGINAL_SEX, TAG.ANAL_SEX, TAG.VAGINAL_LEAKAGE, TAG.AHEGAO
+            ],
+            male:[],
+            location:[TAG.FACILITY, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0695":{
+        character:CHAR.KAGOMORI_ZAKURO,
+        tags:{
+            female:[
+                TAG.BREASTS_OUT, TAG.THIGH_HIGH_STOCKINGS, TAG.SKIRT,
+                TAG.BLOWJOB, TAG.PREGNANT, TAG.VAGINAL_LEAKAGE, TAG.VAGINAL_SEX, TAG.WEARING_CONDOMS
+            ],
+            male:[TAG.SHOTA],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0696":{
+        character:CHAR.ARGENTO,
+        tags:{
+            female:[
+                TAG.LEOTARD, TAG.PANTIES_PUSHED_TO_SIDE, TAG.BREASTS_OUT, TAG.THIGH_HIGH_STOCKINGS,
+                TAG.BREAST_GROPING, TAG.VAGINAL_SEX, TAG.STOMACH_DEFORMATION, TAG.VAGINAL_LEAKAGE, TAG.NAKADASHI
+            ],
+            male:[TAG.ORC],
+            location:[TAG.INSIDE, TAG.PRIVATE],
             misc:[]
         },
         ignoredCharacterTags:[],
