@@ -7429,7 +7429,7 @@ var CHAR = {
                 TAG.BIG_BREASTS, TAG.LIGHT_SKIN
             ],
             gender:"female",
-            originalCharacter:true,
+            originalCharacter:false,
             artist:ARTIST.TSUJI_SANTA,
             cv:CV.SUPER_SONICO
         }
@@ -29792,6 +29792,61 @@ var SCENE = {
             ],
             male:[TAG.ORC],
             location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0697_1":{
+        character:CHAR.KOUSAKA_SHIZURU,
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.BREASTS_OUT, TAG.LEOTARD, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.VAGINAL_SEX, TAG.LEGLOCK, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.CLASSROOM, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0697_2"
+    },
+    "0697_2":{
+        character:CHAR.KOUSAKA_SHIZURU,
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.BREASTS_OUT, TAG.LEOTARD, TAG.PANTIES_PUSHED_TO_SIDE, TAG.NAKED, TAG.HIGH_HEELS, TAG.EVENING_GLOVES, TAG.CHOKER, TAG.THIGH_HIGH_STOCKINGS,
+                TAG.STANDING_SEX, TAG.QUICKIE_FIX_POSITION,
+                TAG.RAPE, TAG.VAGINAL_SEX, TAG.ANAL_FINGERING, TAG.NAKADASHI, TAG.AHEGAO, TAG.MINDBREAK, TAG.WOMB_TATTOO, TAG.NIPPLE_PINCHING, TAG.PREGNANT
+            ],
+            male:[],
+            location:[TAG.CLASSROOM, TAG.SEMI_PUBLIC],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0698_1":{
+        character:[CHAR.SHINGANJI_KURENAI, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.BIKINI, TAG.PARTIALLY_TRANSPARENT_CLOTHING,
+                TAG.HANDJOB, TAG.BLOWJOB, TAG.ASS_GROPING, TAG.CUM_IN_MOUTH
+            ],
+            male:[TAG.NIPPLE_PLAY],
+            location:[TAG.BROTHEL, TAG.PRIVATE],
+            misc:[TAG.NO_SEX]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0698_2"
+    },
+    "0698_2":{
+        character:[CHAR.SHINGANJI_KURENAI, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.VAGINAL_CUTOUT, TAG.ANAL_CUTOUT, TAG.PROTRUDING_NIPPLES,
+                TAG.ASS_GROPING, TAG.VAGINAL_SEX, TAG.KISSING, TAG.AHEGAO, TAG.NAKADASHI, TAG.BUKKAKE
+            ],
+            male:[],
+            location:[TAG.BROTHEL, TAG.PRIVATE],
             misc:[]
         },
         ignoredCharacterTags:[],
