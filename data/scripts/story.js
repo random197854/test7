@@ -1618,5 +1618,11 @@ STORY = {
         banner:"bnr_ev_map_00050_1_l.webp",
         id:226
     },
+    CHAPTER201:{
+        japName:"再始動",
+        type:"chapter",
+        chapter:1,
+        id:227
+    }
 }
 
