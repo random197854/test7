@@ -1623,6 +1623,12 @@ STORY = {
         type:"chapter",
         chapter:1,
         id:227
-    }
+    },
+    RAIDEVENT050:{
+        japName:"翡翠先輩とGOLDEN GIRL",
+        type:"raid",
+        banner:"bnr_ev_raid_00050_1_l.webp",
+        id:228
+    },
 }
 
