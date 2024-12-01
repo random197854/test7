@@ -10678,6 +10678,63 @@ var CHAR = {
             cv:CV.MOMOSE_RIRU
         }
     },
+    NATALIE_FLETCHER:{
+        base:{
+            name:{
+                eng:"Natalie Fletcher",
+                engAlias:["Natalie", "Fletcher"],
+                jap:"ナタリー・フレッチャー",
+                japAlias:["ナタリー", "フレッチャー"]
+            },
+            tags:[
+                TAG.BLOND_HAIR, TAG.LONG_HAIR,
+                TAG.CYAN_EYES,
+                TAG.LIGHT_SKIN, TAG.BIG_BREASTS
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.SHINDOL,
+            cv:CV.MOMIJI_RIKO
+        }
+    },
+    MIBUCHI_YUUREN:{
+        base:{
+            name:{
+                eng:"Mibuchi Yuuren",
+                engAlias:["Mibuchi", "Yuuren Mibuchi", "Yuuren"],
+                jap:"三淵夕恋",
+                japAlias:["三淵", "夕恋"]
+            },
+            tags:[
+                TAG.SHOULDER_LENGTH_HAIR, TAG.VIOLET_HAIR,
+                TAG.VIOLET_EYES,
+                TAG.LIGHT_SKIN, TAG.HUGE_BREASTS
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.AIKAWA_ARISA,
+            cv:CV.SAKURANI_AKARI
+        }
+    },
+    VICTORIA_ESTA:{
+        base:{
+            name:{
+                eng:"Victoria Esta",
+                engAlias:["Victoria Ester", "Victoria", "Esta", "Ester"],
+                jap:"ヴィクトリア・エスタ",
+                japAlias:["ヴィクトリア", "エスタ"]
+            },
+            tags:[
+                TAG.ORANGE_HAIR, TAG.SHOULDER_LENGTH_HAIR,
+                TAG.AMBER_EYES,
+                TAG.LIGHT_SKIN, TAG.AVERAGE_BREASTS
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.KUUCHUU_YOUSAI,
+            cv:CV.HAZUKI_AKARI
+        }
+    },
 
     // :{
     //     base:{
@@ -29848,6 +29905,87 @@ var SCENE = {
             male:[],
             location:[TAG.BROTHEL, TAG.PRIVATE],
             misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0699_1":{
+        character:[CHAR.YURI_HISUI, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.BREASTS_OUT,
+                TAG.VAGINAL_SEX, TAG.BREAST_GROPING, TAG.BREAST_SUCKING, TAG.KISSING, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0699_2"
+    },
+    "0699_2":{
+        character:[CHAR.YURI_HISUI, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.BREASTS_OUT,
+                TAG.VAGINAL_FINGERING, TAG.ANAL_FINGERING, TAG.ANILINGUS, TAG.ANAL_SEX, TAG.SQUIRTING, TAG.GAPING, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0700_1":{
+        character:CHAR.NATALIE_FLETCHER,
+        tags:{
+            female:[
+                TAG.PROTRUDING_NIPPLES, TAG.BREASTS_OUT,
+                TAG.VAGINAL_LEAKAGE, TAG.SPANKING, TAG.VAGINAL_INSERTION, TAG.ANAL_INSERTION, TAG.AHEGAO, TAG.DOUBLE_PENETRATION
+            ],
+            male:[],
+            location:[TAG.OUTSIDE, TAG.PUBLIC],
+            misc:[TAG.NO_SEX]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0700_2"
+    },
+    "0700_2":{
+        character:CHAR.MIBUCHI_YUUREN,
+        tags:{
+            female:[
+                TAG.SCHOOL_UNIFORM, TAG.PARTIALLY_TRANSPARENT_CLOTHING, TAG.BRA, TAG.BREASTS_OUT, TAG.NAKED, TAG.THIGH_HIGH_STOCKINGS, TAG.PANTIES_AROUND_LEG,
+                TAG.BREAST_GROPING, TAG.KISSING, TAG.VAGINAL_SEX, TAG.ANAL_SEX, TAG.DOUBLE_PENIS_PENETRATION, TAG.NAKADASHI, TAG.KISSING, TAG.DOUBLE_PEACE_SIGN_AHEGAO
+            ],
+            male:[],
+            location:[TAG.SCHOOL, TAG.SEMI_PUBLIC],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0701":{
+        character:CHAR.VICTORIA_ESTA,
+        tags:{
+            female:[
+                TAG.NAKED, TAG.TAIMANIN_OUTFIT, TAG.THIGH_HIGH_STOCKINGS,
+                TAG.DEFLORATION, TAG.LARGE_INSERTIONS, TAG.VAGINAL_INSERTION, TAG.VIBRATOR, TAG.ROTOR, TAG.ANAL_INSERTION, TAG.STOMACH_DEFORMATION, TAG.INCONTINENCE, TAG.AHEGAO
+
+            ],
+            male:[],
+            location:[TAG.PRISON_CELL, TAG.PRIVATE],
+            misc:[TAG.NO_SEX]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0702":{
+        character:[],
+        tags:{
+            female:[
+                TAG.NAKED,
+                TAG.METAL_BONDAGE, TAG.VIBRATOR, TAG.VAGINAL_INSERTION, TAG.NIPPLE_SUCKING, TAG.CLIT_PLAY, TAG.INCONTINENCE, TAG.AHEGAO
+            ],
+            male:[],
+            location:[TAG.FACILITY, TAG.PRIVATE],
+            misc:[TAG.NO_SEX]
         },
         ignoredCharacterTags:[],
     },
