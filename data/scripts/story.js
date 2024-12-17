@@ -1630,5 +1630,11 @@ STORY = {
         banner:"bnr_ev_raid_00050_1_l.webp",
         id:228
     },
+    STORYEVENT050:{
+        japName:"クリスマスは冬ごもり",
+        type:"story",
+        banner:"bnr_ev_story_00050_1_l.webp",
+        id:229
+    },
 }
 
