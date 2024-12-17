@@ -9151,6 +9151,24 @@ var CHAR = {
             originalCharacter:true,
             artist:ARTIST.SHINDOL,
             cv:CV.TSURUMAKI_CHITOSE
+        },
+        form: {
+            adult: {
+                name: {
+                    eng: "Adult Natsu",
+                    engAlias: ["Standard Natsu", "Normal Natsu"],
+                    jap: "稲毛夏",
+                    japAlias: []
+                },
+            },
+            loli: {
+                name: {
+                    eng: "Loli Natsu",
+                    engAlias: ["Loli Inage Natsu", "Loli Natsu Inage"],
+                    jap: "ロリ夏",
+                    japAlias: ["ロリババ夏", "ロリ稲毛夏", "ロリババ稲毛夏"]
+                }
+            }
         }
     },
     AMATSU_ANRI:{
@@ -25117,6 +25135,7 @@ var SCENE = {
     },
     "0472_1":{
         character:[CHAR.INAGE_NATSU, CHAR.AISHUU_HEBIKO],
+        form:["adult", "young"],
         tags:{
             female:[
                 TAG.NAKED,
@@ -25132,6 +25151,7 @@ var SCENE = {
     },
     "0472_2":{
         character:[CHAR.INAGE_NATSU, CHAR.AISHUU_HEBIKO],
+        form:["adult", "young"],
         tags:{
             female:[
                 TAG.COMPLETELY_NAKED, TAG.TAIMANIN_OUTFIT, TAG.BREASTS_OUT,
@@ -29950,7 +29970,7 @@ var SCENE = {
         nextScene:"0700_2"
     },
     "0700_2":{
-        character:CHAR.MIBUCHI_YUUREN,
+        character:CHAR.NATALIE_FLETCHER,
         tags:{
             female:[
                 TAG.SCHOOL_UNIFORM, TAG.PARTIALLY_TRANSPARENT_CLOTHING, TAG.BRA, TAG.BREASTS_OUT, TAG.NAKED, TAG.THIGH_HIGH_STOCKINGS, TAG.PANTIES_AROUND_LEG,
@@ -29963,7 +29983,7 @@ var SCENE = {
         ignoredCharacterTags:[],
     },
     "0701":{
-        character:CHAR.VICTORIA_ESTA,
+        character:CHAR.MIBUCHI_YUUREN,
         tags:{
             female:[
                 TAG.NAKED, TAG.TAIMANIN_OUTFIT, TAG.THIGH_HIGH_STOCKINGS,
@@ -29977,7 +29997,7 @@ var SCENE = {
         ignoredCharacterTags:[],
     },
     "0702":{
-        character:[],
+        character:CHAR.VICTORIA_ESTA,
         tags:{
             female:[
                 TAG.NAKED,
@@ -29986,6 +30006,90 @@ var SCENE = {
             male:[],
             location:[TAG.FACILITY, TAG.PRIVATE],
             misc:[TAG.NO_SEX]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0703_1":{
+        character:CHAR.INAGE_NATSU,
+        form:["loli"],
+        tags:{
+            female:[
+                TAG.CHRISTMAS_CLOTHING, TAG.HIGH_HEELS, TAG.THIGH_HIGH_STOCKINGS, TAG.PANTYLESS, TAG.BRALESS,
+                TAG.ANAL_SEX, TAG.HANDJOB, TAG.VAGINAL_SEX, TAG.DOUBLE_PENIS_PENETRATION, TAG.STOMACH_DEFORMATION, TAG.BUKKAKE, TAG.NAKADASHI, TAG.VAGINAL_LEAKAGE
+            ],
+            male:[],
+            location:[TAG.BROTHEL, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0703_2"
+    },
+    "0703_2":{
+        character:CHAR.INAGE_NATSU,
+        form:["loli"],
+        tags:{
+            female:[
+                TAG.CHRISTMAS_CLOTHING, TAG.HIGH_HEELS, TAG.THIGH_HIGH_STOCKINGS, TAG.PANTYLESS, TAG.BRALESS,
+                TAG.HANDJOB, TAG.VAGINAL_SEX, TAG.STOMACH_DEFORMATION, TAG.NAKADASHI, TAG.AHEGAO, TAG.VAGINAL_LEAKAGE, TAG.ANAL_SEX, TAG.STOMACH_INFLATION, TAG.FOOTJOB
+            ],
+            male:[],
+            location:[TAG.ALLEYWAY, TAG.SEMI_PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0704_1":{
+        character:CHAR.IGAWA_ASAGI,
+        form:["adult"],
+        tags:{
+            female:[
+                TAG.DARK_SKIN,
+                TAG.HANDJOB, TAG.BLOWJOB, TAG.BUKKAKE, TAG.PAIZURI, TAG.ANILINGUS, TAG.NIPPLE_PINCHING, TAG.AHEGAO, TAG.INCONTINENCE
+            ],
+            male:[],
+            location:[TAG.OUTSIDE, TAG.PUBLIC],
+            misc:[TAG.NO_SEX]
+        },
+        ignoredCharacterTags:[TAG.LIGHT_SKIN],
+        nextScene:"0704_2"
+    },
+    "0704_2":{
+        character:CHAR.IGAWA_ASAGI,
+        form:["adult"],
+        tags:{
+            female:[
+                TAG.DARK_SKIN, TAG.USED_CONDOMS_EXPOSITION, TAG.BODY_WRITING,
+                TAG.BUKKAKE, TAG.HEART_PUPILS, TAG.VAGINAL_SEX, TAG.MAGIC_WAND, TAG.VAGINAL_FINGERING, TAG.AHEGAO, TAG.BREAST_GROPING, TAG.INCONTINENCE, TAG.VAGINAL_LEAKAGE, TAG.SUSPENSION_BONDAGE
+            ],
+            male:[],
+            location:[],
+            misc:[TAG.CUT_IN_XRAY]
+        },
+        ignoredCharacterTags:[TAG.LIGHT_SKIN],
+    },
+    "0705":{
+        character:CHAR.TSUSHIMA_YUKIKO,
+        tags:{
+            female:[
+                TAG.CHRISTMAS_CLOTHING, TAG.THONG, TAG.GLOVES, TAG.BREASTS_OUT, 
+                TAG.VAGINAL_SEX, TAG.AHEGAO, TAG.SQUIRTING, TAG.CUM_PLAY
+            ],
+            male:[],
+            location:[TAG.CLASSROOM, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0706":{
+        character:[CHAR.PERIT, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.CHRISTMAS_CLOTHING,
+                TAG.VAGINAL_SEX, TAG.BUKKAKE, TAG.PEACE_SIGN, TAG.NAKADASHI, TAG.AHEGAO
+            ],
+            male:[],
+            location:[],
+            misc:[]
         },
         ignoredCharacterTags:[],
     },
