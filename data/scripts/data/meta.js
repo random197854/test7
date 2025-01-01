@@ -7529,11 +7529,11 @@ var CHAR = {
             cv:CV.MAKIKO
         }
     },
-    SOUMA_NARIMI:{
+    SOUMA_NARUMI:{
         base:{
             name:{
-                eng:"Souma Narimi",
-                engAlias:["Souma", "Narimi Souma", "Narimi"],
+                eng:"Souma Narumi",
+                engAlias:["Souma", "Narumi Souma", "Narumi"],
                 jap:"相馬成美",
                 japAlias:["相馬", "成美"]
             },
@@ -19731,7 +19731,7 @@ var SCENE = {
         ignoredCharacterTags:[],
     },
     "0219":{
-        character:CHAR.SOUMA_NARIMI,
+        character:CHAR.SOUMA_NARUMI,
         tags:{
             female:[
                 TAG.TAIMANIN_OUTFIT, TAG.PROTRUDING_NIPPLES,
@@ -21728,7 +21728,7 @@ var SCENE = {
         ignoredCharacterTags:[],
     },
     "0314_1":{
-        character:[CHAR.SOUMA_NARIMI, CHAR.FUUMA_KOTAROU],
+        character:[CHAR.SOUMA_NARUMI, CHAR.FUUMA_KOTAROU],
         tags:{
             female:[
                 TAG.CHEERLEADER_OUTFIT, TAG.PANTIES, TAG.THIGH_HIGH_STOCKINGS, TAG.BELT, TAG.CHOKER,
@@ -21742,7 +21742,7 @@ var SCENE = {
         nextScene:"0314_2"
     },
     "0314_2":{
-        character:[CHAR.SOUMA_NARIMI, CHAR.FUUMA_KOTAROU],
+        character:[CHAR.SOUMA_NARUMI, CHAR.FUUMA_KOTAROU],
         tags:{
             female:[
                 TAG.CHEERLEADER_OUTFIT, TAG.PANTIES_PUSHED_TO_SIDE, TAG.BELT, TAG.THIGH_HIGH_STOCKINGS, TAG.CHOKER,
@@ -30092,6 +30092,89 @@ var SCENE = {
             misc:[]
         },
         ignoredCharacterTags:[],
+    },
+    "0707_1":{
+        character:CHAR.RINA,
+        tags:{
+            female:[
+                TAG.KIMONO, TAG.BREASTS_OUT,
+                TAG.BLOWJOB, TAG.PAIZURI, TAG.BLOWJOB_PAIZURI, TAG.NIPPLE_PINCHING, TAG.CUM_IN_MOUTH, TAG.BUKKAKE
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[TAG.NO_SEX]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0707_2"
+    },
+    "0707_2":{
+        character:CHAR.RINA,
+        tags:{
+            female:[
+                TAG.KIMONO, TAG.BREASTS_OUT, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.BUKKAKE, TAG.VAGINAL_SEX, TAG.SQUIRTING, TAG.NAKADASHI, TAG.AHEGAO
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[]
+    },
+    "0708_1":{
+        character:[CHAR.ONISAKI_KIRARA, CHAR.FUUMA_KOTAROU],
+        form:["young", null],
+        tags:{
+            female:[
+                TAG.KIMONO, TAG.BREASTS_OUT,
+                TAG.BLOWJOB, TAG.CUM_IN_MOUTH
+            ],
+            male:[],
+            location:[TAG.OUTSIDE, TAG.SEMI_PUBLIC],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0708_2"
+    },
+    "0708_2":{
+        character:[CHAR.ONISAKI_KIRARA, CHAR.FUUMA_KOTAROU],
+        form:["young", null],
+        tags:{
+            female:[
+                TAG.KIMONO, TAG.BREASTS_OUT, TAG.THIGH_HIGH_STOCKINGS, TAG.PANTLESS,
+                TAG.QUICKIE_FIX_POSITION,
+                TAG.VAGINAL_SEX, TAG.BREAST_GROPING, TAG.NIPPLE_PINCHING, TAG.AHEGAO, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.OUTSIDE, TAG.SEMI_PUBLIC],
+            misc:[]
+        },
+        ignoredCharacterTags:[]
+    },
+    "0709":{
+        character:CHAR.FARIRA,
+        tags:{
+            female:[
+                TAG.KIMONO, TAG.BREASTS_OUT,
+                TAG.HANDJOB, TAG.FEMDOM
+            ],
+            male:[TAG.ANAL_SEX, TAG.NIPPLE_PINCHING, TAG.NAKADASHI, TAG.AHEGAO],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[]
+    },
+    "0710":{
+        character:[CHAR.SOUMA_NARUMI, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.KIMONO, TAG.BREASTS_OUT,
+                TAG.PAIZURI, TAG.BUKKAKE, TAG.BLOWJOB_PAIZURI, 
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[]
     },
 
 

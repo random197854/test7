@@ -1636,5 +1636,11 @@ STORY = {
         banner:"bnr_ev_story_00050_1_l.webp",
         id:229
     },
+    MAPEVENT051:{
+        japName:"白蛇姫と幸運のお正月",
+        type:"map",
+        banner:"bnr_ev_map_00051_1_l.webp",
+        id:230
+    },
 }
 
