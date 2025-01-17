@@ -1642,5 +1642,11 @@ STORY = {
         banner:"bnr_ev_map_00051_1_l.webp",
         id:230
     },
+    RAIDEVENT051:{
+        japName:"銀世界の復讐者",
+        type:"raid",
+        banner:"bnr_ev_raid_00051_1_l.webp",
+        id:231
+    },
 }
 
