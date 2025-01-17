@@ -4504,6 +4504,24 @@ var CHAR = {
             cv:CV.IGNORE
         }
     },
+    SAGOU_BUNGO:{
+        base:{
+            name:{
+                eng:"Sagou Bungo",
+                engAlias:["Sagou", "Bungo Sagou", "Bungo", "Library"],
+                jap:"佐郷文庫",
+                japAlias:["佐郷", "文庫", "ライブラリー"]
+            },
+            tags:[
+                
+            ],
+            gender:"male",
+            focus:false,
+            originalCharacter:true,
+            artist:ARTIST.IGNORE,
+            cv:CV.IGNORE
+        }
+    },
 
     IGAWA_ASAGI: {
         base: {
@@ -10751,6 +10769,83 @@ var CHAR = {
             originalCharacter:true,
             artist:ARTIST.KUUCHUU_YOUSAI,
             cv:CV.HAZUKI_AKARI
+        }
+    },
+    IZUMO_KINU:{
+        base:{
+            name:{
+                eng:"Izumo Kinu",
+                engAlias:["Izumo", "Kinu Izumo", "Kinu"],
+                jap:"出雲きぬ",
+                japAlias:["出雲", "きぬ"]
+            },
+            tags:[
+                TAG.TEAL_HAIR, TAG.LONG_HAIR,
+                TAG.AMBER_EYES,
+                TAG.LIGHT_SKIN, TAG.HUGE_BREASTS
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.ZOL,
+            cv:CV.INUGAMI_HINATA
+        }
+    },
+    KUTSUKI_MAHIRU:{
+        base:{
+            name:{
+                eng:"Kutsuki Mahiru",
+                engAlias:["Kutsuki", "Mahiru Kutsuki", "Mahiru"],
+                jap:"朽木真妃留",
+                japAlias:["朽木", "真妃留"]
+            },
+            tags:[
+                TAG.BLACK_HAIR, TAG.LONG_HAIR,
+                TAG.RED_EYES,
+                TAG.BIG_BREASTS, TAG.LIGHT_SKIN
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.SATOU_KUUKI,
+            cv:CV.MORIYA_UTANE
+        }
+    },
+    MURASAKI_KAGAMI:{
+        base:{
+            name:{
+                eng:"Murasaki Kagami",
+                engAlias:["Murasaki", "Kagami", "Purple Mirror", "Purple", "Mirror"],
+                jap:"ムラサキカガミ",
+                japAlias:["ムラサキ", "カガミ"]
+            },
+            tags:[
+                TAG.WHITE_HAIR, TAG.LONG_HAIR,
+                TAG.VIOLET_EYES,
+                TAG.TANNED_SKIN, TAG.BIG_BREASTS
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.HOMURA_YUNI,
+            cv:CV.ENOMOTO_NEMU
+        }
+    },
+    MAPE_DROP:{
+        base:{
+            name:{
+                eng:"Mape Drop",
+                engAlias:["Maple Drop", "Mape", "Drop", "Maple"],
+                jap:"メープ・ドロープ",
+                japAlias:["メープ", "ドロープ"]
+            },
+            tags:[
+                TAG.WHITE_HAIR, TAG.LONG_HAIR,
+                TAG.RED_EYES,
+                TAG.DARK_SKIN, TAG.BIG_BREASTS,
+                TAG.HORNS
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.SAKURANBO,
+            cv:CV.TACHIBANA_SARA
         }
     },
 
@@ -30176,6 +30271,88 @@ var SCENE = {
         },
         ignoredCharacterTags:[]
     },
+    "0711_1":{
+        character:[CHAR.KUTSUKI_MAHIRU, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.BREASTS_OUT, TAG.LEOTARD, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.FOOTJOB, TAG.ONAHOLE, TAG.WOMB_TATTOO
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0711_2"
+    },
+    "0711_2":{
+        character:[CHAR.KUTSUKI_MAHIRU, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.BREASTS_OUT, TAG.LEOTARD,
+                TAG.VAGINAL_SEX, TAG.WOMB_TATTOO, TAG.KISSING, TAG.BREAST_GROPING, TAG.BUKKAKE
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0712_1":{
+        character:[CHAR.LILIM, CHAR.FUUMA_KOTAROU],
+        form:["awakened", null],
+        tags:{
+            female:[
+                TAG.BREASTS_OUT, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.VAGINAL_SEX, TAG.AHEGAO, TAG.SQUIRTING, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.OUTSIDE, TAG.SEMI_PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0712_2"
+    },
+    "0712_2":{
+        character:[CHAR.LILIM, CHAR.FUUMA_KOTAROU],
+        form:["awakened", null],
+        tags:{
+            female:[
+                TAG.BREASTS_OUT, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.MASTURBATION, TAG.VAGINAL_FINGERING, TAG.BUKKAKE, TAG.VAGINAL_SEX, TAG.BREAST_GROPING, TAG.HEART_PUPILS
+            ],
+            male:[],
+            location:[TAG.OUTSIDE, TAG.SEMI_PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0713":{
+        character:[CHAR.MURASAKI_KAGAMI, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.SCHOOL_UNIFORM,
+                TAG.HANDJOB, TAG.BLOWJOB, TAG.CUM_IN_MOUTH
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0714":{
+        character:[CHAR.MAPE_DROP, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.BREASTS_OUT,
+                TAG.HANDJOB, TAG.BREAST_SUCKING, TAG.CUM_LICKUP
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
 
 
 
@@ -30358,6 +30535,19 @@ var SCENE = {
             misc:[TAG.GROUP]
         },
         ignoredCharacterTags:[TAG.TANNED_SKIN, TAG.TANLINES],
+    },
+    "EX0006":{
+        character:[CHAR.IZUMO_KINU, CHAR.SAGOU_BUNGO],
+        tags:{
+            female:[
+                TAG.COMPLETELY_NAKED,
+                TAG.VAGINAL_SEX, TAG.KISSING, TAG.NAKADASHI, TAG.AHEGAO
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[]
     },
 
 
