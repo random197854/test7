@@ -30353,6 +30353,89 @@ var SCENE = {
         },
         ignoredCharacterTags:[],
     },
+    "0715_1":{
+        character:[CHAR.KUGIMITSU_CHLOE, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.FRILLY_CLOTHING, TAG.THIGH_HIGH_STOCKINGS, TAG.NAKED,
+                TAG.BLOWJOB, TAG.BUKKAKE, TAG.VAGINAL_LEAKAGE, TAG.CUM_IN_MOUTH
+            ],
+            male:[],
+            location:[TAG.PRISON_CELL, TAG.ON_BED, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"715_2"
+    },
+    "0715_2":{
+        character:[CHAR.KUGIMITSU_CHLOE, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.FRILLY_CLOTHING, TAG.THIGH_HIGH_STOCKINGS, TAG.NAKED,
+                TAG.VAGINAL_SEX, TAG.SPANKING, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.PRISON_CELL, TAG.ON_BED, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0716_1":{
+        character:CHAR.KAMIMURA_MAIKA,
+        form:"adult",
+        tags:{
+            female:[
+                TAG.TURTLE_NECK, TAG.PANTYLESS, TAG.NIPPLE_PIERCING, TAG.BREASTS_OUT,
+                TAG.BREAST_GROPING, TAG.VAGINAL_LEAKAGE, TAG.VAGINAL_FINGERING, TAG.SQUIRTING, TAG.VAGINAL_SEX, TAG.HAIR_PULLING, TAG.AHEGAO, TAG.NAKADASHI, TAG.AHEGAO, TAG.SPANKING
+            ],
+            male:[],
+            location:[TAG.LOVE_HOTEL, TAG.PRIVATE],
+            misc:[TAG.CUT_IN_XRAY]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"716_2"
+    },
+    "0716_2":{
+        character:CHAR.KAMIMURA_MAIKA,
+        form:"adult",
+        tags:{
+            female:[
+                TAG.SIDE_TIE_PANTIES, TAG.BRA, TAG.PANTIES_PUSHED_TO_SIDE, TAG.BREASTS_OUT, TAG.USED_CONDOMS_EXPOSITION, TAG.NIPPLE_PIERCING, TAG.GENITAL_PIERCING,
+                TAG.QUICKIE_FIX_POSITION,
+                TAG.ANAL_INSERTION, TAG.VIBRATOR, TAG.VAGINAL_SEX, TAG.DOUBLE_PENETRATION, TAG.MAGIC_WAND, TAG.ANAL_SEX, TAG.AHEGAO, TAG.NAKADASHI, TAG.SQUIRTING, TAG.VAGINAL_LEAKAGE, TAG.DICK_CLEANING_BLOWJOB, TAG.CUM_IN_MOUTH
+            ],
+            male:[],
+            location:[TAG.WAREHOUSE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0717":{
+        character:[CHAR.REPITA_RICHSTAR, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.BREASTS_OUT, TAG.PANTIES, TAG.FRILLY_CLOTHING, TAG.THIGH_HIGH_STOCKINGS, TAG.SKIRT, TAG.PANTYLESS,
+                TAG.BLOWJOB, TAG.INCONTINENCE, TAG.CUM_IN_MOUTH, TAG.VAGINAL_SEX, TAG.NAKADASHI, TAG.AHEGAO, TAG.VAGINAL_LEAKAGE
+            ],
+            male:[],
+            location:[TAG.BEDROOM, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0718":{
+        character:CHAR.EMORITA,
+        tags:{
+            female:[
+                TAG.FRILLY_CLOTHING, TAG.BREASTS_OUT, TAG.LEOTARD, TAG.THIGH_HIGH_STOCKINGS,
+                TAG.TENTACLE_BONDAGE, TAG.BREAST_GROPING, TAG.VAGINAL_SEX, TAG.STOMACH_INFLATION, TAG.VAGINAL_LEAKAGE, TAG.AHEGAO
+            ],
+            male:[],
+            location:[TAG.FLESH_ROOM, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
 
 
 
