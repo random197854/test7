@@ -1648,5 +1648,17 @@ STORY = {
         banner:"bnr_ev_raid_00051_1_l.webp",
         id:231
     },
+    CHAPTER202:{
+        japName:"廃棄都市",
+        type:"chapter",
+        chapter:2,
+        id:232
+    },
+    STORYEVENT051:{
+        japName:"廃棄都市と未来ギャル",
+        type:"story",
+        banner:"bnr_ev_story_00051_1_l.webp",
+        id:233
+    },
 }
 
