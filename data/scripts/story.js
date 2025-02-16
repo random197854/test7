@@ -1660,5 +1660,11 @@ STORY = {
         banner:"bnr_ev_story_00051_1_l.webp",
         id:233
     },
+    MAPEVENT052:{
+        japName:"嶺と炎鬼",
+        type:"map",
+        banner:"bnr_ev_map_00052_1_l.webp",
+        id:234
+    },
 }
 
