@@ -10848,6 +10848,63 @@ var CHAR = {
             cv:CV.TACHIBANA_SARA
         }
     },
+    ZOYA_AZEF:{
+        base:{
+            name:{
+                eng:"Zoya Azef",
+                engAlias:["Zoya", "Azef"],
+                jap:"ゾーヤ・アゼフ",
+                japAlias:["ゾーヤ", "アゼフ"]
+            },
+            tags:[
+                TAG.PLATINUM_BLOND_HAIR, TAG.LONG_HAIR,
+                TAG.BLUE_EYES,
+                TAG.HUGE_BREASTS, TAG.LIGHT_SKIN
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.SAIJO_SATORU,
+            cv:CV.OKUDERA_KASUMI
+        }
+    },
+    NAGIRIIN_RYOU:{
+        base:{
+            name:{
+                eng:"Nagiriin Ryou",
+                engAlias:["Nagiriin", "Ryou Nagiriin", "Ryou"],
+                jap:"百鬼院嶺",
+                japAlias:["百鬼院", "嶺"]
+            },
+            tags:[
+                TAG.PINK_HAIR, TAG.LONG_HAIR,
+                TAG.PINK_EYES,
+                TAG.HUGE_BREASTS, TAG.LIGHT_SKIN, TAG.HORNS
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.YOU_MARU,
+            cv:CV.IGASAKI_AYAKA
+        }
+    },
+    BARUBURUBARU:{
+        base:{
+            name:{
+                eng:"Baruburubaru",
+                engAlias:[],
+                jap:"バルブルバル",
+                japAlias:[]
+            },
+            tags:[
+                TAG.PINK_HAIR, TAG.GREEN_HAIR, TAG.MULTICOLORED_HAIR,
+                TAG.AMBER_EYES,
+                TAG.HUGE_BREASTS, TAG.LIGHT_SKIN
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.ASAHI,
+            cv:CV.KUROMORI_OSHIKA
+        }
+    },
 
     // :{
     //     base:{
@@ -30393,7 +30450,7 @@ var SCENE = {
             misc:[TAG.CUT_IN_XRAY]
         },
         ignoredCharacterTags:[],
-        nextScene:"716_2"
+        nextScene:"0716_2"
     },
     "0716_2":{
         character:CHAR.KAMIMURA_MAIKA,
@@ -30435,6 +30492,85 @@ var SCENE = {
             misc:[]
         },
         ignoredCharacterTags:[],
+    },
+    "0719_1":{
+        character:[CHAR.ZOYA_AZEF, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT,
+                TAG.HANDJOB, TAG.INTERCRURAL_SEX, TAG.BUKKAKE
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0719_2"
+    },
+    "0719_2":{
+        character:[CHAR.ZOYA_AZEF, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT,
+                TAG.VAGINAL_SEX, TAG.LOTION, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.BATHROOM, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0720_1":{
+        character:CHAR.NAGIRIIN_RYOU,
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.RIPPED_CLOTHING, TAG.BREASTS_OUT,
+                TAG.VAGINAL_FINGERING, TAG.WOMB_TATTOO, TAG.NIPPLE_PINCHING, TAG.VAGINAL_LEAKAGE, TAG.VAGINAL_SEX, TAG.AHEGAO, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.OUTSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0720_2"
+    },
+    "0720_2":{
+        character:CHAR.NAGIRIIN_RYOU,
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.RIPPED_CLOTHING, TAG.BREASTS_OUT,TAG.VAGINAL_SEX, TAG.STOMACH_DEFORMATION, TAG.WOMB_TATTOO, TAG.AHEGAO, TAG.NAKADASHI, TAG.DEEPTHROAT, TAG.DOUBLE_PENIS_PENETRATION, TAG.CUM_IN_MOUTH
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.ON_BED, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[]
+    },
+    "0721":{
+        character:CHAR.BARUBURUBARU,
+        tags:{
+            female:[
+                TAG.TOPLESS, TAG.CHOKER, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.VAGINAL_SEX, TAG.PAIZURI, TAG.BUKKAKE, TAG.BLOWJOB, TAG.DOUBLE_PENIS_PENETRATION, TAG.NIPPLE_PINCHING, TAG.NAKADASHI, TAG.CUM_IN_MOUTH, TAG.INCONTINENCE
+            ],
+            male:[],
+            location:[TAG.LOVE_HOTEL, TAG.PRIVATE],
+            misc:[TAG.CUT_IN_XRAY]
+        },
+        ignoredCharacterTags:[]
+    },
+    "0722":{
+        character:CHAR.HATSUKAZE,
+        tags:{
+            female:[
+                TAG.BREASTS_OUT,
+                TAG.VAGINAL_SEX, TAG.NAKADASHI, TAG.HANDJOB, TAG.BLOWJOB, TAG.BUKKAKE
+            ],
+            male:[],
+            location:[TAG.PRISON_CELL, TAG.PRIVATE],
+            misc:[TAG.GROUP]
+        },
+        ignoredCharacterTags:[]
     },
 
 
