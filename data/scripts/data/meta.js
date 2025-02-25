@@ -1233,6 +1233,18 @@ var CV = {
         jap: "百瀬りる",
         japAlias: ["百瀬", "りる"]
     },
+    KOMURA_SUI:{
+        eng: "Komura Sui",
+        engAlias: ["Komura", "Sui Komura", "Sui"],
+        jap: "小村スイ",
+        japAlias: ["小村", "スイ"]
+    },
+    KIRISAKI_MIKO:{
+        eng: "Kirisaki Miko",
+        engAlias: ["Kirisaki", "Miko Kirisaki", "Miko"],
+        jap: "桐咲みこ",
+        japAlias: ["桐咲", "みこ"]
+    },
     IGNORE:{
         eng: "",
         engAlias: [],
@@ -10903,6 +10915,44 @@ var CHAR = {
             originalCharacter:true,
             artist:ARTIST.ASAHI,
             cv:CV.KUROMORI_OSHIKA
+        }
+    },
+    LICH_MAID:{
+        base:{
+            name:{
+                eng:"Lich Maid",
+                engAlias:["Armeria"],
+                jap:"リッチメイド",
+                japAlias:["アルメリア"]
+            },
+            tags:[
+                TAG.BLACK_HAIR, TAG.WHITE_HAIR, TAG.LONG_HAIR, TAG.MULTICOLORED_HAIR,
+                TAG.RED_EYES,
+                TAG.LIGHT_SKIN, TAG.BIG_BREASTS
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.KAGAMI_HIROTAKA,
+            cv:CV.KOMURA_SUI
+        }
+    },
+    MAJOR:{
+        base:{
+            name:{
+                eng:"Major",
+                engAlias:[],
+                jap:"メイジャー",
+                japAlias:[]
+            },
+            tags:[
+                    TAG.BLACK_HAIR, TAG.SHOULDER_LENGTH_HAIR,
+                    TAG.VIOLET_EYES,
+                    TAG.LIGHT_SKIN, TAG.BIG_BREASTS
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.SANO_TOSHIHIDE,
+            cv:CV.KIRISAKI_MIKO
         }
     },
 
@@ -30646,6 +30696,60 @@ var SCENE = {
             ],
             male:[],
             location:[TAG.ALLEYWAY, TAG.SEMI_PUBLIC],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "4003_1":{
+        character:[CHAR.LICH_MAID, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.MAID_DRESS, TAG.BREASTS_OUT,
+                TAG.HANDJOB, TAG.BUKKAKE
+            ],
+            male:[],
+            location:[TAG.BEDROOM, TAG.ON_BED, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"4003_2"
+    },
+    "4003_2":{
+        character:[CHAR.LICH_MAID, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.MAID_DRESS, TAG.BREASTS_OUT, TAG.PANTYLESS,
+                TAG.VAGINAL_SEX, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.BEDROOM, TAG.ON_BED, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "4004_1":{
+        character:CHAR.MAJOR,
+        tags:{
+            female:[
+                TAG.BREASTS_OUT, TAG.PANTYLESS,
+                TAG.SEX_ENGINE, TAG.BREAST_INJECTION, TAG.CLIT_INJECTION, TAG.VAGINAL_INJECTION, TAG.NIPPLE_PINCHING, TAG.BREAST_PRESS, TAG.AHEGAO
+            ],
+            male:[],
+            location:[TAG.FACILITY, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"4004_2"
+    },
+    "4004_2":{
+        character:[CHAR.MAJOR, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.BREASTS_OUT, TAG.HAT, TAG.PANTIES_PUSHED_TO_SIDE, TAG.COLLAR, TAG.KEMONOMIMI,
+                TAG.VAGINAL_SEX, TAG.BREAST_GROPING, TAG.KISSING, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.BEDROOM, TAG.ON_BED, TAG.PRIVATE],
             misc:[]
         },
         ignoredCharacterTags:[],
