@@ -1666,5 +1666,11 @@ STORY = {
         banner:"bnr_ev_map_00052_1_l.webp",
         id:234
     },
+    RAIDEVENT052:{
+        japName:"癒しのナースと銭湯の対魔忍",
+        type:"raid",
+        banner:"bnr_ev_raid_00052_1_l.webp",
+        id:235
+    },
 }
 
