@@ -10955,6 +10955,25 @@ var CHAR = {
             cv:CV.KIRISAKI_MIKO
         }
     },
+    TRACY:{
+        base:{
+            name:{
+                eng:"Tracy",
+                engAlias:["Tracey"],
+                jap:"トレイシー",
+                japAlias:[]
+            },
+            tags:[
+                TAG.BLUE_HAIR, TAG.GREEN_HAIR, TAG.MULTICOLORED_HAIR,
+                TAG.BLUE_EYES,
+                TAG.BIG_BREASTS, TAG.LIGHT_SKIN
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.NOBUSHITO,
+            cv:CV.HAZUKI_HIKARI
+        }
+    },
 
     // :{
     //     base:{
@@ -30621,6 +30640,89 @@ var SCENE = {
             misc:[TAG.GROUP]
         },
         ignoredCharacterTags:[]
+    },
+    "0723_1":{
+        character:CHAR.YORIBE_TSUTOME,
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.BREASTS_OUT, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.BREAST_GROPING, TAG.VAGINAL_SEX, TAG.MASTURBATION, TAG.VAGINAL_FINGERING, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.TOILET, TAG.SEMI_PUBLIC],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"723_2"
+    },
+    "0723_2":{
+        character:CHAR.YORIBE_TSUTOME,
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.BREASTS_OUT, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.SIXTY_NINE,
+                TAG.BLOWJOB, TAG.VAGINAL_SEX, TAG.KISSING
+            ],
+            male:[],
+            location:[TAG.BATHROOM,TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0724_1":{
+        character:CHAR.ELEONORE,
+        tags:{
+            female:[
+                TAG.PARTIALLY_TRANSPARENT_CLOTHING,
+                TAG.BONDAGE, TAG.SPREAD_PUSSY, TAG.VAGINAL_SEX, TAG.BREAST_GROPING, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"724_2"
+    },
+    "0724_2":{
+        character:CHAR.ELEONORE,
+        tags:{
+            female:[
+                TAG.PARTIALLY_TRANSPARENT_CLOTHING,
+                TAG.DOGGY_STYLE,
+                TAG.SPREAD_ASS, TAG.VAGINAL_SEX, TAG.NAKADASHI, TAG.ANAL_SEX, TAG.AHEGAO, TAG.BUKKAKE
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[TAG.GROUP]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0725":{
+        character:CHAR.YOKOZONO_HAZUMI,
+        tags:{
+            female:[
+                TAG.SCHOOL_UNIFORM, TAG.BREASTS_OUT, TAG.PANTIES, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.QUICKIE_FIX_POSITION,
+                TAG.MASTURBATION, TAG.VAGINAL_SEX, TAG.BREAST_GROPING, TAG.DEFLORATION, TAG.VAGINAL_LEAKAGE, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.CLASSROOM, TAG.SEMI_PUBLIC],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0726":{
+        character:CHAR.TRACY,
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.BREAST_CUTOUTS, TAG.VAGINAL_CUTOUT,
+                TAG.BREAST_GROPING, TAG.VAGINAL_SEX, TAG.VAGINAL_LEAKAGE, TAG.BUKKAKE, TAG.NAKADASHI, TAG.KISSING, TAG.ANAL_SEX, TAG.BLOWJOB, TAG.DOUBLE_PENIS_PENETRATION, TAG.AHEGAO
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
     },
 
 
