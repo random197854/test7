@@ -1672,5 +1672,11 @@ STORY = {
         banner:"bnr_ev_raid_00052_1_l.webp",
         id:235
     },
+    STORYEVENT052:{
+        japName:"魔石を撃ち抜け",
+        type:"story",
+        banner:"bnr_ev_story_00052_1_l.webp",
+        id:236
+    },
 }
 
