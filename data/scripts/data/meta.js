@@ -1245,6 +1245,18 @@ var CV = {
         jap: "桐咲みこ",
         japAlias: ["桐咲", "みこ"]
     },
+    AYAME_SHION:{
+        eng: "Ayame Shion",
+        engAlias: ["Ayame", "Shion Ayame", "Shion"],
+        jap: "綾目紫苑",
+        japAlias: ["綾目", "紫苑"]
+    },
+    NATSUNO_UME:{
+        eng: "Natsuno Ume",
+        engAlias: ["Natsuno", "Ume Natsuno", "Ume"],
+        jap: "夏乃うめ",
+        japAlias: ["夏乃", "うめ"]
+    },
     IGNORE:{
         eng: "",
         engAlias: [],
@@ -10972,6 +10984,63 @@ var CHAR = {
             originalCharacter:true,
             artist:ARTIST.NOBUSHITO,
             cv:CV.HAZUKI_HIKARI
+        }
+    },
+    KAMITANI_KIKKA:{
+        base:{
+            name:{
+                eng:"Kamitani Kikka",
+                engAlias:["Kamitani", "Kikka Kamitani", "Kikka"],
+                jap:"狼谷菊華",
+                japAlias:["狼谷", "菊華"]
+            },
+            tags:[
+                TAG.BLACK_HAIR, TAG.WHITE_HAIR, TAG.MULTICOLORED_HAIR,
+                TAG.RED_EYES, TAG.BLUE_EYES, TAG.HETEROCHROMIA,
+                TAG.LIGHT_SKIN, TAG.BIG_BREASTS
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.ASAHI,
+            cv:CV.AYAME_SHION
+        }
+    },
+    KUZUMI_MIONA:{
+        base:{
+            name:{
+                eng:"Kizumi Miona",
+                engAlias:["Kizumi", "Miona Kizumi", "Miona"],
+                jap:"九須見澪奈",
+                japAlias:["九須見", "澪奈"]
+            },
+            tags:[
+                TAG.BROWN_HAIR, TAG.SHOULDER_LENGTH_HAIR,
+                TAG.BROWN_EYES,
+                TAG.LIGHT_SKIN, TAG.BIG_BREASTS
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.FUUFUU,
+            cv:CV.NATSUNO_UME
+        }
+    },
+    SAKURAGI_SHIINA:{
+        base:{
+            name:{
+                eng:"Sakuragi Shiina",
+                engAlias:["Sakuragi", "Shiina Sakuragi", "Shiina"],
+                jap:"櫻木椎菜",
+                japAlias:["櫻木", "椎菜"]
+            },
+            tags:[
+                TAG.PINK_HAIR, TAG.LONG_HAIR,
+                TAG.PINK_EYES,
+                TAG.SMALL_BREASTS, TAG.LIGHT_SKIN
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.SABUROU,
+            cv:CV.MOMOSE_RIRU
         }
     },
 
@@ -30717,6 +30786,87 @@ var SCENE = {
             female:[
                 TAG.TAIMANIN_OUTFIT, TAG.BREAST_CUTOUTS, TAG.VAGINAL_CUTOUT,
                 TAG.BREAST_GROPING, TAG.VAGINAL_SEX, TAG.VAGINAL_LEAKAGE, TAG.BUKKAKE, TAG.NAKADASHI, TAG.KISSING, TAG.ANAL_SEX, TAG.BLOWJOB, TAG.DOUBLE_PENIS_PENETRATION, TAG.AHEGAO
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0727_1":{
+        character:CHAR.KAMITANI_KIKKA,
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.BREASTS_OUT, TAG.RIPPED_CLOTHING,
+                TAG.BLOWJOB, TAG.VAGINAL_SEX, TAG.NAKADASHI, TAG.CUM_IN_MOUTH, TAG.FORCEFUL_BLOWJOB, TAG.VAGINAL_LEAKAGE
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0727_2"
+    },
+    "0727_2":{
+        character:CHAR.KAMITANI_KIKKA,
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.BREASTS_OUT,
+                TAG.PROSTITUTION, TAG.PAIZURI, TAG.BLOWJOB_PAIZURI, TAG.VAGINAL_SEX, TAG.NAKADASHI, TAG.AHEGAO
+            ],
+            male:[],
+            location:[TAG.LOVE_HOTEL, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0728_1":{
+        character:CHAR.MAKISHIMA_AYAME,
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.BREAST_CUTOUTS, TAG.VAGINAL_CUTOUT,
+                TAG.DOGGY_STYLE,
+                TAG.VAGINAL_SEX, TAG.NAKADASHI, TAG.AHEGAO, TAG.BLOWJOB, TAG.CUM_IN_MOUTH
+            ],
+            male:[],
+            location:[TAG.OUTSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0728_2"
+    },
+    "0728_2":{
+        character:CHAR.MAKISHIMA_AYAME,
+        tags:{
+            female:[
+                TAG.YUKATA, TAG.BREASTS_OUT, TAG.PANTYLESS,
+                TAG.BREAST_SUCKING, TAG.VAGINAL_SEX, TAG.AHEGAO, TAG.NAKADASHI, TAG.LEGLOCK
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.SEMI_PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0729":{
+        character:[CHAR.KUZUMI_MIONA, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.BREASTS_OUT,
+                TAG.BLOWJOB, TAG.CUM_IN_MOUTH
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0730":{
+        character:[CHAR.SAKURAGI_SHIINA, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.BREASTS_OUT, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.NIPPLE_PINCHING, TAG.VAGINAL_SEX, TAG.VAGINAL_LEAKAGE, TAG.BUKKAKE, TAG.STOMACH_DEFORMATION, TAG.NAKADASHI, TAG.AHEGAO
             ],
             male:[],
             location:[TAG.INSIDE, TAG.PRIVATE],
