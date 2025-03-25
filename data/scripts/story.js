@@ -1678,5 +1678,11 @@ STORY = {
         banner:"bnr_ev_story_00052_1_l.webp",
         id:236
     },
+    CHAPTER203:{
+        japName:"魔界の門",
+        type:"chapter",
+        chapter:3,
+        id:237
+    },
 }
 
