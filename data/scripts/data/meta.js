@@ -22710,6 +22710,7 @@ var SCENE = {
             misc:[TAG.CUT_IN_XRAY]
         },
         ignoredCharacterTags:[],
+        nextScene:"0603_1"
     },
     "0346":{
         character:CHAR.KOKOA_LAPUCELLE,
@@ -28219,7 +28220,8 @@ var SCENE = {
             misc:[]
         },
         ignoredCharacterTags:[],
-        nextScene:"0603_2"
+        nextScene:"0603_2",
+        artistOverwrite:ARTIST.AOI_NAGISA
     },
     "0603_2":{
         character:[CHAR.MIZUKI_SHIRANUI, CHAR.UEHARA_SHIKANOSUKE],
@@ -28236,6 +28238,8 @@ var SCENE = {
             misc:[TAG.CUT_IN_XRAY]
         },
         ignoredCharacterTags:[],
+        nextScene:"0732_1",
+        artistOverwrite:ARTIST.AOI_NAGISA
     },
     "0604":{
         character:[CHAR.ICHIMONJI_MIIKO, CHAR.FUUMA_KOTAROU],
@@ -30873,6 +30877,67 @@ var SCENE = {
             misc:[]
         },
         ignoredCharacterTags:[],
+    },
+    "0731_1":{
+        character:[CHAR.AISHUU_HEBIKO, CHAR.FUUMA_KOTAROU],
+        form:["young", null],
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.BREAST_CUTOUTS, TAG.VAGINAL_CUTOUT,
+                TAG.BREAST_GROPING, TAG.VAGINAL_SEX, TAG.NAKADASHI, TAG.BUKKAKE, TAG.AHEGAO, TAG.DICK_CLEANING_BLOWJOB, TAG.VAGINAL_LEAKAGE
+            ],
+            male:[],
+            location:[TAG.BEDROOM, TAG.ON_BED, TAG.PRIVATE],
+            misc:[TAG.CUT_IN_XRAY]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0731_2"
+    },
+    "0731_2":{
+        character:CHAR.AISHUU_HEBIKO,
+        form:"young",
+        tags:{
+            female:[
+                TAG.BREASTS_OUT, TAG.PANTIES_PUSHED_TO_SIDE, TAG.THIGH_HIGH_STOCKINGS, TAG.THIGH_BAND,
+                TAG.KISSING, TAG.VAGINAL_SEX, TAG.BREAST_GROPING, TAG.BLOWJOB, TAG.DOUBLE_PENIS_PENETRATION, TAG.VAGINAL_LEAKAGE, TAG.NAKADASHI, TAG.CUM_IN_MOUTH, TAG.ANAL_SEX, TAG.BUKKAKE, TAG.AHEGAO
+            ],
+            male:[],
+            location:[TAG.LOVE_HOTEL, TAG.ON_BED, TAG.PRIVATE],
+            misc:[TAG.CUT_IN_XRAY]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0732_1":{
+        character:[CHAR.UEHARA_SHIKANOSUKE, CHAR.UEHARA_RIN],
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.PROTRUDING_NIPPLES, TAG.STRAP_ON
+            ],
+            male:[
+                TAG.TAIMANIN_OUTFIT, TAG.BREASTS_OUT, TAG.PROTRUDING_NIPPLES, TAG.ANAL_SEX, TAG.STOMACH_DEFORMATION, TAG.AHEGAO
+            ],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0732_2",
+        artistOverwrite:ARTIST.OBUI
+    },
+    "0732_2":{
+        character:[CHAR.UEHARA_SHIKANOSUKE, CHAR.UEHARA_RIN],
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.BREASTS_OUT, TAG.RIPPED_CLOTHING,
+                TAG.BLOWJOB, TAG.ANAL_SEX, TAG.VAGINAL_SEX, TAG.DOUBLE_PENETRATION, TAG.VAGINAL_LEAKAGE
+            ],
+            male:[
+                TAG.TAIMANIN_OUTFIT, TAG.BREASTS_OUT, TAG.STRAP_ON
+            ],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        artistOverwrite:ARTIST.OBUI
     },
 
 
