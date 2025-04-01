@@ -30939,6 +30939,90 @@ var SCENE = {
         ignoredCharacterTags:[],
         artistOverwrite:ARTIST.OBUI
     },
+    "0733_1":{
+        character:[CHAR.AMANAKI_UI, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.DRESS, TAG.PANTYLESS, TAG.EVENING_GLOVES, TAG.FRILLY_CLOTHING,
+                TAG.HANDJOB, TAG.BLOWJOB, TAG.BUKKAKE, TAG.VAGINAL_FINGERING, TAG.SQUIRTING, TAG.VAGINAL_LEAKAGE, TAG.CUM_IN_MOUTH
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE, TAG.ON_BED],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0733_2"
+    },
+    "0733_2":{
+        character:[CHAR.AMANAKI_UI, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.DRESS, TAG.PANTYLESS, TAG.EVENING_GLOVES, TAG.FRILLY_CLOTHING,
+                TAG.HANDJOB, TAG.BUKKAKE, TAG.VAGINAL_SEX, TAG.BREAST_GROPING, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE, TAG.ON_BED],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0734_1":{
+        character:CHAR.MIZUKI_SHIRANUI,
+        form:"adult",
+        tags:{
+            female:[
+                TAG.DRESS, TAG.PANTYLESS, TAG.PARTIALLY_TRANSPARENT_CLOTHING, TAG.THIGH_HIGH_STOCKINGS, TAG.PANTYHOSE, TAG.EVENING_GLOVES, TAG.HIGH_HEELS,
+                TAG.HANDJOB, TAG.BLOWJOB, TAG.VAGINAL_FINGERING, TAG.CUM_IN_MOUTH, TAG.SQUIRTING, TAG.BUKKAKE
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0734_2"
+    },
+    "0734_2":{
+        character:CHAR.MIZUKI_SHIRANUI,
+        form:"adult",
+        tags:{
+            female:[
+                TAG.DRESS, TAG.PANTYLESS, TAG.PARTIALLY_TRANSPARENT_CLOTHING, TAG.THIGH_HIGH_STOCKINGS, TAG.PANTYHOSE, TAG.EVENING_GLOVES, TAG.BREASTS_OUT,
+                TAG.STANDING_SEX,
+                TAG.BUKKAKE, TAG.VAGINAL_SEX, TAG.NAKADASHI, TAG.AHEGAO, TAG.VAGINAL_LEAKAGE
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.SEMI_PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0735":{
+        character:CHAR.YUUKI_TENKO,
+        tags:{
+            female:[
+                TAG.DRESS, TAG.PANTIES_PUSHED_TO_SIDE, TAG.BREASTS_OUT, TAG.THIGH_HIGH_STOCKINGS, TAG.THIGH_BAND,
+                TAG.VAGINAL_SEX, TAG.BUKKAKE, TAG.NAKADASHI, TAG.AHEGAO
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.ON_BED, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0736":{
+        character:[CHAR.MOCHIZUKI_UNA, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.DRESS, TAG.PANTIES_PUSHED_TO_SIDE, TAG.GLOVES, TAG.BREASTS_OUT,
+                TAG.URINATION_FETISH, TAG.CUNNILINGUS, TAG.VAGINAL_SEX, TAG.NIPPLE_PINCHING, TAG.NAKADASHI, TAG.AHEGAO
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.SEMI_PUBLIC],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+
 
 
 
