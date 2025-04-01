@@ -1684,5 +1684,11 @@ STORY = {
         chapter:3,
         id:237
     },
+    STORYEVENT053:{
+        japName:"幻夢卿の夜会",
+        type:"story",
+        banner:"bnr_ev_story_00053_1_l.webp",
+        id:238
+    },
 }
 
