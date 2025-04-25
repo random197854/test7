@@ -1691,9 +1691,9 @@ STORY = {
         id:238
     },
     STORYEVENT054:{
-        japName:"COLAB_54-ARREGLAR_ESTO",
+        japName:"次元JCTの支配者",
         type:"story",
-        banner:"bnr_ev_story_00053_1_l.webp",
+        banner:"bnr_ev_story_00054_1_l.webp",
         id:239
     },
 }
