@@ -1690,5 +1690,11 @@ STORY = {
         banner:"bnr_ev_story_00053_1_l.webp",
         id:238
     },
+    STORYEVENT054:{
+        japName:"COLAB_54-ARREGLAR_ESTO",
+        type:"story",
+        banner:"bnr_ev_story_00053_1_l.webp",
+        id:239
+    },
 }
 
