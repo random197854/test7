@@ -1697,10 +1697,10 @@ STORY = {
         id:239
     },
     STORYEVENT055:{
-        japName:"次元JCTの支配者",
+        japName:"幽霊城再び",
         type:"story",
         banner:"bnr_ev_story_00054_1_l.webp",
-        id:239
+        id:240
     },
 }
 
