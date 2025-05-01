@@ -1696,5 +1696,11 @@ STORY = {
         banner:"bnr_ev_story_00054_1_l.webp",
         id:239
     },
+    STORYEVENT055:{
+        japName:"次元JCTの支配者",
+        type:"story",
+        banner:"bnr_ev_story_00054_1_l.webp",
+        id:239
+    },
 }
 
