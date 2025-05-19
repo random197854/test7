@@ -1421,5 +1421,35 @@ STORY = {
         banner:"bnr_ev_story_00052_1_l.png",
         id:236
     },
+    CHAPTER203:{
+        japName:"魔界の門",
+        type:"chapter",
+        chapter:3,
+        id:237
+    },
+    STORYEVENT053:{
+        japName:"幻夢卿の夜会",
+        type:"story",
+        banner:"bnr_ev_story_00053_1_l.png",
+        id:238
+    },
+    STORYEVENT054:{
+        japName:"次元JCTの支配者",
+        type:"story",
+        banner:"bnr_ev_story_00054_1_l.png",
+        id:239
+    },
+    STORYEVENT055:{
+        japName:"幽霊城再び",
+        type:"story",
+        banner:"bnr_ev_story_00055_1_l.png",
+        id:240
+    },
+    STORYEVENT056:{
+        japName:"文香とフェリシア",
+        type:"story",
+        banner:"bnr_ev_story_00056_1_l.png",
+        id:241
+    },
 }
 

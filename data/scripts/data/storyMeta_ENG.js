@@ -124,22 +124,4 @@ STORY_ENG = {
     CHAPTER015:{
         engName:"Gosha Summer Vacation"
     },
-	MAPEVENT007:{
-		engName:"Ba Chou in Paradise",
-		engBanner:"en/bnr_ev_map_00007_1_l.png",
-	},
-	STORYEVENT008:{
-		engName:"Lady of the Spiders",
-		engBanner:"en/bnr_ev_story_00008_1_l.png",
-	},
-    CHAPTER016:{
-        engName:"The Forgotten Study"
-    },
-    RAIDEVENT008:{
-		engName:"The Cursed Mirror",
-		engBanner:"en/bnr_ev_raid_00008_1_l.png",
-	},
-    CHAPTER017:{
-        engName:"AD2068"
-    },
 }
