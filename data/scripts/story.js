@@ -1690,5 +1690,23 @@ STORY = {
         banner:"bnr_ev_story_00053_1_l.webp",
         id:238
     },
+    STORYEVENT054:{
+        japName:"次元JCTの支配者",
+        type:"story",
+        banner:"bnr_ev_story_00054_1_l.webp",
+        id:239
+    },
+    STORYEVENT055:{
+        japName:"幽霊城再び",
+        type:"story",
+        banner:"bnr_ev_story_00055_1_l.webp",
+        id:240
+    },
+    STORYEVENT056:{
+        japName:"文香とフェリシア",
+        type:"story",
+        banner:"bnr_ev_story_00056_1_l.webp",
+        id:241
+    },
 }
 
