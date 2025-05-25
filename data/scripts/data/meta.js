@@ -31568,6 +31568,62 @@ var SCENE = {
         },
         ignoredCharacterTags:[],
     },
+    "0750_1":{
+        character:CHAR.MIZUKI_YUKIKAZE,
+        form:"adult",
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.NIPPLE_CUTOUTS, TAG.VAGINAL_CUTOUT,
+                TAG.ELECTRIC_SHOCKS, TAG.RAPE, TAG.VAGINAL_SEX, TAG.FORCEFUL_BLOWJOB, TAG.CUM_IN_MOUTH, TAG.DOUBLE_PENIS_PENETRATION, TAG.AHEGAO, TAG.BUKKAKE
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0750_2"
+    },
+    "0750_2":{
+        character:CHAR.MIZUKI_YUKIKAZE,
+        form:"adult",
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.NIPPLE_CUTOUTS,
+                TAG.STOMACH_DEFORMATION, TAG.ELECTRIC_SHOCKS, TAG.VAGINAL_INSERTION, TAG.ANAL_INSERTION, TAG.AHEGAO, TAG.SQUIRTING
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[]
+    },
+    "0751_1":{
+        character:CHAR.INAGE_NATSU,
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.CLEAVAGE_CUTOUT,
+                TAG.BLOWJOB_PAIZURI, TAG.BUKKAKE, TAG.HANDJOB
+            ],
+            male:[TAG.ORC],
+            location:[TAG.INSIDE, TAG.BEDROOM, TAG.ON_BED],
+            misc:[TAG.NO_SEX]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0751_2"
+    },
+    "0751_2":{
+        character:CHAR.INAGE_NATSU,
+        tags:{
+            female:[
+                TAG.COMPLETELY_NAKED,
+                TAG.VAGINAL_SEX, TAG.AHEGAO, TAG.NAKADASHI, TAG.ANAL_SEX, TAG.KISSING
+            ],
+            male:[TAG.ORC],
+            location:[TAG.INSIDE, TAG.BEDROOM, TAG.ON_BED],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
 
 
 

@@ -1708,5 +1708,11 @@ STORY = {
         banner:"bnr_ev_story_00056_1_l.webp",
         id:241
     },
+    CHAPTER204:{
+        japName:"雷神再び",
+        type:"chapter",
+        chapter:4,
+        id:242
+    },
 }
 
