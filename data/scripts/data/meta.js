@@ -275,6 +275,12 @@ var ARTIST = {
         jap: "織音",
         japAlias: []
     },
+    ST:{
+        eng: "ST",
+        engAlias: [],
+        jap: "ST",
+        japAlias: []
+    },
     IGNORE:{
         eng: "",
         engAlias: [],
@@ -31620,6 +31626,93 @@ var SCENE = {
             ],
             male:[TAG.ORC],
             location:[TAG.INSIDE, TAG.BEDROOM, TAG.ON_BED],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0752_1":{
+        character:CHAR.TORAJIRO,
+        tags:{
+            female:[
+                TAG.BIKINI, TAG.WEDDING_DRESS, TAG.SKIRT, TAG.FRILLY_CLOTHING, TAG.NAKED,
+                TAG.VAGINAL_LEAKAGE, TAG.MINDBREAK, TAG.AHEGAO
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[TAG.NO_SEX]
+        },
+        ignoredCharacterTags:[],
+        artistOverwrite:ARTIST.ST,
+        nextScene:"0752_2"
+    },
+    "0752_2":{
+        character:CHAR.TORAJIRO,
+        tags:{
+            female:[
+                TAG.BIKINI, TAG.WEDDING_DRESS, TAG.SKIRT, TAG.FRILLY_CLOTHING, TAG.THIGH_HIGH_STOCKINGS, TAG.HIGH_HEELS, TAG.BREAST_CUTOUTS, TAG.BRA, TAG.PANTIES,
+                TAG.DOGGY_STYLE,
+                TAG.MINDBREAK, TAG.VAGINAL_FINGERING, TAG.HAIR_PULLING, TAG.VAGINAL_LEAKAGE, TAG.VAGINAL_SEX, TAG.BLOWJOB, TAG.DOUBLE_PENIS_PENETRATION, TAG.NAKADASHI, TAG.CUM_IN_MOUTH, TAG.BUKKAKE
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        artistOverwrite:ARTIST.ST,
+    },
+    "0753_1":{
+        character:[CHAR.KOUKAWA_ASUKA, CHAR.FUUMA_KOTAROU],
+        form:["normal", null],
+        tags:{
+            female:[
+                TAG.WEDDING_DRESS, TAG.THIGH_HIGH_STOCKINGS, TAG.EVENING_GLOVES, TAG.PANTIES, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.BREAST_GROPING, TAG.VAGINAL_SEX, TAG.NAKADASHI, TAG.KISSING
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        artistOverwrite:ARTIST.ST,
+        nextScene:"753_2"
+    },
+    "0753_2":{
+        character:[CHAR.KOUKAWA_ASUKA, CHAR.FUUMA_KOTAROU],
+        form:["normal", null],
+        tags:{
+            female:[
+                TAG.WEDDING_DRESS, TAG.THIGH_HIGH_STOCKINGS, TAG.EVENING_GLOVES, TAG.PREGNANT,
+                TAG.VAGINAL_SEX, TAG.LACTATION, TAG.NIPPLE_SUCKING, TAG.NAKADASHI, TAG.AHEGAO
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        artistOverwrite:ARTIST.ST,
+    },
+    "0754":{
+        character:CHAR.LISCIA,
+        tags:{
+            female:[
+                TAG.WEDDING_DRESS, TAG.RIPPED_CLOTHING, TAG.THIGH_HIGH_STOCKINGS, TAG.PANTIES, TAG.PROTRUDING_NIPPLES, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.VAGINAL_SEX, TAG.LACTATION, TAG.AHEGAO, TAG.NAKADASHI, TAG.SQUIRTING
+            ],
+            male:[],
+            location:[TAG.BROTHEL, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0755":{
+        character:CHAR.HAYASHIZAKI_MIYAKO,
+        tags:{
+            female:[
+                TAG.WEDDING_DRESS, TAG.BREASTS_OUT, TAG.PANTIES, TAG.PANTIES_PUSHED_TO_SIDE, TAG.GLOVES, TAG.THIGH_HIGH_STOCKINGS,
+                TAG.BONDAGE, TAG.VAGINAL_FINGERING, TAG.VAGINAL_SEX, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
             misc:[]
         },
         ignoredCharacterTags:[],

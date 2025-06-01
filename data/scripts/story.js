@@ -1714,5 +1714,11 @@ STORY = {
         chapter:4,
         id:242
     },
+    STORYEVENT057:{
+        japName:"アスカと花嫁コンテスト",
+        type:"story",
+        banner:"bnr_ev_story_00057_1_l.webp",
+        id:243
+    },
 }
 
