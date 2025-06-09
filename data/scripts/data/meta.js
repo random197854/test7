@@ -11321,6 +11321,25 @@ var CHAR = {
             cv:CV.AN_MITSUKI
         }
     },
+    KOKUOUIN_YORUYA:{
+        base:{
+            name:{
+                eng:"Kokuouin Yoruya",
+                engAlias:["Kokuouin", "Yoruya Kokuouin", "Yoruya"],
+                jap:"黒鳳院ヨルヤ",
+                japAlias:["黒鳳院", "ヨルヤ"]
+            },
+            tags:[
+                TAG.BROWN_HAIR, TAG.LONG_HAIR,
+                TAG.AMBER_EYES, TAG.BLUE_EYES, TAG.HETEROCHROMIA,
+                TAG.BIG_BREASTS, TAG.LIGHT_SKIN
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.SAIJO_SATORU,
+            cv:CV.ENOMOTO_NEMU
+        }
+    },
 
     // :{
     //     base:{
@@ -31847,6 +31866,33 @@ var SCENE = {
             ],
             male:[],
             location:[TAG.BEDROOM, TAG.ON_BED, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "5003_1":{
+        character:CHAR.KOKUOUIN_YORUYA,
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.RIPPED_CLOTHING, TAG.BREAST_CUTOUTS, TAG.VAGINAL_CUTOUT, TAG.FRILLY_CLOTHING, TAG.HAT,
+                TAG.VAGINAL_SEX, TAG.NAKADASHI, TAG.STOMACH_DEFORMATION, TAG.FORCEFUL_BLOWJOB, TAG.HANDJOB, TAG.AHEGAO, TAG.BUKKAKE
+            ],
+            male:[TAG.ORC],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[TAG.GROUP]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"5003_2"
+    },
+    "5003_2":{
+        character:CHAR.KOKUOUIN_YORUYA,
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.RIPPED_CLOTHING, TAG.NAKED, TAG.FRILLY_CLOTHING, TAG.HAT,
+                TAG.WOMB_TATTOO, TAG.HANDJOB, TAG.BUKKAKE, TAG.VAGINAL_SEX, TAG.NAKADASHI, TAG.AHEGAO
+            ],
+            male:[TAG.ORC],
+            location:[TAG.INSIDE, TAG.PRIVATE],
             misc:[]
         },
         ignoredCharacterTags:[],
