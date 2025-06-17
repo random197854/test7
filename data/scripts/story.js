@@ -1720,5 +1720,11 @@ STORY = {
         banner:"bnr_ev_story_00057_1_l.webp",
         id:243
     },
+    RAIDEVENT053:{
+        japName:"女教師南海大作戦",
+        type:"raid",
+        banner:"bnr_ev_raid_00053_1_l.webp",
+        id:244
+    },
 }
 

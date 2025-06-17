@@ -1317,6 +1317,12 @@ var CV = {
         jap: "逢坂菜乃花",
         japAlias: ["逢坂", "菜乃花"]
     },
+    MIZUSHIRO_SUI:{
+        eng: "Mizushiro Sui",
+        engAlias: ["Mizushiro", "Sui Mizushiro", "Sui"],
+        jap: "水城すい",
+        japAlias: ["水城", "すい"]
+    },
     IGNORE:{
         eng: "",
         engAlias: [],
@@ -11338,6 +11344,63 @@ var CHAR = {
             originalCharacter:true,
             artist:ARTIST.SAIJO_SATORU,
             cv:CV.ENOMOTO_NEMU
+        }
+    },
+    SHIKISHIMA_SHIMEI:{
+        base:{
+            name:{
+                eng:"Shikishima Shimei",
+                engAlias:["Shikishima", "Shimei Shikishima", "Shimei"],
+                jap:"屍忌島シメイ",
+                japAlias:["屍忌島", "シメイ"]
+            },
+            tags:[
+                TAG.BLACK_HAIR, TAG.RED_HAIR, TAG.MULTICOLORED_HAIR, TAG.SHOULDER_LENGTH_HAIR,
+                TAG.RED_EYES,
+                TAG.BIG_BREASTS, TAG.LIGHT_SKIN
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.NOBUSHITO,
+            cv:CV.FUYUMINE_KOSUZU
+        }
+    },
+    ETHER_BALMEGIA:{
+        base:{
+            name:{
+                eng:"Ether Balemgia",
+                engAlias:["Ether", "Balmegia"],
+                jap:"エーテル・バレメギア",
+                japAlias:["エーテル", "バレメギア"]
+            },
+            tags:[
+                TAG.PINK_HAIR, TAG.SHOULDER_LENGTH_HAIR,
+                TAG.PINK_EYES,
+                TAG.BIG_BREASTS, TAG.LIGHT_SKIN
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.SANO_TOSHIHIDE,
+            cv:CV.MIZUSHIRO_SUI
+        }
+    },
+    OTOGI_FUJINO:{
+        base:{
+            name:{
+                eng:"Otogi Fujino",
+                engAlias:["Otogi", "Fujino Otogi", "Fujino"],
+                jap:"乙切藤乃",
+                japAlias:["乙切", "藤乃"]
+            },
+            tags:[
+                TAG.BROWN_HAIR, TAG.LONG_HAIR,
+                TAG.AMBER_EYES, TAG.VIOLET_EYES, TAG.HETEROCHROMIA,
+                TAG.BIG_BREASTS, TAG.LIGHT_SKIN
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.SABUROU,
+            cv:CV.UIKOU_SUIKI
         }
     },
 
@@ -30363,6 +30426,7 @@ var SCENE = {
             misc:[TAG.CUT_IN_XRAY]
         },
         ignoredCharacterTags:[],
+        nextScene:"0757_1"
     },
     "0691":{
         character:CHAR.ROKKA,
@@ -31735,6 +31799,86 @@ var SCENE = {
             misc:[]
         },
         ignoredCharacterTags:[],
+    },
+    "0756_1":{
+        character:CHAR.SHIKISHIMA_SHIMEI,
+        tags:{
+            female:[
+                TAG.BREAST_CUTOUTS, TAG.VAGINAL_CUTOUT,
+                TAG.ASPHYXIATION, TAG.VAGINAL_FINGERING, TAG.NIPPLE_SUCKING, TAG.STOMACH_INFLATION, TAG.SLAVE_TATTOO, TAG.SCAT, TAG.AHEGAO, TAG.SENSUAL_BITING, TAG.VAGINAL_LEAKAGE
+            ],
+            male:[],
+            location:[TAG.OUTSIDE, TAG.SEMI_PUBLIC],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0756_2"
+    },
+    "0756_2":{
+        character:CHAR.SHIKISHIMA_SHIMEI,
+        tags:{
+            female:[
+                TAG.BREAST_CUTOUTS, TAG.VAGINAL_CUTOUT,
+                TAG.ANAL_SEX, TAG.STOMACH_INFLATION, TAG.SCAT, TAG.AHEGAO, TAG.SQUIRTING, TAG.VAGINAL_LEAKAGE
+            ],
+            male:[],
+            location:[TAG.OUTSIDE, TAG.SEMI_PUBLIC],
+            misc:[]
+        },
+        ignoredCharacterTags:[]
+    },
+    "0757_1":{
+        character:CHAR.RYUUZEN_TOMOKO,
+        tags:{
+            female:[
+                TAG.SKIRT, TAG.THIGH_HIGH_STOCKINGS, TAG.HIGH_HEELS, TAG.PANTIES, TAG.BREASTS_OUT,
+                TAG.BLOWJOB, TAG.FORCEFUL_BLOWJOB, TAG.VAGINAL_LEAKAGE, TAG.BUKKAKE, TAG.BLOWBANG, TAG.HANDJOB, TAG.MINDBREAK, TAG.BREAST_GROPING, TAG.CUM_IN_MOUTH, TAG.CUM_PLAY, TAG.CUM_SWALLOWING
+            ],
+            male:[],
+            location:[TAG.CLASSROOM, TAG.SEMI_PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0757_1"
+    },
+    "0757_2":{
+        character:CHAR.RYUUZEN_TOMOKO,
+        tags:{
+            female:[
+                TAG.NAKED,
+                TAG.VAGINAL_LEAKAGE, TAG.PROSTITUTION, TAG.ANAL_SEX, TAG.MINDBREAK, TAG.AHEGAO, TAG.BREAST_GROPING, TAG.MASTURBATION, TAG.VAGINAL_FINGERING, TAG.INCONTINENCE
+            ],
+            male:[TAG.ORC],
+            location:[TAG.ALLEYWAY, TAG.SEMI_PUBLIC],
+            misc:[]
+        },
+        ignoredCharacterTags:[]
+    },
+    "0758":{
+        character:[CHAR.ETHER_BALMEGIA, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.BREASTS_OUT,
+                TAG.HANDJOB, TAG.CUM_LICKUP
+            ],
+            male:[TAG.NIPPLE_SUCKING],
+            location:[TAG.BATHROOM, TAG.SEMI_PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[]
+    },
+    "0759":{
+        character:CHAR.OTOGI_FUJINO,
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.BREAST_CUTOUTS, TAG.VAGINAL_CUTOUT,
+                TAG.VAGINAL_SEX, TAG.BUKKAKE, TAG.NAKADASHI, TAG.AHEGAO
+            ],
+            male:[],
+            location:[TAG.OUTSIDE, TAG.SEMI_PUBLIC],
+            misc:[]
+        },
+        ignoredCharacterTags:[]
     },
 
 
