@@ -193,7 +193,7 @@ var ARTIST = {
     },  
     BUTCHA_U:{
         eng: "Butcha-U",
-        engAlias: ["Butcha-U", "Butcha", "U"],
+        engAlias: ["Butcha-U", "Butcha"],
         jap: "",
         japAlias: []
     },  
@@ -205,7 +205,7 @@ var ARTIST = {
     },  
     ZUNTA:{
         eng: "Zunta",
-        engAlias: ["Zunta", "", ""],
+        engAlias: ["Zunta"],
         jap: "",
         japAlias: []
     },
@@ -278,7 +278,13 @@ var ARTIST = {
     ST:{
         eng: "ST",
         engAlias: [],
-        jap: "ST",
+        jap: "",
+        japAlias: []
+    },
+    TAJUYA:{
+        eng: "Tajuya",
+        engAlias: [],
+        jap: "",
         japAlias: []
     },
     IGNORE:{
@@ -31839,7 +31845,7 @@ var SCENE = {
             misc:[]
         },
         ignoredCharacterTags:[],
-        nextScene:"0757_1"
+        nextScene:"0757_2"
     },
     "0757_2":{
         character:CHAR.RYUUZEN_TOMOKO,
@@ -31879,6 +31885,88 @@ var SCENE = {
             misc:[]
         },
         ignoredCharacterTags:[]
+    },
+    "0760_1":{
+        character:[CHAR.ISHIGAWA_AMU, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.BIKINI, TAG.FRILLY_CLOTHING,
+                TAG.SIXTY_NINE,
+                TAG.HANDJOB, TAG.BLOWJOB, TAG.VAGINAL_LEAKAGE, TAG.VAGINAL_FINGERING, TAG.SQUIRTING
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[TAG.NO_SEX]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0760_2"
+    },
+    "0760_2":{
+        character:[CHAR.ISHIGAWA_AMU, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.BIKINI, TAG.FRILLY_CLOTHING, TAG.BREASTS_OUT,
+                TAG.VAGINAL_SEX, TAG.BREAST_GROPING, TAG.NIPPLE_PLAY, TAG.KISSING, TAG.VAGINAL_LEAKAGE, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[]
+    },
+    "0761_1":{
+        character:CHAR.IGAWA_ASAGI,
+        tags:{
+            female:[
+                TAG.BIKINI, TAG.BREASTS_OUT, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.CUM_SWALLOWING, TAG.SQUIRTING, TAG.HAIR_PULLING, TAG.VAGINAL_SEX, TAG.AHEGAO, TAG.NAKADASHI, TAG.VAGINAL_LEAKAGE, TAG.INCONTINENCE
+            ],
+            male:[],
+            location:[TAG.OUTSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0761_2"
+    },
+    "0761_2":{
+        character:[],
+        tags:{
+            female:[
+                TAG.BIKINI, TAG.BREASTS_OUT, TAG.VAGINAL_CUTOUT,
+                TAG.SLAVE_TATTOO, TAG.VAGINAL_SEX, TAG.VAGINAL_LEAKAGE, TAG.AMATEUR_PORN_PRODUCTION, TAG.BREAST_GROPING, TAG.LOTION, TAG.DOUBLE_PEACE_SIGN_AHEGAO, TAG.NAKADASHI, TAG.CUM_SWALLOWING
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[TAG.CUT_IN_XRAY]
+        },
+        ignoredCharacterTags:[]
+    },
+    "0762":{
+        character:CHAR.JIGOKUMARU_AKIRA,
+        tags:{
+            female:[
+                TAG.BIKINI, TAG.BREASTS_OUT, TAG.PANTIES_PUSHED_TO_SIDE, TAG.BELT,
+                TAG.TENTACLE_BONDAGE, TAG.TENTACLE_RAPE, TAG.BREAST_GROPING, TAG.VAGINAL_SEX, TAG.ASPHYXIATION, TAG.SQUIRTING, TAG.ANAL_SEX, TAG.DOUBLE_PENIS_PENETRATION, TAG.ALL_THE_WAY_THROUGH, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.CAVE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[]
+    },
+    "0763":{
+        character:CHAR.HOSHINO_MITSUKI,
+        tags:{
+            female:[
+                TAG.BIKINI, TAG.FRILLY_CLOTHING, TAG.BREASTS_OUT, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.CUM_SWALLOWING, TAG.VAGINAL_SEX, TAG.BUKKAKE, TAG.INCONTINENCE
+            ],
+            male:[],
+            location:[TAG.BEACH, TAG.SEMI_PUBLIC],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        artistOverwrite:ARTIST.TAJUYA
     },
 
 

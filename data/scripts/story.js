@@ -1726,5 +1726,11 @@ STORY = {
         banner:"bnr_ev_raid_00053_1_l.webp",
         id:244
     },
+    STORYEVENT058:{
+        japName:"地下とリゾートと流浪の対魔忍",
+        type:"story",
+        banner:"bnr_ev_story_00058_1_l.webp",
+        id:245
+    },
 }
 
