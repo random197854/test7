@@ -31929,7 +31929,7 @@ var SCENE = {
         nextScene:"0761_2"
     },
     "0761_2":{
-        character:[],
+        character:CHAR.IGAWA_ASAGI,
         tags:{
             female:[
                 TAG.BIKINI, TAG.BREASTS_OUT, TAG.VAGINAL_CUTOUT,
@@ -31967,6 +31967,86 @@ var SCENE = {
         },
         ignoredCharacterTags:[],
         artistOverwrite:ARTIST.TAJUYA
+    },
+    "0764_1":{
+        character:CHAR.TATSUMIYA_HAIRI,
+        tags:{
+            female:[
+                TAG.SWIMSUIT, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.VAGINAL_FINGERING, TAG.MASTURBATION, TAG.CUNNILINGUS, TAG.VAGINAL_SEX, TAG.USED_CONDOMS_EXPOSITION
+            ],
+            male:[],
+            location:[TAG.BEACH, TAG.SEMI_PUBLIC],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"764_2"
+    },
+    "0764_2":{
+        character:CHAR.TATSUMIYA_HAIRI,
+        tags:{
+            female:[
+                TAG.SWIMSUIT, TAG.BREASTS_OUT, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.VAGINAL_SEX, TAG.BLOWJOB, TAG.DOUBLE_PENIS_PENETRATION, TAG.BUKKAKE, TAG.USED_CONDOMS_EXPOSITION, TAG.NAKADASHI, TAG.CUM_IN_MOUTH
+            ],
+            male:[],
+            location:[TAG.BEACH, TAG.SEMI_PUBLIC],
+            misc:[]
+        },
+        ignoredCharacterTags:[]
+    },
+    "0765_1":{
+        character:CHAR.DAIDOUJI_NAMI,
+        tags:{
+            female:[
+                TAG.SCHOOL_UNIFORM, TAG.BIKINI, TAG.BREASTS_OUT, TAG.SIDE_TIE_PANTIES, TAG.CHOKER, TAG.SKIRT,
+                TAG.BLOWJOB, TAG.HEART_PUPILS, TAG.PAIZURI, TAG.CUM_IN_MOUTH, TAG.BUKKAKE
+            ],
+            male:[],
+            location:[TAG.BEACH, TAG.SEMI_PUBLIC],
+            misc:[TAG.NO_SEX]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"765_2"
+    },
+    "0765_2":{
+        character:CHAR.DAIDOUJI_NAMI,
+        tags:{
+            female:[
+                TAG.SCHOOL_UNIFORM, TAG.BIKINI, TAG.BREASTS_OUT, TAG.SIDE_TIE_PANTIES, TAG.CHOKER, TAG.SKIRT,
+                TAG.INTERCRURAL_SEX, TAG.VAGINAL_SEX, TAG.NAKADASHI, TAG.AHEGAO, TAG.DICK_CLEANING_BLOWJOB
+            ],
+            male:[],
+            location:[TAG.BEACH, TAG.SEMI_PUBLIC],
+            misc:[]
+        },
+        ignoredCharacterTags:[]
+    },
+    "0766":{
+        character:[CHAR.IBA_MINAMI, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.BIKINI, TAG.BREASTS_OUT, TAG.PANTIES_AROUND_LEG, TAG.THIGH_BAND,
+                TAG.VAGINAL_SEX, TAG.USED_CONDOMS_EXPOSITION, TAG.NAKADASHI, TAG.AHEGAO
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[]
+    },
+    "0767":{
+        character:[CHAR.ROSIE, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.BIKINI, TAG.BREASTS_OUT, TAG.PANTIES_PUSHED_TO_SIDE, TAG.FRILLY_CLOTHING,
+                TAG.VAGINAL_SEX, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.BEACH, TAG.SEMI_PUBLIC],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
     },
 
 

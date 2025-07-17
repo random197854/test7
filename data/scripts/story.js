@@ -1732,5 +1732,11 @@ STORY = {
         banner:"bnr_ev_story_00058_1_l.webp",
         id:245
     },
+    RAIDEVENT054:{
+        japName:"大怪獣と渚のアメスク対魔忍",
+        type:"raid",
+        banner:"bnr_ev_raid_00054_1_l.webp",
+        id:246
+    },
 }
 
