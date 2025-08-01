@@ -11409,6 +11409,57 @@ var CHAR = {
             cv:CV.UIKOU_SUIKI
         }
     },
+    KOUGA_GENNOSUKE_BASILISK:{
+        base:{
+            name:{
+                eng:"Kouga Gennosuke (Basilisk)",
+                engAlias:["Kouga Gennosuke", "Kouga", "Gennosuke Kouga", "Gennosuke"],
+                jap:"甲賀弦之介（バジリスク）",
+                japAlias:["甲賀", "弦之介"]
+            },
+            tags:[
+                
+            ],
+            gender:"male",
+            originalCharacter:false,
+            artist:ARTIST.SANO_TOSHIHIDE,
+            cv:CV.IGNORE
+        }
+    },
+    OBORO_BASILISK:{
+        base:{
+            name:{
+                eng:"Oboro (Basilisk)",
+                engAlias:["Oboro"],
+                jap:"朧（バジリスク）",
+                japAlias:["朧"]
+            },
+            tags:[
+                
+            ],
+            gender:"female",
+            originalCharacter:false,
+            artist:ARTIST.KAGAMI_HIROTAKA,
+            cv:CV.IGNORE
+        }
+    },
+    KAGEROU_BASILISK:{
+        base:{
+            name:{
+                eng:"Kagerou (Basilisk)",
+                engAlias:["Kagerou"],
+                jap:"陽炎（バジリスク）",
+                japAlias:["陽炎"]
+            },
+            tags:[
+                
+            ],
+            gender:"female",
+            originalCharacter:false,
+            artist:ARTIST.ZOL,
+            cv:CV.IGNORE
+        }
+    },
 
     // :{
     //     base:{
@@ -32044,6 +32095,105 @@ var SCENE = {
             ],
             male:[],
             location:[TAG.BEACH, TAG.SEMI_PUBLIC],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0768_1":{
+        character:[CHAR.KOUGA_GENNOSUKE_BASILISK, CHAR.FUUMA_KOTAROU, CHAR.FUUMA_TOKIKO, CHAR.IZUMO_TSURU],
+        tags:{
+            female:[
+                
+            ],
+            male:[],
+            location:[],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0768_2"
+    },
+    "0768_2":{
+        character:[CHAR.KOUGA_GENNOSUKE_BASILISK, CHAR.FUUMA_KOTAROU, CHAR.UEHARA_SHIKANOSUKE],
+        tags:{
+            female:[
+                
+            ],
+            male:[],
+            location:[],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0769_1":{
+        character:[CHAR.OBORO_BASILISK, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                
+            ],
+            male:[],
+            location:[],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0769_2"
+    },
+    "0769_2":{
+        character:[CHAR.OBORO_BASILISK, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                
+            ],
+            male:[],
+            location:[],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0770_1":{
+        character:[CHAR.KAGEROU_BASILISK, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                
+            ],
+            male:[],
+            location:[],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0770_2"
+    },
+    "0770_2":{
+        character:[CHAR.KAGEROU_BASILISK, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                
+            ],
+            male:[],
+            location:[],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0771":{
+        character:[CHAR.CLEAR_LOBEL, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                
+            ],
+            male:[],
+            location:[],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0772":{
+        character:[CHAR.SANADA_HOMURA, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                
+            ],
+            male:[],
+            location:[],
             misc:[]
         },
         ignoredCharacterTags:[],

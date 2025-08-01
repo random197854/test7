@@ -1738,5 +1738,17 @@ STORY = {
         banner:"bnr_ev_raid_00054_1_l.webp",
         id:246
     },
+    CHAPTER205:{
+        japName:"正しい決断",
+        type:"chapter",
+        chapter:5,
+        id:247
+    },
+    RAIDEVENT999:{
+        japName:"対魔忍xバジリスク",
+        type:"raid",
+        banner:"bnr_ev_raid_00999_1_l.webp",
+        id:248
+    },
 }
 
