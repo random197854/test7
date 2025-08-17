@@ -1329,6 +1329,12 @@ var CV = {
         jap: "水城すい",
         japAlias: ["水城", "すい"]
     },
+    KURABA_AIRI:{
+        eng: "Kubara Airi",
+        engAlias: ["Kubara", "Airi Kubara", "Airi"],
+        jap: "倉葉アイリ",
+        japAlias: ["倉葉", "アイリ"]
+    },
     IGNORE:{
         eng: "",
         engAlias: [],
@@ -11458,6 +11464,44 @@ var CHAR = {
             originalCharacter:false,
             artist:ARTIST.ZOL,
             cv:CV.IGNORE
+        }
+    },
+    VASUKI:{
+        base:{
+            name:{
+                eng:"Vasuki",
+                engAlias:[],
+                jap:"ヴァースキ",
+                japAlias:[]
+            },
+            tags:[
+                TAG.GREEN_HAIR, TAG.LONG_HAIR,
+                TAG.GREEN_EYES,
+                TAG.LIGHT_SKIN, TAG.HUGE_BREASTS
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.YOU_MARU,
+            cv:CV.KURABA_AIRI
+        }
+    },
+    ONIGUMO_SABUROU:{
+        base:{
+            name:{
+                eng:"Onigumo Saburou",
+                engAlias:["Onigumo", "Saburou Onigumo", "Saburou"],
+                jap:"鬼蜘蛛三郎",
+                japAlias:["鬼蜘蛛", "三郎"]
+            },
+            tags:[
+                TAG.WHITE_HAIR, TAG.LONG_HAIR,
+                TAG.RED_EYES,
+                TAG.LIGHT_SKIN, TAG.AVERAGE_BREASTS
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.SANO_TOSHIHIDE,
+            cv:CV.UNEMU_ZAKURO
         }
     },
 
@@ -32198,7 +32242,7 @@ var SCENE = {
         },
         ignoredCharacterTags:[],
     },
-
+    
 
 
 
@@ -32329,6 +32373,60 @@ var SCENE = {
             male:[],
             location:[TAG.BEDROOM, TAG.ON_BED, TAG.PRIVATE],
             misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "4005_1":{
+        character:[CHAR.VASUKI, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.BREASTS_OUT, TAG.TAIL, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.BUKKAKE, TAG.VAGINAL_SEX, TAG.FEMDOM, TAG.BREAST_GROPING, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.BEDROOM, TAG.ON_BED, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"4005_2"
+    },
+    "4005_2":{
+        character:[CHAR.VASUKI, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.BREASTS_OUT, TAG.BREASTS_OUT, TAG.PANTYLESS,
+                TAG.BREAST_GROPING, TAG.VAGINAL_SEX, TAG.BUKKAKE, TAG.NAKADASHI, TAG.AHEGAO
+            ],
+            male:[],
+            location:[TAG.BEDROOM, TAG.ON_BED, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "4006_1":{
+        character:CHAR.ONIGUMO_SABUROU,
+        tags:{
+            female:[
+                TAG.COMPLETELY_NAKED,
+                TAG.DOGEZA, TAG.ANAL_FINGERING, TAG.ANAL_SEX, TAG.NAKADASHI, TAG.AHEGAO, TAG.HAIR_PULLING, TAG.BUKKAKE, TAG.CUM_LICKUP
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[TAG.CUT_IN_XRAY]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"4006_2"
+    },
+    "4006_2":{
+        character:CHAR.ONIGUMO_SABUROU,
+        tags:{
+            female:[
+                TAG.COMPLETELY_NAKED,
+                TAG.ANAL_INSERTION, TAG.VAGINAL_FINGERING, TAG.SQUIRTING, TAG.ANILINGUS, TAG.AHEGAO, TAG.VAGINAL_SEX, TAG.LEGLOCK, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE, TAG.ON_BED],
+            misc:[TAG.CUT_IN_XRAY]
         },
         ignoredCharacterTags:[],
     },
