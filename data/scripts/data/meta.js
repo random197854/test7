@@ -287,6 +287,12 @@ var ARTIST = {
         jap: "",
         japAlias: []
     },
+    KIRIN_P:{
+        eng: "Kirin P",
+        engAlias: [],
+        jap: "キリンP",
+        japAlias: []
+    },
     IGNORE:{
         eng: "",
         engAlias: [],
@@ -32242,7 +32248,91 @@ var SCENE = {
         },
         ignoredCharacterTags:[],
     },
-    
+    "0773_1":{
+        character:[CHAR.ANNETTESU, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.BUNNYGIRL_OUTFIT, TAG.PANTIES_PUSHED_TO_SIDE, TAG.BREASTS_OUT,
+                TAG.VAGINAL_SEX, TAG.VAGINAL_LEAKAGE, TAG.NAKADASHI,
+            ],
+            male:[],
+            location:[TAG.BEDROOM, TAG.ON_BED, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0773_2"
+    },
+    "0773_2":{
+        character:[CHAR.ANNETTESU, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.BUNNYGIRL_OUTFIT, TAG.BREASTS_OUT,
+                TAG.LACTATION, TAG.VAGINAL_SEX, TAG.BREAST_SUCKING, TAG.NAKADASHI, TAG.AHEGAO, TAG.GAPING
+            ],
+            male:[],
+            location:[TAG.BEDROOM, TAG.ON_BED, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0774_1":{
+        character:CHAR.AKIYAMA_RINKO,
+        tags:{
+            female:[
+                TAG.BUNNYGIRL_OUTFIT, TAG.BREASTS_OUT, TAG.HIGH_HEELS, TAG.THIGH_BAND, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.MASTURBATION, TAG.BUKKAKE, TAG.VAGINAL_LEAKAGE, TAG.VAGINAL_FINGERING, TAG.BREAST_GROPING, TAG.SQUIRTING
+            ],
+            male:[],
+            location:[TAG.BROTHEL, TAG.SEMI_PRIVATE],
+            misc:[TAG.NO_SEX]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0774_2",
+        artistOverwrite:ARTIST.KIRIN_P
+    },
+    "0774_2":{
+        character:CHAR.AKIYAMA_RINKO,
+        tags:{
+            female:[
+                TAG.BUNNYGIRL_OUTFIT, TAG.BREASTS_OUT, TAG.PANTIES_PUSHED_TO_SIDE, TAG.THIGH_BAND, TAG.HIGH_HEELS,
+                TAG.QUICKIE_FIX_POSITION,
+                TAG.VAGINAL_SEX, TAG.NAKADASHI, TAG.AHEGAO, TAG.BREAST_GROPING, TAG.BLOWJOB, TAG.DOUBLE_PENIS_PENETRATION, TAG.CUM_IN_MOUTH, TAG.VAGINAL_LEAKAGE, TAG.INCONTINENCE
+            ],
+            male:[],
+            location:[TAG.BROTHEL, TAG.SEMI_PRIVATE],
+            misc:[TAG.CUT_IN_XRAY]
+        },
+        ignoredCharacterTags:[],
+        artistOverwrite:ARTIST.KIRIN_P
+    },
+    "0775":{
+        character:CHAR.VICTORIA_ESTA,
+        tags:{
+            female:[
+                TAG.BUNNYGIRL_OUTFIT, TAG.BREASTS_OUT, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.QUICKIE_FIX_POSITION,
+                TAG.VAGINAL_SEX, TAG.ANAL_FINGERING, TAG.ANAL_SEX, TAG.NAKADASHI, TAG.AHEGAO
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "0776":{
+        character:[CHAR.DAJAME, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.BUNNYGIRL_OUTFIT, TAG.RIPPED_CLOTHING, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.CUNNILINGUS, TAG.VAGINAL_SEX, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.BEDROOM, TAG.ON_BED, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        artistOverwrite:ARTIST.FUUFUU
+    },
 
 
 

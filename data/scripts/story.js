@@ -1750,5 +1750,11 @@ STORY = {
         banner:"bnr_ev_raid_00999_1_l.webp",
         id:248
     },
+    STORYEVENT059:{
+        japName:"Bunny Mission",
+        type:"story",
+        banner:"bnr_ev_story_00059_1_l.webp",
+        id:249
+    },
 }
 
