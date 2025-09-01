@@ -1756,5 +1756,11 @@ STORY = {
         banner:"bnr_ev_story_00059_1_l.webp",
         id:249
     },
+    RAIDEVENT055:{
+        japName:"祭りのあとの肝試し！？",
+        type:"raid",
+        banner:"bnr_ev_raid_00055_1_l.webp",
+        id:250
+    },
 }
 

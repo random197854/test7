@@ -10161,7 +10161,7 @@ var CHAR = {
             cv:CV.SORA_MAME
         }
     },
-    ELZA:{
+    ELZA_SWANSON:{
         base:{
             name:{
                 eng:"Elza Swanson",
@@ -28741,7 +28741,7 @@ var SCENE = {
         ignoredCharacterTags:[],
     },
     "0606_1":{
-        character:CHAR.ELZA,
+        character:CHAR.ELZA_SWANSON,
         tags:{
             female:[
                 TAG.BREASTS_OUT,
@@ -28755,7 +28755,7 @@ var SCENE = {
         nextScene:"0606_2"
     },
     "0606_2":{
-        character:CHAR.ELZA,
+        character:CHAR.ELZA_SWANSON,
         tags:{
             female:[
                 TAG.BREASTS_OUT,
@@ -32332,6 +32332,87 @@ var SCENE = {
         },
         ignoredCharacterTags:[],
         artistOverwrite:ARTIST.FUUFUU
+    },
+    "0777_1":{
+        character:[CHAR.SHINONOME_YAHIRO, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.YUKATA, TAG.BIKINI, TAG.BREASTS_OUT,
+                TAG.PAIZURI, TAG.BUKKAKE, TAG.BLOWJOB_PAIZURI
+            ],
+            male:[],
+            location:[TAG.OUTSIDE, TAG.PRIVATE],
+            misc:[TAG.NO_SEX]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0777_2"
+    },
+    "0777_2":{
+        character:[CHAR.SHINONOME_YAHIRO, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.YUKATA, TAG.BREASTS_OUT, TAG.PANTYLESS,
+                TAG.VAGINAL_SEX, TAG.BUKKAKE, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.OUTSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[]
+    },
+    "0778_1":{
+        character:CHAR.NATALIE_FLETCHER,
+        tags:{
+            female:[
+                TAG.YUKATA, TAG.BREASTS_OUT, TAG.PANTIES, TAG.CHOKER,
+                TAG.BREAST_GROPING, TAG.SQUIRTING, TAG.BLOWJOB, TAG.NIPPLE_PINCHING
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[TAG.NO_SEX]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0778_2"
+    },
+    "0778_2":{
+        character:CHAR.NATALIE_FLETCHER,
+        tags:{
+            female:[
+                TAG.YUKATA, TAG.BREASTS_OUT, TAG.PANTYLESS,
+                TAG.VAGINAL_SEX, TAG.NAKADASHI, TAG.SQUIRTING, TAG.AHEGAO, TAG.BLOWJOB, TAG.BUKKAKE
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[]
+    },
+    "0779":{
+        character:CHAR.SHAERIN_AYANO,
+        tags:{
+            female:[
+                TAG.YUKATA, TAG.BREASTS_OUT, TAG.PANTYLESS, TAG.BODY_WRITING,
+                TAG.MASTURBATION, TAG.VAGINAL_FINGERING, TAG.CUNNILINGUS, TAG.BREAST_SUCKING, TAG.AMATEUR_PORN_PRODUCTION, TAG.AHEGAO, TAG.NIPPLE_PINCHING, TAG.VAGINAL_SEX, TAG.DEFLORATION, TAG.BREAST_GROPING, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.OUTSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:""
+    },
+    "0780":{
+        character:CHAR.ELZA_SWANSON,
+        tags:{
+            female:[
+                TAG.YUKATA, TAG.BREASTS_OUT, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.VAGINAL_SEX, TAG.LACTATION, TAG.NIPPLE_PLAY, TAG.BREAST_SUCKING, TAG.AHEGAO, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.OUTSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[]
     },
 
 
