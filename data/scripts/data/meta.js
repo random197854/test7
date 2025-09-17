@@ -32414,7 +32414,67 @@ var SCENE = {
         },
         ignoredCharacterTags:[]
     },
-
+    "0785_1":{
+        character:[CHAR.MIZUKI_YUKIKAZE, CHAR.FUUMA_KOTAROU],
+        form:["young", null],
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.BREASTS_OUT, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.FACESITTING, TAG.FOOTJOB, TAG.MASTURBATION, TAG.CLIT_PLAY, TAG.BREAST_GROPING, TAG.BUKKAKE
+            ],
+            male:[],
+            location:[TAG.BEDROOM, TAG.ON_BED, TAG.PRIVATE],
+            misc:[TAG.NO_SEX]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0785_2",
+        artistOverwrite:ARTIST.KIRIN_P
+    },
+    "0785_2":{
+        character:[CHAR.MIZUKI_YUKIKAZE, CHAR.FUUMA_KOTAROU],
+        form:["young", null],
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.BREASTS_OUT, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.SITTING_SEX,
+                TAG.VAGINAL_SEX, TAG.BREAST_GROPING, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.BEDROOM, TAG.ON_BED, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        artistOverwrite:ARTIST.KIRIN_P
+    },
+    "0786_1":{
+        character:CHAR.IGAWA_SAKURA,
+        form:"adult",
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.BREASTS_OUT, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.VAGINAL_SEX, TAG.BUKKAKE, TAG.NAKADASHI, TAG.AHEGAO, TAG.INCONTINENCE, TAG.VAGINAL_LEAKAGE
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.ON_BED, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0786_2"
+    },
+    "0786_2":{
+        character:CHAR.IGAWA_SAKURA,
+        form:"adult",
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.BREASTS_OUT, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.ANAL_INSERTION, TAG.PROSTITUTION, TAG.VAGINAL_SEX, TAG.NAKADASHI, TAG.AHEGAO, TAG.ANAL_SEX
+            ],
+            male:[],
+            location:[TAG.BROTHEL, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[]
+    },
 
 
 
