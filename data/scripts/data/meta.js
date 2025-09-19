@@ -293,6 +293,18 @@ var ARTIST = {
         jap: "キリンP",
         japAlias: []
     },
+    HAMADA_YOUHO:{
+        eng: "Hamada Youho",
+        engAlias: ["Hamada", "Youho Hamada", "Youho"],
+        jap: "浜田遊歩",
+        japAlias: ["浜田", "遊歩"]
+    },
+    JUMBO_YAMA:{
+        eng: "Jumbo Yama",
+        engAlias: [],
+        jap: "ジャンボ山",
+        japAlias: []
+    },
     IGNORE:{
         eng: "",
         engAlias: [],
@@ -1340,6 +1352,18 @@ var CV = {
         engAlias: ["Kubara", "Airi Kubara", "Airi"],
         jap: "倉葉アイリ",
         japAlias: ["倉葉", "アイリ"]
+    },
+    KOMIKAN_REI:{
+        eng: "Komikan Rei",
+        engAlias: ["Komikan", "Rei Komikan", "Rei"],
+        jap: "小蜜柑れい",
+        japAlias: ["小蜜柑", "れい"]
+    },
+    KISAKI_RANRAN:{
+        eng: "Kisaki Ranran",
+        engAlias: ["Kisaki", "Ranran Kisaki", "Ranran"],
+        jap: "妃蘭々",
+        japAlias: ["妃", "蘭々"]
     },
     IGNORE:{
         eng: "",
@@ -11508,6 +11532,82 @@ var CHAR = {
             originalCharacter:true,
             artist:ARTIST.SANO_TOSHIHIDE,
             cv:CV.UNEMU_ZAKURO
+        }
+    },
+    SUGINOME_SERINO:{
+        base:{
+            name:{
+                eng:"Suginome Serino",
+                engAlias:["Suginome", "Serino Suginome"],
+                jap:"杉之目芹乃",
+                japAlias:["杉之目", "芹乃"]
+            },
+            tags:[
+                TAG.GREEN_HAIR, TAG.SHOULDER_LENGTH_HAIR,
+                TAG.VIOLET_EYES,
+                TAG.HUGE_BREASTS, TAG.LIGHT_SKIN
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.TSUNE,
+            cv:CV.SAKURA_MIZUKI
+        }
+    },
+    SUBA_SHINO:{
+        base:{
+            name:{
+                eng:"Suba Shino",
+                engAlias:["Suba", "Shino Suba", "Shino"],
+                jap:"透波梓乃",
+                japAlias:["透波", "梓乃"]
+            },
+            tags:[
+                TAG.BLACK_HAIR, TAG.SHOULDER_LENGTH_HAIR,
+                TAG.BLUE_EYES,
+                TAG.BIG_BREASTS, TAG.LIGHT_SKIN
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.YOU_MARU,
+            cv:CV.KOMIKAN_REI
+        }
+    },
+    KUMARA_JUN:{
+        base:{
+            name:{
+                eng:"Kumara Jun",
+                engAlias:["Kumara", "Jun Kumara", "Jun"],
+                jap:"九摩羅ジュン",
+                japAlias:["九摩羅", "ジュン"]
+            },
+            tags:[
+                TAG.WHITE_HAIR, TAG.LONG_HAIR,
+                TAG.RED_EYES,
+                TAG.LIGHT_SKIN, TAG.BIG_BREASTS
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.HAMADA_YOUHO,
+            cv:CV.KOMURA_SUI
+        }
+    },
+    SHINATO_FUUKO:{
+        base:{
+            name:{
+                eng:"Shinato Fuuko",
+                engAlias:["Shinato", "Fuuko Shinato", "Fuuko"],
+                jap:"志那処風虎",
+                japAlias:["志那処", "風虎"]
+            },
+            tags:[
+                TAG.GREEN_HAIR, TAG.SHORT_HAIR,
+                TAG.BROWN_EYES, TAG.GREEN_EYES, TAG.HETEROCHROMIA,
+                TAG.LIGHT_SKIN, TAG.BIG_BREASTS
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.JUMBO_YAMA,
+            cv:CV.KISAKI_RANRAN
         }
     },
 
@@ -32398,8 +32498,7 @@ var SCENE = {
             location:[TAG.OUTSIDE, TAG.PRIVATE],
             misc:[]
         },
-        ignoredCharacterTags:[],
-        nextScene:""
+        ignoredCharacterTags:[]
     },
     "0780":{
         character:CHAR.ELZA_SWANSON,
@@ -32411,6 +32510,86 @@ var SCENE = {
             male:[],
             location:[TAG.OUTSIDE, TAG.PRIVATE],
             misc:[]
+        },
+        ignoredCharacterTags:[]
+    },
+    "0781_1":{
+        character:CHAR.SUGINOME_SERINO,
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.PARTIALLY_TRANSPARENT_CLOTHING,
+                TAG.PAIZURI, TAG.BUKKAKE, TAG.CUM_LICKUP, TAG.PROTRUDING_NIPPLES
+            ],
+            male:[],
+            location:[TAG.BROTHEL, TAG.PRIVATE],
+            misc:[TAG.NO_SEX]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0781_2"
+    },
+    "0781_2":{
+        character:[CHAR.SUGINOME_SERINO, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.PARTIALLY_TRANSPARENT_CLOTHING, TAG.PANTIES_PUSHED_TO_SIDE, TAG.BREASTS_OUT,
+                TAG.VAGINAL_SEX, TAG.BREAST_GROPING, TAG.NIPPLE_SUCKING, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.BROTHEL, TAG.PRIVATE],
+            misc:[TAG.CUT_IN_XRAY]
+        },
+        ignoredCharacterTags:[]
+    },
+    "0782_1":{
+        character:CHAR.SUBA_SHINO,
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.BREAST_CUTOUTS, TAG.VAGINAL_CUTOUT, TAG.GLOVES, TAG.GLASSES,
+                TAG.VAGINAL_FINGERING, TAG.SQUIRTING, TAG.VAGINAL_SEX, TAG.VAGINAL_LEAKAGE, TAG.BREAST_GROPING, TAG.NAKADASHI, TAG.AHEGAO
+            ],
+            male:[],
+            location:[TAG.PRISON_CELL, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0782_2"
+    },
+    "0782_2":{
+        character:CHAR.SUBA_SHINO,
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.BREAST_CUTOUTS, TAG.VAGINAL_CUTOUT, TAG.GLASSES,
+                TAG.VAGINAL_SEX, TAG.BREAST_GROPING, TAG.FORCEFUL_BLOWJOB, TAG.ANAL_SEX, TAG.HANDJOB, TAG.TRIPLE_PENIS_PENETRATION, TAG.NAKADASHI, TAG.CUM_IN_MOUTH, TAG.AHEGAO
+            ],
+            male:[],
+            location:[TAG.PRISON_CELL, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[]
+    },
+    "0783":{
+        character:CHAR.KUMARA_JUN,
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.BREAST_CUTOUTS, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.VAGINAL_SEX, TAG.BREAST_GROPING, TAG.HANDJOB, TAG.BUKKAKE, TAG.BLOWJOB, TAG.DOUBLE_PENIS_PENETRATION, TAG.NAKADASHI, TAG.CUM_IN_MOUTH
+            ],
+            male:[],
+            location:[TAG.PRISON_CELL, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[]
+    },
+    "0784":{
+        character:CHAR.SHINATO_FUUKO,
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.BREASTS_OUT, TAG.PANTYLESS,
+                TAG.BREAST_GROPING, TAG.VAGINAL_SEX, TAG.NAKADASHI, TAG.AHEGAO, TAG.CHASTITY_BELT, TAG.VAGINAL_INSERTION, TAG.ANAL_INSERTION, TAG.DOUBLE_PENETRATION, TAG.URETHRA_INSERTION, TAG.SQUIRTING
+            ],
+            male:[],
+            location:[TAG.BEDROOM, TAG.PRIVATE],
+            misc:[TAG.CUT_IN_XRAY]
         },
         ignoredCharacterTags:[]
     },

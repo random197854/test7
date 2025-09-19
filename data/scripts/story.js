@@ -1762,5 +1762,11 @@ STORY = {
         banner:"bnr_ev_raid_00055_1_l.webp",
         id:250
     },
+    MAPEVENT054:{
+        japName:"バトロワとカピバラと対魔忍",
+        type:"map",
+        banner:"bnr_ev_map_00054_1_l.webp",
+        id:251
+    },
 }
 
