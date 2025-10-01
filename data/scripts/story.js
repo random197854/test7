@@ -1768,5 +1768,11 @@ STORY = {
         banner:"bnr_ev_map_00054_1_l.webp",
         id:251
     },
+    STORYEVENT060:{
+        japName:"隠者と騎士と妊娠と",
+        type:"story",
+        banner:"bnr_ev_story_00060_1_l.webp",
+        id:252
+    },
 }
 
