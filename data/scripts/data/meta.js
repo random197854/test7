@@ -32654,86 +32654,7 @@ var SCENE = {
         },
         ignoredCharacterTags:[]
     },
-    "0787_1":{
-        character:[CHAR.LATIKUUL, CHAR.FUUMA_KOTAROU],
-        tags:{
-            female:[
-                TAG.TAIMANIN_OUTFIT, TAG.BREASTS_OUT, TAG.PANTIES_PUSHED_TO_SIDE,
-                TAG.PREGNANT, TAG.VAGINAL_LEAKAGE, TAG.BLOWJOB, TAG.MASTURBATION, TAG.VAGINAL, TAG.NIPPLE_PLAY, TAG.CUM_IN_MOUTH, 
-            ],
-            male:[],
-            location:[TAG.INSIDE, TAG.PRIVATE],
-            misc:[TAG.NO_SEX]
-        },
-        ignoredCharacterTags:[],
-        nextScene:"0787_2"
-    },
-    "0787_2":{
-        character:[CHAR.LATIKUUL, CHAR.FUUMA_KOTAROU],
-        tags:{
-            female:[
-                TAG.TAIMANIN_OUTFIT, TAG.BREASTS_OUT, TAG.PANTIES_PUSHED_TO_SIDE,
-                TAG.PREGNANT, TAG.ROPE_BONDAGE, TAG.VAGINAL_FINGERING, TAG.LACTATION, TAG.VAGINAL_SEX, TAG.SQUIRTING, TAG.NAKADASHI, TAG.BUKKAKE, TAG.AHEGAO
-            ],
-            male:[],
-            location:[TAG.INSIDE, TAG.PRIVATE, TAG.ON_BED],
-            misc:[]
-        },
-        ignoredCharacterTags:[]
-    },
-    "0788_1":{
-        character:CHAR.INGRID,
-        tags:{
-            female:[
-                TAG.THIGH_HIGH_STOCKINGS, TAG.BREASTS_OUT,
-                TAG.PREGNANT, TAG.NIPPLE_PULLING, TAG.LACTATION, TAG.SQUIRTING, TAG.VAGINAL_SEX, TAG.BLOWJOB, TAG.DOUBLE_PENIS_PENETRATION, TAG.NAKADASHI, TAG.CUM_IN_MOUTH
-            ],
-            male:[],
-            location:[TAG.INSIDE, TAG.PRIVATE],
-            misc:[]
-        },
-        ignoredCharacterTags:[],
-        nextScene:"0788_2"
-    },
-    "0788_2":{
-        character:CHAR.INGRID,
-        tags:{
-            female:[
-                TAG.COMPLETELY_NAKED,
-                TAG.PREGNANT, TAG.LACTATION, TAG.VAGINAL_SEX, TAG.NAKADASHI, TAG.AHEGAO, TAG.NIPPLE_PLAY
-            ],
-            male:[],
-            location:[TAG.INSIDE, TAG.PRIVATE],
-            misc:[]
-        },
-        ignoredCharacterTags:[]
-    },
-    "0789":{
-        character:[CHAR.LOLA, CHAR.FUUMA_KOTAROU],
-        tags:{
-            female:[
-                TAG.COMPLETELY_NAKED,
-                TAG.VAGINAL_FINGERING, TAG.SQUIRTING, TAG.VAGINAL_SEX, TAG.BREAST_GROPING, TAG.LACTATION, TAG.NAKADASHI
-            ],
-            male:[],
-            location:[TAG.INSIDE, TAG.PRIVATE, TAG.ON_BED],
-            misc:[]
-        },
-        ignoredCharacterTags:[]
-    },
-    "0790":{
-        character:CHAR.FRANCIS,
-        tags:{
-            female:[
-                TAG.PARTIALLY_TRANSPARENT_CLOTHING, TAG.BRA, TAG.THONG,
-                TAG.PREGNANT, TAG.HANDJOB, TAG.BUKKAKE, TAG.LACTATION, TAG.VAGINAL_SEX, TAG.NAKADASHI, TAG.AHEGAO
-            ],
-            male:[],
-            location:[TAG.INSIDE, TAG.PRIVATE, TAG.ON_BED],
-            misc:[]
-        },
-        ignoredCharacterTags:[]
-    },
+
 
 
     
@@ -46528,6 +46449,8 @@ var SCENE = {
         artistOverwrite:ARTIST.IGNORE
     }
 }
+
+
 
 
 
