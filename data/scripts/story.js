@@ -1768,11 +1768,17 @@ STORY = {
         banner:"bnr_ev_map_00054_1_l.webp",
         id:251
     },
+    CHAPTER206:{
+        japName:"ふうま暁に死す",
+        type:"chapter",
+        chapter:6,
+        id:252
+    },
     STORYEVENT060:{
         japName:"隠者と騎士と妊娠と",
         type:"story",
         banner:"bnr_ev_story_00060_1_l.webp",
-        id:252
+        id:253
     },
 }
 
