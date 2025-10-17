@@ -11610,6 +11610,25 @@ var CHAR = {
             cv:CV.KISAKI_RANRAN
         }
     },
+    NEVE_CAILLEACH:{
+        base:{
+            name:{
+                eng:"Neve Cailleach",
+                engAlias:[],
+                jap:"ネヴェ・カリアッハ",
+                japAlias:["ネヴェ", "カリアッハ"]
+            },
+            tags:[
+                TAG.BLOND_HAIR, TAG.LONG_HAIR,
+                TAG.AMBER_EYES,
+                TAG.LIGHT_SKIN, TAG.BIG_BREASTS, TAG.POINTED_EARS
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.TSUNE,
+            cv:CV.FUYUMINE_KOSUZU
+        }
+    },
 
     // :{
     //     base:{
@@ -32654,7 +32673,167 @@ var SCENE = {
         },
         ignoredCharacterTags:[]
     },
+    "0787_1":{
+        character:[CHAR.LATIKUUL, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.BREASTS_OUT, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.PREGNANT, TAG.VAGINAL_LEAKAGE, TAG.BLOWJOB, TAG.MASTURBATION, TAG.VAGINAL_SEX, TAG.NIPPLE_PLAY, TAG.CUM_IN_MOUTH, 
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[TAG.NO_SEX]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0787_2"
+    },
+    "0787_2":{
+        character:[CHAR.LATIKUUL, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.BREASTS_OUT, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.PREGNANT, TAG.ROPE_BONDAGE, TAG.VAGINAL_FINGERING, TAG.LACTATION, TAG.VAGINAL_SEX, TAG.SQUIRTING, TAG.NAKADASHI, TAG.BUKKAKE, TAG.AHEGAO
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE, TAG.ON_BED],
+            misc:[]
+        },
+        ignoredCharacterTags:[]
+    },
+    "0788_1":{
+        character:CHAR.INGRID,
+        tags:{
+            female:[
+                TAG.THIGH_HIGH_STOCKINGS, TAG.BREASTS_OUT,
+                TAG.PREGNANT, TAG.NIPPLE_PULLING, TAG.LACTATION, TAG.SQUIRTING, TAG.VAGINAL_SEX, TAG.BLOWJOB, TAG.DOUBLE_PENIS_PENETRATION, TAG.NAKADASHI, TAG.CUM_IN_MOUTH
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0788_2"
+    },
+    "0788_2":{
+        character:CHAR.INGRID,
+        tags:{
+            female:[
+                TAG.COMPLETELY_NAKED,
+                TAG.PREGNANT, TAG.LACTATION, TAG.VAGINAL_SEX, TAG.NAKADASHI, TAG.AHEGAO, TAG.NIPPLE_PLAY
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[]
+    },
+    "0789":{
+        character:[CHAR.LOLA, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.COMPLETELY_NAKED,
+                TAG.VAGINAL_FINGERING, TAG.SQUIRTING, TAG.VAGINAL_SEX, TAG.BREAST_GROPING, TAG.LACTATION, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE, TAG.ON_BED],
+            misc:[]
+        },
+        ignoredCharacterTags:[]
+    },
+    "0790":{
+        character:CHAR.FRANCIS,
+        tags:{
+            female:[
+                TAG.PARTIALLY_TRANSPARENT_CLOTHING, TAG.BRA, TAG.THONG,
+                TAG.PREGNANT, TAG.HANDJOB, TAG.BUKKAKE, TAG.LACTATION, TAG.VAGINAL_SEX, TAG.NAKADASHI, TAG.AHEGAO
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE, TAG.ON_BED],
+            misc:[]
+        },
+        ignoredCharacterTags:[]
+    },
+    "0791_1":{
+        character:CHAR.CRACKLE,
+        tags:{
+            female:[
+                TAG.HALLOWEEN_OUTFIT, TAG.BRA, TAG.COLLAR, TAG.SHORTS,
+                TAG.BLOWJOB, TAG.PAIZURI, TAG.BLOWJOB_PAIZURI, TAG.BUKKAKE
+            ],
+            male:[],
+            location:[TAG.OUTSIDE, TAG.PRIVATE],
+            misc:[TAG.NO_SEX]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0791_2"
+    },
+    "0791_2":{
+        character:CHAR.CRACKLE,
+        tags:{
+            female:[
+                TAG.HALLOWEEN_OUTFIT, TAG.BRA, TAG.COLLAR, TAG.SHORTS, TAG.RIPPED_CLOTHING, TAG.BREASTS_OUT, TAG.THIGH_BAND, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.VAGINAL_SEX, TAG.ANAL_FINGERING, TAG.ANAL_INSERTION, TAG.AHEGAO, TAG.VAGINAL_LEAKAGE, TAG.NAKADASHI, TAG.GAPING
 
+            ],
+            male:[],
+            location:[TAG.OUTSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[]
+    },
+    "0792_1":{
+        character:[CHAR.IZUMO_TSURU, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.HALLOWEEN_OUTFIT, TAG.FRILLY_CLOTHING, TAG.BREASTS_OUT, TAG.PANTYLESS, TAG.THIGH_HIGH_STOCKINGS, TAG.EVENING_GLOVES,
+                TAG.HANDJOB, TAG.BLOWJOB, TAG.BUKKAKE, TAG.VAGINAL_FINGERING, TAG.VAGINAL_LEAKAGE, TAG.CUM_IN_MOUTH
+            ],
+            male:[],
+            location:[TAG.BEDROOM, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0792_2"
+    },
+    "0792_2":{
+        character:[CHAR.IZUMO_TSURU, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.HALLOWEEN_OUTFIT, TAG.FRILLY_CLOTHING, TAG.BREASTS_OUT, TAG.PANTYLESS, TAG.THIGH_HIGH_STOCKINGS, TAG.EVENING_GLOVES,
+                TAG.BREAST_GROPING, TAG.VAGINAL_SEX, TAG.NIPPLE_PINCHING, TAG.NAKADASHI, TAG.AHEGAO
+            ],
+            male:[],
+            location:[TAG.BEDROOM, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[]
+    },
+    "0793":{
+        character:CHAR.NEVE_CAILLEACH,
+        tags:{
+            female:[
+                TAG.BREASTS_OUT, TAG.RIPPED_CLOTHING, TAG.PANTIES_PUSHED_TO_SIDE, TAG.PANTYHOSE,
+                TAG.VAGINAL_SEX, TAG.BREAST_GROPING, TAG.SQUIRTING, TAG.AHEGAO, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[]
+    },
+    "0794":{
+        character:[CHAR.GLORIA, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.HALLOWEEN_OUTFIT, TAG.BREASTS_OUT, TAG.PANTYLESS, TAG.CHOKER,
+                TAG.VAGINAL_SEX, TAG.BREAST_GROPING, TAG.STOMACH_INFLATION, TAG.LACTATION, TAG.NAKADASHI, TAG.AHEGAO
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[]
+    },
 
 
     
@@ -32852,7 +33031,7 @@ var SCENE = {
             misc:[TAG.GROUP]
         },
         ignoredCharacterTags:[],
-        nextScene:"5003_2"
+        nextScene:"5003_2_v2"
     },
     "5003_2":{
         character:CHAR.KOKUOUIN_YORUYA,
@@ -32864,6 +33043,20 @@ var SCENE = {
             male:[TAG.ORC],
             location:[TAG.INSIDE, TAG.PRIVATE],
             misc:[]
+        },
+        ignoredCharacterTags:[],
+        artistOverwrite:ARTIST.IGNORE
+    },
+    "5003_2_v2":{
+        character:CHAR.KOKUOUIN_YORUYA,
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.RIPPED_CLOTHING, TAG.FRILLY_CLOTHING, TAG.HAT,
+                TAG.WOMB_TATTOO, TAG.HANDJOB, TAG.BUKKAKE, TAG.VAGINAL_SEX, TAG.NAKADASHI, TAG.AHEGAO
+            ],
+            male:[TAG.ORC],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[TAG.CUT_IN_XRAY]
         },
         ignoredCharacterTags:[],
     },
@@ -46449,8 +46642,6 @@ var SCENE = {
         artistOverwrite:ARTIST.IGNORE
     }
 }
-
-
 
 
 

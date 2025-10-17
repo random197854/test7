@@ -256,6 +256,18 @@ function unhideElem(elem){
 }
 
 STORY = {
+    TUTORIALV1:{
+        japName:"チュートリアル1",
+        type:"tutorial1",
+        banner:"bnr_common_00009_s.webp",
+        id:-9999
+    },
+    TUTORIALV2:{
+        japName:"チュートリアル2",
+        type:"tutorial2",
+        banner:"bnr_common_00009_s.webp",
+        id:-9998
+    },
     CHAPTER001:{
         japName:"反乱",
         type:"chapter",
@@ -1780,5 +1792,17 @@ STORY = {
         banner:"bnr_ev_story_00060_1_l.webp",
         id:253
     },
+    RAIDEVENT056:{
+        japName:"鶴の不思議な冒険",
+        type:"raid",
+        banner:"bnr_ev_raid_00056_1_l.webp",
+        id:254
+    },
+    TAIMANINASAGI20THEVENT:{
+        japName:"対魔忍アサギ【前世の記憶】",
+        type:"story",
+        banner:"bnr_ev_story_00130_1_l.webp",
+        id:255
+    }
 }
 
