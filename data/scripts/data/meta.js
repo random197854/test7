@@ -1365,6 +1365,12 @@ var CV = {
         jap: "妃蘭々",
         japAlias: ["妃", "蘭々"]
     },
+    ISOBE_TSUTOMU:{
+        eng: "Isobe Tsutomu",
+        engAlias: ["Isobe", "Tsutomu Isobe", "Tsutomu"],
+        jap: "磯部勉",
+        japAlias: ["磯部", "勉"]
+    },
     IGNORE:{
         eng: "",
         engAlias: [],
@@ -9215,6 +9221,23 @@ var CHAR = {
             originalCharacter:false,
             artist:ARTIST.HIROE_REI,
             cv:CV.KOYAMA_MAMI
+        }
+    },
+    DUTCH:{
+        base:{
+            name:{
+                eng:"Dutch",
+                engAlias:[],
+                jap:"ダッチ",
+                japAlias:[]
+            },
+            tags:[
+                TAG.DARK_SKIN
+            ],
+            gender:"male",
+            originalCharacter:false,
+            artist:ARTIST.HIROE_REI,
+            cv:CV.ISOBE_TSUTOMU
         }
     },
     SHAKUJII_SOYO:{
@@ -32830,6 +32853,107 @@ var SCENE = {
             ],
             male:[],
             location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[]
+    },
+    "0795_1":{
+        character:CHAR.DUTCH,
+        tags:{
+            female:[
+                
+            ],
+            male:[],
+            location:[],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0795_2"
+    },
+    "0795_2":{
+        character:CHAR.DUTCH,
+        tags:{
+            female:[
+                
+            ],
+            male:[],
+            location:[],
+            misc:[]
+        },
+        ignoredCharacterTags:[]
+    },
+    "0796_1":{
+        character:CHAR.BALALAIKA,
+        tags:{
+            female:[
+                
+            ],
+            male:[],
+            location:[],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        artistOverwrite:ARTIST.KAGAMI_HIROTAKA,
+        nextScene:"0796_2"
+    },
+    "0796_2":{
+        character:CHAR.BALALAIKA,
+        tags:{
+            female:[
+                
+            ],
+            male:[],
+            location:[],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        artistOverwrite:ARTIST.KAGAMI_HIROTAKA
+    },
+    "0797_1":{
+        character:CHAR.REVY,
+        tags:{
+            female:[
+                
+            ],
+            male:[],
+            location:[],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0797_2"
+    },
+    "0797_2":{
+        character:CHAR.REVY,
+        tags:{
+            female:[
+                
+            ],
+            male:[],
+            location:[],
+            misc:[]
+        },
+        ignoredCharacterTags:[]
+    },
+    "0798":{
+        character:[CHAR.IZUMO_KINU, CHAR.SAGOU_BUNGO],
+        tags:{
+            female:[
+                
+            ],
+            male:[],
+            location:[],
+            misc:[]
+        },
+        ignoredCharacterTags:[]
+    },
+    "0799":{
+        character:CHAR.IGAWA_SENSHUU,
+        tags:{
+            female:[
+                
+            ],
+            male:[],
+            location:[],
             misc:[]
         },
         ignoredCharacterTags:[]

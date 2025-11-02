@@ -1803,6 +1803,12 @@ STORY = {
         type:"story",
         banner:"bnr_ev_story_00130_1_l.webp",
         id:255
-    }
+    },
+    MAPEVENT055:{
+        japName:"Ghost Chaser GUNSLINGER and TAIMANIN Ⅱ",
+        type:"map",
+        banner:"bnr_ev_map_00055_1_l.webp",
+        id:256
+    },
 }
 
