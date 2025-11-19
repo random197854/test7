@@ -11652,6 +11652,82 @@ var CHAR = {
             cv:CV.FUYUMINE_KOSUZU
         }
     },
+    ASAKA_RIJUNA:{
+        base:{
+            name:{
+                eng:"Asaka Rijuna",
+                engAlias:["Asaka", "Rijuna Asaka", "Rijuna"],
+                jap:"朝香梨珠那",
+                japAlias:["朝香", "梨珠那"]
+            },
+            tags:[
+                TAG.PINK_HAIR, TAG.SHOULDER_LENGTH_HAIR,
+                TAG.PINK_EYES,
+                TAG.LIGHT_SKIN, TAG.HUGE_BREASTS
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.FUUFUU,
+            cv:CV.YUUKI_HONOKA
+        }
+    },
+    HIDOU_RIRI:{
+        base:{
+            name:{
+                eng:"Hidou Riri",
+                engAlias:["Hidou", "Riri Hidou", "Riri", "Hidou Lily", "Lily Hidou", "Lily"],
+                jap:"緋堂麗李",
+                japAlias:["緋堂", "麗李"]
+            },
+            tags:[
+                TAG.WHITE_HAIR, TAG.SHORT_HAIR,
+                TAG.AMBER_EYES,
+                TAG.LIGHT_SKIN, TAG.BIG_BREASTS
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.JUMBO_YAMA,
+            cv:CV.TSURUMAKI_CHITOSE
+        }
+    },
+    MEIJOU_RUI:{
+        base:{
+            name:{
+                eng:"Meijou Rui",
+                engAlias:["Meijou", "Rui Meijou", "Rui"],
+                jap:"名城瑠衣",
+                japAlias:["名城", "瑠衣"]
+            },
+            tags:[
+                TAG.WHITE_HAIR, TAG.LONG_HAIR,
+                TAG.VIOLET_EYES,
+                TAG.LIGHT_SKIN, TAG.BIG_BREASTS
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.HAMADA_YOUHO,
+            cv:CV.ENOMOTO_NEMU
+        }
+    },
+    SHAKUDOU_HINAKO:{
+        base:{
+            name:{
+                eng:"Shakudou Hinako",
+                engAlias:["Shakudou", "Hinako Shakudou", "Hinako"],
+                jap:"灼堂ヒナコ",
+                japAlias:["灼堂", "ヒナコ"]
+            },
+            tags:[
+                TAG.RED_HAIR, TAG.LONG_HAIR,
+                TAG.AMBER_EYES,
+                TAG.DARK_SKIN, TAG.BIG_BREASTS
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.YOU_MARU,
+            cv:CV.TACHIBANA_SARA
+        }
+    },
 
     // :{
     //     base:{
@@ -32954,6 +33030,87 @@ var SCENE = {
             ],
             male:[],
             location:[],
+            misc:[]
+        },
+        ignoredCharacterTags:[]
+    },
+    "0800_1":{
+        character:CHAR.ASAKA_RIJUNA,
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.LEOTARD, TAG.CLEAVAGE_CUTOUT, TAG.BREASTS_OUT,
+                TAG.BREAST_GROPING, TAG.TENTACLE_BONDAGE, TAG.BUKKAKE, TAG.INTERCRURAL_SEX
+            ],
+            male:[TAG.TENTACLE_CREATURE],
+            location:[TAG.BEDROOM, TAG.PRIVATE],
+            misc:[TAG.NO_SEX]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0800_2"
+    },
+    "0800_2":{
+        character:CHAR.ASAKA_RIJUNA,
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.LEOTARD, TAG.CLEAVAGE_CUTOUT, TAG.BREASTS_OUT, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.TENTACLE_BONDAGE, TAG.VAGINAL_SEX, TAG.NAKADASHI, TAG.ANAL_SEX, TAG.DOUBLE_PENIS_PENETRATION
+            ],
+            male:[TAG.TENTACLE_CREATURE],
+            location:[TAG.BEDROOM, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[]
+    },
+    "0801_1":{
+        character:CHAR.HIDOU_RIRI,
+        tags:{
+            female:[
+                TAG.SHIRT,
+                TAG.BREAST_GROPING, TAG.HANDJOB, TAG.BREAST_SUCKING, TAG.BREASTS_OUT, TAG.BLOWJOB, TAG.CUM_IN_MOUTH
+            ],
+            male:[TAG.SHOTA],
+            location:[TAG.BEDROOM, TAG.PRIVATE],
+            misc:[TAG.NO_SEX]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0801_2"
+    },
+    "0801_2":{
+        character:CHAR.HIDOU_RIRI,
+        tags:{
+            female:[
+                TAG.SHIRT, TAG.NAKED,
+                TAG.VAGINAL_SEX, TAG.NAKADASHI, TAG.AHEGAO, TAG.BREAST_GROPING, TAG.VAGINAL_LEAKAGE, TAG.DICK_CLEANING_BLOWJOB, TAG.SQUIRTING, TAG.BUKKAKE
+            ],
+            male:[TAG.SHOTA],
+            location:[TAG.BEDROOM, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[]
+    },
+    "0802":{
+        character:[CHAR.MEIJOU_RUI, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.DRESS, TAG.FRILLY_CLOTHING, TAG.BREASTS_OUT, TAG.PANTIES, TAG.THIGH_BAND, TAG.THIGH_HIGH_STOCKINGS, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.BLOWJOB, TAG.PAIZURI, TAG.VAGINAL_SEX, TAG.VAGINAL_INSERTION, TAG.SQUIRTING
+            ],
+            male:[],
+            location:[TAG.BEDROOM, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[]
+    },
+    "0803":{
+        character:[CHAR.SHAKUDOU_HINAKO, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.BREASTS_OUT, TAG.LEOTARD, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.BUKKAKE, TAG.VAGINAL_SEX, TAG.NAKADASHI
+
+            ],
+            male:[],
+            location:[TAG.OUTSIDE, TAG.SEMI_PUBLIC],
             misc:[]
         },
         ignoredCharacterTags:[]

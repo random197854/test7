@@ -1810,5 +1810,11 @@ STORY = {
         banner:"bnr_ev_map_00055_1_l.webp",
         id:256
     },
+    STORYEVENT061:{
+        japName:"Internal Mission",
+        type:"story",
+        banner:"bnr_ev_story_00061_1_l.webp",
+        id:257
+    },
 }
 
