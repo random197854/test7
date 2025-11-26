@@ -1816,5 +1816,11 @@ STORY = {
         banner:"bnr_ev_story_00061_1_l.webp",
         id:257
     },
+    CHAPTER207:{
+        japName:"隠者ククリ",
+        type:"chapter",
+        chapter:7,
+        id:258
+    },
 }
 

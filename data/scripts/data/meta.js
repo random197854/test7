@@ -33115,6 +33115,62 @@ var SCENE = {
         },
         ignoredCharacterTags:[]
     },
+    "0804_1":{
+        character:CHAR.YANAGI_MUTSUHO,
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.BREAST_CUTOUTS, TAG.VAGINAL_CUTOUT,
+                TAG.TENTACLE_BONDAGE, TAG.BREAST_GROPING, TAG.VAGINAL_SEX, TAG.BLOWJOB, TAG.DOUBLE_PENIS_PENETRATION, TAG.BREAST_SUCKING, TAG.SQUIRTING, TAG.NAKADASHI, TAG.CUM_IN_MOUTH
+            ],
+            male:[],
+            location:[TAG.OUTSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"0804_2"
+    },
+    "0804_2":{
+        character:[CHAR.YANAGI_MUTSUHO, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.BREASTS_OUT, TAG.RIPPED_CLOTHING,
+                TAG.ASS_GROPING, TAG.VAGINAL_SEX, TAG.KISSING, TAG.BREAST_GROPING, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[]
+    },
+    "0805_1":{
+        character:[CHAR.MIKAMI_CHIZU, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.SWIMSUIT, TAG.PROTRUDING_NIPPLES, TAG.BREASTS_OUT,
+                TAG.SQUIRTING
+            ],
+            male:[],
+            location:[TAG.OUTSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        artistOverwrite:ARTIST.KIRIN_P,
+        nextScene:"0805_2"
+    },
+    "0805_2":{
+        character:[CHAR.MIKAMI_CHIZU, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.SWIMSUIT, TAG.BREASTS_OUT,
+                TAG.BREAST_GROPING, TAG.NIPPLE_PINCHING, TAG.VAGINAL_SEX, TAG.NIPPLE_SUCKING, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.OUTSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        artistOverwrite:ARTIST.KIRIN_P
+    },
 
 
     
