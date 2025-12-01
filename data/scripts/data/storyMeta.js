@@ -1,4 +1,16 @@
 STORY = {
+    TUTORIALV1:{
+        japName:"チュートリアル1",
+        type:"tutorial1",
+        banner:"bnr_common_00009_s.png",
+        id:-9999
+    },
+    TUTORIALV2:{
+        japName:"チュートリアル2",
+        type:"tutorial2",
+        banner:"bnr_common_00009_s.png",
+        id:-9998
+    },
     CHAPTER001:{
         japName:"反乱",
         type:"chapter",
@@ -1450,6 +1462,114 @@ STORY = {
         type:"story",
         banner:"bnr_ev_story_00056_1_l.png",
         id:241
+    },
+    CHAPTER204:{
+        japName:"雷神再び",
+        type:"chapter",
+        chapter:4,
+        id:242
+    },
+    STORYEVENT057:{
+        japName:"アスカと花嫁コンテスト",
+        type:"story",
+        banner:"bnr_ev_story_00057_1_l.png",
+        id:243
+    },
+    RAIDEVENT053:{
+        japName:"女教師南海大作戦",
+        type:"raid",
+        banner:"bnr_ev_raid_00053_1_l.png",
+        id:244
+    },
+    STORYEVENT058:{
+        japName:"地下とリゾートと流浪の対魔忍",
+        type:"story",
+        banner:"bnr_ev_story_00058_1_l.png",
+        id:245
+    },
+    RAIDEVENT054:{
+        japName:"大怪獣と渚のアメスク対魔忍",
+        type:"raid",
+        banner:"bnr_ev_raid_00054_1_l.png",
+        id:246
+    },
+    CHAPTER205:{
+        japName:"正しい決断",
+        type:"chapter",
+        chapter:5,
+        id:247
+    },
+    RAIDEVENT999:{
+        japName:"対魔忍xバジリスク",
+        type:"raid",
+        banner:"bnr_ev_raid_00999_1_l.png",
+        id:248
+    },
+    STORYEVENT059:{
+        japName:"Bunny Mission",
+        type:"story",
+        banner:"bnr_ev_story_00059_1_l.png",
+        id:249
+    },
+    RAIDEVENT055:{
+        japName:"祭りのあとの肝試し！？",
+        type:"raid",
+        banner:"bnr_ev_raid_00055_1_l.png",
+        id:250
+    },
+    MAPEVENT054:{
+        japName:"バトロワとカピバラと対魔忍",
+        type:"map",
+        banner:"bnr_ev_map_00054_1_l.png",
+        id:251
+    },
+    CHAPTER206:{
+        japName:"ふうま暁に死す",
+        type:"chapter",
+        chapter:6,
+        id:252
+    },
+    STORYEVENT060:{
+        japName:"隠者と騎士と妊娠と",
+        type:"story",
+        banner:"bnr_ev_story_00060_1_l.png",
+        id:253
+    },
+    RAIDEVENT056:{
+        japName:"鶴の不思議な冒険",
+        type:"raid",
+        banner:"bnr_ev_raid_00056_1_l.png",
+        id:254
+    },
+    TAIMANINASAGI20THEVENT:{
+        japName:"対魔忍アサギ【前世の記憶】",
+        type:"story",
+        banner:"bnr_ev_story_00130_1_l.png",
+        id:255
+    },
+    MAPEVENT055:{
+        japName:"Ghost Chaser GUNSLINGER and TAIMANIN Ⅱ",
+        type:"map",
+        banner:"bnr_ev_map_00055_1_l.png",
+        id:256
+    },
+    STORYEVENT061:{
+        japName:"Internal Mission",
+        type:"story",
+        banner:"bnr_ev_story_00061_1_l.png",
+        id:257
+    },
+    CHAPTER207:{
+        japName:"隠者ククリ",
+        type:"chapter",
+        chapter:7,
+        id:258
+    },
+    RAIDEVENT057:{
+        japName:"猫又先生の恩返し",
+        type:"raid",
+        banner:"bnr_ev_raid_00057_1_l.png",
+        id:259
     },
 }
 

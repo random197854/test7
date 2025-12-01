@@ -221,9 +221,9 @@ var ARTIST = {
         jap: "sage・ジョー",
         japAlias: ["ジョー"]
     },
-    TSUNE:{
-        eng: "Tsune",
-        engAlias: [],
+    JOE:{
+        eng: "Joe",
+        engAlias: ["Tsune"],
         jap: "常",
         japAlias: []
     },
@@ -1329,7 +1329,7 @@ var CV = {
         jap: "初好翠季",
         japAlias: ["初好", "翠季"]
     },
-    OMANJIRU:{
+    GOMANJIRU:{
         eng: "Omanjiru",
         engAlias: [],
         jap: "御満汁",
@@ -8725,7 +8725,7 @@ var CHAR = {
             ],
             gender:"female",
             originalCharacter:true,
-            artist:ARTIST.TSUNE,
+            artist:ARTIST.JOE,
             cv:CV.FUJINOMIYA_KISEKI
         }
     },
@@ -9048,7 +9048,7 @@ var CHAR = {
             ],
             gender:"female",
             originalCharacter:true,
-            artist:ARTIST.TSUNE,
+            artist:ARTIST.JOE,
             cv:CV.YUUKI_HONOKA
         }
     },
@@ -11294,7 +11294,7 @@ var CHAR = {
             gender:"female",
             originalCharacter:true,
             artist:ARTIST.SANO_TOSHIHIDE,
-            cv:CV.OMANJIRU
+            cv:CV.GOMANJIRU
         }
     },
     NAKATSUJI_AISU:{
@@ -11350,7 +11350,7 @@ var CHAR = {
             ],
             gender:"female",
             originalCharacter:true,
-            artist:ARTIST.TSUNE,
+            artist:ARTIST.JOE,
             cv:CV.OUSAKA_NANOKA
         }
     },
@@ -11370,7 +11370,7 @@ var CHAR = {
             gender:"female",
             originalCharacter:true,
             artist:ARTIST.ASAHI,
-            cv:CV.OMANJIRU
+            cv:CV.GOMANJIRU
         }
     },
     BANKOUIN_MANGE:{
@@ -11572,7 +11572,7 @@ var CHAR = {
             ],
             gender:"female",
             originalCharacter:true,
-            artist:ARTIST.TSUNE,
+            artist:ARTIST.JOE,
             cv:CV.SAKURA_MIZUKI
         }
     },
@@ -11648,7 +11648,7 @@ var CHAR = {
             ],
             gender:"female",
             originalCharacter:true,
-            artist:ARTIST.TSUNE,
+            artist:ARTIST.JOE,
             cv:CV.FUYUMINE_KOSUZU
         }
     },
@@ -11726,6 +11726,82 @@ var CHAR = {
             originalCharacter:true,
             artist:ARTIST.YOU_MARU,
             cv:CV.TACHIBANA_SARA
+        }
+    },
+    NEKOMATA_SENSEI:{
+        base:{
+            name:{
+                eng:"Nekomata Sensei",
+                engAlias:["Nekomata"],
+                jap:"猫又先生",
+                japAlias:["猫又"]
+            },
+            tags:[
+                TAG.GREY_HAIR, TAG.SHOULDER_LENGTH_HAIR,
+                TAG.AMBER_EYES,
+                TAG.LIGHT_SKIN, TAG.BIG_BREASTS, TAG.NEKOMIMI, TAG.TAIL
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.ZOL,
+            cv:CV.GOMANJIRU
+        }
+    },
+    KAMIOOJI_RUA:{
+        base:{
+            name:{
+                eng:"Kamiooji Rua",
+                engAlias:["Kamiooji", "Rua Kamiooji", "Rua"],
+                jap:"神大路瑠亜",
+                japAlias:["神大路", "瑠亜"]
+            },
+            tags:[
+                TAG.BROWN_HAIR, TAG.SHOULDER_LENGTH_HAIR,
+                TAG.AMBER_EYES,
+                TAG.BIG_BREASTS, TAG.LIGHT_SKIN
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.JOE,
+            cv:CV.MUGIME_PURIN
+        }
+    },
+    MARIE:{
+        base:{
+            name:{
+                eng:"Marie",
+                engAlias:["Mari"],
+                jap:"マリー",
+                japAlias:[]
+            },
+            tags:[
+                TAG.RED_HAIR, TAG.LONG_HAIR,
+                TAG.GREEN_EYES,
+                TAG.LIGHT_SKIN, TAG.HUGE_BREASTS, TAG.HORNS, TAG.TAIL
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.JUMBO_YAMA,
+            cv:CV.OUSAKA_NANOKA
+        }
+    },
+    CYGNUS:{
+        base:{
+            name:{
+                eng:"Cygnus",
+                engAlias:["Cygnas", "Signus", "Signas"],
+                jap:"シグナス",
+                japAlias:[]
+            },
+            tags:[
+                TAG.PINK_HAIR, TAG.LONG_HAIR,
+                TAG.AMBER_EYES,
+                TAG.LIGHT_SKIN, TAG.AVERAGE_BREASTS
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.HAMADA_YOUHO,
+            cv:CV.KOMURA_SUI
         }
     },
 
@@ -33171,13 +33247,93 @@ var SCENE = {
         ignoredCharacterTags:[],
         artistOverwrite:ARTIST.KIRIN_P
     },
+    "1001_1":{
+        character:CHAR.NEKOMATA_SENSEI,
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.COLLAR, TAG.BREAST_CUTOUTS, TAG.VAGINAL_CUTOUT,
+                TAG.ANAL_BEADS, TAG.VAGINAL_SEX, TAG.DOUBLE_PENETRATION, TAG.BLOWJOB, TAG.NAKADASHI, TAG.CUM_IN_MOUTH
+            ],
+            male:[],
+            location:[TAG.OUTSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"1001_2"
+    },
+    "1001_2":{
+        character:CHAR.NEKOMATA_SENSEI,
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.COLLAR, TAG.BREAST_CUTOUTS, TAG.VAGINAL_CUTOUT,
+                TAG.BREAST_GROPING, TAG.VAGINAL_SEX, TAG.VAGINAL_LEAKAGE, TAG.AHEGAO, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE, TAG.ON_BED],
+            misc:[TAG.CUT_IN_XRAY]
+        },
+        ignoredCharacterTags:[]
+    },
+    "1002_1":{
+        character:CHAR.KAMIOOJI_RUA,
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.BLOWJOB, TAG.CUNNILINGUS, TAG.SQUIRTING, TAG.VAGINAL_LEAKAGE, TAG.CUM_IN_MOUTH
+            ],
+            male:[],
+            location:[TAG.LOVE_HOTEL, TAG.PRIVATE, TAG.ON_BED],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"1002_1"
+    },
+    "1002_2":{
+        character:CHAR.KAMIOOJI_RUA,
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.BREASTS_OUT, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.VAGINAL_LEAKAGE, TAG.VAGINAL_SEX, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.LOVE_HOTEL, TAG.PRIVATE, TAG.ON_BED],
+            misc:[TAG.CUT_IN_XRAY]
+        },
+        ignoredCharacterTags:[]
+    },
+    "1003":{
+        character:CHAR.MARIE,
+        tags:{
+            female:[
+                TAG.BREASTS_OUT,
+                TAG.BLOWJOB, TAG.PAIZURI, TAG.BUKKAKE, TAG.AHEGAO, TAG.NIPPLE_PINCHING
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[]
+    },
+    "1004":{
+        character:CHAR.CYGNUS,
+        tags:{
+            female:[
+                TAG.PANTYLESS, TAG.BREAST_CUTOUTS,
+                TAG.METAL_BONDAGE, TAG.SPREAD_ASS, TAG.ANAL_FINGERING, TAG.VAGINAL_FINGERING, TAG.ANAL_INSERTION, TAG.SQUIRTING, TAG.GAPING, TAG.INCONTINENCE, TAG.AHEGAO
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[]
+    },
 
 
     
 
 
 
-    // "0":{
+    // "1":{
     //     character:[],
     //     tags:{
     //         female:[

@@ -1822,5 +1822,11 @@ STORY = {
         chapter:7,
         id:258
     },
+    RAIDEVENT057:{
+        japName:"猫又先生の恩返し",
+        type:"raid",
+        banner:"bnr_ev_raid_00057_1_l.webp",
+        id:259
+    },
 }
 
