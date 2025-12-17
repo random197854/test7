@@ -33327,6 +33327,90 @@ var SCENE = {
         },
         ignoredCharacterTags:[]
     },
+    "1005_1":{
+        character:[CHAR.NAGANUMA_MITSURU, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.CHRISTMAS_CLOTHING, TAG.BIKINI, TAG.PROTRUDING_NIPPLES,
+                TAG.PAIZURI, TAG.BLOWJOB_PAIZURI, TAG.BUKKAKE, TAG.CUM_IN_MOUTH
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[TAG.NO_SEX]
+        },
+        ignoredCharacterTags:[],
+        artistOverwrite:ARTIST.YOU_MARU,
+        nextScene:"1005_2"
+    },
+    "1005_2":{
+        character:[CHAR.NAGANUMA_MITSURU, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.CHRISTMAS_CLOTHING, TAG.BIKINI, TAG.PANTIES_PUSHED_TO_SIDE, TAG.THIGH_HIGH_STOCKINGS, TAG.BREASTS_OUT,
+                TAG.VAGINAL_SEX, TAG.BREAST_GROPING, TAG.NAKADASHI, TAG.BUKKAKE, TAG.SQUIRTING
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        artistOverwrite:ARTIST.YOU_MARU,
+    },
+    "1006_1":{
+        character:[CHAR.AISHUU_HEBIKO, CHAR.FUUMA_KOTAROU],
+        form:["adult", null],
+        tags:{
+            female:[
+                TAG.CHRISTMAS_CLOTHING, TAG.THIGH_HIGH_STOCKINGS, TAG.THIGH_BAND, TAG.EVENING_GLOVES, TAG.PROTRUDING_NIPPLES,
+                TAG.BLOWJOB, TAG.HANDJOB, TAG.CUM_IN_MOUTH, TAG.BUKKAKE, TAG.VAGINAL_LEAKAGE
+            ],
+            male:[],
+            location:[TAG.BEDROOM, TAG.PRIVATE],
+            misc:[TAG.NO_SEX]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"1006_2"
+    },
+    "1006_2":{
+        character:[CHAR.AISHUU_HEBIKO, CHAR.FUUMA_KOTAROU],
+        form:["adult", null],
+        tags:{
+            female:[
+                TAG.CHRISTMAS_CLOTHING, TAG.PANTYLESS, TAG.THIGH_BAND, TAG.THIGH_HIGH_STOCKINGS, TAG.BREASTS_OUT,
+                TAG.VAGINAL_SEX, TAG.VAGINAL_LEAKAGE, TAG.BREAST_GROPING, TAG.NAKADASHI, TAG.AHEGAO, TAG.BUKKAKE
+            ],
+            male:[],
+            location:[TAG.BEDROOM, TAG.PRIVATE],
+            misc:[TAG.OVERLAY_XRAY]
+        },
+        ignoredCharacterTags:[]
+    },
+    "1007":{
+        character:CHAR.SANADA_SAKI,
+        tags:{
+            female:[
+                TAG.CHRISTMAS_CLOTHING, TAG.BREASTS_OUT, TAG.PANTYLESS,
+                TAG.BREAST_GROPING, TAG.VAGINAL_SEX, TAG.NIPPLE_PINCHING, TAG.VAGINAL_LEAKAGE, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.LOVE_HOTEL, TAG.ON_BED, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[]
+    },
+    "1008":{
+        character:CHAR.JUNO,
+        tags:{
+            female:[
+                TAG.HALF_NAKED, TAG.BREASTS_OUT, TAG.PANTLESS,
+                TAG.BREAST_GROPING, TAG.VAGINAL_SEX, TAG.NAKADASHI, TAG.LACTATION, TAG.AHEGAO, TAG.NIPPLE_PINCHING, TAG.STOMACH_INFLATION
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[]
+    },
 
 
     

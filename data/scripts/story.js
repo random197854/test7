@@ -1828,5 +1828,11 @@ STORY = {
         banner:"bnr_ev_raid_00057_1_l.webp",
         id:259
     },
+    MAPEVENT056:{
+        japName:"鰻と魔神さまのクリスマス",
+        type:"map",
+        banner:"bnr_ev_map_00056_1_l.webp",
+        id:260
+    },
 }
 
