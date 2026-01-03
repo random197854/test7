@@ -305,6 +305,12 @@ var ARTIST = {
         jap: "ジャンボ山",
         japAlias: []
     },
+    SUEHIRO:{
+        eng: "Suehiro",
+        engAlias: [],
+        jap: "すゑひろ",
+        japAlias: []
+    },
     IGNORE:{
         eng: "",
         engAlias: [],
@@ -33411,6 +33417,89 @@ var SCENE = {
         },
         ignoredCharacterTags:[]
     },
+    "1009_1":{
+        character:CHAR.FUUMA_AKI,
+        tags:{
+            female:[
+                TAG.BREASTS_OUT, TAG.KIMONO, TAG.CHOKER,
+                TAG.PAIZURI, TAG.HANDJOB, TAG.BLOWJOB, TAG.BUKKAKE, TAG.CUM_IN_MOUTH, TAG.NIPPLE_PINCHING, TAG.LACTATION, TAG.NIPPLE_FUCK, TAG.AHEGAO
+            ],
+            male:[],
+            location:[TAG.OUTSIDE, TAG.SEMI_PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"1009_1"
+    },
+    "1009_2":{
+        character:CHAR.FUUMA_AKI,
+        tags:{
+            female:[
+                TAG.BREASTS_OUT, TAG.KIMONO, TAG.CHOKER, TAG.PANTYLESS,
+                TAG.NIPPLE_FUCK, TAG.VAGINAL_SEX, TAG.NAKADASHI, TAG.AHEGAO, TAG.ANAL_SEX, TAG.PAIZURI, TAG.LACTATION
+            ],
+            male:[],
+            location:[TAG.OUTSIDE, TAG.SEMI_PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[]
+    },
+    "1010_1":{
+        character:[CHAR.IGAWA_SAKURA, CHAR.FUUMA_KOTAROU],
+        form:["young", null],
+        tags:{
+            female:[
+                TAG.KIMONO, TAG.BREASTS_OUT, TAG.PANTIES, TAG.CHOKER, TAG.BLINDFOLD, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.BREAST_GROPING, TAG.CLIT_PLAY, TAG.KISSING, TAG.VAGINAL_LEAKAGE, TAG.HANDJOB, TAG.AHEGAO, TAG.SQUIRTING
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"1010_2"
+    },
+    "1010_2":{
+        character:[CHAR.IGAWA_SAKURA, CHAR.FUUMA_KOTAROU],
+        form:["young", null],
+        tags:{
+            female:[
+                TAG.KIMONO, TAG.BREASTS_OUT, TAG.PANTYLESS,
+                TAG.VAGINAL_SEX, TAG.BREAST_GROPING, TAG.KISSING, TAG.NAKADASHI
+            ],
+            male:[TAG.NIPPLE_PLAY],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+    },
+    "1011":{
+        character:CHAR.FORCIA,
+        tags:{
+            female:[
+                TAG.KIMONO, TAG.PANTIES, TAG.THIGH_HIGH_STOCKINGS, TAG.BREASTS_OUT,
+                TAG.BLOWJOB, TAG.BREAST_GROPING, TAG.SQUIRTING, TAG.ASPHYXIATION, TAG.CUM_IN_MOUTH, TAG.VAGINAL_LEAKAGE
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        artistOverwrite:ARTIST.SUEHIRO
+    },
+    "1012":{
+        character:[CHAR.PERIT, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.FRILLY_CLOTHING, TAG.THIGH_HIGH_STOCKINGS, TAG.BREASTS_OUT,
+                TAG.VAGINAL_SEX, TAG.KISSING, TAG.NAKADASHI, TAG.AHEGAO
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[]
+    },
 
 
     
@@ -33636,6 +33725,66 @@ var SCENE = {
             misc:[TAG.CUT_IN_XRAY]
         },
         ignoredCharacterTags:[],
+    },
+    "5004_1":{
+        character:CHAR.IGAWA_ASAGI,
+        from:"adult",
+        tags:{
+            female:[
+                TAG.DRESS, TAG.BREASTS_OUT, TAG.PANTIES, TAG.AFFIXED_DILDO,
+                TAG.BREAST_INJECTION, TAG.VAGINAL_INSERTION, TAG.VIBRATOR, TAG.SWEATING, TAG.SQUIRTING, TAG.AHEGAO, TAG.ELECTRIC_SHOCKS, TAG.CERVIX_PENETRATION, TAG.INCONTINENCE, TAG.LIVE_STREAMING, TAG.PROFESSIONAL_PORN_PRODUCTION, TAG.VAGINAL_LEAKAGE
+            ],
+            male:[],
+            location:[TAG.BEDROOM, TAG.ON_BED, TAG.PRIVATE],
+            misc:[TAG.OVERLAY_XRAY]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"5004_2"
+    },
+    "5004_2":{
+        character:CHAR.IGAWA_ASAGI,
+        from:"adult",
+        tags:{
+            female:[
+                TAG.NAKED, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.LEGS_PULLED_UP,
+                TAG.VAGINAL_LEAKAGE, TAG.SPANKING, TAG.VAGINAL_SEX, TAG.AHEGAO, TAG.NAKADASHI, TAG.ANAL_BEADS, TAG.ANAL_INSERTION, TAG.BODY_WRITING
+            ],
+            male:[],
+            location:[TAG.BEDROOM, TAG.ON_BED, TAG.PRIVATE],
+            misc:[TAG.CUT_IN_XRAY]
+        },
+        ignoredCharacterTags:[]
+    },
+    "5004_3":{
+        character:CHAR.IGAWA_ASAGI,
+        from:"adult",
+        tags:{
+            female:[
+                TAG.DRESS, TAG.BREASTS_OUT, TAG.PANTIES, TAG.AFFIXED_DILDO,
+                TAG.BREAST_INJECTION, TAG.VAGINAL_INSERTION, TAG.VIBRATOR, TAG.SWEATING, TAG.SQUIRTING, TAG.AHEGAO, TAG.ELECTRIC_SHOCKS, TAG.CERVIX_PENETRATION, TAG.INCONTINENCE, TAG.LIVE_STREAMING, TAG.PROFESSIONAL_PORN_PRODUCTION, TAG.VAGINAL_LEAKAGE
+            ],
+            male:[],
+            location:[TAG.BEDROOM, TAG.ON_BED, TAG.PRIVATE],
+            misc:[TAG.OVERLAY_XRAY]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"5004_4"
+    },
+    "5004_4":{
+        character:CHAR.IGAWA_ASAGI,
+        from:"adult",
+        tags:{
+            female:[
+                TAG.NAKED, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.LEGS_PULLED_UP,
+                TAG.VAGINAL_LEAKAGE, TAG.SPANKING, TAG.VAGINAL_SEX, TAG.AHEGAO, TAG.NAKADASHI, TAG.ANAL_BEADS, TAG.ANAL_INSERTION, TAG.BODY_WRITING
+            ],
+            male:[],
+            location:[TAG.BEDROOM, TAG.ON_BED, TAG.PRIVATE],
+            misc:[TAG.CUT_IN_XRAY]
+        },
+        ignoredCharacterTags:[]
     },
 
 
@@ -47217,7 +47366,143 @@ var SCENE = {
         },
         ignoredCharacterTags:[],
         artistOverwrite:ARTIST.IGNORE
-    }
+    },
+    "OTOGI_220301":{
+        character:CHAR.IGAWA_ASAGI,
+        form:"adult",
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.RIPPED_CLOTHING,
+                TAG.QUICKIE_FIX_POSITION,
+                TAG.VAGINAL_SEX, TAG.NAKADASHI, TAG.AHEGAO
+            ],
+            male:[],
+            location:[TAG.TOILET, TAG.PRIVATE,TAG.INSIDE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        artistOverwrite:ARTIST.IGNORE
+    },
+    "OTOGI_220302":{
+        character:[CHAR.IGAWA_ASAGI, CHAR.FUUMA_KOTAROU],
+        form:["adult", null],
+        tags:{
+            female:[
+                TAG.DRESS, TAG.BREASTS_OUT,
+                TAG.PAIZURI, TAG.BUKKAKE
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        artistOverwrite:ARTIST.IGNORE
+    },
+    "OTOGI_220311":{
+        character:CHAR.MIZUKI_YUKIKAZE,
+        form:"young",
+        tags:{
+            female:[
+                TAG.DRESS, TAG.BREASTS_OUT, TAG.PANTYLESS, TAG.THIGH_HIGH_STOCKINGS,
+                TAG.VAGINAL_SEX, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.OUTSIDE, TAG.SEMI_PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        artistOverwrite:ARTIST.IGNORE
+    },
+    "OTOGI_220312":{
+        character:CHAR.MIZUKI_YUKIKAZE,
+        form:"young",
+        tags:{
+            female:[
+                TAG.COMPLETELY_NAKED,
+                TAG.VIBRATOR, TAG.SWEATING, TAG.VAGINAL_LEAKAGE, TAG.AHEGAO
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        artistOverwrite:ARTIST.IGNORE
+    },
+    "OTOGI_220321":{
+        character:CHAR.ONISAKI_KIRARA,
+        form:"young",
+        tags:{
+            female:[
+                TAG.DRESS, TAG.BREASTS_OUT, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.VAGINAL_FINGERING, TAG.ANAL_FINGERING, TAG.DOUBLE_PENETRATION, TAG.VAGINAL_LEAKAGE, TAG.MASTURBATION,
+            ],
+            male:[],
+            location:[TAG.BEDROOM, TAG.ON_BED, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        artistOverwrite:ARTIST.IGNORE
+    },
+    "OTOGI_220322":{
+        character:[CHAR.ONISAKI_KIRARA, CHAR.FUUMA_KOTAROU],
+        form:["young", null],
+        tags:{
+            female:[
+                TAG.DRESS, TAG.BREASTS_OUT, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.HAND_HOLDING, TAG.VAGINAL_SEX, TAG.VAGINAL_LEAKAGE, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.BEDROOM, TAG.ON_BED, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        artistOverwrite:ARTIST.IGNORE
+    },
+    "OTOGI_220331":{
+        character:CHAR.KOUSAKA_SHIZURU,
+        tags:{
+            female:[
+                TAG.DRESS, TAG.BREASTS_OUT, TAG.PANTIES_PULLED_DOWN,
+                TAG.QUICKIE_FIX_POSITION,
+                TAG.VAGINAL_SEX, TAG.VAGINAL_LEAKAGE, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.SEMI_PUBLIC],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        artistOverwrite:ARTIST.IGNORE
+    },
+    "OTOGI_220332":{
+        character:CHAR.KOUSAKA_SHIZURU,
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.BREAST_CUTOUTS, TAG.VAGINAL_CUTOUT,
+                TAG.DOGGY_STYLE,
+                TAG.BLOWJOB, TAG.VAGINAL_SEX, TAG.DOUBLE_PENIS_PENETRATION, TAG.VAGINAL_LEAKAGE, TAG.NAKADASHI, TAG.CUM_IN_MOUTH
+            ],
+            male:[TAG.SHOTA],
+            location:[],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        artistOverwrite:ARTIST.IGNORE
+    },
+    "OTOGI_220341":{
+        character:CHAR.INGRID,
+        tags:{
+            female:[
+                TAG.BREASTS_OUT, TAG.PANTYLESS,
+                TAG.TENTACLE_BONDAGE, TAG.BREAST_GROPING, TAG.VAGINAL_SEX, TAG.TENTACLE_RAPE, TAG.VAGINAL_LEAKAGE, TAG.NAKADASHI, TAG.AHEGAO
+            ],
+            male:[],
+            location:[TAG.OUTSIDE, TAG.SEMI_PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        artistOverwrite:ARTIST.IGNORE
+    },
+    
 }
 
 

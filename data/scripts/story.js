@@ -1834,5 +1834,11 @@ STORY = {
         banner:"bnr_ev_map_00056_1_l.webp",
         id:260
     },
+    STORYEVENT062:{
+        japName:"さくらとヨミハラのお正月",
+        type:"story",
+        banner:"bnr_ev_story_00062_1_l.webp",
+        id:261
+    },
 }
 
