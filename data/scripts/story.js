@@ -1840,5 +1840,11 @@ STORY = {
         banner:"bnr_ev_story_00062_1_l.webp",
         id:261
     },
+    RAIDEVENT058:{
+        japName:"黒煙のアリーナ",
+        type:"raid",
+        banner:"bnr_ev_raid_00058_1_l.webp",
+        id:262
+    },
 }
 

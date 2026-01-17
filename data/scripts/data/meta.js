@@ -311,6 +311,12 @@ var ARTIST = {
         jap: "すゑひろ",
         japAlias: []
     },
+    EKAKI_NO_KOUKAKURUI:{
+        eng: "Ekaki no Koukakurui",
+        engAlias: [],
+        jap: "絵かきの甲殻類",
+        japAlias: []
+    },
     IGNORE:{
         eng: "",
         engAlias: [],
@@ -1376,6 +1382,12 @@ var CV = {
         engAlias: ["Isobe", "Tsutomu Isobe", "Tsutomu"],
         jap: "磯部勉",
         japAlias: ["磯部", "勉"]
+    },
+    SUZUKA:{
+        eng: "Suzuka",
+        engAlias: [],
+        jap: "鈴華",
+        japAlias: []
     },
     IGNORE:{
         eng: "",
@@ -11808,6 +11820,44 @@ var CHAR = {
             originalCharacter:true,
             artist:ARTIST.HAMADA_YOUHO,
             cv:CV.KOMURA_SUI
+        }
+    },
+    KABASHIMA_MIKUNI:{
+        base:{
+            name:{
+                eng:"Kabashima Mikuni",
+                engAlias:["Kabashima", "Mikuni Kabashima", "Mikuni"],
+                jap:"樺島魅久仁",
+                japAlias:["樺島", "魅久仁"]
+            },
+            tags:[
+                TAG.VIOLET_HAIR, TAG.LONG_HAIR,
+                TAG.AMBER_EYES,
+                TAG.BIG_BREASTS, TAG.LIGHT_SKIN
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.HAMADA_YOUHO,
+            cv:CV.SUZUKA
+        }
+    },
+    SAGAKARI_MANA:{
+        base:{
+            name:{
+                eng:"Sagakari Mana",
+                engAlias:["Sagakari", "Mana Sagakari", "Mana"],
+                jap:"鬼狩雁摩永",
+                japAlias:["鬼狩雁", "摩永"]
+            },
+            tags:[
+                TAG.WHITE_HAIR, TAG.LONG_HAIR,
+                TAG.PINK_EYES,
+                TAG.BIG_BREASTS, TAG.LIGHT_SKIN
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.EKAKI_NO_KOUKAKURUI,
+            cv:CV.SAKURANI_AKARI
         }
     },
 
@@ -33497,6 +33547,86 @@ var SCENE = {
             male:[],
             location:[TAG.INSIDE, TAG.PRIVATE],
             misc:[]
+        },
+        ignoredCharacterTags:[]
+    },
+    "1013_1":{
+        character:CHAR.MURAKUMO_IBUKI,
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.BREASTS_OUT, TAG.PANTYLESS,
+                TAG.HAIR_PULLING, TAG.SPANKING, TAG.VAGINAL_SEX, TAG.VAGINAL_LEAKAGE, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.FACILITY, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"1013_2"
+    },
+    "1013_2":{
+        character:CHAR.MURAKUMO_IBUKI,
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.BREASTS_OUT, TAG.PANTYLESS,
+                TAG.HANDCUFFS, TAG.VAGINAL_SEX, TAG.NAKADASHI, TAG.ANAL_SEX, TAG.AHEGAO
+            ],
+            male:[],
+            location:[TAG.FACILITY, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[]
+    },
+    "1014_1":{
+        character:CHAR.SHINGANJI_KURENAI,
+        tags:{
+            female:[
+                TAG.TAIMANIN_OUTFIT, TAG.BREAST_CUTOUTS, TAG.VAGINAL_CUTOUT, TAG.VAGINAL_LEAKAGE,
+                TAG.NOSE_HOOK, TAG.TENTACLE_BONDAGE, TAG.BREAST_INJECTION, TAG.ANAL_INSERTION, TAG.VAGINAL_FINGERING, TAG.VAGINAL_INSERTION, TAG.BREAST_GROWTH, TAG.AHEGAO, TAG.TENTACLE_RAPE, TAG.DOUBLE_PENIS_PENETRATION, TAG.NIPPLE_SUCKING, TAG.VAGINAL_LEAKAGE
+            ],
+            male:[],
+            location:[TAG.PRISON_CELL, TAG.PRIVATE],
+            misc:[TAG.CUT_IN_XRAY]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"1014_2"
+    },
+    "1014_2":{
+        character:CHAR.SHINGANJI_KURENAI,
+        tags:{
+            female:[
+                TAG.NAKED,
+                TAG.BREAST_GROWTH, TAG.BLOWJOB, TAG.VAGINAL_SEX, TAG.DOUBLE_PENIS_PENETRATION, TAG.VAGINAL_LEAKAGE, TAG.HAIR_PULLING, TAG.NAKADASHI, TAG.CUM_IN_MOUTH, TAG.ANAL_SEX, TAG.PAIZURI, TAG.BUKKAKE, TAG.INCONTINENCE, TAG.STOMACH_DEFORMATION, TAG.AHEGAO, TAG.STOMACH_INFLATION
+            ],
+            male:[],
+            location:[TAG.PRISON_CELL, TAG.PRIVATE],
+            misc:[TAG.CUT_IN_XRAY]
+        },
+        ignoredCharacterTags:[]
+    },
+    "1015":{
+        character:CHAR.KABASHIMA_MIKUNI,
+        tags:{
+            female:[
+                TAG.LEOTARD, TAG.PANTIES_PUSHED_TO_SIDE, TAG.BREASTS_OUT, 
+                TAG.VAGINAL_SEX, TAG.BREAST_GROPING, TAG.VAGINAL_LEAKAGE
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[]
+    },
+    "1016":{
+        character:CHAR.SAGAKARI_MANA,
+        tags:{
+            female:[
+                TAG.BREASTS_OUT, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.MASTURBATION, TAG.BREAST_GROPING, TAG.CLIT_PLAY, TAG.AHEGAO, TAG.NIPPLE_SUCKING, TAG.VAGINAL_LEAKAGE
+            ],
+            male:[],
+            location:[TAG.BEDROOM, TAG.PRIVATE],
+            misc:[TAG.NO_SEX]
         },
         ignoredCharacterTags:[]
     },
