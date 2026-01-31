@@ -33630,6 +33630,88 @@ var SCENE = {
         },
         ignoredCharacterTags:[]
     },
+    "1017_1":{
+        character:CHAR.SHIGARAKI_MAME,
+        tags:{
+            female:[
+                TAG.BREASTS_OUT, TAG.RIPPED_PANTIES, TAG.THIGH_HIGH_STOCKINGS,
+                TAG.TENTACLE_BONDAGE, TAG.BREAST_GROPING, TAG.VAGINAL_SEX, TAG.SQUIRTING, TAG.HANDJOB, 
+            ],
+            male:[],
+            location:[TAG.OUTSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        artistOverwrite: ARTIST.JOE,
+        nextScene:"1017_2"
+    },
+    "1017_2":{
+        character:CHAR.SHIGARAKI_MAME,
+        tags:{
+            female:[
+                TAG.BREASTS_OUT, TAG.PANTYLESS, TAG.THIGH_HIGH_STOCKINGS, TAG.COLLAR,
+                TAG.BREAST_GROPING, TAG.VAGINAL_SEX, TAG.BLOWJOB, TAG.DOUBLE_PENIS_PENETRATION, TAG.BUKKAKE, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        artistOverwrite: ARTIST.JOE
+    },
+    "1018_1":{
+        character:[CHAR.LICH_MAID, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.BIKINI, TAG.FRILLY_CLOTHING, TAG.HEADBAND, TAG.SKIRT, TAG.BREASTS_OUT,
+                TAG.PAIZURI, TAG.LOTION, TAG.BLOWJOB_PAIZURI, TAG.CUM_IN_MOUTH
+            ],
+            male:[],
+            location:[TAG.BEDROOM, TAG.PRIVATE],
+            misc:[TAG.NO_SEX]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"1018_2"
+    },
+    "1018_2":{
+        character:[CHAR.LICH_MAID, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.NAKED_RIBBON,
+                TAG.VAGINAL_SEX, TAG.KISSING, TAG.NAKADASHI, TAG.AHEGAO
+            ],
+            male:[],
+            location:[TAG.BEDROOM, TAG.PRIVATE],
+            misc:[TAG.OVERLAY_XRAY]
+        },
+        ignoredCharacterTags:[],
+    },
+    "1019":{
+        character:[CHAR.YAKUSHIJI_MIZUHO, CHAR.FUUMA_KOTAROU],
+        tags:{
+            female:[
+                TAG.BREASTS_OUT, TAG.PANTYLESS,
+                TAG.BREAST_GROPING, TAG.VAGINAL_SEX, TAG.BUKKAKE, TAG.AHEGAO, TAG.STOMACH_DEFORMATION, TAG.NAKADASHI
+            ],
+            male:[],
+            location:[TAG.BEDROOM, TAG.ON_BED, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[]
+    },
+    "1020":{
+        character:CHAR.AINO_NOZOMI,
+        tags:{
+            female:[],
+            male:[
+                TAG.FRILLY_CLOTHING, TAG.GARTER_BELT,
+                TAG.ANAL_SEX, TAG.NAKADASHI, TAG.AHEGAO
+            ],
+            location:[TAG.BEDROOM, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[]
+    },
 
 
     

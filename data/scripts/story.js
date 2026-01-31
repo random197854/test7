@@ -1846,5 +1846,17 @@ STORY = {
         banner:"bnr_ev_raid_00058_1_l.webp",
         id:262
     },
+    CHAPTER208:{
+        japName:"Irregulars",
+        type:"chapter",
+        chapter:8,
+        id:263
+    },
+    MAPEVENT057:{
+        japName:"バレンタインメイドとチョコ狩人",
+        type:"map",
+        banner:"bnr_ev_map_00057_1_l.webp",
+        id:264
+    },
 }
 
