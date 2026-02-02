@@ -290,7 +290,21 @@ function isArray(obj) {
 
 // Creates what scene select works off of
 function fillSceneList(){
-	for(key of Object.keys(sceneData)){
+	let keys = Object.keys(sceneData);
+	keys.sort(function(a, b) {
+		const partsA = a.split('_').map(Number);
+		const partsB = b.split('_').map(Number);
+		
+		const len = Math.min(partsA.length, partsB.length);
+		for (let i = 0; i < len; i++) {
+			if (partsA[i] !== partsB[i]) {
+				return partsA[i] - partsB[i];
+			}
+		}
+		
+		return partsA.length - partsB.length;
+	});
+	for(key of keys){
 		if(sceneData[key].SCRIPT){
 			main.sceneList.push(key)
 		} else if(sceneData[key].SCRIPTS.PART1.SCRIPT){
