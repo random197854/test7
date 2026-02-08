@@ -1389,6 +1389,12 @@ var CV = {
         jap: "鈴華",
         japAlias: []
     },
+    SAKURANO_KOHANE:{
+        eng: "Sakurano Kohane",
+        engAlias: ["Sakurano", "Kohane Sakurano", "Kohane"],
+        jap: "桜野恋羽",
+        japAlias: ["桜野", "恋羽"]
+    },
     IGNORE:{
         eng: "",
         engAlias: [],
@@ -11858,6 +11864,44 @@ var CHAR = {
             originalCharacter:true,
             artist:ARTIST.EKAKI_NO_KOUKAKURUI,
             cv:CV.SAKURANI_AKARI
+        }
+    },
+    POWER_LADY:{
+        base:{
+            name:{
+                eng:"Power Lady",
+                engAlias:[],
+                jap:"パワーレディ",
+                japAlias:[]
+            },
+            tags:[
+                TAG.BLOND_HAIR, TAG.LONG_HAIR,
+                TAG.AMBER_EYES,
+                TAG.TANNED_SKIN, TAG.BIG_BREASTS
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.KAGAMI_HIROTAKA,
+            cv:CV.GOMANJIRU
+        }
+    },
+    BEELZEBUB:{
+        base:{
+            name:{
+                eng:"Beelzebub",
+                engAlias:[],
+                jap:"ベルゼビュート",
+                japAlias:[]
+            },
+            tags:[
+                TAG.WHITE_HAIR, TAG.LONG_HAIR,
+                TAG.VIOLET_EYES,
+                TAG.UNNATURAL_SKIN, TAG.BIG_BREASTS
+            ],
+            gender:"female",
+            originalCharacter:true,
+            artist:ARTIST.YOU_MARU,
+            cv:CV.SAKURANO_KOHANE
         }
     },
 
@@ -33896,6 +33940,62 @@ var SCENE = {
             misc:[TAG.CUT_IN_XRAY]
         },
         ignoredCharacterTags:[],
+    },
+    "4007_1":{
+        character:CHAR.POWER_LADY,
+        tags:{
+            female:[
+                TAG.BREAST_CUTOUTS,
+                TAG.VAGINAL_SEX, TAG.STOMACH_DEFORMATION, TAG.AHEGAO, TAG.NAKADASHI, TAG.INCONTINENCE
+            ],
+            male:[TAG.OGRE],
+            location:[TAG.ARENA, TAG.SEMI_PUBLIC],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"4007_2",
+        artistOverwrite: ARTIST.OBUI
+    },
+    "4007_2":{
+        character:CHAR.POWER_LADY,
+        tags:{
+            female:[
+                TAG.LINGERIE, TAG.BREASTS_OUT, TAG.THIGH_HIGH_STOCKINGS,
+                TAG.VAGINAL_SEX, TAG.PROSTITUTION, TAG.NAKADASHI, TAG.AHEGAO, TAG.BLOWJOB, TAG.DOUBLE_PENIS_PENETRATION, TAG.CUM_IN_MOUTH, TAG.BUKKAKE
+            ],
+            male:[],
+            location:[TAG.BROTHEL, TAG.PRIVATE],
+            misc:[]
+        },
+        ignoredCharacterTags:[],
+        artistOverwrite: ARTIST.OBUI
+    },
+    "4008_1":{
+        character:CHAR.BEELZEBUB,
+        tags:{
+            female:[
+                TAG.BREASTS_OUT, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.VAGINAL_SEX, TAG.STOMACH_DEFORMATION, TAG.NAKADASHI, TAG.BLOWJOB, TAG.DOUBLE_PENIS_PENETRATION, TAG.ANAL_SEX, TAG.STOMACH_INFLATION, TAG.CUM_IN_MOUTH, TAG.VAGINAL_LEAKAGE
+            ],
+            male:[],
+            location:[TAG.INSIDE, TAG.PRIVATE],
+            misc:[TAG.CUT_IN_XRAY]
+        },
+        ignoredCharacterTags:[],
+        nextScene:"4008_2"
+    },
+    "4008_2":{
+        character:CHAR.BEELZEBUB,
+        tags:{
+            female:[
+                TAG.BREASTS_OUT, TAG.PANTIES_PUSHED_TO_SIDE,
+                TAG.VAGINAL_SEX, TAG.NAKADASHI, TAG.STOMACH_INFLATION, TAG.ANAL_SEX, TAG.LACTATION, TAG.AHEGAO, TAG.VAGINAL_LEAKAGE, 
+            ],
+            male:[],
+            location:[],
+            misc:[]
+        },
+        ignoredCharacterTags:[]
     },
     "5003_1":{
         character:CHAR.KOKUOUIN_YORUYA,
