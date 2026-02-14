@@ -1858,5 +1858,11 @@ STORY = {
         banner:"bnr_ev_map_00057_1_l.webp",
         id:264
     },
+    STORYEVENT063:{
+        japName:"爆炎と夢怪盗",
+        type:"story",
+        banner:"bnr_ev_story_00063_1_l.webp",
+        id:265
+    },
 }
 
